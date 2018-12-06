@@ -1,0 +1,3337 @@
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:36:56 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- invariant (loc = EoC -> !(SF_ModeSelector2_DiagCode = resize(0ud16_32768, 16) & SF_ModeSelector2_S_Unlock = !(0ud8_0 = 0ud8_0)))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: AG alpha Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    loc = 151
+    ccntr = 0
+    UNKNOWN_BOOL_UNKNOWN_BOOL = FALSE
+    SF_ModeSelector2_Activate = FALSE
+    SF_ModeSelector2_S_Mode0 = FALSE
+    SF_ModeSelector2_S_Mode1 = FALSE
+    SF_ModeSelector2_S_Mode2 = FALSE
+    SF_ModeSelector2_S_Mode3 = FALSE
+    SF_ModeSelector2_S_Mode4 = FALSE
+    SF_ModeSelector2_S_Mode5 = FALSE
+    SF_ModeSelector2_S_Mode6 = FALSE
+    SF_ModeSelector2_S_Mode7 = FALSE
+    SF_ModeSelector2_S_Unlock = FALSE
+    SF_ModeSelector2_S_SetMode = FALSE
+    SF_ModeSelector2_AutoSetMode = FALSE
+    SF_ModeSelector2_ModeMonitorTime = 0ud32_0
+    SF_ModeSelector2_Reset = FALSE
+    SF_ModeSelector2_Ready = FALSE
+    SF_ModeSelector2_S_Mode0Sel = FALSE
+    SF_ModeSelector2_S_Mode1Sel = FALSE
+    SF_ModeSelector2_S_Mode2Sel = FALSE
+    SF_ModeSelector2_S_Mode3Sel = FALSE
+    SF_ModeSelector2_S_Mode4Sel = FALSE
+    SF_ModeSelector2_S_Mode5Sel = FALSE
+    SF_ModeSelector2_S_Mode6Sel = FALSE
+    SF_ModeSelector2_S_Mode7Sel = FALSE
+    SF_ModeSelector2_S_AnyModeSel = FALSE
+    SF_ModeSelector2_Error = FALSE
+    SF_ModeSelector2_DiagCode = 0ud16_0
+    SF_ModeSelector2_T_1_IN = FALSE
+    SF_ModeSelector2_T_1_PT = 0ud32_0
+    SF_ModeSelector2_T_1_Q = FALSE
+    SF_ModeSelector2_T_1___TEMP0 = FALSE
+    SF_ModeSelector2_R_TRIGatReset_CLK = FALSE
+    SF_ModeSelector2_R_TRIGatReset_Q = FALSE
+    SF_ModeSelector2_R_TRIGatReset_M = FALSE
+    SF_ModeSelector2_R_TRIGatSetMode_CLK = FALSE
+    SF_ModeSelector2_R_TRIGatSetMode_Q = FALSE
+    SF_ModeSelector2_R_TRIGatSetMode_M = FALSE
+    SF_ModeSelector2_F_TRIGatModeSel0_CLK = FALSE
+    SF_ModeSelector2_F_TRIGatModeSel0_Q = FALSE
+    SF_ModeSelector2_F_TRIGatModeSel0_M = FALSE
+    SF_ModeSelector2_R_TRIGatModeSel0_CLK = FALSE
+    SF_ModeSelector2_R_TRIGatModeSel0_Q = FALSE
+    SF_ModeSelector2_R_TRIGatModeSel0_M = FALSE
+    SF_ModeSelector2_Error1 = FALSE
+    SF_ModeSelector2_Error2 = FALSE
+    SF_ModeSelector2___TEMP0 = 0ud16_0
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.2 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_Mode1_IN = FALSE
+    SF_ModeSelector2_S_Mode2_IN = FALSE
+    SF_ModeSelector2_S_Mode3_IN = FALSE
+    SF_ModeSelector2_S_Mode4_IN = FALSE
+    SF_ModeSelector2_S_Mode5_IN = FALSE
+    SF_ModeSelector2_S_Mode6_IN = FALSE
+    SF_ModeSelector2_S_Mode7_IN = FALSE
+    SF_ModeSelector2_S_Unlock_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_AutoSetMode_IN = FALSE
+    SF_ModeSelector2_ModeMonitorTime_IN = 0ud32_0
+    SF_ModeSelector2_Reset_IN = FALSE
+    UNKNOWN_BOOL_UNKNOWN_BOOL_IN = FALSE
+  -> State: 1.2 <-
+    loc = EoC
+  -> Input: 1.3 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.3 <-
+    loc = 16
+    ccntr = 1
+    SF_ModeSelector2_Activate = TRUE
+    SF_ModeSelector2_S_Mode0 = TRUE
+    SF_ModeSelector2_S_SetMode = TRUE
+    SF_ModeSelector2_Reset = TRUE
+  -> Input: 1.4 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.4 <-
+    loc = 17
+  -> Input: 1.5 <-
+  -> State: 1.5 <-
+    loc = 18
+  -> Input: 1.6 <-
+  -> State: 1.6 <-
+    loc = 19
+  -> Input: 1.7 <-
+  -> State: 1.7 <-
+    loc = 20
+  -> Input: 1.8 <-
+  -> State: 1.8 <-
+    loc = 189
+  -> Input: 1.9 <-
+  -> State: 1.9 <-
+    loc = 190
+    SF_ModeSelector2_R_TRIGatReset_CLK = TRUE
+  -> Input: 1.10 <-
+  -> State: 1.10 <-
+    loc = 186
+  -> Input: 1.11 <-
+  -> State: 1.11 <-
+    loc = 187
+    SF_ModeSelector2_R_TRIGatReset_Q = TRUE
+  -> Input: 1.12 <-
+  -> State: 1.12 <-
+    loc = 188
+    SF_ModeSelector2_R_TRIGatReset_M = TRUE
+  -> Input: 1.13 <-
+  -> State: 1.13 <-
+    loc = 191
+  -> Input: 1.14 <-
+  -> State: 1.14 <-
+    loc = 21
+  -> Input: 1.15 <-
+  -> State: 1.15 <-
+    loc = 195
+  -> Input: 1.16 <-
+  -> State: 1.16 <-
+    loc = 196
+    SF_ModeSelector2_R_TRIGatSetMode_CLK = TRUE
+  -> Input: 1.17 <-
+  -> State: 1.17 <-
+    loc = 192
+  -> Input: 1.18 <-
+  -> State: 1.18 <-
+    loc = 193
+    SF_ModeSelector2_R_TRIGatSetMode_Q = TRUE
+  -> Input: 1.19 <-
+  -> State: 1.19 <-
+    loc = 194
+    SF_ModeSelector2_R_TRIGatSetMode_M = TRUE
+  -> Input: 1.20 <-
+  -> State: 1.20 <-
+    loc = 197
+  -> Input: 1.21 <-
+  -> State: 1.21 <-
+    loc = 22
+  -> Input: 1.22 <-
+  -> State: 1.22 <-
+    loc = 24
+  -> Input: 1.23 <-
+  -> State: 1.23 <-
+    loc = 27
+  -> Input: 1.24 <-
+  -> State: 1.24 <-
+    loc = 28
+  -> Input: 1.25 <-
+  -> State: 1.25 <-
+    loc = 29
+  -> Input: 1.26 <-
+  -> State: 1.26 <-
+    loc = 30
+  -> Input: 1.27 <-
+  -> State: 1.27 <-
+    loc = 31
+  -> Input: 1.28 <-
+  -> State: 1.28 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.29 <-
+  -> State: 1.29 <-
+    loc = 99
+  -> Input: 1.30 <-
+  -> State: 1.30 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.31 <-
+  -> State: 1.31 <-
+    loc = 113
+  -> Input: 1.32 <-
+  -> State: 1.32 <-
+    loc = 114
+  -> Input: 1.33 <-
+  -> State: 1.33 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.34 <-
+  -> State: 1.34 <-
+    loc = 116
+  -> Input: 1.35 <-
+  -> State: 1.35 <-
+    loc = 117
+  -> Input: 1.36 <-
+  -> State: 1.36 <-
+    loc = 118
+  -> Input: 1.37 <-
+  -> State: 1.37 <-
+    loc = 119
+  -> Input: 1.38 <-
+  -> State: 1.38 <-
+    loc = 120
+  -> Input: 1.39 <-
+  -> State: 1.39 <-
+    loc = 121
+  -> Input: 1.40 <-
+  -> State: 1.40 <-
+    loc = 122
+  -> Input: 1.41 <-
+  -> State: 1.41 <-
+    loc = 123
+  -> Input: 1.42 <-
+  -> State: 1.42 <-
+    loc = 124
+  -> Input: 1.43 <-
+  -> State: 1.43 <-
+    loc = 125
+  -> Input: 1.44 <-
+  -> State: 1.44 <-
+    loc = 149
+  -> Input: 1.45 <-
+  -> State: 1.45 <-
+    loc = 151
+  -> Input: 1.46 <-
+  -> State: 1.46 <-
+    loc = EoC
+  -> Input: 1.47 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.47 <-
+    loc = 16
+    ccntr = 2
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.48 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.48 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.49 <-
+  -> State: 1.49 <-
+    loc = 18
+  -> Input: 1.50 <-
+  -> State: 1.50 <-
+    loc = 19
+  -> Input: 1.51 <-
+  -> State: 1.51 <-
+    loc = 20
+  -> Input: 1.52 <-
+  -> State: 1.52 <-
+    loc = 189
+  -> Input: 1.53 <-
+  -> State: 1.53 <-
+    loc = 190
+  -> Input: 1.54 <-
+  -> State: 1.54 <-
+    loc = 186
+  -> Input: 1.55 <-
+  -> State: 1.55 <-
+    loc = 187
+    SF_ModeSelector2_R_TRIGatReset_Q = FALSE
+  -> Input: 1.56 <-
+  -> State: 1.56 <-
+    loc = 188
+  -> Input: 1.57 <-
+  -> State: 1.57 <-
+    loc = 191
+  -> Input: 1.58 <-
+  -> State: 1.58 <-
+    loc = 21
+  -> Input: 1.59 <-
+  -> State: 1.59 <-
+    loc = 195
+  -> Input: 1.60 <-
+  -> State: 1.60 <-
+    loc = 196
+  -> Input: 1.61 <-
+  -> State: 1.61 <-
+    loc = 192
+  -> Input: 1.62 <-
+  -> State: 1.62 <-
+    loc = 193
+    SF_ModeSelector2_R_TRIGatSetMode_Q = FALSE
+  -> Input: 1.63 <-
+  -> State: 1.63 <-
+    loc = 194
+  -> Input: 1.64 <-
+  -> State: 1.64 <-
+    loc = 197
+  -> Input: 1.65 <-
+  -> State: 1.65 <-
+    loc = 22
+  -> Input: 1.66 <-
+  -> State: 1.66 <-
+    loc = 23
+  -> Input: 1.67 <-
+  -> State: 1.67 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.68 <-
+  -> State: 1.68 <-
+    loc = 27
+  -> Input: 1.69 <-
+  -> State: 1.69 <-
+    loc = 28
+  -> Input: 1.70 <-
+  -> State: 1.70 <-
+    loc = 29
+  -> Input: 1.71 <-
+  -> State: 1.71 <-
+    loc = 30
+  -> Input: 1.72 <-
+  -> State: 1.72 <-
+    loc = 32
+  -> Input: 1.73 <-
+  -> State: 1.73 <-
+    loc = 99
+  -> Input: 1.74 <-
+  -> State: 1.74 <-
+    loc = 100
+  -> Input: 1.75 <-
+  -> State: 1.75 <-
+    loc = 101
+  -> Input: 1.76 <-
+  -> State: 1.76 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.77 <-
+  -> State: 1.77 <-
+    loc = 103
+  -> Input: 1.78 <-
+  -> State: 1.78 <-
+    loc = 104
+  -> Input: 1.79 <-
+  -> State: 1.79 <-
+    loc = 105
+  -> Input: 1.80 <-
+  -> State: 1.80 <-
+    loc = 106
+  -> Input: 1.81 <-
+  -> State: 1.81 <-
+    loc = 107
+  -> Input: 1.82 <-
+  -> State: 1.82 <-
+    loc = 108
+  -> Input: 1.83 <-
+  -> State: 1.83 <-
+    loc = 109
+  -> Input: 1.84 <-
+  -> State: 1.84 <-
+    loc = 110
+  -> Input: 1.85 <-
+  -> State: 1.85 <-
+    loc = 111
+  -> Input: 1.86 <-
+  -> State: 1.86 <-
+    loc = 112
+  -> Input: 1.87 <-
+  -> State: 1.87 <-
+    loc = 149
+  -> Input: 1.88 <-
+  -> State: 1.88 <-
+    loc = 150
+  -> Input: 1.89 <-
+  -> State: 1.89 <-
+    loc = 217
+  -> Input: 1.90 <-
+  -> State: 1.90 <-
+    loc = 218
+  -> Input: 1.91 <-
+  -> State: 1.91 <-
+    loc = 219
+  -> Input: 1.92 <-
+  -> State: 1.92 <-
+    loc = 205
+  -> Input: 1.93 <-
+  -> State: 1.93 <-
+    loc = 204
+  -> Input: 1.94 <-
+  -> State: 1.94 <-
+    loc = 206
+  -> Input: 1.95 <-
+  -> State: 1.95 <-
+    loc = 207
+  -> Input: 1.96 <-
+  -> State: 1.96 <-
+    loc = 212
+  -> Input: 1.97 <-
+  -> State: 1.97 <-
+    loc = 220
+  -> Input: 1.98 <-
+  -> State: 1.98 <-
+    loc = 151
+  -> Input: 1.99 <-
+  -> State: 1.99 <-
+    loc = EoC
+  -> Input: 1.100 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.100 <-
+    loc = 16
+    ccntr = 3
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.101 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.101 <-
+    loc = 17
+  -> Input: 1.102 <-
+  -> State: 1.102 <-
+    loc = 18
+  -> Input: 1.103 <-
+  -> State: 1.103 <-
+    loc = 19
+  -> Input: 1.104 <-
+  -> State: 1.104 <-
+    loc = 20
+  -> Input: 1.105 <-
+  -> State: 1.105 <-
+    loc = 189
+  -> Input: 1.106 <-
+  -> State: 1.106 <-
+    loc = 190
+  -> Input: 1.107 <-
+  -> State: 1.107 <-
+    loc = 186
+  -> Input: 1.108 <-
+  -> State: 1.108 <-
+    loc = 187
+  -> Input: 1.109 <-
+  -> State: 1.109 <-
+    loc = 188
+  -> Input: 1.110 <-
+  -> State: 1.110 <-
+    loc = 191
+  -> Input: 1.111 <-
+  -> State: 1.111 <-
+    loc = 21
+  -> Input: 1.112 <-
+  -> State: 1.112 <-
+    loc = 195
+  -> Input: 1.113 <-
+  -> State: 1.113 <-
+    loc = 196
+  -> Input: 1.114 <-
+  -> State: 1.114 <-
+    loc = 192
+  -> Input: 1.115 <-
+  -> State: 1.115 <-
+    loc = 193
+  -> Input: 1.116 <-
+  -> State: 1.116 <-
+    loc = 194
+  -> Input: 1.117 <-
+  -> State: 1.117 <-
+    loc = 197
+  -> Input: 1.118 <-
+  -> State: 1.118 <-
+    loc = 22
+  -> Input: 1.119 <-
+  -> State: 1.119 <-
+    loc = 24
+  -> Input: 1.120 <-
+  -> State: 1.120 <-
+    loc = 27
+  -> Input: 1.121 <-
+  -> State: 1.121 <-
+    loc = 28
+  -> Input: 1.122 <-
+  -> State: 1.122 <-
+    loc = 29
+  -> Input: 1.123 <-
+  -> State: 1.123 <-
+    loc = 30
+  -> Input: 1.124 <-
+  -> State: 1.124 <-
+    loc = 31
+  -> Input: 1.125 <-
+  -> State: 1.125 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.126 <-
+  -> State: 1.126 <-
+    loc = 99
+  -> Input: 1.127 <-
+  -> State: 1.127 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.128 <-
+  -> State: 1.128 <-
+    loc = 113
+  -> Input: 1.129 <-
+  -> State: 1.129 <-
+    loc = 114
+  -> Input: 1.130 <-
+  -> State: 1.130 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.131 <-
+  -> State: 1.131 <-
+    loc = 116
+  -> Input: 1.132 <-
+  -> State: 1.132 <-
+    loc = 117
+  -> Input: 1.133 <-
+  -> State: 1.133 <-
+    loc = 118
+  -> Input: 1.134 <-
+  -> State: 1.134 <-
+    loc = 119
+  -> Input: 1.135 <-
+  -> State: 1.135 <-
+    loc = 120
+  -> Input: 1.136 <-
+  -> State: 1.136 <-
+    loc = 121
+  -> Input: 1.137 <-
+  -> State: 1.137 <-
+    loc = 122
+  -> Input: 1.138 <-
+  -> State: 1.138 <-
+    loc = 123
+  -> Input: 1.139 <-
+  -> State: 1.139 <-
+    loc = 124
+  -> Input: 1.140 <-
+  -> State: 1.140 <-
+    loc = 125
+  -> Input: 1.141 <-
+  -> State: 1.141 <-
+    loc = 149
+  -> Input: 1.142 <-
+  -> State: 1.142 <-
+    loc = 151
+  -> Input: 1.143 <-
+  -> State: 1.143 <-
+    loc = EoC
+  -> Input: 1.144 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.144 <-
+    loc = 16
+    ccntr = 4
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.145 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.145 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.146 <-
+  -> State: 1.146 <-
+    loc = 18
+  -> Input: 1.147 <-
+  -> State: 1.147 <-
+    loc = 19
+  -> Input: 1.148 <-
+  -> State: 1.148 <-
+    loc = 20
+  -> Input: 1.149 <-
+  -> State: 1.149 <-
+    loc = 189
+  -> Input: 1.150 <-
+  -> State: 1.150 <-
+    loc = 190
+  -> Input: 1.151 <-
+  -> State: 1.151 <-
+    loc = 186
+  -> Input: 1.152 <-
+  -> State: 1.152 <-
+    loc = 187
+  -> Input: 1.153 <-
+  -> State: 1.153 <-
+    loc = 188
+  -> Input: 1.154 <-
+  -> State: 1.154 <-
+    loc = 191
+  -> Input: 1.155 <-
+  -> State: 1.155 <-
+    loc = 21
+  -> Input: 1.156 <-
+  -> State: 1.156 <-
+    loc = 195
+  -> Input: 1.157 <-
+  -> State: 1.157 <-
+    loc = 196
+  -> Input: 1.158 <-
+  -> State: 1.158 <-
+    loc = 192
+  -> Input: 1.159 <-
+  -> State: 1.159 <-
+    loc = 193
+  -> Input: 1.160 <-
+  -> State: 1.160 <-
+    loc = 194
+  -> Input: 1.161 <-
+  -> State: 1.161 <-
+    loc = 197
+  -> Input: 1.162 <-
+  -> State: 1.162 <-
+    loc = 22
+  -> Input: 1.163 <-
+  -> State: 1.163 <-
+    loc = 23
+  -> Input: 1.164 <-
+  -> State: 1.164 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.165 <-
+  -> State: 1.165 <-
+    loc = 27
+  -> Input: 1.166 <-
+  -> State: 1.166 <-
+    loc = 28
+  -> Input: 1.167 <-
+  -> State: 1.167 <-
+    loc = 29
+  -> Input: 1.168 <-
+  -> State: 1.168 <-
+    loc = 30
+  -> Input: 1.169 <-
+  -> State: 1.169 <-
+    loc = 32
+  -> Input: 1.170 <-
+  -> State: 1.170 <-
+    loc = 99
+  -> Input: 1.171 <-
+  -> State: 1.171 <-
+    loc = 100
+  -> Input: 1.172 <-
+  -> State: 1.172 <-
+    loc = 101
+  -> Input: 1.173 <-
+  -> State: 1.173 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.174 <-
+  -> State: 1.174 <-
+    loc = 103
+  -> Input: 1.175 <-
+  -> State: 1.175 <-
+    loc = 104
+  -> Input: 1.176 <-
+  -> State: 1.176 <-
+    loc = 105
+  -> Input: 1.177 <-
+  -> State: 1.177 <-
+    loc = 106
+  -> Input: 1.178 <-
+  -> State: 1.178 <-
+    loc = 107
+  -> Input: 1.179 <-
+  -> State: 1.179 <-
+    loc = 108
+  -> Input: 1.180 <-
+  -> State: 1.180 <-
+    loc = 109
+  -> Input: 1.181 <-
+  -> State: 1.181 <-
+    loc = 110
+  -> Input: 1.182 <-
+  -> State: 1.182 <-
+    loc = 111
+  -> Input: 1.183 <-
+  -> State: 1.183 <-
+    loc = 112
+  -> Input: 1.184 <-
+  -> State: 1.184 <-
+    loc = 149
+  -> Input: 1.185 <-
+  -> State: 1.185 <-
+    loc = 150
+  -> Input: 1.186 <-
+  -> State: 1.186 <-
+    loc = 217
+  -> Input: 1.187 <-
+  -> State: 1.187 <-
+    loc = 218
+  -> Input: 1.188 <-
+  -> State: 1.188 <-
+    loc = 219
+  -> Input: 1.189 <-
+  -> State: 1.189 <-
+    loc = 205
+  -> Input: 1.190 <-
+  -> State: 1.190 <-
+    loc = 204
+  -> Input: 1.191 <-
+  -> State: 1.191 <-
+    loc = 206
+  -> Input: 1.192 <-
+  -> State: 1.192 <-
+    loc = 207
+  -> Input: 1.193 <-
+  -> State: 1.193 <-
+    loc = 212
+  -> Input: 1.194 <-
+  -> State: 1.194 <-
+    loc = 220
+  -> Input: 1.195 <-
+  -> State: 1.195 <-
+    loc = 151
+  -> Input: 1.196 <-
+  -> State: 1.196 <-
+    loc = EoC
+  -> Input: 1.197 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.197 <-
+    loc = 16
+    ccntr = 5
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.198 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.198 <-
+    loc = 17
+  -> Input: 1.199 <-
+  -> State: 1.199 <-
+    loc = 18
+  -> Input: 1.200 <-
+  -> State: 1.200 <-
+    loc = 19
+  -> Input: 1.201 <-
+  -> State: 1.201 <-
+    loc = 20
+  -> Input: 1.202 <-
+  -> State: 1.202 <-
+    loc = 189
+  -> Input: 1.203 <-
+  -> State: 1.203 <-
+    loc = 190
+  -> Input: 1.204 <-
+  -> State: 1.204 <-
+    loc = 186
+  -> Input: 1.205 <-
+  -> State: 1.205 <-
+    loc = 187
+  -> Input: 1.206 <-
+  -> State: 1.206 <-
+    loc = 188
+  -> Input: 1.207 <-
+  -> State: 1.207 <-
+    loc = 191
+  -> Input: 1.208 <-
+  -> State: 1.208 <-
+    loc = 21
+  -> Input: 1.209 <-
+  -> State: 1.209 <-
+    loc = 195
+  -> Input: 1.210 <-
+  -> State: 1.210 <-
+    loc = 196
+  -> Input: 1.211 <-
+  -> State: 1.211 <-
+    loc = 192
+  -> Input: 1.212 <-
+  -> State: 1.212 <-
+    loc = 193
+  -> Input: 1.213 <-
+  -> State: 1.213 <-
+    loc = 194
+  -> Input: 1.214 <-
+  -> State: 1.214 <-
+    loc = 197
+  -> Input: 1.215 <-
+  -> State: 1.215 <-
+    loc = 22
+  -> Input: 1.216 <-
+  -> State: 1.216 <-
+    loc = 24
+  -> Input: 1.217 <-
+  -> State: 1.217 <-
+    loc = 27
+  -> Input: 1.218 <-
+  -> State: 1.218 <-
+    loc = 28
+  -> Input: 1.219 <-
+  -> State: 1.219 <-
+    loc = 29
+  -> Input: 1.220 <-
+  -> State: 1.220 <-
+    loc = 30
+  -> Input: 1.221 <-
+  -> State: 1.221 <-
+    loc = 31
+  -> Input: 1.222 <-
+  -> State: 1.222 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.223 <-
+  -> State: 1.223 <-
+    loc = 99
+  -> Input: 1.224 <-
+  -> State: 1.224 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.225 <-
+  -> State: 1.225 <-
+    loc = 113
+  -> Input: 1.226 <-
+  -> State: 1.226 <-
+    loc = 114
+  -> Input: 1.227 <-
+  -> State: 1.227 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.228 <-
+  -> State: 1.228 <-
+    loc = 116
+  -> Input: 1.229 <-
+  -> State: 1.229 <-
+    loc = 117
+  -> Input: 1.230 <-
+  -> State: 1.230 <-
+    loc = 118
+  -> Input: 1.231 <-
+  -> State: 1.231 <-
+    loc = 119
+  -> Input: 1.232 <-
+  -> State: 1.232 <-
+    loc = 120
+  -> Input: 1.233 <-
+  -> State: 1.233 <-
+    loc = 121
+  -> Input: 1.234 <-
+  -> State: 1.234 <-
+    loc = 122
+  -> Input: 1.235 <-
+  -> State: 1.235 <-
+    loc = 123
+  -> Input: 1.236 <-
+  -> State: 1.236 <-
+    loc = 124
+  -> Input: 1.237 <-
+  -> State: 1.237 <-
+    loc = 125
+  -> Input: 1.238 <-
+  -> State: 1.238 <-
+    loc = 149
+  -> Input: 1.239 <-
+  -> State: 1.239 <-
+    loc = 151
+  -> Input: 1.240 <-
+  -> State: 1.240 <-
+    loc = EoC
+  -> Input: 1.241 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.241 <-
+    loc = 16
+    ccntr = 6
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.242 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.242 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.243 <-
+  -> State: 1.243 <-
+    loc = 18
+  -> Input: 1.244 <-
+  -> State: 1.244 <-
+    loc = 19
+  -> Input: 1.245 <-
+  -> State: 1.245 <-
+    loc = 20
+  -> Input: 1.246 <-
+  -> State: 1.246 <-
+    loc = 189
+  -> Input: 1.247 <-
+  -> State: 1.247 <-
+    loc = 190
+  -> Input: 1.248 <-
+  -> State: 1.248 <-
+    loc = 186
+  -> Input: 1.249 <-
+  -> State: 1.249 <-
+    loc = 187
+  -> Input: 1.250 <-
+  -> State: 1.250 <-
+    loc = 188
+  -> Input: 1.251 <-
+  -> State: 1.251 <-
+    loc = 191
+  -> Input: 1.252 <-
+  -> State: 1.252 <-
+    loc = 21
+  -> Input: 1.253 <-
+  -> State: 1.253 <-
+    loc = 195
+  -> Input: 1.254 <-
+  -> State: 1.254 <-
+    loc = 196
+  -> Input: 1.255 <-
+  -> State: 1.255 <-
+    loc = 192
+  -> Input: 1.256 <-
+  -> State: 1.256 <-
+    loc = 193
+  -> Input: 1.257 <-
+  -> State: 1.257 <-
+    loc = 194
+  -> Input: 1.258 <-
+  -> State: 1.258 <-
+    loc = 197
+  -> Input: 1.259 <-
+  -> State: 1.259 <-
+    loc = 22
+  -> Input: 1.260 <-
+  -> State: 1.260 <-
+    loc = 23
+  -> Input: 1.261 <-
+  -> State: 1.261 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.262 <-
+  -> State: 1.262 <-
+    loc = 27
+  -> Input: 1.263 <-
+  -> State: 1.263 <-
+    loc = 28
+  -> Input: 1.264 <-
+  -> State: 1.264 <-
+    loc = 29
+  -> Input: 1.265 <-
+  -> State: 1.265 <-
+    loc = 30
+  -> Input: 1.266 <-
+  -> State: 1.266 <-
+    loc = 32
+  -> Input: 1.267 <-
+  -> State: 1.267 <-
+    loc = 99
+  -> Input: 1.268 <-
+  -> State: 1.268 <-
+    loc = 100
+  -> Input: 1.269 <-
+  -> State: 1.269 <-
+    loc = 101
+  -> Input: 1.270 <-
+  -> State: 1.270 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.271 <-
+  -> State: 1.271 <-
+    loc = 103
+  -> Input: 1.272 <-
+  -> State: 1.272 <-
+    loc = 104
+  -> Input: 1.273 <-
+  -> State: 1.273 <-
+    loc = 105
+  -> Input: 1.274 <-
+  -> State: 1.274 <-
+    loc = 106
+  -> Input: 1.275 <-
+  -> State: 1.275 <-
+    loc = 107
+  -> Input: 1.276 <-
+  -> State: 1.276 <-
+    loc = 108
+  -> Input: 1.277 <-
+  -> State: 1.277 <-
+    loc = 109
+  -> Input: 1.278 <-
+  -> State: 1.278 <-
+    loc = 110
+  -> Input: 1.279 <-
+  -> State: 1.279 <-
+    loc = 111
+  -> Input: 1.280 <-
+  -> State: 1.280 <-
+    loc = 112
+  -> Input: 1.281 <-
+  -> State: 1.281 <-
+    loc = 149
+  -> Input: 1.282 <-
+  -> State: 1.282 <-
+    loc = 150
+  -> Input: 1.283 <-
+  -> State: 1.283 <-
+    loc = 217
+  -> Input: 1.284 <-
+  -> State: 1.284 <-
+    loc = 218
+  -> Input: 1.285 <-
+  -> State: 1.285 <-
+    loc = 219
+  -> Input: 1.286 <-
+  -> State: 1.286 <-
+    loc = 205
+  -> Input: 1.287 <-
+  -> State: 1.287 <-
+    loc = 204
+  -> Input: 1.288 <-
+  -> State: 1.288 <-
+    loc = 206
+  -> Input: 1.289 <-
+  -> State: 1.289 <-
+    loc = 207
+  -> Input: 1.290 <-
+  -> State: 1.290 <-
+    loc = 212
+  -> Input: 1.291 <-
+  -> State: 1.291 <-
+    loc = 220
+  -> Input: 1.292 <-
+  -> State: 1.292 <-
+    loc = 151
+  -> Input: 1.293 <-
+  -> State: 1.293 <-
+    loc = EoC
+  -> Input: 1.294 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.294 <-
+    loc = 16
+    ccntr = 7
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.295 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.295 <-
+    loc = 17
+  -> Input: 1.296 <-
+  -> State: 1.296 <-
+    loc = 18
+  -> Input: 1.297 <-
+  -> State: 1.297 <-
+    loc = 19
+  -> Input: 1.298 <-
+  -> State: 1.298 <-
+    loc = 20
+  -> Input: 1.299 <-
+  -> State: 1.299 <-
+    loc = 189
+  -> Input: 1.300 <-
+  -> State: 1.300 <-
+    loc = 190
+  -> Input: 1.301 <-
+  -> State: 1.301 <-
+    loc = 186
+  -> Input: 1.302 <-
+  -> State: 1.302 <-
+    loc = 187
+  -> Input: 1.303 <-
+  -> State: 1.303 <-
+    loc = 188
+  -> Input: 1.304 <-
+  -> State: 1.304 <-
+    loc = 191
+  -> Input: 1.305 <-
+  -> State: 1.305 <-
+    loc = 21
+  -> Input: 1.306 <-
+  -> State: 1.306 <-
+    loc = 195
+  -> Input: 1.307 <-
+  -> State: 1.307 <-
+    loc = 196
+  -> Input: 1.308 <-
+  -> State: 1.308 <-
+    loc = 192
+  -> Input: 1.309 <-
+  -> State: 1.309 <-
+    loc = 193
+  -> Input: 1.310 <-
+  -> State: 1.310 <-
+    loc = 194
+  -> Input: 1.311 <-
+  -> State: 1.311 <-
+    loc = 197
+  -> Input: 1.312 <-
+  -> State: 1.312 <-
+    loc = 22
+  -> Input: 1.313 <-
+  -> State: 1.313 <-
+    loc = 24
+  -> Input: 1.314 <-
+  -> State: 1.314 <-
+    loc = 27
+  -> Input: 1.315 <-
+  -> State: 1.315 <-
+    loc = 28
+  -> Input: 1.316 <-
+  -> State: 1.316 <-
+    loc = 29
+  -> Input: 1.317 <-
+  -> State: 1.317 <-
+    loc = 30
+  -> Input: 1.318 <-
+  -> State: 1.318 <-
+    loc = 31
+  -> Input: 1.319 <-
+  -> State: 1.319 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.320 <-
+  -> State: 1.320 <-
+    loc = 99
+  -> Input: 1.321 <-
+  -> State: 1.321 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.322 <-
+  -> State: 1.322 <-
+    loc = 113
+  -> Input: 1.323 <-
+  -> State: 1.323 <-
+    loc = 114
+  -> Input: 1.324 <-
+  -> State: 1.324 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.325 <-
+  -> State: 1.325 <-
+    loc = 116
+  -> Input: 1.326 <-
+  -> State: 1.326 <-
+    loc = 117
+  -> Input: 1.327 <-
+  -> State: 1.327 <-
+    loc = 118
+  -> Input: 1.328 <-
+  -> State: 1.328 <-
+    loc = 119
+  -> Input: 1.329 <-
+  -> State: 1.329 <-
+    loc = 120
+  -> Input: 1.330 <-
+  -> State: 1.330 <-
+    loc = 121
+  -> Input: 1.331 <-
+  -> State: 1.331 <-
+    loc = 122
+  -> Input: 1.332 <-
+  -> State: 1.332 <-
+    loc = 123
+  -> Input: 1.333 <-
+  -> State: 1.333 <-
+    loc = 124
+  -> Input: 1.334 <-
+  -> State: 1.334 <-
+    loc = 125
+  -> Input: 1.335 <-
+  -> State: 1.335 <-
+    loc = 149
+  -> Input: 1.336 <-
+  -> State: 1.336 <-
+    loc = 151
+  -> Input: 1.337 <-
+  -> State: 1.337 <-
+    loc = EoC
+  -> Input: 1.338 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.338 <-
+    loc = 16
+    ccntr = 8
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.339 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.339 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.340 <-
+  -> State: 1.340 <-
+    loc = 18
+  -> Input: 1.341 <-
+  -> State: 1.341 <-
+    loc = 19
+  -> Input: 1.342 <-
+  -> State: 1.342 <-
+    loc = 20
+  -> Input: 1.343 <-
+  -> State: 1.343 <-
+    loc = 189
+  -> Input: 1.344 <-
+  -> State: 1.344 <-
+    loc = 190
+  -> Input: 1.345 <-
+  -> State: 1.345 <-
+    loc = 186
+  -> Input: 1.346 <-
+  -> State: 1.346 <-
+    loc = 187
+  -> Input: 1.347 <-
+  -> State: 1.347 <-
+    loc = 188
+  -> Input: 1.348 <-
+  -> State: 1.348 <-
+    loc = 191
+  -> Input: 1.349 <-
+  -> State: 1.349 <-
+    loc = 21
+  -> Input: 1.350 <-
+  -> State: 1.350 <-
+    loc = 195
+  -> Input: 1.351 <-
+  -> State: 1.351 <-
+    loc = 196
+  -> Input: 1.352 <-
+  -> State: 1.352 <-
+    loc = 192
+  -> Input: 1.353 <-
+  -> State: 1.353 <-
+    loc = 193
+  -> Input: 1.354 <-
+  -> State: 1.354 <-
+    loc = 194
+  -> Input: 1.355 <-
+  -> State: 1.355 <-
+    loc = 197
+  -> Input: 1.356 <-
+  -> State: 1.356 <-
+    loc = 22
+  -> Input: 1.357 <-
+  -> State: 1.357 <-
+    loc = 23
+  -> Input: 1.358 <-
+  -> State: 1.358 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.359 <-
+  -> State: 1.359 <-
+    loc = 27
+  -> Input: 1.360 <-
+  -> State: 1.360 <-
+    loc = 28
+  -> Input: 1.361 <-
+  -> State: 1.361 <-
+    loc = 29
+  -> Input: 1.362 <-
+  -> State: 1.362 <-
+    loc = 30
+  -> Input: 1.363 <-
+  -> State: 1.363 <-
+    loc = 32
+  -> Input: 1.364 <-
+  -> State: 1.364 <-
+    loc = 99
+  -> Input: 1.365 <-
+  -> State: 1.365 <-
+    loc = 100
+  -> Input: 1.366 <-
+  -> State: 1.366 <-
+    loc = 101
+  -> Input: 1.367 <-
+  -> State: 1.367 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.368 <-
+  -> State: 1.368 <-
+    loc = 103
+  -> Input: 1.369 <-
+  -> State: 1.369 <-
+    loc = 104
+  -> Input: 1.370 <-
+  -> State: 1.370 <-
+    loc = 105
+  -> Input: 1.371 <-
+  -> State: 1.371 <-
+    loc = 106
+  -> Input: 1.372 <-
+  -> State: 1.372 <-
+    loc = 107
+  -> Input: 1.373 <-
+  -> State: 1.373 <-
+    loc = 108
+  -> Input: 1.374 <-
+  -> State: 1.374 <-
+    loc = 109
+  -> Input: 1.375 <-
+  -> State: 1.375 <-
+    loc = 110
+  -> Input: 1.376 <-
+  -> State: 1.376 <-
+    loc = 111
+  -> Input: 1.377 <-
+  -> State: 1.377 <-
+    loc = 112
+  -> Input: 1.378 <-
+  -> State: 1.378 <-
+    loc = 149
+  -> Input: 1.379 <-
+  -> State: 1.379 <-
+    loc = 150
+  -> Input: 1.380 <-
+  -> State: 1.380 <-
+    loc = 217
+  -> Input: 1.381 <-
+  -> State: 1.381 <-
+    loc = 218
+  -> Input: 1.382 <-
+  -> State: 1.382 <-
+    loc = 219
+  -> Input: 1.383 <-
+  -> State: 1.383 <-
+    loc = 205
+  -> Input: 1.384 <-
+  -> State: 1.384 <-
+    loc = 204
+  -> Input: 1.385 <-
+  -> State: 1.385 <-
+    loc = 206
+  -> Input: 1.386 <-
+  -> State: 1.386 <-
+    loc = 207
+  -> Input: 1.387 <-
+  -> State: 1.387 <-
+    loc = 212
+  -> Input: 1.388 <-
+  -> State: 1.388 <-
+    loc = 220
+  -> Input: 1.389 <-
+  -> State: 1.389 <-
+    loc = 151
+  -> Input: 1.390 <-
+  -> State: 1.390 <-
+    loc = EoC
+  -> Input: 1.391 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.391 <-
+    loc = 16
+    ccntr = 9
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.392 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.392 <-
+    loc = 17
+  -> Input: 1.393 <-
+  -> State: 1.393 <-
+    loc = 18
+  -> Input: 1.394 <-
+  -> State: 1.394 <-
+    loc = 19
+  -> Input: 1.395 <-
+  -> State: 1.395 <-
+    loc = 20
+  -> Input: 1.396 <-
+  -> State: 1.396 <-
+    loc = 189
+  -> Input: 1.397 <-
+  -> State: 1.397 <-
+    loc = 190
+  -> Input: 1.398 <-
+  -> State: 1.398 <-
+    loc = 186
+  -> Input: 1.399 <-
+  -> State: 1.399 <-
+    loc = 187
+  -> Input: 1.400 <-
+  -> State: 1.400 <-
+    loc = 188
+  -> Input: 1.401 <-
+  -> State: 1.401 <-
+    loc = 191
+  -> Input: 1.402 <-
+  -> State: 1.402 <-
+    loc = 21
+  -> Input: 1.403 <-
+  -> State: 1.403 <-
+    loc = 195
+  -> Input: 1.404 <-
+  -> State: 1.404 <-
+    loc = 196
+  -> Input: 1.405 <-
+  -> State: 1.405 <-
+    loc = 192
+  -> Input: 1.406 <-
+  -> State: 1.406 <-
+    loc = 193
+  -> Input: 1.407 <-
+  -> State: 1.407 <-
+    loc = 194
+  -> Input: 1.408 <-
+  -> State: 1.408 <-
+    loc = 197
+  -> Input: 1.409 <-
+  -> State: 1.409 <-
+    loc = 22
+  -> Input: 1.410 <-
+  -> State: 1.410 <-
+    loc = 24
+  -> Input: 1.411 <-
+  -> State: 1.411 <-
+    loc = 27
+  -> Input: 1.412 <-
+  -> State: 1.412 <-
+    loc = 28
+  -> Input: 1.413 <-
+  -> State: 1.413 <-
+    loc = 29
+  -> Input: 1.414 <-
+  -> State: 1.414 <-
+    loc = 30
+  -> Input: 1.415 <-
+  -> State: 1.415 <-
+    loc = 31
+  -> Input: 1.416 <-
+  -> State: 1.416 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.417 <-
+  -> State: 1.417 <-
+    loc = 99
+  -> Input: 1.418 <-
+  -> State: 1.418 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.419 <-
+  -> State: 1.419 <-
+    loc = 113
+  -> Input: 1.420 <-
+  -> State: 1.420 <-
+    loc = 114
+  -> Input: 1.421 <-
+  -> State: 1.421 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.422 <-
+  -> State: 1.422 <-
+    loc = 116
+  -> Input: 1.423 <-
+  -> State: 1.423 <-
+    loc = 117
+  -> Input: 1.424 <-
+  -> State: 1.424 <-
+    loc = 118
+  -> Input: 1.425 <-
+  -> State: 1.425 <-
+    loc = 119
+  -> Input: 1.426 <-
+  -> State: 1.426 <-
+    loc = 120
+  -> Input: 1.427 <-
+  -> State: 1.427 <-
+    loc = 121
+  -> Input: 1.428 <-
+  -> State: 1.428 <-
+    loc = 122
+  -> Input: 1.429 <-
+  -> State: 1.429 <-
+    loc = 123
+  -> Input: 1.430 <-
+  -> State: 1.430 <-
+    loc = 124
+  -> Input: 1.431 <-
+  -> State: 1.431 <-
+    loc = 125
+  -> Input: 1.432 <-
+  -> State: 1.432 <-
+    loc = 149
+  -> Input: 1.433 <-
+  -> State: 1.433 <-
+    loc = 151
+  -> Input: 1.434 <-
+  -> State: 1.434 <-
+    loc = EoC
+  -> Input: 1.435 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.435 <-
+    loc = 16
+    ccntr = 10
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.436 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.436 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.437 <-
+  -> State: 1.437 <-
+    loc = 18
+  -> Input: 1.438 <-
+  -> State: 1.438 <-
+    loc = 19
+  -> Input: 1.439 <-
+  -> State: 1.439 <-
+    loc = 20
+  -> Input: 1.440 <-
+  -> State: 1.440 <-
+    loc = 189
+  -> Input: 1.441 <-
+  -> State: 1.441 <-
+    loc = 190
+  -> Input: 1.442 <-
+  -> State: 1.442 <-
+    loc = 186
+  -> Input: 1.443 <-
+  -> State: 1.443 <-
+    loc = 187
+  -> Input: 1.444 <-
+  -> State: 1.444 <-
+    loc = 188
+  -> Input: 1.445 <-
+  -> State: 1.445 <-
+    loc = 191
+  -> Input: 1.446 <-
+  -> State: 1.446 <-
+    loc = 21
+  -> Input: 1.447 <-
+  -> State: 1.447 <-
+    loc = 195
+  -> Input: 1.448 <-
+  -> State: 1.448 <-
+    loc = 196
+  -> Input: 1.449 <-
+  -> State: 1.449 <-
+    loc = 192
+  -> Input: 1.450 <-
+  -> State: 1.450 <-
+    loc = 193
+  -> Input: 1.451 <-
+  -> State: 1.451 <-
+    loc = 194
+  -> Input: 1.452 <-
+  -> State: 1.452 <-
+    loc = 197
+  -> Input: 1.453 <-
+  -> State: 1.453 <-
+    loc = 22
+  -> Input: 1.454 <-
+  -> State: 1.454 <-
+    loc = 23
+  -> Input: 1.455 <-
+  -> State: 1.455 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.456 <-
+  -> State: 1.456 <-
+    loc = 27
+  -> Input: 1.457 <-
+  -> State: 1.457 <-
+    loc = 28
+  -> Input: 1.458 <-
+  -> State: 1.458 <-
+    loc = 29
+  -> Input: 1.459 <-
+  -> State: 1.459 <-
+    loc = 30
+  -> Input: 1.460 <-
+  -> State: 1.460 <-
+    loc = 32
+  -> Input: 1.461 <-
+  -> State: 1.461 <-
+    loc = 99
+  -> Input: 1.462 <-
+  -> State: 1.462 <-
+    loc = 100
+  -> Input: 1.463 <-
+  -> State: 1.463 <-
+    loc = 101
+  -> Input: 1.464 <-
+  -> State: 1.464 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.465 <-
+  -> State: 1.465 <-
+    loc = 103
+  -> Input: 1.466 <-
+  -> State: 1.466 <-
+    loc = 104
+  -> Input: 1.467 <-
+  -> State: 1.467 <-
+    loc = 105
+  -> Input: 1.468 <-
+  -> State: 1.468 <-
+    loc = 106
+  -> Input: 1.469 <-
+  -> State: 1.469 <-
+    loc = 107
+  -> Input: 1.470 <-
+  -> State: 1.470 <-
+    loc = 108
+  -> Input: 1.471 <-
+  -> State: 1.471 <-
+    loc = 109
+  -> Input: 1.472 <-
+  -> State: 1.472 <-
+    loc = 110
+  -> Input: 1.473 <-
+  -> State: 1.473 <-
+    loc = 111
+  -> Input: 1.474 <-
+  -> State: 1.474 <-
+    loc = 112
+  -> Input: 1.475 <-
+  -> State: 1.475 <-
+    loc = 149
+  -> Input: 1.476 <-
+  -> State: 1.476 <-
+    loc = 150
+  -> Input: 1.477 <-
+  -> State: 1.477 <-
+    loc = 217
+  -> Input: 1.478 <-
+  -> State: 1.478 <-
+    loc = 218
+  -> Input: 1.479 <-
+  -> State: 1.479 <-
+    loc = 219
+  -> Input: 1.480 <-
+  -> State: 1.480 <-
+    loc = 205
+  -> Input: 1.481 <-
+  -> State: 1.481 <-
+    loc = 204
+  -> Input: 1.482 <-
+  -> State: 1.482 <-
+    loc = 206
+  -> Input: 1.483 <-
+  -> State: 1.483 <-
+    loc = 207
+  -> Input: 1.484 <-
+  -> State: 1.484 <-
+    loc = 212
+  -> Input: 1.485 <-
+  -> State: 1.485 <-
+    loc = 220
+  -> Input: 1.486 <-
+  -> State: 1.486 <-
+    loc = 151
+  -> Input: 1.487 <-
+  -> State: 1.487 <-
+    loc = EoC
+  -> Input: 1.488 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.488 <-
+    loc = 16
+    ccntr = 11
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.489 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.489 <-
+    loc = 17
+  -> Input: 1.490 <-
+  -> State: 1.490 <-
+    loc = 18
+  -> Input: 1.491 <-
+  -> State: 1.491 <-
+    loc = 19
+  -> Input: 1.492 <-
+  -> State: 1.492 <-
+    loc = 20
+  -> Input: 1.493 <-
+  -> State: 1.493 <-
+    loc = 189
+  -> Input: 1.494 <-
+  -> State: 1.494 <-
+    loc = 190
+  -> Input: 1.495 <-
+  -> State: 1.495 <-
+    loc = 186
+  -> Input: 1.496 <-
+  -> State: 1.496 <-
+    loc = 187
+  -> Input: 1.497 <-
+  -> State: 1.497 <-
+    loc = 188
+  -> Input: 1.498 <-
+  -> State: 1.498 <-
+    loc = 191
+  -> Input: 1.499 <-
+  -> State: 1.499 <-
+    loc = 21
+  -> Input: 1.500 <-
+  -> State: 1.500 <-
+    loc = 195
+  -> Input: 1.501 <-
+  -> State: 1.501 <-
+    loc = 196
+  -> Input: 1.502 <-
+  -> State: 1.502 <-
+    loc = 192
+  -> Input: 1.503 <-
+  -> State: 1.503 <-
+    loc = 193
+  -> Input: 1.504 <-
+  -> State: 1.504 <-
+    loc = 194
+  -> Input: 1.505 <-
+  -> State: 1.505 <-
+    loc = 197
+  -> Input: 1.506 <-
+  -> State: 1.506 <-
+    loc = 22
+  -> Input: 1.507 <-
+  -> State: 1.507 <-
+    loc = 24
+  -> Input: 1.508 <-
+  -> State: 1.508 <-
+    loc = 27
+  -> Input: 1.509 <-
+  -> State: 1.509 <-
+    loc = 28
+  -> Input: 1.510 <-
+  -> State: 1.510 <-
+    loc = 29
+  -> Input: 1.511 <-
+  -> State: 1.511 <-
+    loc = 30
+  -> Input: 1.512 <-
+  -> State: 1.512 <-
+    loc = 31
+  -> Input: 1.513 <-
+  -> State: 1.513 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.514 <-
+  -> State: 1.514 <-
+    loc = 99
+  -> Input: 1.515 <-
+  -> State: 1.515 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.516 <-
+  -> State: 1.516 <-
+    loc = 113
+  -> Input: 1.517 <-
+  -> State: 1.517 <-
+    loc = 114
+  -> Input: 1.518 <-
+  -> State: 1.518 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.519 <-
+  -> State: 1.519 <-
+    loc = 116
+  -> Input: 1.520 <-
+  -> State: 1.520 <-
+    loc = 117
+  -> Input: 1.521 <-
+  -> State: 1.521 <-
+    loc = 118
+  -> Input: 1.522 <-
+  -> State: 1.522 <-
+    loc = 119
+  -> Input: 1.523 <-
+  -> State: 1.523 <-
+    loc = 120
+  -> Input: 1.524 <-
+  -> State: 1.524 <-
+    loc = 121
+  -> Input: 1.525 <-
+  -> State: 1.525 <-
+    loc = 122
+  -> Input: 1.526 <-
+  -> State: 1.526 <-
+    loc = 123
+  -> Input: 1.527 <-
+  -> State: 1.527 <-
+    loc = 124
+  -> Input: 1.528 <-
+  -> State: 1.528 <-
+    loc = 125
+  -> Input: 1.529 <-
+  -> State: 1.529 <-
+    loc = 149
+  -> Input: 1.530 <-
+  -> State: 1.530 <-
+    loc = 151
+  -> Input: 1.531 <-
+  -> State: 1.531 <-
+    loc = EoC
+  -> Input: 1.532 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.532 <-
+    loc = 16
+    ccntr = 12
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.533 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.533 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.534 <-
+  -> State: 1.534 <-
+    loc = 18
+  -> Input: 1.535 <-
+  -> State: 1.535 <-
+    loc = 19
+  -> Input: 1.536 <-
+  -> State: 1.536 <-
+    loc = 20
+  -> Input: 1.537 <-
+  -> State: 1.537 <-
+    loc = 189
+  -> Input: 1.538 <-
+  -> State: 1.538 <-
+    loc = 190
+  -> Input: 1.539 <-
+  -> State: 1.539 <-
+    loc = 186
+  -> Input: 1.540 <-
+  -> State: 1.540 <-
+    loc = 187
+  -> Input: 1.541 <-
+  -> State: 1.541 <-
+    loc = 188
+  -> Input: 1.542 <-
+  -> State: 1.542 <-
+    loc = 191
+  -> Input: 1.543 <-
+  -> State: 1.543 <-
+    loc = 21
+  -> Input: 1.544 <-
+  -> State: 1.544 <-
+    loc = 195
+  -> Input: 1.545 <-
+  -> State: 1.545 <-
+    loc = 196
+  -> Input: 1.546 <-
+  -> State: 1.546 <-
+    loc = 192
+  -> Input: 1.547 <-
+  -> State: 1.547 <-
+    loc = 193
+  -> Input: 1.548 <-
+  -> State: 1.548 <-
+    loc = 194
+  -> Input: 1.549 <-
+  -> State: 1.549 <-
+    loc = 197
+  -> Input: 1.550 <-
+  -> State: 1.550 <-
+    loc = 22
+  -> Input: 1.551 <-
+  -> State: 1.551 <-
+    loc = 23
+  -> Input: 1.552 <-
+  -> State: 1.552 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.553 <-
+  -> State: 1.553 <-
+    loc = 27
+  -> Input: 1.554 <-
+  -> State: 1.554 <-
+    loc = 28
+  -> Input: 1.555 <-
+  -> State: 1.555 <-
+    loc = 29
+  -> Input: 1.556 <-
+  -> State: 1.556 <-
+    loc = 30
+  -> Input: 1.557 <-
+  -> State: 1.557 <-
+    loc = 32
+  -> Input: 1.558 <-
+  -> State: 1.558 <-
+    loc = 99
+  -> Input: 1.559 <-
+  -> State: 1.559 <-
+    loc = 100
+  -> Input: 1.560 <-
+  -> State: 1.560 <-
+    loc = 101
+  -> Input: 1.561 <-
+  -> State: 1.561 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.562 <-
+  -> State: 1.562 <-
+    loc = 103
+  -> Input: 1.563 <-
+  -> State: 1.563 <-
+    loc = 104
+  -> Input: 1.564 <-
+  -> State: 1.564 <-
+    loc = 105
+  -> Input: 1.565 <-
+  -> State: 1.565 <-
+    loc = 106
+  -> Input: 1.566 <-
+  -> State: 1.566 <-
+    loc = 107
+  -> Input: 1.567 <-
+  -> State: 1.567 <-
+    loc = 108
+  -> Input: 1.568 <-
+  -> State: 1.568 <-
+    loc = 109
+  -> Input: 1.569 <-
+  -> State: 1.569 <-
+    loc = 110
+  -> Input: 1.570 <-
+  -> State: 1.570 <-
+    loc = 111
+  -> Input: 1.571 <-
+  -> State: 1.571 <-
+    loc = 112
+  -> Input: 1.572 <-
+  -> State: 1.572 <-
+    loc = 149
+  -> Input: 1.573 <-
+  -> State: 1.573 <-
+    loc = 150
+  -> Input: 1.574 <-
+  -> State: 1.574 <-
+    loc = 217
+  -> Input: 1.575 <-
+  -> State: 1.575 <-
+    loc = 218
+  -> Input: 1.576 <-
+  -> State: 1.576 <-
+    loc = 219
+  -> Input: 1.577 <-
+  -> State: 1.577 <-
+    loc = 205
+  -> Input: 1.578 <-
+  -> State: 1.578 <-
+    loc = 204
+  -> Input: 1.579 <-
+  -> State: 1.579 <-
+    loc = 206
+  -> Input: 1.580 <-
+  -> State: 1.580 <-
+    loc = 207
+  -> Input: 1.581 <-
+  -> State: 1.581 <-
+    loc = 212
+  -> Input: 1.582 <-
+  -> State: 1.582 <-
+    loc = 220
+  -> Input: 1.583 <-
+  -> State: 1.583 <-
+    loc = 151
+  -> Input: 1.584 <-
+  -> State: 1.584 <-
+    loc = EoC
+  -> Input: 1.585 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.585 <-
+    loc = 16
+    ccntr = 13
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.586 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.586 <-
+    loc = 17
+  -> Input: 1.587 <-
+  -> State: 1.587 <-
+    loc = 18
+  -> Input: 1.588 <-
+  -> State: 1.588 <-
+    loc = 19
+  -> Input: 1.589 <-
+  -> State: 1.589 <-
+    loc = 20
+  -> Input: 1.590 <-
+  -> State: 1.590 <-
+    loc = 189
+  -> Input: 1.591 <-
+  -> State: 1.591 <-
+    loc = 190
+  -> Input: 1.592 <-
+  -> State: 1.592 <-
+    loc = 186
+  -> Input: 1.593 <-
+  -> State: 1.593 <-
+    loc = 187
+  -> Input: 1.594 <-
+  -> State: 1.594 <-
+    loc = 188
+  -> Input: 1.595 <-
+  -> State: 1.595 <-
+    loc = 191
+  -> Input: 1.596 <-
+  -> State: 1.596 <-
+    loc = 21
+  -> Input: 1.597 <-
+  -> State: 1.597 <-
+    loc = 195
+  -> Input: 1.598 <-
+  -> State: 1.598 <-
+    loc = 196
+  -> Input: 1.599 <-
+  -> State: 1.599 <-
+    loc = 192
+  -> Input: 1.600 <-
+  -> State: 1.600 <-
+    loc = 193
+  -> Input: 1.601 <-
+  -> State: 1.601 <-
+    loc = 194
+  -> Input: 1.602 <-
+  -> State: 1.602 <-
+    loc = 197
+  -> Input: 1.603 <-
+  -> State: 1.603 <-
+    loc = 22
+  -> Input: 1.604 <-
+  -> State: 1.604 <-
+    loc = 24
+  -> Input: 1.605 <-
+  -> State: 1.605 <-
+    loc = 27
+  -> Input: 1.606 <-
+  -> State: 1.606 <-
+    loc = 28
+  -> Input: 1.607 <-
+  -> State: 1.607 <-
+    loc = 29
+  -> Input: 1.608 <-
+  -> State: 1.608 <-
+    loc = 30
+  -> Input: 1.609 <-
+  -> State: 1.609 <-
+    loc = 31
+  -> Input: 1.610 <-
+  -> State: 1.610 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.611 <-
+  -> State: 1.611 <-
+    loc = 99
+  -> Input: 1.612 <-
+  -> State: 1.612 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.613 <-
+  -> State: 1.613 <-
+    loc = 113
+  -> Input: 1.614 <-
+  -> State: 1.614 <-
+    loc = 114
+  -> Input: 1.615 <-
+  -> State: 1.615 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.616 <-
+  -> State: 1.616 <-
+    loc = 116
+  -> Input: 1.617 <-
+  -> State: 1.617 <-
+    loc = 117
+  -> Input: 1.618 <-
+  -> State: 1.618 <-
+    loc = 118
+  -> Input: 1.619 <-
+  -> State: 1.619 <-
+    loc = 119
+  -> Input: 1.620 <-
+  -> State: 1.620 <-
+    loc = 120
+  -> Input: 1.621 <-
+  -> State: 1.621 <-
+    loc = 121
+  -> Input: 1.622 <-
+  -> State: 1.622 <-
+    loc = 122
+  -> Input: 1.623 <-
+  -> State: 1.623 <-
+    loc = 123
+  -> Input: 1.624 <-
+  -> State: 1.624 <-
+    loc = 124
+  -> Input: 1.625 <-
+  -> State: 1.625 <-
+    loc = 125
+  -> Input: 1.626 <-
+  -> State: 1.626 <-
+    loc = 149
+  -> Input: 1.627 <-
+  -> State: 1.627 <-
+    loc = 151
+  -> Input: 1.628 <-
+  -> State: 1.628 <-
+    loc = EoC
+  -> Input: 1.629 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.629 <-
+    loc = 16
+    ccntr = 14
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.630 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.630 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.631 <-
+  -> State: 1.631 <-
+    loc = 18
+  -> Input: 1.632 <-
+  -> State: 1.632 <-
+    loc = 19
+  -> Input: 1.633 <-
+  -> State: 1.633 <-
+    loc = 20
+  -> Input: 1.634 <-
+  -> State: 1.634 <-
+    loc = 189
+  -> Input: 1.635 <-
+  -> State: 1.635 <-
+    loc = 190
+  -> Input: 1.636 <-
+  -> State: 1.636 <-
+    loc = 186
+  -> Input: 1.637 <-
+  -> State: 1.637 <-
+    loc = 187
+  -> Input: 1.638 <-
+  -> State: 1.638 <-
+    loc = 188
+  -> Input: 1.639 <-
+  -> State: 1.639 <-
+    loc = 191
+  -> Input: 1.640 <-
+  -> State: 1.640 <-
+    loc = 21
+  -> Input: 1.641 <-
+  -> State: 1.641 <-
+    loc = 195
+  -> Input: 1.642 <-
+  -> State: 1.642 <-
+    loc = 196
+  -> Input: 1.643 <-
+  -> State: 1.643 <-
+    loc = 192
+  -> Input: 1.644 <-
+  -> State: 1.644 <-
+    loc = 193
+  -> Input: 1.645 <-
+  -> State: 1.645 <-
+    loc = 194
+  -> Input: 1.646 <-
+  -> State: 1.646 <-
+    loc = 197
+  -> Input: 1.647 <-
+  -> State: 1.647 <-
+    loc = 22
+  -> Input: 1.648 <-
+  -> State: 1.648 <-
+    loc = 23
+  -> Input: 1.649 <-
+  -> State: 1.649 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.650 <-
+  -> State: 1.650 <-
+    loc = 27
+  -> Input: 1.651 <-
+  -> State: 1.651 <-
+    loc = 28
+  -> Input: 1.652 <-
+  -> State: 1.652 <-
+    loc = 29
+  -> Input: 1.653 <-
+  -> State: 1.653 <-
+    loc = 30
+  -> Input: 1.654 <-
+  -> State: 1.654 <-
+    loc = 32
+  -> Input: 1.655 <-
+  -> State: 1.655 <-
+    loc = 99
+  -> Input: 1.656 <-
+  -> State: 1.656 <-
+    loc = 100
+  -> Input: 1.657 <-
+  -> State: 1.657 <-
+    loc = 101
+  -> Input: 1.658 <-
+  -> State: 1.658 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.659 <-
+  -> State: 1.659 <-
+    loc = 103
+  -> Input: 1.660 <-
+  -> State: 1.660 <-
+    loc = 104
+  -> Input: 1.661 <-
+  -> State: 1.661 <-
+    loc = 105
+  -> Input: 1.662 <-
+  -> State: 1.662 <-
+    loc = 106
+  -> Input: 1.663 <-
+  -> State: 1.663 <-
+    loc = 107
+  -> Input: 1.664 <-
+  -> State: 1.664 <-
+    loc = 108
+  -> Input: 1.665 <-
+  -> State: 1.665 <-
+    loc = 109
+  -> Input: 1.666 <-
+  -> State: 1.666 <-
+    loc = 110
+  -> Input: 1.667 <-
+  -> State: 1.667 <-
+    loc = 111
+  -> Input: 1.668 <-
+  -> State: 1.668 <-
+    loc = 112
+  -> Input: 1.669 <-
+  -> State: 1.669 <-
+    loc = 149
+  -> Input: 1.670 <-
+  -> State: 1.670 <-
+    loc = 150
+  -> Input: 1.671 <-
+  -> State: 1.671 <-
+    loc = 217
+  -> Input: 1.672 <-
+  -> State: 1.672 <-
+    loc = 218
+  -> Input: 1.673 <-
+  -> State: 1.673 <-
+    loc = 219
+  -> Input: 1.674 <-
+  -> State: 1.674 <-
+    loc = 205
+  -> Input: 1.675 <-
+  -> State: 1.675 <-
+    loc = 204
+  -> Input: 1.676 <-
+  -> State: 1.676 <-
+    loc = 206
+  -> Input: 1.677 <-
+  -> State: 1.677 <-
+    loc = 207
+  -> Input: 1.678 <-
+  -> State: 1.678 <-
+    loc = 212
+  -> Input: 1.679 <-
+  -> State: 1.679 <-
+    loc = 220
+  -> Input: 1.680 <-
+  -> State: 1.680 <-
+    loc = 151
+  -> Input: 1.681 <-
+  -> State: 1.681 <-
+    loc = EoC
+  -> Input: 1.682 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.682 <-
+    loc = 16
+    ccntr = 15
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.683 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.683 <-
+    loc = 17
+  -> Input: 1.684 <-
+  -> State: 1.684 <-
+    loc = 18
+  -> Input: 1.685 <-
+  -> State: 1.685 <-
+    loc = 19
+  -> Input: 1.686 <-
+  -> State: 1.686 <-
+    loc = 20
+  -> Input: 1.687 <-
+  -> State: 1.687 <-
+    loc = 189
+  -> Input: 1.688 <-
+  -> State: 1.688 <-
+    loc = 190
+  -> Input: 1.689 <-
+  -> State: 1.689 <-
+    loc = 186
+  -> Input: 1.690 <-
+  -> State: 1.690 <-
+    loc = 187
+  -> Input: 1.691 <-
+  -> State: 1.691 <-
+    loc = 188
+  -> Input: 1.692 <-
+  -> State: 1.692 <-
+    loc = 191
+  -> Input: 1.693 <-
+  -> State: 1.693 <-
+    loc = 21
+  -> Input: 1.694 <-
+  -> State: 1.694 <-
+    loc = 195
+  -> Input: 1.695 <-
+  -> State: 1.695 <-
+    loc = 196
+  -> Input: 1.696 <-
+  -> State: 1.696 <-
+    loc = 192
+  -> Input: 1.697 <-
+  -> State: 1.697 <-
+    loc = 193
+  -> Input: 1.698 <-
+  -> State: 1.698 <-
+    loc = 194
+  -> Input: 1.699 <-
+  -> State: 1.699 <-
+    loc = 197
+  -> Input: 1.700 <-
+  -> State: 1.700 <-
+    loc = 22
+  -> Input: 1.701 <-
+  -> State: 1.701 <-
+    loc = 24
+  -> Input: 1.702 <-
+  -> State: 1.702 <-
+    loc = 27
+  -> Input: 1.703 <-
+  -> State: 1.703 <-
+    loc = 28
+  -> Input: 1.704 <-
+  -> State: 1.704 <-
+    loc = 29
+  -> Input: 1.705 <-
+  -> State: 1.705 <-
+    loc = 30
+  -> Input: 1.706 <-
+  -> State: 1.706 <-
+    loc = 31
+  -> Input: 1.707 <-
+  -> State: 1.707 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.708 <-
+  -> State: 1.708 <-
+    loc = 99
+  -> Input: 1.709 <-
+  -> State: 1.709 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.710 <-
+  -> State: 1.710 <-
+    loc = 113
+  -> Input: 1.711 <-
+  -> State: 1.711 <-
+    loc = 114
+  -> Input: 1.712 <-
+  -> State: 1.712 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.713 <-
+  -> State: 1.713 <-
+    loc = 116
+  -> Input: 1.714 <-
+  -> State: 1.714 <-
+    loc = 117
+  -> Input: 1.715 <-
+  -> State: 1.715 <-
+    loc = 118
+  -> Input: 1.716 <-
+  -> State: 1.716 <-
+    loc = 119
+  -> Input: 1.717 <-
+  -> State: 1.717 <-
+    loc = 120
+  -> Input: 1.718 <-
+  -> State: 1.718 <-
+    loc = 121
+  -> Input: 1.719 <-
+  -> State: 1.719 <-
+    loc = 122
+  -> Input: 1.720 <-
+  -> State: 1.720 <-
+    loc = 123
+  -> Input: 1.721 <-
+  -> State: 1.721 <-
+    loc = 124
+  -> Input: 1.722 <-
+  -> State: 1.722 <-
+    loc = 125
+  -> Input: 1.723 <-
+  -> State: 1.723 <-
+    loc = 149
+  -> Input: 1.724 <-
+  -> State: 1.724 <-
+    loc = 151
+  -> Input: 1.725 <-
+  -> State: 1.725 <-
+    loc = EoC
+  -> Input: 1.726 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.726 <-
+    loc = 16
+    ccntr = 16
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.727 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.727 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.728 <-
+  -> State: 1.728 <-
+    loc = 18
+  -> Input: 1.729 <-
+  -> State: 1.729 <-
+    loc = 19
+  -> Input: 1.730 <-
+  -> State: 1.730 <-
+    loc = 20
+  -> Input: 1.731 <-
+  -> State: 1.731 <-
+    loc = 189
+  -> Input: 1.732 <-
+  -> State: 1.732 <-
+    loc = 190
+  -> Input: 1.733 <-
+  -> State: 1.733 <-
+    loc = 186
+  -> Input: 1.734 <-
+  -> State: 1.734 <-
+    loc = 187
+  -> Input: 1.735 <-
+  -> State: 1.735 <-
+    loc = 188
+  -> Input: 1.736 <-
+  -> State: 1.736 <-
+    loc = 191
+  -> Input: 1.737 <-
+  -> State: 1.737 <-
+    loc = 21
+  -> Input: 1.738 <-
+  -> State: 1.738 <-
+    loc = 195
+  -> Input: 1.739 <-
+  -> State: 1.739 <-
+    loc = 196
+  -> Input: 1.740 <-
+  -> State: 1.740 <-
+    loc = 192
+  -> Input: 1.741 <-
+  -> State: 1.741 <-
+    loc = 193
+  -> Input: 1.742 <-
+  -> State: 1.742 <-
+    loc = 194
+  -> Input: 1.743 <-
+  -> State: 1.743 <-
+    loc = 197
+  -> Input: 1.744 <-
+  -> State: 1.744 <-
+    loc = 22
+  -> Input: 1.745 <-
+  -> State: 1.745 <-
+    loc = 23
+  -> Input: 1.746 <-
+  -> State: 1.746 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.747 <-
+  -> State: 1.747 <-
+    loc = 27
+  -> Input: 1.748 <-
+  -> State: 1.748 <-
+    loc = 28
+  -> Input: 1.749 <-
+  -> State: 1.749 <-
+    loc = 29
+  -> Input: 1.750 <-
+  -> State: 1.750 <-
+    loc = 30
+  -> Input: 1.751 <-
+  -> State: 1.751 <-
+    loc = 32
+  -> Input: 1.752 <-
+  -> State: 1.752 <-
+    loc = 99
+  -> Input: 1.753 <-
+  -> State: 1.753 <-
+    loc = 100
+  -> Input: 1.754 <-
+  -> State: 1.754 <-
+    loc = 101
+  -> Input: 1.755 <-
+  -> State: 1.755 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.756 <-
+  -> State: 1.756 <-
+    loc = 103
+  -> Input: 1.757 <-
+  -> State: 1.757 <-
+    loc = 104
+  -> Input: 1.758 <-
+  -> State: 1.758 <-
+    loc = 105
+  -> Input: 1.759 <-
+  -> State: 1.759 <-
+    loc = 106
+  -> Input: 1.760 <-
+  -> State: 1.760 <-
+    loc = 107
+  -> Input: 1.761 <-
+  -> State: 1.761 <-
+    loc = 108
+  -> Input: 1.762 <-
+  -> State: 1.762 <-
+    loc = 109
+  -> Input: 1.763 <-
+  -> State: 1.763 <-
+    loc = 110
+  -> Input: 1.764 <-
+  -> State: 1.764 <-
+    loc = 111
+  -> Input: 1.765 <-
+  -> State: 1.765 <-
+    loc = 112
+  -> Input: 1.766 <-
+  -> State: 1.766 <-
+    loc = 149
+  -> Input: 1.767 <-
+  -> State: 1.767 <-
+    loc = 150
+  -> Input: 1.768 <-
+  -> State: 1.768 <-
+    loc = 217
+  -> Input: 1.769 <-
+  -> State: 1.769 <-
+    loc = 218
+  -> Input: 1.770 <-
+  -> State: 1.770 <-
+    loc = 219
+  -> Input: 1.771 <-
+  -> State: 1.771 <-
+    loc = 205
+  -> Input: 1.772 <-
+  -> State: 1.772 <-
+    loc = 204
+  -> Input: 1.773 <-
+  -> State: 1.773 <-
+    loc = 206
+  -> Input: 1.774 <-
+  -> State: 1.774 <-
+    loc = 207
+  -> Input: 1.775 <-
+  -> State: 1.775 <-
+    loc = 212
+  -> Input: 1.776 <-
+  -> State: 1.776 <-
+    loc = 220
+  -> Input: 1.777 <-
+  -> State: 1.777 <-
+    loc = 151
+  -> Input: 1.778 <-
+  -> State: 1.778 <-
+    loc = EoC
+  -> Input: 1.779 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.779 <-
+    loc = 16
+    ccntr = 17
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.780 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.780 <-
+    loc = 17
+  -> Input: 1.781 <-
+  -> State: 1.781 <-
+    loc = 18
+  -> Input: 1.782 <-
+  -> State: 1.782 <-
+    loc = 19
+  -> Input: 1.783 <-
+  -> State: 1.783 <-
+    loc = 20
+  -> Input: 1.784 <-
+  -> State: 1.784 <-
+    loc = 189
+  -> Input: 1.785 <-
+  -> State: 1.785 <-
+    loc = 190
+  -> Input: 1.786 <-
+  -> State: 1.786 <-
+    loc = 186
+  -> Input: 1.787 <-
+  -> State: 1.787 <-
+    loc = 187
+  -> Input: 1.788 <-
+  -> State: 1.788 <-
+    loc = 188
+  -> Input: 1.789 <-
+  -> State: 1.789 <-
+    loc = 191
+  -> Input: 1.790 <-
+  -> State: 1.790 <-
+    loc = 21
+  -> Input: 1.791 <-
+  -> State: 1.791 <-
+    loc = 195
+  -> Input: 1.792 <-
+  -> State: 1.792 <-
+    loc = 196
+  -> Input: 1.793 <-
+  -> State: 1.793 <-
+    loc = 192
+  -> Input: 1.794 <-
+  -> State: 1.794 <-
+    loc = 193
+  -> Input: 1.795 <-
+  -> State: 1.795 <-
+    loc = 194
+  -> Input: 1.796 <-
+  -> State: 1.796 <-
+    loc = 197
+  -> Input: 1.797 <-
+  -> State: 1.797 <-
+    loc = 22
+  -> Input: 1.798 <-
+  -> State: 1.798 <-
+    loc = 24
+  -> Input: 1.799 <-
+  -> State: 1.799 <-
+    loc = 27
+  -> Input: 1.800 <-
+  -> State: 1.800 <-
+    loc = 28
+  -> Input: 1.801 <-
+  -> State: 1.801 <-
+    loc = 29
+  -> Input: 1.802 <-
+  -> State: 1.802 <-
+    loc = 30
+  -> Input: 1.803 <-
+  -> State: 1.803 <-
+    loc = 31
+  -> Input: 1.804 <-
+  -> State: 1.804 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.805 <-
+  -> State: 1.805 <-
+    loc = 99
+  -> Input: 1.806 <-
+  -> State: 1.806 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.807 <-
+  -> State: 1.807 <-
+    loc = 113
+  -> Input: 1.808 <-
+  -> State: 1.808 <-
+    loc = 114
+  -> Input: 1.809 <-
+  -> State: 1.809 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.810 <-
+  -> State: 1.810 <-
+    loc = 116
+  -> Input: 1.811 <-
+  -> State: 1.811 <-
+    loc = 117
+  -> Input: 1.812 <-
+  -> State: 1.812 <-
+    loc = 118
+  -> Input: 1.813 <-
+  -> State: 1.813 <-
+    loc = 119
+  -> Input: 1.814 <-
+  -> State: 1.814 <-
+    loc = 120
+  -> Input: 1.815 <-
+  -> State: 1.815 <-
+    loc = 121
+  -> Input: 1.816 <-
+  -> State: 1.816 <-
+    loc = 122
+  -> Input: 1.817 <-
+  -> State: 1.817 <-
+    loc = 123
+  -> Input: 1.818 <-
+  -> State: 1.818 <-
+    loc = 124
+  -> Input: 1.819 <-
+  -> State: 1.819 <-
+    loc = 125
+  -> Input: 1.820 <-
+  -> State: 1.820 <-
+    loc = 149
+  -> Input: 1.821 <-
+  -> State: 1.821 <-
+    loc = 151
+  -> Input: 1.822 <-
+  -> State: 1.822 <-
+    loc = EoC
+  -> Input: 1.823 <-
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.823 <-
+    loc = 16
+    ccntr = 18
+    SF_ModeSelector2_Activate = FALSE
+  -> Input: 1.824 <-
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.824 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.825 <-
+  -> State: 1.825 <-
+    loc = 18
+  -> Input: 1.826 <-
+  -> State: 1.826 <-
+    loc = 19
+  -> Input: 1.827 <-
+  -> State: 1.827 <-
+    loc = 20
+  -> Input: 1.828 <-
+  -> State: 1.828 <-
+    loc = 189
+  -> Input: 1.829 <-
+  -> State: 1.829 <-
+    loc = 190
+  -> Input: 1.830 <-
+  -> State: 1.830 <-
+    loc = 186
+  -> Input: 1.831 <-
+  -> State: 1.831 <-
+    loc = 187
+  -> Input: 1.832 <-
+  -> State: 1.832 <-
+    loc = 188
+  -> Input: 1.833 <-
+  -> State: 1.833 <-
+    loc = 191
+  -> Input: 1.834 <-
+  -> State: 1.834 <-
+    loc = 21
+  -> Input: 1.835 <-
+  -> State: 1.835 <-
+    loc = 195
+  -> Input: 1.836 <-
+  -> State: 1.836 <-
+    loc = 196
+  -> Input: 1.837 <-
+  -> State: 1.837 <-
+    loc = 192
+  -> Input: 1.838 <-
+  -> State: 1.838 <-
+    loc = 193
+  -> Input: 1.839 <-
+  -> State: 1.839 <-
+    loc = 194
+  -> Input: 1.840 <-
+  -> State: 1.840 <-
+    loc = 197
+  -> Input: 1.841 <-
+  -> State: 1.841 <-
+    loc = 22
+  -> Input: 1.842 <-
+  -> State: 1.842 <-
+    loc = 23
+  -> Input: 1.843 <-
+  -> State: 1.843 <-
+    loc = 24
+    SF_ModeSelector2_DiagCode = 0ud16_0
+  -> Input: 1.844 <-
+  -> State: 1.844 <-
+    loc = 27
+  -> Input: 1.845 <-
+  -> State: 1.845 <-
+    loc = 28
+  -> Input: 1.846 <-
+  -> State: 1.846 <-
+    loc = 29
+  -> Input: 1.847 <-
+  -> State: 1.847 <-
+    loc = 30
+  -> Input: 1.848 <-
+  -> State: 1.848 <-
+    loc = 32
+  -> Input: 1.849 <-
+  -> State: 1.849 <-
+    loc = 99
+  -> Input: 1.850 <-
+  -> State: 1.850 <-
+    loc = 100
+  -> Input: 1.851 <-
+  -> State: 1.851 <-
+    loc = 101
+  -> Input: 1.852 <-
+  -> State: 1.852 <-
+    loc = 102
+    SF_ModeSelector2_Ready = FALSE
+  -> Input: 1.853 <-
+  -> State: 1.853 <-
+    loc = 103
+  -> Input: 1.854 <-
+  -> State: 1.854 <-
+    loc = 104
+  -> Input: 1.855 <-
+  -> State: 1.855 <-
+    loc = 105
+  -> Input: 1.856 <-
+  -> State: 1.856 <-
+    loc = 106
+  -> Input: 1.857 <-
+  -> State: 1.857 <-
+    loc = 107
+  -> Input: 1.858 <-
+  -> State: 1.858 <-
+    loc = 108
+  -> Input: 1.859 <-
+  -> State: 1.859 <-
+    loc = 109
+  -> Input: 1.860 <-
+  -> State: 1.860 <-
+    loc = 110
+  -> Input: 1.861 <-
+  -> State: 1.861 <-
+    loc = 111
+  -> Input: 1.862 <-
+  -> State: 1.862 <-
+    loc = 112
+  -> Input: 1.863 <-
+  -> State: 1.863 <-
+    loc = 149
+  -> Input: 1.864 <-
+  -> State: 1.864 <-
+    loc = 150
+  -> Input: 1.865 <-
+  -> State: 1.865 <-
+    loc = 217
+  -> Input: 1.866 <-
+  -> State: 1.866 <-
+    loc = 218
+  -> Input: 1.867 <-
+  -> State: 1.867 <-
+    loc = 219
+  -> Input: 1.868 <-
+  -> State: 1.868 <-
+    loc = 205
+  -> Input: 1.869 <-
+  -> State: 1.869 <-
+    loc = 204
+  -> Input: 1.870 <-
+  -> State: 1.870 <-
+    loc = 206
+  -> Input: 1.871 <-
+  -> State: 1.871 <-
+    loc = 207
+  -> Input: 1.872 <-
+  -> State: 1.872 <-
+    loc = 212
+  -> Input: 1.873 <-
+  -> State: 1.873 <-
+    loc = 220
+  -> Input: 1.874 <-
+  -> State: 1.874 <-
+    loc = 151
+  -> Input: 1.875 <-
+  -> State: 1.875 <-
+    loc = EoC
+  -> Input: 1.876 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.876 <-
+    loc = 16
+    ccntr = 19
+    SF_ModeSelector2_Activate = TRUE
+  -> Input: 1.877 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.877 <-
+    loc = 17
+  -> Input: 1.878 <-
+  -> State: 1.878 <-
+    loc = 18
+  -> Input: 1.879 <-
+  -> State: 1.879 <-
+    loc = 19
+  -> Input: 1.880 <-
+  -> State: 1.880 <-
+    loc = 20
+  -> Input: 1.881 <-
+  -> State: 1.881 <-
+    loc = 189
+  -> Input: 1.882 <-
+  -> State: 1.882 <-
+    loc = 190
+  -> Input: 1.883 <-
+  -> State: 1.883 <-
+    loc = 186
+  -> Input: 1.884 <-
+  -> State: 1.884 <-
+    loc = 187
+  -> Input: 1.885 <-
+  -> State: 1.885 <-
+    loc = 188
+  -> Input: 1.886 <-
+  -> State: 1.886 <-
+    loc = 191
+  -> Input: 1.887 <-
+  -> State: 1.887 <-
+    loc = 21
+  -> Input: 1.888 <-
+  -> State: 1.888 <-
+    loc = 195
+  -> Input: 1.889 <-
+  -> State: 1.889 <-
+    loc = 196
+  -> Input: 1.890 <-
+  -> State: 1.890 <-
+    loc = 192
+  -> Input: 1.891 <-
+  -> State: 1.891 <-
+    loc = 193
+  -> Input: 1.892 <-
+  -> State: 1.892 <-
+    loc = 194
+  -> Input: 1.893 <-
+  -> State: 1.893 <-
+    loc = 197
+  -> Input: 1.894 <-
+  -> State: 1.894 <-
+    loc = 22
+  -> Input: 1.895 <-
+  -> State: 1.895 <-
+    loc = 24
+  -> Input: 1.896 <-
+  -> State: 1.896 <-
+    loc = 27
+  -> Input: 1.897 <-
+  -> State: 1.897 <-
+    loc = 28
+  -> Input: 1.898 <-
+  -> State: 1.898 <-
+    loc = 29
+  -> Input: 1.899 <-
+  -> State: 1.899 <-
+    loc = 30
+  -> Input: 1.900 <-
+  -> State: 1.900 <-
+    loc = 31
+  -> Input: 1.901 <-
+  -> State: 1.901 <-
+    loc = 32
+    SF_ModeSelector2_DiagCode = 0ud16_32773
+  -> Input: 1.902 <-
+  -> State: 1.902 <-
+    loc = 99
+  -> Input: 1.903 <-
+  -> State: 1.903 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32773
+  -> Input: 1.904 <-
+  -> State: 1.904 <-
+    loc = 113
+  -> Input: 1.905 <-
+  -> State: 1.905 <-
+    loc = 114
+  -> Input: 1.906 <-
+  -> State: 1.906 <-
+    loc = 115
+    SF_ModeSelector2_Ready = TRUE
+  -> Input: 1.907 <-
+  -> State: 1.907 <-
+    loc = 116
+  -> Input: 1.908 <-
+  -> State: 1.908 <-
+    loc = 117
+  -> Input: 1.909 <-
+  -> State: 1.909 <-
+    loc = 118
+  -> Input: 1.910 <-
+  -> State: 1.910 <-
+    loc = 119
+  -> Input: 1.911 <-
+  -> State: 1.911 <-
+    loc = 120
+  -> Input: 1.912 <-
+  -> State: 1.912 <-
+    loc = 121
+  -> Input: 1.913 <-
+  -> State: 1.913 <-
+    loc = 122
+  -> Input: 1.914 <-
+  -> State: 1.914 <-
+    loc = 123
+  -> Input: 1.915 <-
+  -> State: 1.915 <-
+    loc = 124
+  -> Input: 1.916 <-
+  -> State: 1.916 <-
+    loc = 125
+  -> Input: 1.917 <-
+  -> State: 1.917 <-
+    loc = 149
+  -> Input: 1.918 <-
+  -> State: 1.918 <-
+    loc = 151
+  -> Input: 1.919 <-
+  -> State: 1.919 <-
+    loc = EoC
+  -> Input: 1.920 <-
+    SF_ModeSelector2_Activate_IN = TRUE
+    SF_ModeSelector2_S_Mode0_IN = TRUE
+    SF_ModeSelector2_S_Unlock_IN = TRUE
+    SF_ModeSelector2_S_SetMode_IN = TRUE
+    SF_ModeSelector2_AutoSetMode_IN = TRUE
+    SF_ModeSelector2_Reset_IN = TRUE
+  -> State: 1.920 <-
+    loc = 16
+    ccntr = 20
+    SF_ModeSelector2_S_Unlock = TRUE
+    SF_ModeSelector2_AutoSetMode = TRUE
+  -> Input: 1.921 <-
+    SF_ModeSelector2_Activate_IN = FALSE
+    SF_ModeSelector2_S_Mode0_IN = FALSE
+    SF_ModeSelector2_S_Unlock_IN = FALSE
+    SF_ModeSelector2_S_SetMode_IN = FALSE
+    SF_ModeSelector2_AutoSetMode_IN = FALSE
+    SF_ModeSelector2_Reset_IN = FALSE
+  -> State: 1.921 <-
+    loc = 17
+    SF_ModeSelector2___TEMP1 = 0ud16_0
+  -> Input: 1.922 <-
+  -> State: 1.922 <-
+    loc = 18
+  -> Input: 1.923 <-
+  -> State: 1.923 <-
+    loc = 19
+  -> Input: 1.924 <-
+  -> State: 1.924 <-
+    loc = 20
+  -> Input: 1.925 <-
+  -> State: 1.925 <-
+    loc = 189
+  -> Input: 1.926 <-
+  -> State: 1.926 <-
+    loc = 190
+  -> Input: 1.927 <-
+  -> State: 1.927 <-
+    loc = 186
+  -> Input: 1.928 <-
+  -> State: 1.928 <-
+    loc = 187
+  -> Input: 1.929 <-
+  -> State: 1.929 <-
+    loc = 188
+  -> Input: 1.930 <-
+  -> State: 1.930 <-
+    loc = 191
+  -> Input: 1.931 <-
+  -> State: 1.931 <-
+    loc = 21
+  -> Input: 1.932 <-
+  -> State: 1.932 <-
+    loc = 195
+  -> Input: 1.933 <-
+  -> State: 1.933 <-
+    loc = 196
+  -> Input: 1.934 <-
+  -> State: 1.934 <-
+    loc = 192
+  -> Input: 1.935 <-
+  -> State: 1.935 <-
+    loc = 193
+  -> Input: 1.936 <-
+  -> State: 1.936 <-
+    loc = 194
+  -> Input: 1.937 <-
+  -> State: 1.937 <-
+    loc = 197
+  -> Input: 1.938 <-
+  -> State: 1.938 <-
+    loc = 22
+  -> Input: 1.939 <-
+  -> State: 1.939 <-
+    loc = 24
+  -> Input: 1.940 <-
+  -> State: 1.940 <-
+    loc = 27
+  -> Input: 1.941 <-
+  -> State: 1.941 <-
+    loc = 28
+  -> Input: 1.942 <-
+  -> State: 1.942 <-
+    loc = 29
+    SF_ModeSelector2___TEMP0 = 0ud16_32773
+  -> Input: 1.943 <-
+  -> State: 1.943 <-
+    loc = 33
+  -> Input: 1.944 <-
+  -> State: 1.944 <-
+    loc = 34
+  -> Input: 1.945 <-
+  -> State: 1.945 <-
+    loc = 38
+  -> Input: 1.946 <-
+  -> State: 1.946 <-
+    loc = 230
+  -> Input: 1.947 <-
+  -> State: 1.947 <-
+    loc = 231
+  -> Input: 1.948 <-
+  -> State: 1.948 <-
+    loc = 228
+  -> Input: 1.949 <-
+  -> State: 1.949 <-
+    loc = 229
+  -> Input: 1.950 <-
+  -> State: 1.950 <-
+    loc = 227
+  -> Input: 1.951 <-
+  -> State: 1.951 <-
+    loc = 232
+  -> Input: 1.952 <-
+  -> State: 1.952 <-
+    loc = 39
+  -> Input: 1.953 <-
+  -> State: 1.953 <-
+    loc = 236
+  -> Input: 1.954 <-
+  -> State: 1.954 <-
+    loc = 237
+  -> Input: 1.955 <-
+  -> State: 1.955 <-
+    loc = 233
+  -> Input: 1.956 <-
+  -> State: 1.956 <-
+    loc = 234
+  -> Input: 1.957 <-
+  -> State: 1.957 <-
+    loc = 235
+  -> Input: 1.958 <-
+  -> State: 1.958 <-
+    loc = 238
+  -> Input: 1.959 <-
+  -> State: 1.959 <-
+    loc = 40
+  -> Input: 1.960 <-
+  -> State: 1.960 <-
+    loc = 43
+  -> Input: 1.961 <-
+  -> State: 1.961 <-
+    loc = 45
+  -> Input: 1.962 <-
+  -> State: 1.962 <-
+    loc = 46
+  -> Input: 1.963 <-
+  -> State: 1.963 <-
+    loc = 49
+  -> Input: 1.964 <-
+  -> State: 1.964 <-
+    loc = 52
+  -> Input: 1.965 <-
+  -> State: 1.965 <-
+    loc = 53
+  -> Input: 1.966 <-
+  -> State: 1.966 <-
+    loc = 54
+    SF_ModeSelector2_DiagCode = 0ud16_32768
+  -> Input: 1.967 <-
+  -> State: 1.967 <-
+    loc = 55
+    SF_ModeSelector2_S_Mode0Sel = TRUE
+  -> Input: 1.968 <-
+  -> State: 1.968 <-
+    loc = 56
+  -> Input: 1.969 <-
+  -> State: 1.969 <-
+    loc = 57
+  -> Input: 1.970 <-
+  -> State: 1.970 <-
+    loc = 58
+  -> Input: 1.971 <-
+  -> State: 1.971 <-
+    loc = 59
+  -> Input: 1.972 <-
+  -> State: 1.972 <-
+    loc = 60
+  -> Input: 1.973 <-
+  -> State: 1.973 <-
+    loc = 61
+  -> Input: 1.974 <-
+  -> State: 1.974 <-
+    loc = 62
+  -> Input: 1.975 <-
+  -> State: 1.975 <-
+    loc = 99
+  -> Input: 1.976 <-
+  -> State: 1.976 <-
+    loc = 100
+    SF_ModeSelector2___TEMP1 = 0ud16_32768
+  -> Input: 1.977 <-
+  -> State: 1.977 <-
+    loc = 113
+  -> Input: 1.978 <-
+  -> State: 1.978 <-
+    loc = 126
+  -> Input: 1.979 <-
+  -> State: 1.979 <-
+    loc = 127
+  -> Input: 1.980 <-
+  -> State: 1.980 <-
+    loc = 128
+  -> Input: 1.981 <-
+  -> State: 1.981 <-
+    loc = 129
+    SF_ModeSelector2_S_AnyModeSel = TRUE
+  -> Input: 1.982 <-
+  -> State: 1.982 <-
+    loc = 130
+  -> Input: 1.983 <-
+  -> State: 1.983 <-
+    loc = 149
+  -> Input: 1.984 <-
+  -> State: 1.984 <-
+    loc = 150
+  -> Input: 1.985 <-
+  -> State: 1.985 <-
+    loc = 217
+  -> Input: 1.986 <-
+  -> State: 1.986 <-
+    loc = 218
+  -> Input: 1.987 <-
+  -> State: 1.987 <-
+    loc = 219
+  -> Input: 1.988 <-
+  -> State: 1.988 <-
+    loc = 205
+  -> Input: 1.989 <-
+  -> State: 1.989 <-
+    loc = 204
+  -> Input: 1.990 <-
+  -> State: 1.990 <-
+    loc = 206
+  -> Input: 1.991 <-
+  -> State: 1.991 <-
+    loc = 207
+  -> Input: 1.992 <-
+  -> State: 1.992 <-
+    loc = 212
+  -> Input: 1.993 <-
+  -> State: 1.993 <-
+    loc = 220
+  -> Input: 1.994 <-
+  -> State: 1.994 <-
+    loc = 151
+  -> Input: 1.995 <-
+  -> State: 1.995 <-
+    loc = EoC
+  -> Input: 1.996 <-
+  -> State: 1.996 <-
+    ccntr = 21
+    SF_ModeSelector2_Activate = FALSE
+    SF_ModeSelector2_S_Mode0 = FALSE
+    SF_ModeSelector2_S_Unlock = FALSE
+    SF_ModeSelector2_S_SetMode = FALSE
+    SF_ModeSelector2_AutoSetMode = FALSE
+    SF_ModeSelector2_Reset = FALSE

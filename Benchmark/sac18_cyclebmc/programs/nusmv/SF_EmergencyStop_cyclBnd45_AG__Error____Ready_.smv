@@ -1,0 +1,365 @@
+-- FORMULA: AG (Error => Ready)
+-- BOUND: 45
+
+MODULE main
+	IVAR
+		SF_EmergencyStop_Activate_IN : boolean;
+		SF_EmergencyStop_S_EStopIn_IN : boolean;
+		SF_EmergencyStop_S_StartReset_IN : boolean;
+		SF_EmergencyStop_S_AutoReset_IN : boolean;
+		SF_EmergencyStop_Reset_IN : boolean;
+	VAR
+		loc : {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, EoC};
+		ccntr : 0..46;
+		SF_EmergencyStop_Activate : boolean;
+		SF_EmergencyStop_S_EStopIn : boolean;
+		SF_EmergencyStop_S_StartReset : boolean;
+		SF_EmergencyStop_S_AutoReset : boolean;
+		SF_EmergencyStop_Reset : boolean;
+		SF_EmergencyStop_Ready : boolean;
+		SF_EmergencyStop_S_EStopOut : boolean;
+		SF_EmergencyStop_Error : boolean;
+		SF_EmergencyStop_DiagCode : unsigned word[16];
+		SF_EmergencyStop_R_TRIGatReset_CLK : boolean;
+		SF_EmergencyStop_R_TRIGatReset_Q : boolean;
+		SF_EmergencyStop_R_TRIGatReset_M : boolean;
+		SF_EmergencyStop___TEMP0 : unsigned word[16];
+		SF_EmergencyStop___TEMP1 : unsigned word[16];
+	ASSIGN
+		init(loc) := 111;
+		init(ccntr) := 0;
+		init(SF_EmergencyStop_Activate) := FALSE;
+		init(SF_EmergencyStop_S_EStopIn) := FALSE;
+		init(SF_EmergencyStop_S_StartReset) := FALSE;
+		init(SF_EmergencyStop_S_AutoReset) := FALSE;
+		init(SF_EmergencyStop_Reset) := FALSE;
+		init(SF_EmergencyStop_Ready) := FALSE;
+		init(SF_EmergencyStop_S_EStopOut) := FALSE;
+		init(SF_EmergencyStop_Error) := FALSE;
+		init(SF_EmergencyStop_DiagCode) := 0ud16_0;
+		init(SF_EmergencyStop_R_TRIGatReset_CLK) := FALSE;
+		init(SF_EmergencyStop_R_TRIGatReset_Q) := FALSE;
+		init(SF_EmergencyStop_R_TRIGatReset_M) := FALSE;
+		init(SF_EmergencyStop___TEMP0) := 0ud16_0;
+		init(SF_EmergencyStop___TEMP1) := 0ud16_0;
+
+		next(loc) := case
+			loc = 1 : 2;
+			loc = 2 : 3;
+			loc = 3 : 115;
+			loc = 4 & !(SF_EmergencyStop_Activate) : 5;
+			loc = 4 & SF_EmergencyStop_Activate : 7;
+			loc = 5 : 6;
+			loc = 6 : 65;
+			loc = 7 : 8;
+			loc = 8 & (SF_EmergencyStop___TEMP0 = resize(0ud8_0,16)) : 9;
+			loc = 8 & !((SF_EmergencyStop___TEMP0 = resize(0ud8_0,16))) : 12;
+			loc = 9 & SF_EmergencyStop_Activate : 10;
+			loc = 9 & !(SF_EmergencyStop_Activate) : 11;
+			loc = 10 : 11;
+			loc = 11 : 65;
+			loc = 12 & (SF_EmergencyStop___TEMP0 = resize(0ud16_32769,16)) : 13;
+			loc = 12 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_32769,16))) : 22;
+			loc = 13 & !(SF_EmergencyStop_S_StartReset) : 14;
+			loc = 13 & SF_EmergencyStop_S_StartReset : 16;
+			loc = 14 : 15;
+			loc = 15 : 21;
+			loc = 16 & (SF_EmergencyStop_S_StartReset & !(SF_EmergencyStop_S_EStopIn)) : 17;
+			loc = 16 & !((SF_EmergencyStop_S_StartReset & !(SF_EmergencyStop_S_EStopIn))) : 19;
+			loc = 17 : 18;
+			loc = 18 : 21;
+			loc = 19 & (SF_EmergencyStop_S_EStopIn & SF_EmergencyStop_S_StartReset) : 20;
+			loc = 19 & !((SF_EmergencyStop_S_EStopIn & SF_EmergencyStop_S_StartReset)) : 21;
+			loc = 20 : 21;
+			loc = 21 : 65;
+			loc = 22 & (SF_EmergencyStop___TEMP0 = resize(0ud16_32770,16)) : 23;
+			loc = 22 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_32770,16))) : 26;
+			loc = 23 & SF_EmergencyStop_S_EStopIn : 24;
+			loc = 23 & !(SF_EmergencyStop_S_EStopIn) : 25;
+			loc = 24 : 25;
+			loc = 25 : 65;
+			loc = 26 & (SF_EmergencyStop___TEMP0 = resize(0ud16_32771,16)) : 27;
+			loc = 26 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_32771,16))) : 36;
+			loc = 27 & (SF_EmergencyStop_Reset & !(SF_EmergencyStop_R_TRIGatReset_Q)) : 28;
+			loc = 27 & !((SF_EmergencyStop_Reset & !(SF_EmergencyStop_R_TRIGatReset_Q))) : 30;
+			loc = 28 : 29;
+			loc = 29 : 35;
+			loc = 30 & !(SF_EmergencyStop_S_EStopIn) : 31;
+			loc = 30 & SF_EmergencyStop_S_EStopIn : 33;
+			loc = 31 : 32;
+			loc = 32 : 35;
+			loc = 33 & SF_EmergencyStop_R_TRIGatReset_Q : 34;
+			loc = 33 & !(SF_EmergencyStop_R_TRIGatReset_Q) : 35;
+			loc = 34 : 35;
+			loc = 35 : 65;
+			loc = 36 & (SF_EmergencyStop___TEMP0 = resize(0ud16_49153,16)) : 37;
+			loc = 36 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_49153,16))) : 40;
+			loc = 37 & !(SF_EmergencyStop_Reset) : 38;
+			loc = 37 & SF_EmergencyStop_Reset : 39;
+			loc = 38 : 39;
+			loc = 39 : 65;
+			loc = 40 & (SF_EmergencyStop___TEMP0 = resize(0ud16_32772,16)) : 41;
+			loc = 40 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_32772,16))) : 47;
+			loc = 41 & (SF_EmergencyStop_S_EStopIn & !(SF_EmergencyStop_S_AutoReset)) : 42;
+			loc = 41 & !((SF_EmergencyStop_S_EStopIn & !(SF_EmergencyStop_S_AutoReset))) : 44;
+			loc = 42 : 43;
+			loc = 43 : 46;
+			loc = 44 & (SF_EmergencyStop_S_EStopIn & SF_EmergencyStop_S_AutoReset) : 45;
+			loc = 44 & !((SF_EmergencyStop_S_EStopIn & SF_EmergencyStop_S_AutoReset)) : 46;
+			loc = 45 : 46;
+			loc = 46 : 65;
+			loc = 47 & (SF_EmergencyStop___TEMP0 = resize(0ud16_32773,16)) : 48;
+			loc = 47 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_32773,16))) : 57;
+			loc = 48 & (SF_EmergencyStop_Reset & !(SF_EmergencyStop_R_TRIGatReset_Q)) : 49;
+			loc = 48 & !((SF_EmergencyStop_Reset & !(SF_EmergencyStop_R_TRIGatReset_Q))) : 51;
+			loc = 49 : 50;
+			loc = 50 : 56;
+			loc = 51 & !(SF_EmergencyStop_S_EStopIn) : 52;
+			loc = 51 & SF_EmergencyStop_S_EStopIn : 54;
+			loc = 52 : 53;
+			loc = 53 : 56;
+			loc = 54 & (SF_EmergencyStop_R_TRIGatReset_Q | SF_EmergencyStop_S_AutoReset) : 55;
+			loc = 54 & !((SF_EmergencyStop_R_TRIGatReset_Q | SF_EmergencyStop_S_AutoReset)) : 56;
+			loc = 55 : 56;
+			loc = 56 : 65;
+			loc = 57 & (SF_EmergencyStop___TEMP0 = resize(0ud16_49154,16)) : 58;
+			loc = 57 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_49154,16))) : 61;
+			loc = 58 & !(SF_EmergencyStop_Reset) : 59;
+			loc = 58 & SF_EmergencyStop_Reset : 60;
+			loc = 59 : 60;
+			loc = 60 : 65;
+			loc = 61 & (SF_EmergencyStop___TEMP0 = resize(0ud16_32768,16)) : 62;
+			loc = 61 & !((SF_EmergencyStop___TEMP0 = resize(0ud16_32768,16))) : 65;
+			loc = 62 & !(SF_EmergencyStop_S_EStopIn) : 63;
+			loc = 62 & SF_EmergencyStop_S_EStopIn : 64;
+			loc = 63 : 64;
+			loc = 64 : 65;
+			loc = 65 : 66;
+			loc = 66 & (SF_EmergencyStop___TEMP1 = resize(0ud8_0,16)) : 67;
+			loc = 66 & !((SF_EmergencyStop___TEMP1 = resize(0ud8_0,16))) : 71;
+			loc = 67 : 68;
+			loc = 68 : 69;
+			loc = 69 : 70;
+			loc = 70 : 111;
+			loc = 71 & (SF_EmergencyStop___TEMP1 = resize(0ud16_32769,16)) : 72;
+			loc = 71 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_32769,16))) : 76;
+			loc = 72 : 73;
+			loc = 73 : 74;
+			loc = 74 : 75;
+			loc = 75 : 111;
+			loc = 76 & (SF_EmergencyStop___TEMP1 = resize(0ud16_32770,16)) : 77;
+			loc = 76 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_32770,16))) : 81;
+			loc = 77 : 78;
+			loc = 78 : 79;
+			loc = 79 : 80;
+			loc = 80 : 111;
+			loc = 81 & (SF_EmergencyStop___TEMP1 = resize(0ud16_32771,16)) : 82;
+			loc = 81 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_32771,16))) : 86;
+			loc = 82 : 83;
+			loc = 83 : 84;
+			loc = 84 : 85;
+			loc = 85 : 111;
+			loc = 86 & (SF_EmergencyStop___TEMP1 = resize(0ud16_49153,16)) : 87;
+			loc = 86 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_49153,16))) : 91;
+			loc = 87 : 88;
+			loc = 88 : 89;
+			loc = 89 : 90;
+			loc = 90 : 111;
+			loc = 91 & (SF_EmergencyStop___TEMP1 = resize(0ud16_32772,16)) : 92;
+			loc = 91 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_32772,16))) : 96;
+			loc = 92 : 93;
+			loc = 93 : 94;
+			loc = 94 : 95;
+			loc = 95 : 111;
+			loc = 96 & (SF_EmergencyStop___TEMP1 = resize(0ud16_32773,16)) : 97;
+			loc = 96 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_32773,16))) : 101;
+			loc = 97 : 98;
+			loc = 98 : 99;
+			loc = 99 : 100;
+			loc = 100 : 111;
+			loc = 101 & (SF_EmergencyStop___TEMP1 = resize(0ud16_49154,16)) : 102;
+			loc = 101 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_49154,16))) : 106;
+			loc = 102 : 103;
+			loc = 103 : 104;
+			loc = 104 : 105;
+			loc = 105 : 111;
+			loc = 106 & (SF_EmergencyStop___TEMP1 = resize(0ud16_32768,16)) : 107;
+			loc = 106 & !((SF_EmergencyStop___TEMP1 = resize(0ud16_32768,16))) : 111;
+			loc = 107 : 108;
+			loc = 108 : 109;
+			loc = 109 : 110;
+			loc = 110 : 111;
+			loc = 111 : EoC;
+			(loc = EoC) & (ccntr<45) : 1;
+			(loc = EoC) & !(ccntr<45) : EoC;
+			loc = 112 : 113;
+			loc = 113 : 114;
+			loc = 114 : 117;
+			loc = 115 : 116;
+			loc = 116 : 112;
+			loc = 117 : 4;
+			TRUE : loc;
+		esac;
+		next(ccntr) := case
+			loc = EoC & (ccntr = 0): 1;
+			loc = EoC & (ccntr = 1): 2;
+			loc = EoC & (ccntr = 2): 3;
+			loc = EoC & (ccntr = 3): 4;
+			loc = EoC & (ccntr = 4): 5;
+			loc = EoC & (ccntr = 5): 6;
+			loc = EoC & (ccntr = 6): 7;
+			loc = EoC & (ccntr = 7): 8;
+			loc = EoC & (ccntr = 8): 9;
+			loc = EoC & (ccntr = 9): 10;
+			loc = EoC & (ccntr = 10): 11;
+			loc = EoC & (ccntr = 11): 12;
+			loc = EoC & (ccntr = 12): 13;
+			loc = EoC & (ccntr = 13): 14;
+			loc = EoC & (ccntr = 14): 15;
+			loc = EoC & (ccntr = 15): 16;
+			loc = EoC & (ccntr = 16): 17;
+			loc = EoC & (ccntr = 17): 18;
+			loc = EoC & (ccntr = 18): 19;
+			loc = EoC & (ccntr = 19): 20;
+			loc = EoC & (ccntr = 20): 21;
+			loc = EoC & (ccntr = 21): 22;
+			loc = EoC & (ccntr = 22): 23;
+			loc = EoC & (ccntr = 23): 24;
+			loc = EoC & (ccntr = 24): 25;
+			loc = EoC & (ccntr = 25): 26;
+			loc = EoC & (ccntr = 26): 27;
+			loc = EoC & (ccntr = 27): 28;
+			loc = EoC & (ccntr = 28): 29;
+			loc = EoC & (ccntr = 29): 30;
+			loc = EoC & (ccntr = 30): 31;
+			loc = EoC & (ccntr = 31): 32;
+			loc = EoC & (ccntr = 32): 33;
+			loc = EoC & (ccntr = 33): 34;
+			loc = EoC & (ccntr = 34): 35;
+			loc = EoC & (ccntr = 35): 36;
+			loc = EoC & (ccntr = 36): 37;
+			loc = EoC & (ccntr = 37): 38;
+			loc = EoC & (ccntr = 38): 39;
+			loc = EoC & (ccntr = 39): 40;
+			loc = EoC & (ccntr = 40): 41;
+			loc = EoC & (ccntr = 41): 42;
+			loc = EoC & (ccntr = 42): 43;
+			loc = EoC & (ccntr = 43): 44;
+			loc = EoC & (ccntr = 44): 45;
+			loc = EoC & (ccntr = 45): 46;
+			TRUE : ccntr;
+		esac;
+
+		next(SF_EmergencyStop_Activate) := case
+			loc = EoC : SF_EmergencyStop_Activate_IN;
+			TRUE : SF_EmergencyStop_Activate;
+		esac;
+
+		next(SF_EmergencyStop_S_EStopIn) := case
+			loc = EoC : SF_EmergencyStop_S_EStopIn_IN;
+			TRUE : SF_EmergencyStop_S_EStopIn;
+		esac;
+
+		next(SF_EmergencyStop_S_StartReset) := case
+			loc = EoC : SF_EmergencyStop_S_StartReset_IN;
+			TRUE : SF_EmergencyStop_S_StartReset;
+		esac;
+
+		next(SF_EmergencyStop_S_AutoReset) := case
+			loc = EoC : SF_EmergencyStop_S_AutoReset_IN;
+			TRUE : SF_EmergencyStop_S_AutoReset;
+		esac;
+
+		next(SF_EmergencyStop_Reset) := case
+			loc = EoC : SF_EmergencyStop_Reset_IN;
+			TRUE : SF_EmergencyStop_Reset;
+		esac;
+
+		next(SF_EmergencyStop_Ready) := case
+			loc = 67 : FALSE;
+			loc = 72 : TRUE;
+			loc = 77 : TRUE;
+			loc = 82 : TRUE;
+			loc = 87 : TRUE;
+			loc = 92 : TRUE;
+			loc = 97 : TRUE;
+			loc = 102 : TRUE;
+			loc = 107 : TRUE;
+			TRUE : SF_EmergencyStop_Ready;
+		esac;
+
+		next(SF_EmergencyStop_S_EStopOut) := case
+			loc = 69 : FALSE;
+			loc = 74 : FALSE;
+			loc = 79 : FALSE;
+			loc = 84 : FALSE;
+			loc = 89 : FALSE;
+			loc = 94 : FALSE;
+			loc = 99 : FALSE;
+			loc = 104 : FALSE;
+			loc = 109 : TRUE;
+			TRUE : SF_EmergencyStop_S_EStopOut;
+		esac;
+
+		next(SF_EmergencyStop_Error) := case
+			loc = 68 : FALSE;
+			loc = 73 : FALSE;
+			loc = 78 : FALSE;
+			loc = 83 : FALSE;
+			loc = 88 : TRUE;
+			loc = 93 : FALSE;
+			loc = 98 : FALSE;
+			loc = 103 : TRUE;
+			loc = 108 : FALSE;
+			TRUE : SF_EmergencyStop_Error;
+		esac;
+
+		next(SF_EmergencyStop_DiagCode) := case
+			loc = 5 : resize(0ud8_0,16);
+			loc = 10 : resize(0ud16_32769,16);
+			loc = 14 : resize(0ud16_32770,16);
+			loc = 17 : resize(0ud16_32772,16);
+			loc = 20 : resize(0ud16_32768,16);
+			loc = 24 : resize(0ud16_32771,16);
+			loc = 28 : resize(0ud16_49153,16);
+			loc = 31 : resize(0ud16_32770,16);
+			loc = 34 : resize(0ud16_32768,16);
+			loc = 38 : resize(0ud16_32771,16);
+			loc = 42 : resize(0ud16_32773,16);
+			loc = 45 : resize(0ud16_32768,16);
+			loc = 49 : resize(0ud16_49154,16);
+			loc = 52 : resize(0ud16_32772,16);
+			loc = 55 : resize(0ud16_32768,16);
+			loc = 59 : resize(0ud16_32773,16);
+			loc = 63 : resize(0ud16_32772,16);
+			TRUE : SF_EmergencyStop_DiagCode;
+		esac;
+
+		next(SF_EmergencyStop_R_TRIGatReset_CLK) := case
+			loc = 115 : SF_EmergencyStop_Reset;
+			TRUE : SF_EmergencyStop_R_TRIGatReset_CLK;
+		esac;
+
+		next(SF_EmergencyStop_R_TRIGatReset_Q) := case
+			loc = 112 : (SF_EmergencyStop_R_TRIGatReset_CLK & !(SF_EmergencyStop_R_TRIGatReset_M));
+			TRUE : SF_EmergencyStop_R_TRIGatReset_Q;
+		esac;
+
+		next(SF_EmergencyStop_R_TRIGatReset_M) := case
+			loc = 113 : SF_EmergencyStop_R_TRIGatReset_CLK;
+			TRUE : SF_EmergencyStop_R_TRIGatReset_M;
+		esac;
+
+		next(SF_EmergencyStop___TEMP0) := case
+			loc = 2 : 0ud16_0;
+			loc = 7 : SF_EmergencyStop_DiagCode;
+			TRUE : SF_EmergencyStop___TEMP0;
+		esac;
+
+		next(SF_EmergencyStop___TEMP1) := case
+			loc = 1 : 0ud16_0;
+			loc = 65 : SF_EmergencyStop_DiagCode;
+			TRUE : SF_EmergencyStop___TEMP1;
+		esac;
+
+INVARSPEC (loc = EoC) -> !((!((SF_EmergencyStop_Error = !((0ud8_0 = 0ud8_0)))) & (SF_EmergencyStop_Ready = !((0ud8_0 = 0ud8_0)))))

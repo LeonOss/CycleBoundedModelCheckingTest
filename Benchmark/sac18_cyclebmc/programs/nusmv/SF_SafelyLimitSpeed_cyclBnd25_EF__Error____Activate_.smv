@@ -1,0 +1,431 @@
+-- FORMULA: EF (Error & !Activate)
+-- BOUND: 25
+
+MODULE main
+	IVAR
+		SF_SafelyLimitSpeed_Activate_IN : boolean;
+		SF_SafelyLimitSpeed_S_OpMode_IN : boolean;
+		SF_SafelyLimitSpeed_S_Enabled_IN : boolean;
+		SF_SafelyLimitSpeed_AxisID_IN : signed word[16];
+		SF_SafelyLimitSpeed_MonitoringTime_IN : unsigned word[32];
+		SF_SafelyLimitSpeed_Reset_IN : boolean;
+		SF_SafelyLimitSpeed_Acknowledge_IN : boolean;
+		UNKNOWN_BOOL_UNKNOWN_BOOL_IN : boolean;
+	VAR
+		loc : {9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, EoC};
+		ccntr : 0..26;
+		UNKNOWN_BOOL_UNKNOWN_BOOL : boolean;
+		SF_SafelyLimitSpeed_Activate : boolean;
+		SF_SafelyLimitSpeed_S_OpMode : boolean;
+		SF_SafelyLimitSpeed_S_Enabled : boolean;
+		SF_SafelyLimitSpeed_AxisID : signed word[16];
+		SF_SafelyLimitSpeed_MonitoringTime : unsigned word[32];
+		SF_SafelyLimitSpeed_Reset : boolean;
+		SF_SafelyLimitSpeed_Acknowledge : boolean;
+		SF_SafelyLimitSpeed_Ready : boolean;
+		SF_SafelyLimitSpeed_S_SafetyActive : boolean;
+		SF_SafelyLimitSpeed_Error : boolean;
+		SF_SafelyLimitSpeed_DiagCode : unsigned word[16];
+		SF_SafelyLimitSpeed_R_TRIGatReset_CLK : boolean;
+		SF_SafelyLimitSpeed_R_TRIGatReset_Q : boolean;
+		SF_SafelyLimitSpeed_R_TRIGatReset_M : boolean;
+		SF_SafelyLimitSpeed_T_1_IN : boolean;
+		SF_SafelyLimitSpeed_T_1_PT : unsigned word[32];
+		SF_SafelyLimitSpeed_T_1_Q : boolean;
+		SF_SafelyLimitSpeed_T_1___TEMP0 : boolean;
+		SF_SafelyLimitSpeed___TEMP0 : unsigned word[16];
+		SF_SafelyLimitSpeed___TEMP1 : unsigned word[16];
+	ASSIGN
+		init(loc) := 128;
+		init(ccntr) := 0;
+		init(UNKNOWN_BOOL_UNKNOWN_BOOL) := FALSE;
+		init(SF_SafelyLimitSpeed_Activate) := FALSE;
+		init(SF_SafelyLimitSpeed_S_OpMode) := FALSE;
+		init(SF_SafelyLimitSpeed_S_Enabled) := FALSE;
+		init(SF_SafelyLimitSpeed_AxisID) := 0sd16_0;
+		init(SF_SafelyLimitSpeed_MonitoringTime) := 0ud32_0;
+		init(SF_SafelyLimitSpeed_Reset) := FALSE;
+		init(SF_SafelyLimitSpeed_Acknowledge) := FALSE;
+		init(SF_SafelyLimitSpeed_Ready) := FALSE;
+		init(SF_SafelyLimitSpeed_S_SafetyActive) := FALSE;
+		init(SF_SafelyLimitSpeed_Error) := FALSE;
+		init(SF_SafelyLimitSpeed_DiagCode) := 0ud16_0;
+		init(SF_SafelyLimitSpeed_R_TRIGatReset_CLK) := FALSE;
+		init(SF_SafelyLimitSpeed_R_TRIGatReset_Q) := FALSE;
+		init(SF_SafelyLimitSpeed_R_TRIGatReset_M) := FALSE;
+		init(SF_SafelyLimitSpeed_T_1_IN) := FALSE;
+		init(SF_SafelyLimitSpeed_T_1_PT) := 0ud32_0;
+		init(SF_SafelyLimitSpeed_T_1_Q) := FALSE;
+		init(SF_SafelyLimitSpeed_T_1___TEMP0) := FALSE;
+		init(SF_SafelyLimitSpeed___TEMP0) := 0ud16_0;
+		init(SF_SafelyLimitSpeed___TEMP1) := 0ud16_0;
+
+		next(loc) := case
+			loc = 9 : 10;
+			loc = 10 : 11;
+			loc = 11 : 132;
+			loc = 12 & !(SF_SafelyLimitSpeed_Activate) : 13;
+			loc = 12 & SF_SafelyLimitSpeed_Activate : 14;
+			loc = 13 : 14;
+			loc = 14 : 148;
+			loc = 15 : 16;
+			loc = 16 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud8_0,16)) : 17;
+			loc = 16 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud8_0,16))) : 20;
+			loc = 17 & SF_SafelyLimitSpeed_Activate : 18;
+			loc = 17 & !(SF_SafelyLimitSpeed_Activate) : 19;
+			loc = 18 : 19;
+			loc = 19 : 107;
+			loc = 20 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32768,16)) : 21;
+			loc = 20 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32768,16))) : 30;
+			loc = 21 & !(SF_SafelyLimitSpeed_Acknowledge) : 22;
+			loc = 21 & SF_SafelyLimitSpeed_Acknowledge : 24;
+			loc = 22 : 23;
+			loc = 23 : 29;
+			loc = 24 & SF_SafelyLimitSpeed_S_OpMode : 25;
+			loc = 24 & !(SF_SafelyLimitSpeed_S_OpMode) : 27;
+			loc = 25 : 26;
+			loc = 26 : 29;
+			loc = 27 & SF_SafelyLimitSpeed_S_Enabled : 28;
+			loc = 27 & !(SF_SafelyLimitSpeed_S_Enabled) : 29;
+			loc = 28 : 29;
+			loc = 29 : 107;
+			loc = 30 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32769,16)) : 31;
+			loc = 30 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32769,16))) : 40;
+			loc = 31 & (SF_SafelyLimitSpeed_Reset & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q)) : 32;
+			loc = 31 & !((SF_SafelyLimitSpeed_Reset & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q))) : 34;
+			loc = 32 : 33;
+			loc = 33 : 39;
+			loc = 34 & (SF_SafelyLimitSpeed_R_TRIGatReset_Q & !(SF_SafelyLimitSpeed_Acknowledge)) : 35;
+			loc = 34 & !((SF_SafelyLimitSpeed_R_TRIGatReset_Q & !(SF_SafelyLimitSpeed_Acknowledge))) : 37;
+			loc = 35 : 36;
+			loc = 36 : 39;
+			loc = 37 & (SF_SafelyLimitSpeed_R_TRIGatReset_Q & SF_SafelyLimitSpeed_Acknowledge) : 38;
+			loc = 37 & !((SF_SafelyLimitSpeed_R_TRIGatReset_Q & SF_SafelyLimitSpeed_Acknowledge)) : 39;
+			loc = 38 : 39;
+			loc = 39 : 107;
+			loc = 40 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32770,16)) : 41;
+			loc = 40 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32770,16))) : 47;
+			loc = 41 & !(SF_SafelyLimitSpeed_S_OpMode) : 42;
+			loc = 41 & SF_SafelyLimitSpeed_S_OpMode : 44;
+			loc = 42 : 43;
+			loc = 43 : 46;
+			loc = 44 & SF_SafelyLimitSpeed_Acknowledge : 45;
+			loc = 44 & !(SF_SafelyLimitSpeed_Acknowledge) : 46;
+			loc = 45 : 46;
+			loc = 46 : 107;
+			loc = 47 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32771,16)) : 48;
+			loc = 47 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32771,16))) : 60;
+			loc = 48 & SF_SafelyLimitSpeed_T_1_Q : 49;
+			loc = 48 & !(SF_SafelyLimitSpeed_T_1_Q) : 51;
+			loc = 49 : 50;
+			loc = 50 : 59;
+			loc = 51 & SF_SafelyLimitSpeed_S_OpMode : 52;
+			loc = 51 & !(SF_SafelyLimitSpeed_S_OpMode) : 54;
+			loc = 52 : 53;
+			loc = 53 : 59;
+			loc = 54 & (SF_SafelyLimitSpeed_Acknowledge & !(SF_SafelyLimitSpeed_S_Enabled)) : 55;
+			loc = 54 & !((SF_SafelyLimitSpeed_Acknowledge & !(SF_SafelyLimitSpeed_S_Enabled))) : 57;
+			loc = 55 : 56;
+			loc = 56 : 59;
+			loc = 57 & (SF_SafelyLimitSpeed_Acknowledge & SF_SafelyLimitSpeed_S_Enabled) : 58;
+			loc = 57 & !((SF_SafelyLimitSpeed_Acknowledge & SF_SafelyLimitSpeed_S_Enabled)) : 59;
+			loc = 58 : 59;
+			loc = 59 : 107;
+			loc = 60 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32772,16)) : 61;
+			loc = 60 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32772,16))) : 70;
+			loc = 61 & !(SF_SafelyLimitSpeed_Acknowledge) : 62;
+			loc = 61 & SF_SafelyLimitSpeed_Acknowledge : 64;
+			loc = 62 : 63;
+			loc = 63 : 69;
+			loc = 64 & SF_SafelyLimitSpeed_S_OpMode : 65;
+			loc = 64 & !(SF_SafelyLimitSpeed_S_OpMode) : 67;
+			loc = 65 : 66;
+			loc = 66 : 69;
+			loc = 67 & !(SF_SafelyLimitSpeed_S_Enabled) : 68;
+			loc = 67 & SF_SafelyLimitSpeed_S_Enabled : 69;
+			loc = 68 : 69;
+			loc = 69 : 107;
+			loc = 70 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32773,16)) : 71;
+			loc = 70 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32773,16))) : 74;
+			loc = 71 & SF_SafelyLimitSpeed_S_OpMode : 72;
+			loc = 71 & !(SF_SafelyLimitSpeed_S_OpMode) : 73;
+			loc = 72 : 73;
+			loc = 73 : 107;
+			loc = 74 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32786,16)) : 75;
+			loc = 74 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_32786,16))) : 81;
+			loc = 75 & !(SF_SafelyLimitSpeed_Acknowledge) : 76;
+			loc = 75 & SF_SafelyLimitSpeed_Acknowledge : 78;
+			loc = 76 : 77;
+			loc = 77 : 80;
+			loc = 78 & !(SF_SafelyLimitSpeed_S_OpMode) : 79;
+			loc = 78 & SF_SafelyLimitSpeed_S_OpMode : 80;
+			loc = 79 : 80;
+			loc = 80 : 107;
+			loc = 81 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49153,16)) : 82;
+			loc = 81 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49153,16))) : 85;
+			loc = 82 & !(SF_SafelyLimitSpeed_Reset) : 83;
+			loc = 82 & SF_SafelyLimitSpeed_Reset : 84;
+			loc = 83 : 84;
+			loc = 84 : 107;
+			loc = 85 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49154,16)) : 86;
+			loc = 85 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49154,16))) : 92;
+			loc = 86 & (SF_SafelyLimitSpeed_Reset & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q)) : 87;
+			loc = 86 & !((SF_SafelyLimitSpeed_Reset & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q))) : 89;
+			loc = 87 : 88;
+			loc = 88 : 91;
+			loc = 89 & SF_SafelyLimitSpeed_R_TRIGatReset_Q : 90;
+			loc = 89 & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q) : 91;
+			loc = 90 : 91;
+			loc = 91 : 107;
+			loc = 92 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49155,16)) : 93;
+			loc = 92 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49155,16))) : 99;
+			loc = 93 & (SF_SafelyLimitSpeed_Reset & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q)) : 94;
+			loc = 93 & !((SF_SafelyLimitSpeed_Reset & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q))) : 96;
+			loc = 94 : 95;
+			loc = 95 : 98;
+			loc = 96 & SF_SafelyLimitSpeed_R_TRIGatReset_Q : 97;
+			loc = 96 & !(SF_SafelyLimitSpeed_R_TRIGatReset_Q) : 98;
+			loc = 97 : 98;
+			loc = 98 : 107;
+			loc = 99 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49156,16)) : 100;
+			loc = 99 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49156,16))) : 103;
+			loc = 100 & !(SF_SafelyLimitSpeed_Reset) : 101;
+			loc = 100 & SF_SafelyLimitSpeed_Reset : 102;
+			loc = 101 : 102;
+			loc = 102 : 107;
+			loc = 103 & (SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49157,16)) : 104;
+			loc = 103 & !((SF_SafelyLimitSpeed___TEMP0 = resize(0ud16_49157,16))) : 107;
+			loc = 104 & !(SF_SafelyLimitSpeed_Reset) : 105;
+			loc = 104 & SF_SafelyLimitSpeed_Reset : 106;
+			loc = 105 : 106;
+			loc = 106 : 107;
+			loc = 107 : 108;
+			loc = 108 & (SF_SafelyLimitSpeed___TEMP1 = resize(0ud8_0,16)) : 109;
+			loc = 108 & !((SF_SafelyLimitSpeed___TEMP1 = resize(0ud8_0,16))) : 113;
+			loc = 109 : 110;
+			loc = 110 : 111;
+			loc = 111 : 112;
+			loc = 112 : 128;
+			loc = 113 & ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32768,16)) | (SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32772,16))) : 114;
+			loc = 113 & !(((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32768,16)) | (SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32772,16)))) : 118;
+			loc = 114 : 115;
+			loc = 115 : 116;
+			loc = 116 : 117;
+			loc = 117 : 128;
+			loc = 118 & ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32769,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32770,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32771,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32773,16)) | (SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32786,16)))))) : 119;
+			loc = 118 & !(((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32769,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32770,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32771,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32773,16)) | (SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_32786,16))))))) : 123;
+			loc = 119 : 120;
+			loc = 120 : 121;
+			loc = 121 : 122;
+			loc = 122 : 128;
+			loc = 123 & ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49153,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49154,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49155,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49156,16)) | (SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49157,16)))))) : 124;
+			loc = 123 & !(((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49153,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49154,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49155,16)) | ((SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49156,16)) | (SF_SafelyLimitSpeed___TEMP1 = resize(0ud16_49157,16))))))) : 128;
+			loc = 124 : 125;
+			loc = 125 : 126;
+			loc = 126 : 127;
+			loc = 127 : 128;
+			loc = 128 : EoC;
+			(loc = EoC) & (ccntr<25) : 9;
+			(loc = EoC) & !(ccntr<25) : EoC;
+			loc = 129 : 130;
+			loc = 130 : 131;
+			loc = 131 : 134;
+			loc = 132 : 133;
+			loc = 133 : 129;
+			loc = 134 : 12;
+			loc = 135 : 136;
+			loc = 136 & !(SF_SafelyLimitSpeed_T_1_IN) : 137;
+			loc = 136 & SF_SafelyLimitSpeed_T_1_IN : 139;
+			loc = 137 : 138;
+			loc = 138 : 143;
+			loc = 139 & !(SF_SafelyLimitSpeed_T_1_Q) : 140;
+			loc = 139 & SF_SafelyLimitSpeed_T_1_Q : 143;
+			loc = 140 : 146;
+			loc = 141 : 142;
+			loc = 142 : 143;
+			loc = 143 : 151;
+			loc = 144 : 145;
+			loc = 145 : 147;
+			loc = 146 : 144;
+			loc = 147 : 141;
+			loc = 148 : 149;
+			loc = 149 : 150;
+			loc = 150 : 135;
+			loc = 151 : 15;
+			TRUE : loc;
+		esac;
+		next(ccntr) := case
+			loc = EoC & (ccntr = 0): 1;
+			loc = EoC & (ccntr = 1): 2;
+			loc = EoC & (ccntr = 2): 3;
+			loc = EoC & (ccntr = 3): 4;
+			loc = EoC & (ccntr = 4): 5;
+			loc = EoC & (ccntr = 5): 6;
+			loc = EoC & (ccntr = 6): 7;
+			loc = EoC & (ccntr = 7): 8;
+			loc = EoC & (ccntr = 8): 9;
+			loc = EoC & (ccntr = 9): 10;
+			loc = EoC & (ccntr = 10): 11;
+			loc = EoC & (ccntr = 11): 12;
+			loc = EoC & (ccntr = 12): 13;
+			loc = EoC & (ccntr = 13): 14;
+			loc = EoC & (ccntr = 14): 15;
+			loc = EoC & (ccntr = 15): 16;
+			loc = EoC & (ccntr = 16): 17;
+			loc = EoC & (ccntr = 17): 18;
+			loc = EoC & (ccntr = 18): 19;
+			loc = EoC & (ccntr = 19): 20;
+			loc = EoC & (ccntr = 20): 21;
+			loc = EoC & (ccntr = 21): 22;
+			loc = EoC & (ccntr = 22): 23;
+			loc = EoC & (ccntr = 23): 24;
+			loc = EoC & (ccntr = 24): 25;
+			loc = EoC & (ccntr = 25): 26;
+			TRUE : ccntr;
+		esac;
+
+		next(UNKNOWN_BOOL_UNKNOWN_BOOL) := case
+			loc = 144 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			TRUE : UNKNOWN_BOOL_UNKNOWN_BOOL;
+		esac;
+
+		next(SF_SafelyLimitSpeed_Activate) := case
+			loc = EoC : SF_SafelyLimitSpeed_Activate_IN;
+			TRUE : SF_SafelyLimitSpeed_Activate;
+		esac;
+
+		next(SF_SafelyLimitSpeed_S_OpMode) := case
+			loc = EoC : SF_SafelyLimitSpeed_S_OpMode_IN;
+			TRUE : SF_SafelyLimitSpeed_S_OpMode;
+		esac;
+
+		next(SF_SafelyLimitSpeed_S_Enabled) := case
+			loc = EoC : SF_SafelyLimitSpeed_S_Enabled_IN;
+			TRUE : SF_SafelyLimitSpeed_S_Enabled;
+		esac;
+
+		next(SF_SafelyLimitSpeed_AxisID) := case
+			loc = EoC : SF_SafelyLimitSpeed_AxisID_IN;
+			TRUE : SF_SafelyLimitSpeed_AxisID;
+		esac;
+
+		next(SF_SafelyLimitSpeed_MonitoringTime) := case
+			loc = EoC : SF_SafelyLimitSpeed_MonitoringTime_IN;
+			TRUE : SF_SafelyLimitSpeed_MonitoringTime;
+		esac;
+
+		next(SF_SafelyLimitSpeed_Reset) := case
+			loc = EoC : SF_SafelyLimitSpeed_Reset_IN;
+			TRUE : SF_SafelyLimitSpeed_Reset;
+		esac;
+
+		next(SF_SafelyLimitSpeed_Acknowledge) := case
+			loc = EoC : SF_SafelyLimitSpeed_Acknowledge_IN;
+			TRUE : SF_SafelyLimitSpeed_Acknowledge;
+		esac;
+
+		next(SF_SafelyLimitSpeed_Ready) := case
+			loc = 109 : FALSE;
+			loc = 114 : TRUE;
+			loc = 119 : TRUE;
+			loc = 124 : TRUE;
+			TRUE : SF_SafelyLimitSpeed_Ready;
+		esac;
+
+		next(SF_SafelyLimitSpeed_S_SafetyActive) := case
+			loc = 110 : FALSE;
+			loc = 115 : TRUE;
+			loc = 120 : FALSE;
+			loc = 125 : FALSE;
+			TRUE : SF_SafelyLimitSpeed_S_SafetyActive;
+		esac;
+
+		next(SF_SafelyLimitSpeed_Error) := case
+			loc = 111 : FALSE;
+			loc = 116 : FALSE;
+			loc = 121 : FALSE;
+			loc = 126 : TRUE;
+			TRUE : SF_SafelyLimitSpeed_Error;
+		esac;
+
+		next(SF_SafelyLimitSpeed_DiagCode) := case
+			loc = 13 : resize(0ud8_0,16);
+			loc = 18 : resize(0ud16_32769,16);
+			loc = 22 : resize(0ud16_49154,16);
+			loc = 25 : resize(0ud16_32786,16);
+			loc = 28 : resize(0ud16_32772,16);
+			loc = 32 : resize(0ud16_49153,16);
+			loc = 35 : resize(0ud16_32770,16);
+			loc = 38 : resize(0ud16_32786,16);
+			loc = 42 : resize(0ud16_32771,16);
+			loc = 45 : resize(0ud16_32786,16);
+			loc = 49 : resize(0ud16_49155,16);
+			loc = 52 : resize(0ud16_32786,16);
+			loc = 55 : resize(0ud16_32768,16);
+			loc = 58 : resize(0ud16_32772,16);
+			loc = 62 : resize(0ud16_49154,16);
+			loc = 65 : resize(0ud16_32786,16);
+			loc = 68 : resize(0ud16_32768,16);
+			loc = 72 : resize(0ud16_32786,16);
+			loc = 76 : resize(0ud16_32770,16);
+			loc = 79 : resize(0ud16_32771,16);
+			loc = 83 : resize(0ud16_32769,16);
+			loc = 87 : resize(0ud16_49156,16);
+			loc = 90 : resize(0ud16_32773,16);
+			loc = 94 : resize(0ud16_49157,16);
+			loc = 97 : resize(0ud16_32773,16);
+			loc = 101 : resize(0ud16_49154,16);
+			loc = 105 : resize(0ud16_49155,16);
+			TRUE : SF_SafelyLimitSpeed_DiagCode;
+		esac;
+
+		next(SF_SafelyLimitSpeed_R_TRIGatReset_CLK) := case
+			loc = 132 : SF_SafelyLimitSpeed_Reset;
+			TRUE : SF_SafelyLimitSpeed_R_TRIGatReset_CLK;
+		esac;
+
+		next(SF_SafelyLimitSpeed_R_TRIGatReset_Q) := case
+			loc = 129 : (SF_SafelyLimitSpeed_R_TRIGatReset_CLK & !(SF_SafelyLimitSpeed_R_TRIGatReset_M));
+			TRUE : SF_SafelyLimitSpeed_R_TRIGatReset_Q;
+		esac;
+
+		next(SF_SafelyLimitSpeed_R_TRIGatReset_M) := case
+			loc = 130 : SF_SafelyLimitSpeed_R_TRIGatReset_CLK;
+			TRUE : SF_SafelyLimitSpeed_R_TRIGatReset_M;
+		esac;
+
+		next(SF_SafelyLimitSpeed_T_1_IN) := case
+			loc = 148 : (SF_SafelyLimitSpeed_Activate & !(SF_SafelyLimitSpeed_S_OpMode));
+			TRUE : SF_SafelyLimitSpeed_T_1_IN;
+		esac;
+
+		next(SF_SafelyLimitSpeed_T_1_PT) := case
+			loc = 149 : SF_SafelyLimitSpeed_MonitoringTime;
+			TRUE : SF_SafelyLimitSpeed_T_1_PT;
+		esac;
+
+		next(SF_SafelyLimitSpeed_T_1_Q) := case
+			loc = 137 : FALSE;
+			loc = 142 : SF_SafelyLimitSpeed_T_1___TEMP0;
+			TRUE : SF_SafelyLimitSpeed_T_1_Q;
+		esac;
+
+		next(SF_SafelyLimitSpeed_T_1___TEMP0) := case
+			loc = 135 : FALSE;
+			loc = 141 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			TRUE : SF_SafelyLimitSpeed_T_1___TEMP0;
+		esac;
+
+		next(SF_SafelyLimitSpeed___TEMP0) := case
+			loc = 10 : 0ud16_0;
+			loc = 15 : SF_SafelyLimitSpeed_DiagCode;
+			TRUE : SF_SafelyLimitSpeed___TEMP0;
+		esac;
+
+		next(SF_SafelyLimitSpeed___TEMP1) := case
+			loc = 9 : 0ud16_0;
+			loc = 107 : SF_SafelyLimitSpeed_DiagCode;
+			TRUE : SF_SafelyLimitSpeed___TEMP1;
+		esac;
+
+INVARSPEC (loc = EoC) -> !((!((SF_SafelyLimitSpeed_Error = !((0ud8_0 = 0ud8_0)))) & (SF_SafelyLimitSpeed_Activate = !((0ud8_0 = 0ud8_0)))))

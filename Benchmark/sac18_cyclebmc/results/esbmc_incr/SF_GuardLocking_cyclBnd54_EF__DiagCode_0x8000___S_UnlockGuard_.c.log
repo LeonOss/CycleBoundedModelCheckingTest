@@ -1,0 +1,1293 @@
+ESBMC version 4.5.0 64-bit x86_64 linux
+file /home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c: Parsing
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:68:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:68:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 0)){
+            ~                        ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:68:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 0)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:89:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:89:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 32768)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:89:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 32768)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:124:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:124:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 32769)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:124:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 32769)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:173:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:173:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 32771)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:173:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 32771)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:222:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 32785)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:222:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 32785)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:222:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 32785)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:271:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:271:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 32786)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:271:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 32786)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:306:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 32787)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:306:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 32787)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:306:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 32787)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:341:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 32788)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:341:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 32788)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:341:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 32788)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:390:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:390:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 49153)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:390:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 49153)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:411:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:411:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 49154)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:411:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 49154)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:432:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:432:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 49155)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:432:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 49155)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:453:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:453:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP0 == 49156)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:453:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP0 == 49156)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:478:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:478:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP1 == 0)){
+            ~                        ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:478:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP1 == 0)){
+                                     ^~
+                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:504:31: warning: equality comparison with extraneous parentheses
+        if ((SF_GuardLocking___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:504:31: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_GuardLocking___TEMP1 == 32768)){
+            ~                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c:504:31: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_GuardLocking___TEMP1 == 32768)){
+                                     ^~
+                                     =
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.059s
+GOTO program processing time: 0.001s
+
+*** Iteration number 1 ***
+Starting Bounded Model Checking
+Symex completed in: 0.000s (54 assignments)
+Slicing time: 0.000s (removed 53 assignments)
+Generated 1 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.001s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.000s (54 assignments)
+Slicing time: 0.000s (removed 53 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.000s
+Runtime decision procedure: 0.000s
+The forward condition is unable to prove the property
+
+*** Iteration number 2 ***
+Starting Bounded Model Checking
+Symex completed in: 0.010s (269 assignments)
+Slicing time: 0.000s (removed 141 assignments)
+Generated 2 VCC(s), 1 remaining after simplification (128 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.000s
+Runtime decision procedure: 0.001s
+BMC program time: 0.012s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.009s (268 assignments)
+Slicing time: 0.001s (removed 146 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (122 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.001s
+Runtime decision procedure: 0.000s
+The forward condition is unable to prove the property
+
+*** Iteration number 3 ***
+Starting Bounded Model Checking
+Symex completed in: 0.018s (476 assignments)
+Slicing time: 0.001s (removed 215 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (261 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.001s
+Runtime decision procedure: 0.001s
+BMC program time: 0.021s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.016s (474 assignments)
+Slicing time: 0.001s (removed 229 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (245 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.000s
+Runtime decision procedure: 0.001s
+The forward condition is unable to prove the property
+
+*** Iteration number 4 ***
+Starting Bounded Model Checking
+Symex completed in: 0.024s (683 assignments)
+Slicing time: 0.001s (removed 289 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (394 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.001s
+Runtime decision procedure: 0.002s
+BMC program time: 0.029s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.024s (680 assignments)
+Slicing time: 0.001s (removed 312 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (368 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.001s
+Runtime decision procedure: 0.001s
+The forward condition is unable to prove the property
+
+*** Iteration number 5 ***
+Starting Bounded Model Checking
+Symex completed in: 0.034s (890 assignments)
+Slicing time: 0.002s (removed 363 assignments)
+Generated 5 VCC(s), 4 remaining after simplification (527 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.002s
+Runtime decision procedure: 0.002s
+BMC program time: 0.041s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.031s (886 assignments)
+Slicing time: 0.002s (removed 395 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (491 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.002s
+Runtime decision procedure: 0.001s
+The forward condition is unable to prove the property
+
+*** Iteration number 6 ***
+Starting Bounded Model Checking
+Symex completed in: 0.042s (1097 assignments)
+Slicing time: 0.003s (removed 437 assignments)
+Generated 6 VCC(s), 5 remaining after simplification (660 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.003s
+Runtime decision procedure: 0.004s
+BMC program time: 0.052s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.039s (1092 assignments)
+Slicing time: 0.002s (removed 478 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (614 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.002s
+Runtime decision procedure: 0.001s
+The forward condition is unable to prove the property
+
+*** Iteration number 7 ***
+Starting Bounded Model Checking
+Symex completed in: 0.046s (1304 assignments)
+Slicing time: 0.003s (removed 511 assignments)
+Generated 7 VCC(s), 6 remaining after simplification (793 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.003s
+Runtime decision procedure: 0.005s
+BMC program time: 0.058s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.046s (1298 assignments)
+Slicing time: 0.003s (removed 561 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (737 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.002s
+Runtime decision procedure: 0.001s
+The forward condition is unable to prove the property
+
+*** Iteration number 8 ***
+Starting Bounded Model Checking
+Symex completed in: 0.058s (1511 assignments)
+Slicing time: 0.004s (removed 585 assignments)
+Generated 8 VCC(s), 7 remaining after simplification (926 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.003s
+Runtime decision procedure: 0.007s
+BMC program time: 0.073s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.059s (1504 assignments)
+Slicing time: 0.003s (removed 644 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (860 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.003s
+Runtime decision procedure: 0.002s
+The forward condition is unable to prove the property
+
+*** Iteration number 9 ***
+Starting Bounded Model Checking
+Symex completed in: 0.067s (1718 assignments)
+Slicing time: 0.004s (removed 659 assignments)
+Generated 9 VCC(s), 8 remaining after simplification (1059 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.004s
+Runtime decision procedure: 0.008s
+BMC program time: 0.084s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.061s (1710 assignments)
+Slicing time: 0.004s (removed 727 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (983 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.004s
+Runtime decision procedure: 0.002s
+The forward condition is unable to prove the property
+
+*** Iteration number 10 ***
+Starting Bounded Model Checking
+Symex completed in: 0.069s (1925 assignments)
+Slicing time: 0.005s (removed 733 assignments)
+Generated 10 VCC(s), 9 remaining after simplification (1192 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.005s
+Runtime decision procedure: 0.008s
+BMC program time: 0.087s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.069s (1916 assignments)
+Slicing time: 0.005s (removed 810 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1106 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.004s
+Runtime decision procedure: 0.002s
+The forward condition is unable to prove the property
+
+*** Iteration number 11 ***
+Starting Bounded Model Checking
+Symex completed in: 0.085s (2132 assignments)
+Slicing time: 0.005s (removed 807 assignments)
+Generated 11 VCC(s), 10 remaining after simplification (1325 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.005s
+Runtime decision procedure: 0.008s
+BMC program time: 0.104s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.084s (2122 assignments)
+Slicing time: 0.006s (removed 893 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1229 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.005s
+Runtime decision procedure: 0.002s
+The forward condition is unable to prove the property
+
+*** Iteration number 12 ***
+Starting Bounded Model Checking
+Symex completed in: 0.093s (2339 assignments)
+Slicing time: 0.006s (removed 881 assignments)
+Generated 12 VCC(s), 11 remaining after simplification (1458 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.006s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.006s
+Runtime decision procedure: 0.010s
+BMC program time: 0.116s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.084s (2328 assignments)
+Slicing time: 0.006s (removed 976 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1352 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.006s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.006s
+Runtime decision procedure: 0.003s
+The forward condition is unable to prove the property
+
+*** Iteration number 13 ***
+Starting Bounded Model Checking
+Symex completed in: 0.094s (2546 assignments)
+Slicing time: 0.006s (removed 955 assignments)
+Generated 13 VCC(s), 12 remaining after simplification (1591 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.016s
+BMC program time: 0.124s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.093s (2534 assignments)
+Slicing time: 0.006s (removed 1059 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1475 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.006s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.006s
+Runtime decision procedure: 0.003s
+The forward condition is unable to prove the property
+
+*** Iteration number 14 ***
+Starting Bounded Model Checking
+Symex completed in: 0.105s (2753 assignments)
+Slicing time: 0.007s (removed 1029 assignments)
+Generated 14 VCC(s), 13 remaining after simplification (1724 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.022s
+BMC program time: 0.142s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.101s (2740 assignments)
+Slicing time: 0.007s (removed 1142 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1598 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.003s
+The forward condition is unable to prove the property
+
+*** Iteration number 15 ***
+Starting Bounded Model Checking
+Symex completed in: 0.108s (2960 assignments)
+Slicing time: 0.008s (removed 1103 assignments)
+Generated 15 VCC(s), 14 remaining after simplification (1857 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.008s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.008s
+Runtime decision procedure: 0.022s
+BMC program time: 0.147s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.107s (2946 assignments)
+Slicing time: 0.007s (removed 1225 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1721 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.003s
+The forward condition is unable to prove the property
+
+*** Iteration number 16 ***
+Starting Bounded Model Checking
+Symex completed in: 0.116s (3167 assignments)
+Slicing time: 0.008s (removed 1177 assignments)
+Generated 16 VCC(s), 15 remaining after simplification (1990 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.009s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.009s
+Runtime decision procedure: 0.020s
+BMC program time: 0.153s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.118s (3152 assignments)
+Slicing time: 0.008s (removed 1308 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1844 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.004s
+The forward condition is unable to prove the property
+
+*** Iteration number 17 ***
+Starting Bounded Model Checking
+Symex completed in: 0.123s (3374 assignments)
+Slicing time: 0.009s (removed 1251 assignments)
+Generated 17 VCC(s), 16 remaining after simplification (2123 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.009s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.009s
+Runtime decision procedure: 0.030s
+BMC program time: 0.171s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.122s (3358 assignments)
+Slicing time: 0.009s (removed 1391 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1967 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.009s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.009s
+Runtime decision procedure: 0.004s
+The forward condition is unable to prove the property
+
+*** Iteration number 18 ***
+Starting Bounded Model Checking
+Symex completed in: 0.131s (3581 assignments)
+Slicing time: 0.010s (removed 1325 assignments)
+Generated 18 VCC(s), 17 remaining after simplification (2256 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.010s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.010s
+Runtime decision procedure: 0.030s
+BMC program time: 0.181s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.132s (3564 assignments)
+Slicing time: 0.009s (removed 1474 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2090 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.009s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.009s
+Runtime decision procedure: 0.004s
+The forward condition is unable to prove the property
+
+*** Iteration number 19 ***
+Starting Bounded Model Checking
+Symex completed in: 0.142s (3788 assignments)
+Slicing time: 0.010s (removed 1399 assignments)
+Generated 19 VCC(s), 18 remaining after simplification (2389 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.011s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.011s
+Runtime decision procedure: 0.027s
+BMC program time: 0.190s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.138s (3770 assignments)
+Slicing time: 0.010s (removed 1557 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2213 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.009s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.009s
+Runtime decision procedure: 0.004s
+The forward condition is unable to prove the property
+
+*** Iteration number 20 ***
+Starting Bounded Model Checking
+Symex completed in: 0.147s (3995 assignments)
+Slicing time: 0.010s (removed 1473 assignments)
+Generated 20 VCC(s), 19 remaining after simplification (2522 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.011s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.011s
+Runtime decision procedure: 0.034s
+BMC program time: 0.203s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.146s (3976 assignments)
+Slicing time: 0.010s (removed 1640 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2336 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.010s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.010s
+Runtime decision procedure: 0.004s
+The forward condition is unable to prove the property
+
+*** Iteration number 21 ***
+Starting Bounded Model Checking
+Symex completed in: 0.155s (4202 assignments)
+Slicing time: 0.011s (removed 1547 assignments)
+Generated 21 VCC(s), 20 remaining after simplification (2655 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.011s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.011s
+Runtime decision procedure: 0.043s
+BMC program time: 0.221s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.159s (4182 assignments)
+Slicing time: 0.011s (removed 1723 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2459 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.011s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.011s
+Runtime decision procedure: 0.005s
+The forward condition is unable to prove the property
+
+*** Iteration number 22 ***
+Starting Bounded Model Checking
+Symex completed in: 0.165s (4409 assignments)
+Slicing time: 0.012s (removed 1621 assignments)
+Generated 22 VCC(s), 21 remaining after simplification (2788 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.013s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.013s
+Runtime decision procedure: 0.039s
+BMC program time: 0.229s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.163s (4388 assignments)
+Slicing time: 0.012s (removed 1806 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2582 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.011s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.011s
+Runtime decision procedure: 0.005s
+The forward condition is unable to prove the property
+
+*** Iteration number 23 ***
+Starting Bounded Model Checking
+Symex completed in: 0.178s (4616 assignments)
+Slicing time: 0.014s (removed 1695 assignments)
+Generated 23 VCC(s), 22 remaining after simplification (2921 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.014s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.014s
+Runtime decision procedure: 0.039s
+BMC program time: 0.246s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.179s (4594 assignments)
+Slicing time: 0.013s (removed 1889 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2705 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.013s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.013s
+Runtime decision procedure: 0.006s
+The forward condition is unable to prove the property
+
+*** Iteration number 24 ***
+Starting Bounded Model Checking
+Symex completed in: 0.179s (4823 assignments)
+Slicing time: 0.015s (removed 1769 assignments)
+Generated 24 VCC(s), 23 remaining after simplification (3054 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.015s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.015s
+Runtime decision procedure: 0.044s
+BMC program time: 0.253s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.182s (4800 assignments)
+Slicing time: 0.013s (removed 1972 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2828 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.014s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.014s
+Runtime decision procedure: 0.006s
+The forward condition is unable to prove the property
+
+*** Iteration number 25 ***
+Starting Bounded Model Checking
+Symex completed in: 0.205s (5030 assignments)
+Slicing time: 0.016s (removed 1843 assignments)
+Generated 25 VCC(s), 24 remaining after simplification (3187 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.015s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.015s
+Runtime decision procedure: 0.051s
+BMC program time: 0.288s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.191s (5006 assignments)
+Slicing time: 0.014s (removed 2055 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2951 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.014s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.014s
+Runtime decision procedure: 0.006s
+The forward condition is unable to prove the property
+
+*** Iteration number 26 ***
+Starting Bounded Model Checking
+Symex completed in: 0.200s (5237 assignments)
+Slicing time: 0.015s (removed 1917 assignments)
+Generated 26 VCC(s), 25 remaining after simplification (3320 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.016s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.016s
+Runtime decision procedure: 0.055s
+BMC program time: 0.287s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.195s (5212 assignments)
+Slicing time: 0.015s (removed 2138 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3074 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.015s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.015s
+Runtime decision procedure: 0.006s
+The forward condition is unable to prove the property
+
+*** Iteration number 27 ***
+Starting Bounded Model Checking
+Symex completed in: 0.204s (5444 assignments)
+Slicing time: 0.016s (removed 1991 assignments)
+Generated 27 VCC(s), 26 remaining after simplification (3453 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.016s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.016s
+Runtime decision procedure: 0.085s
+BMC program time: 0.322s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.203s (5418 assignments)
+Slicing time: 0.016s (removed 2221 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3197 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.016s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.016s
+Runtime decision procedure: 0.006s
+The forward condition is unable to prove the property
+
+*** Iteration number 28 ***
+Starting Bounded Model Checking
+Symex completed in: 0.213s (5651 assignments)
+Slicing time: 0.018s (removed 2065 assignments)
+Generated 28 VCC(s), 27 remaining after simplification (3586 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.017s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.017s
+Runtime decision procedure: 0.066s
+BMC program time: 0.314s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.214s (5624 assignments)
+Slicing time: 0.017s (removed 2304 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3320 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.016s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.016s
+Runtime decision procedure: 0.007s
+The forward condition is unable to prove the property
+
+*** Iteration number 29 ***
+Starting Bounded Model Checking
+Symex completed in: 0.220s (5858 assignments)
+Slicing time: 0.018s (removed 2139 assignments)
+Generated 29 VCC(s), 28 remaining after simplification (3719 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.017s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.017s
+Runtime decision procedure: 0.058s
+BMC program time: 0.314s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.222s (5830 assignments)
+Slicing time: 0.017s (removed 2387 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3443 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.016s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.016s
+Runtime decision procedure: 0.008s
+The forward condition is unable to prove the property
+
+*** Iteration number 30 ***
+Starting Bounded Model Checking
+Symex completed in: 0.232s (6065 assignments)
+Slicing time: 0.018s (removed 2213 assignments)
+Generated 30 VCC(s), 29 remaining after simplification (3852 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.019s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.019s
+Runtime decision procedure: 0.062s
+BMC program time: 0.331s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.232s (6036 assignments)
+Slicing time: 0.018s (removed 2470 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3566 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.018s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.018s
+Runtime decision procedure: 0.007s
+The forward condition is unable to prove the property
+
+*** Iteration number 31 ***
+Starting Bounded Model Checking
+Symex completed in: 0.238s (6272 assignments)
+Slicing time: 0.020s (removed 2287 assignments)
+Generated 31 VCC(s), 30 remaining after simplification (3985 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.020s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.020s
+Runtime decision procedure: 0.058s
+BMC program time: 0.336s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.238s (6242 assignments)
+Slicing time: 0.018s (removed 2553 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3689 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.017s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.017s
+Runtime decision procedure: 0.008s
+The forward condition is unable to prove the property
+
+*** Iteration number 32 ***
+Starting Bounded Model Checking
+Symex completed in: 0.245s (6479 assignments)
+Slicing time: 0.020s (removed 2361 assignments)
+Generated 32 VCC(s), 31 remaining after simplification (4118 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.019s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.019s
+Runtime decision procedure: 0.056s
+BMC program time: 0.341s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.245s (6448 assignments)
+Slicing time: 0.019s (removed 2636 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3812 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.018s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.018s
+Runtime decision procedure: 0.008s
+The forward condition is unable to prove the property
+
+*** Iteration number 33 ***
+Starting Bounded Model Checking
+Symex completed in: 0.272s (6686 assignments)
+Slicing time: 0.021s (removed 2435 assignments)
+Generated 33 VCC(s), 32 remaining after simplification (4251 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.020s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.020s
+Runtime decision procedure: 0.118s
+BMC program time: 0.432s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.258s (6654 assignments)
+Slicing time: 0.020s (removed 2719 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3935 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.019s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.019s
+Runtime decision procedure: 0.008s
+The forward condition is unable to prove the property
+
+*** Iteration number 34 ***
+Starting Bounded Model Checking
+Symex completed in: 0.267s (6893 assignments)
+Slicing time: 0.021s (removed 2509 assignments)
+Generated 34 VCC(s), 33 remaining after simplification (4384 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.020s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.020s
+Runtime decision procedure: 0.106s
+BMC program time: 0.415s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.268s (6860 assignments)
+Slicing time: 0.020s (removed 2802 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4058 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.019s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.019s
+Runtime decision procedure: 0.009s
+The forward condition is unable to prove the property
+
+*** Iteration number 35 ***
+Starting Bounded Model Checking
+Symex completed in: 0.268s (7100 assignments)
+Slicing time: 0.023s (removed 2583 assignments)
+Generated 35 VCC(s), 34 remaining after simplification (4517 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.021s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.021s
+Runtime decision procedure: 0.138s
+BMC program time: 0.451s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.271s (7066 assignments)
+Slicing time: 0.021s (removed 2885 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4181 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.020s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.020s
+Runtime decision procedure: 0.010s
+The forward condition is unable to prove the property
+
+*** Iteration number 36 ***
+Starting Bounded Model Checking
+Symex completed in: 0.277s (7307 assignments)
+Slicing time: 0.023s (removed 2657 assignments)
+Generated 36 VCC(s), 35 remaining after simplification (4650 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.022s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.022s
+Runtime decision procedure: 0.091s
+BMC program time: 0.413s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.282s (7272 assignments)
+Slicing time: 0.020s (removed 2968 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4304 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.020s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.020s
+Runtime decision procedure: 0.009s
+The forward condition is unable to prove the property
+
+*** Iteration number 37 ***
+Starting Bounded Model Checking
+Symex completed in: 0.284s (7514 assignments)
+Slicing time: 0.023s (removed 2731 assignments)
+Generated 37 VCC(s), 36 remaining after simplification (4783 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.023s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.023s
+Runtime decision procedure: 0.159s
+BMC program time: 0.490s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.283s (7478 assignments)
+Slicing time: 0.022s (removed 3051 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4427 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.021s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.021s
+Runtime decision procedure: 0.010s
+The forward condition is unable to prove the property
+
+*** Iteration number 38 ***
+Starting Bounded Model Checking
+Symex completed in: 0.294s (7721 assignments)
+Slicing time: 0.024s (removed 2805 assignments)
+Generated 38 VCC(s), 37 remaining after simplification (4916 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.024s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.024s
+Runtime decision procedure: 0.070s
+BMC program time: 0.412s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.303s (7684 assignments)
+Slicing time: 0.021s (removed 3134 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4550 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.022s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.022s
+Runtime decision procedure: 0.009s
+The forward condition is unable to prove the property
+
+*** Iteration number 39 ***
+Starting Bounded Model Checking
+Symex completed in: 0.324s (7928 assignments)
+Slicing time: 0.025s (removed 2879 assignments)
+Generated 39 VCC(s), 38 remaining after simplification (5049 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.025s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.025s
+Runtime decision procedure: 0.102s
+BMC program time: 0.476s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.300s (7890 assignments)
+Slicing time: 0.023s (removed 3217 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4673 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.022s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.022s
+Runtime decision procedure: 0.010s
+The forward condition is unable to prove the property
+
+*** Iteration number 40 ***
+Starting Bounded Model Checking
+Symex completed in: 0.317s (8135 assignments)
+Slicing time: 0.025s (removed 2953 assignments)
+Generated 40 VCC(s), 39 remaining after simplification (5182 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.025s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.025s
+Runtime decision procedure: 0.114s
+BMC program time: 0.482s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.308s (8096 assignments)
+Slicing time: 0.023s (removed 3300 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4796 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.024s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.024s
+Runtime decision procedure: 0.009s
+The forward condition is unable to prove the property
+
+*** Iteration number 41 ***
+Starting Bounded Model Checking
+Symex completed in: 0.322s (8342 assignments)
+Slicing time: 0.028s (removed 3027 assignments)
+Generated 41 VCC(s), 40 remaining after simplification (5315 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.027s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.027s
+Runtime decision procedure: 0.130s
+BMC program time: 0.507s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.318s (8302 assignments)
+Slicing time: 0.025s (removed 3383 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4919 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.025s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.025s
+Runtime decision procedure: 0.010s
+The forward condition is unable to prove the property
+
+*** Iteration number 42 ***
+Starting Bounded Model Checking
+Symex completed in: 0.328s (8549 assignments)
+Slicing time: 0.028s (removed 3101 assignments)
+Generated 42 VCC(s), 41 remaining after simplification (5448 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.027s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.027s
+Runtime decision procedure: 0.171s
+BMC program time: 0.555s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.332s (8508 assignments)
+Slicing time: 0.026s (removed 3466 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5042 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.026s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.026s
+Runtime decision procedure: 0.011s
+The forward condition is unable to prove the property
+
+*** Iteration number 43 ***
+Starting Bounded Model Checking
+Symex completed in: 0.336s (8756 assignments)
+Slicing time: 0.030s (removed 3175 assignments)
+Generated 43 VCC(s), 42 remaining after simplification (5581 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.030s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.030s
+Runtime decision procedure: 0.147s
+BMC program time: 0.544s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.348s (8714 assignments)
+Slicing time: 0.026s (removed 3549 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5165 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.025s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.025s
+Runtime decision procedure: 0.011s
+The forward condition is unable to prove the property
+
+*** Iteration number 44 ***
+Starting Bounded Model Checking
+Symex completed in: 0.361s (8963 assignments)
+Slicing time: 0.031s (removed 3249 assignments)
+Generated 44 VCC(s), 43 remaining after simplification (5714 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.031s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.031s
+Runtime decision procedure: 0.106s
+BMC program time: 0.530s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.355s (8920 assignments)
+Slicing time: 0.028s (removed 3632 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5288 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.028s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.028s
+Runtime decision procedure: 0.011s
+The forward condition is unable to prove the property
+
+*** Iteration number 45 ***
+Starting Bounded Model Checking
+Symex completed in: 0.354s (9170 assignments)
+Slicing time: 0.030s (removed 3323 assignments)
+Generated 45 VCC(s), 44 remaining after simplification (5847 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.031s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.031s
+Runtime decision procedure: 0.173s
+BMC program time: 0.589s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.358s (9126 assignments)
+Slicing time: 0.029s (removed 3715 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5411 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.028s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.028s
+Runtime decision procedure: 0.011s
+The forward condition is unable to prove the property
+
+*** Iteration number 46 ***
+Starting Bounded Model Checking
+Symex completed in: 0.361s (9377 assignments)
+Slicing time: 0.031s (removed 3397 assignments)
+Generated 46 VCC(s), 45 remaining after simplification (5980 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.032s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.032s
+Runtime decision procedure: 0.177s
+BMC program time: 0.601s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.369s (9332 assignments)
+Slicing time: 0.030s (removed 3798 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5534 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.028s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.028s
+Runtime decision procedure: 0.011s
+The forward condition is unable to prove the property
+
+*** Iteration number 47 ***
+Starting Bounded Model Checking
+Symex completed in: 0.369s (9584 assignments)
+Slicing time: 0.032s (removed 3471 assignments)
+Generated 47 VCC(s), 46 remaining after simplification (6113 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.032s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.032s
+Runtime decision procedure: 0.160s
+BMC program time: 0.594s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.380s (9538 assignments)
+Slicing time: 0.030s (removed 3881 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5657 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.030s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.030s
+Runtime decision procedure: 0.012s
+The forward condition is unable to prove the property
+
+*** Iteration number 48 ***
+Starting Bounded Model Checking
+Symex completed in: 0.378s (9791 assignments)
+Slicing time: 0.031s (removed 3545 assignments)
+Generated 48 VCC(s), 47 remaining after simplification (6246 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.032s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.032s
+Runtime decision procedure: 0.194s
+BMC program time: 0.636s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.373s (9744 assignments)
+Slicing time: 0.030s (removed 3964 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5780 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.031s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.031s
+Runtime decision procedure: 0.012s
+The forward condition is unable to prove the property
+
+*** Iteration number 49 ***
+Starting Bounded Model Checking
+Symex completed in: 0.388s (9998 assignments)
+Slicing time: 0.033s (removed 3619 assignments)
+Generated 49 VCC(s), 48 remaining after simplification (6379 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.033s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.033s
+Runtime decision procedure: 0.150s
+BMC program time: 0.605s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.389s (9950 assignments)
+Slicing time: 0.030s (removed 4047 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5903 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.031s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.031s
+Runtime decision procedure: 0.012s
+The forward condition is unable to prove the property
+
+*** Iteration number 50 ***
+Starting Bounded Model Checking
+Symex completed in: 0.416s (10205 assignments)
+Slicing time: 0.035s (removed 3693 assignments)
+Generated 50 VCC(s), 49 remaining after simplification (6512 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.034s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.034s
+Runtime decision procedure: 0.117s
+BMC program time: 0.602s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.396s (10156 assignments)
+Slicing time: 0.031s (removed 4130 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (6026 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.031s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.031s
+Runtime decision procedure: 0.013s
+The forward condition is unable to prove the property
+Unable to prove or falsify the program, giving up.
+VERIFICATION UNKNOWN

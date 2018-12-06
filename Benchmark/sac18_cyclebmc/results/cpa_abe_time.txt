@@ -1,0 +1,338 @@
+Checking  DiagnosticsConcept_cyclBnd12_AG__SF_SafeStop1_1.Error_____S_Stopped_.c :
+
+real	0m24.931s
+user	0m28.080s
+sys	0m0.868s
+============================
+Checking  DiagnosticsConcept_cyclBnd12_EF__Error_ESPE1___S3_Drive_Reset___S_Stopped_.c :
+
+real	0m45.382s
+user	0m51.868s
+sys	0m1.016s
+============================
+Checking  DiagnosticsConcept_cyclBnd15_AG__SF_EmergencyStop_1.Error_____S_EStopOut_.c :
+
+real	0m15.188s
+user	0m18.732s
+sys	0m0.740s
+============================
+Checking  DiagnosticsConcept_cyclBnd15_AG__SF_ESPE_1.S_ESPE_Out____S2_S_ESPE_In_.c :
+
+real	0m34.266s
+user	0m37.984s
+sys	0m1.008s
+============================
+Checking  DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c :
+./run-experiments.sh: line 147: 26449 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.345s
+user	29m51.280s
+sys	0m8.956s
+============================
+Checking  DiagnosticsConcept_cyclBnd20_AG___S2_S_ESPE_In______SF_ESPE_1.DiagCode___0x8004______SF_ESPE_1.DiagCode___0x8001__.c :
+
+real	0m1.321s
+user	0m3.008s
+sys	0m0.076s
+============================
+Checking  DiagnosticsConcept_cyclBnd4_AG__S_Stopped_____Internal_Acknowledge___SF_ESPE_1.S_ESPE_Out___SF_EmergencyStop_1.S_EStopOut___.c :
+
+real	1m59.335s
+user	2m5.636s
+sys	0m1.464s
+============================
+Checking  SafeMotion_cyclBnd10_643570300.c :
+
+real	0m2.239s
+user	0m4.832s
+sys	0m0.164s
+============================
+Checking  SafeMotion_cyclBnd10_EF__SF_SafelyLimitedSpeed_1.S_OpMode_.c :
+./run-experiments.sh: line 147: 26698 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m55.037s
+user	29m53.984s
+sys	0m6.156s
+============================
+Checking  SafeMotion_cyclBnd10_EF__S_SLS_Enable_.c :
+./run-experiments.sh: line 147: 26761 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m54.708s
+user	29m53.732s
+sys	0m6.084s
+============================
+Checking  SafeMotion_cyclBnd12_AG__S_GuardLocked_____S_UnlockGuard_K1_.c :
+./run-experiments.sh: line 147: 26823 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.958s
+user	29m53.748s
+sys	0m6.160s
+============================
+Checking  SafeMotion_cyclBnd4_EF_SF_EmergencyStop_1.S_EStopOut.c :
+./run-experiments.sh: line 147: 26897 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m55.321s
+user	29m54.504s
+sys	0m5.600s
+============================
+Checking  SafeMotion_cyclBnd5_AG__S0_Reset______S_SafeMoveAxis1___S_SafeMoveAxis2__.c :
+./run-experiments.sh: line 147: 26957 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m54.270s
+user	29m54.460s
+sys	0m5.764s
+============================
+Checking  SafeMotion_cyclBnd5_AG___SF_SafelyLimitedSpeed_1.Error____SF_SafelyLimitedSpeed_2.Error_.c :
+./run-experiments.sh: line 147: 27031 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m54.110s
+user	29m53.828s
+sys	0m6.352s
+============================
+Checking  SafeMotion_cyclBnd5_AG__S_ModeAutoActive____SF_ModeSelector_1.S_Mode0Sel_.c :
+
+real	0m2.822s
+user	0m6.448s
+sys	0m0.216s
+============================
+Checking  SafeMotion_cyclBnd5_EF__SF_EnableSwitch_1.Error_.c :
+./run-experiments.sh: line 147: 27146 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.690s
+user	29m53.560s
+sys	0m6.556s
+============================
+Checking  SafeMotion_cyclBnd5_EF__S_ModeAutoActive_.c :
+./run-experiments.sh: line 147: 27221 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.650s
+user	29m54.220s
+sys	0m6.092s
+============================
+Checking  SafeMotion_cyclBnd5_EF__S_SafeMoveAxis1___S_SafeMoveAxis2_.c :
+./run-experiments.sh: line 147: 27279 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.086s
+user	29m54.528s
+sys	0m5.640s
+============================
+Checking  SafeMotion_cyclBnd9_AG___SF_ModeSelector_1.S_Mode0Sel___S_GuardLocked_____S_ModeAutoActive_.c :
+./run-experiments.sh: line 147: 27356 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.678s
+user	29m54.116s
+sys	0m5.984s
+============================
+Checking  SafeMotionIO_cyclBnd10_AG___S_SafeStandstill____S_SafeStop_M1_.c :
+./run-experiments.sh: line 147: 27414 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.089s
+user	29m49.672s
+sys	0m10.476s
+============================
+Checking  SafeMotionIO_cyclBnd2_EF_S_AutoMode.c :
+
+real	0m7.460s
+user	0m13.020s
+sys	0m0.424s
+============================
+Checking  SafeMotionIO_cyclBnd4_AG___S_UnlockGuard_K1_____S_SafeStandstill_.c :
+./run-experiments.sh: line 147: 27548 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m52.889s
+user	29m51.364s
+sys	0m8.684s
+============================
+Checking  SafeMotionIO_cyclBnd5_AG__S_UnlockGuard_K1____S_SafeStop_M1_.c :
+./run-experiments.sh: line 147: 27604 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.659s
+user	29m54.092s
+sys	0m5.928s
+============================
+Checking  SafeMotionIO_cyclBnd5_EF__S_SetupMode___S_AutoMode_.c :
+./run-experiments.sh: line 147: 27727 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m51.560s
+user	29m53.564s
+sys	0m6.404s
+============================
+Checking  SafeMotionIO_cyclBnd6_AG__SF_EnableSwitch_1.DiagCode___0xC000____SF_EmergencyStop_1.Error_.c :
+./run-experiments.sh: line 147: 27796 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m53.381s
+user	29m52.628s
+sys	0m7.468s
+============================
+Checking  SafeMotionIO_cyclBnd6_AG___SF_SafetyRequest_1.Error___SF_SafetyRequest_2.Error_____S_UnlockGuard_K1_.c :
+./run-experiments.sh: line 147: 27860 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m54.191s
+user	29m51.364s
+sys	0m9.108s
+============================
+Checking  SafeMotionIO_cyclBnd6_EF__S_SafeMotionActive___S_SetupMode___S_Enable_M1_.c :
+./run-experiments.sh: line 147: 27929 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m52.465s
+user	29m49.808s
+sys	0m10.136s
+============================
+Checking  SafeMotionIO_cyclBnd8_AG___S_SetupMode____S_AutoMode_.c :
+./run-experiments.sh: line 147: 27994 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m52.202s
+user	29m53.316s
+sys	0m6.668s
+============================
+Checking  SafeMotionIO_cyclBnd8_EF__S_SafeStandstill___S_SafeStop_M1_.c :
+./run-experiments.sh: line 147: 28063 Killed                  scripts/run_cpa_abe.sh $fn $TIMEOUT > results/cpa_abe/`basename $fn`.log 2>&1
+
+real	29m52.475s
+user	29m48.264s
+sys	0m11.832s
+============================
+Checking  SF_Antivalent_cyclBnd25_AG_____Activate___S_ChannelNO____S_ChannelNC_______S_AntivalentOut_.c :
+
+real	0m8.648s
+user	0m13.252s
+sys	0m0.248s
+============================
+Checking  SF_Antivalent_cyclBnd25_AG__S_AntivalentOut_____Activate____S_ChannelNO___S_ChannelNC____Error__.c :
+
+real	0m9.223s
+user	0m14.680s
+sys	0m0.216s
+============================
+Checking  SF_Antivalent_cyclBnd25_AG____S_ChannelNC___S_ChannelNO___T_1.Q____Error_.c :
+
+real	0m1.759s
+user	0m3.596s
+sys	0m0.076s
+============================
+Checking  SF_Antivalent_cyclBnd27_AG__Error_____S_AntivalentOut_.c :
+
+real	0m1.379s
+user	0m2.860s
+sys	0m0.048s
+============================
+Checking  SF_Antivalent_cyclBnd30_AG___Activate______Ready____S_AntivalentOut___DiagCode_0____Error___.c :
+
+real	0m1.470s
+user	0m3.152s
+sys	0m0.056s
+============================
+Checking  SF_Antivalent_cyclBnd3_AG___Activate_____Ready__.c :
+
+real	0m1.408s
+user	0m2.904s
+sys	0m0.036s
+============================
+Checking  SF_EmergencyStop_cyclBnd35_419082230.c :
+
+real	0m1.929s
+user	0m3.756s
+sys	0m0.088s
+============================
+Checking  SF_EmergencyStop_cyclBnd40_AG___S_EStopIn_____S_EStopOut_.c :
+
+real	0m3.908s
+user	0m7.348s
+sys	0m0.160s
+============================
+Checking  SF_EmergencyStop_cyclBnd45_AG__Error____Ready_.c :
+
+real	0m1.391s
+user	0m2.860s
+sys	0m0.084s
+============================
+Checking  SF_EmergencyStop_cyclBnd45_EF__DiagCode_0x8000___Error_.c :
+
+real	0m1.373s
+user	0m2.724s
+sys	0m0.088s
+============================
+Checking  SF_Equivalent_cyclBnd24_AG__Error_____S_EquivalentOut_.c :
+
+real	0m1.408s
+user	0m3.012s
+sys	0m0.060s
+============================
+Checking  SF_Equivalent_cyclBnd3_AG___DiscrepancyTimer.Q___Ready____Error_.c :
+
+real	0m1.789s
+user	0m4.200s
+sys	0m0.084s
+============================
+Checking  SF_GuardLocking_cyclBnd37_AG__S_GuardLocked_____S_UnlockGuard_.c :
+
+real	0m1.361s
+user	0m2.776s
+sys	0m0.080s
+============================
+Checking  SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c :
+
+real	0m1.367s
+user	0m2.796s
+sys	0m0.064s
+============================
+Checking  SF_GuardLocking_cyclBnd55_AG__DiagCode_8000_____S_UnlockGuard_.c :
+
+real	0m1.314s
+user	0m2.696s
+sys	0m0.072s
+============================
+Checking  SF_ModeSelector2_cyclBnd20_AG__DiagCode___0x8000____S_Unlock_.c :
+
+real	0m1.329s
+user	0m2.996s
+sys	0m0.076s
+============================
+Checking  SF_ModeSelector2_cyclBnd25_436126678.c :
+
+real	0m1.389s
+user	0m2.984s
+sys	0m0.052s
+============================
+Checking  SF_ModeSelector_cyclBnd10_278976826.c :
+
+real	0m12.709s
+user	0m18.344s
+sys	0m0.588s
+============================
+Checking  SF_ModeSelector_cyclBnd3_278976826.c :
+
+real	0m13.819s
+user	0m18.312s
+sys	0m0.636s
+============================
+Checking  SF_MutingSeq_cyclBnd15_AG__DiagCode_0x8011____MutingEnable____MutingSwitch12____MutingSwitch21_.c :
+
+real	0m44.922s
+user	0m47.948s
+sys	0m2.264s
+============================
+Checking  SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c :
+
+real	0m1.515s
+user	0m3.172s
+sys	0m0.084s
+============================
+Checking  SF_MutingSeq_cyclBnd40_AG__Error___S_AOPD_Out__S_MutingActive_.c :
+
+real	0m1.747s
+user	0m3.548s
+sys	0m0.076s
+============================
+Checking  SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c :
+
+real	0m1.340s
+user	0m2.788s
+sys	0m0.052s
+============================
+Checking  SF_SafelyLimitSpeed_cyclBnd25_EF__Error____Activate_.c :
+
+real	0m1.412s
+user	0m2.968s
+sys	0m0.028s
+============================

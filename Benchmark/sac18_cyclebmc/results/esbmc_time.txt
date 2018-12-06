@@ -1,0 +1,339 @@
+Checking  DiagnosticsConcept_cyclBnd12_AG__SF_SafeStop1_1.Error_____S_Stopped_.c :
+
+real	0m1.555s
+user	0m1.540s
+sys	0m0.012s
+============================
+Checking  DiagnosticsConcept_cyclBnd12_EF__Error_ESPE1___S3_Drive_Reset___S_Stopped_.c :
+
+real	0m2.239s
+user	0m2.176s
+sys	0m0.056s
+============================
+Checking  DiagnosticsConcept_cyclBnd15_AG__SF_EmergencyStop_1.Error_____S_EStopOut_.c :
+
+real	0m2.082s
+user	0m2.044s
+sys	0m0.032s
+============================
+Checking  DiagnosticsConcept_cyclBnd15_AG__SF_ESPE_1.S_ESPE_Out____S2_S_ESPE_In_.c :
+
+real	0m2.896s
+user	0m2.860s
+sys	0m0.032s
+============================
+Checking  DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c :
+
+real	0m4.287s
+user	0m4.204s
+sys	0m0.076s
+============================
+Checking  DiagnosticsConcept_cyclBnd20_AG___S2_S_ESPE_In______SF_ESPE_1.DiagCode___0x8004______SF_ESPE_1.DiagCode___0x8001__.c :
+
+real	0m3.065s
+user	0m3.012s
+sys	0m0.044s
+============================
+Checking  DiagnosticsConcept_cyclBnd4_AG__S_Stopped_____Internal_Acknowledge___SF_ESPE_1.S_ESPE_Out___SF_EmergencyStop_1.S_EStopOut___.c :
+
+real	0m0.604s
+user	0m0.564s
+sys	0m0.036s
+============================
+Checking  SafeMotion_cyclBnd10_643570300.c :
+
+real	0m6.146s
+user	0m6.116s
+sys	0m0.020s
+============================
+Checking  SafeMotion_cyclBnd10_EF__SF_SafelyLimitedSpeed_1.S_OpMode_.c :
+
+real	0m8.156s
+user	0m7.784s
+sys	0m0.360s
+============================
+Checking  SafeMotion_cyclBnd10_EF__S_SLS_Enable_.c :
+
+real	0m8.216s
+user	0m7.764s
+sys	0m0.436s
+============================
+Checking  SafeMotion_cyclBnd12_AG__S_GuardLocked_____S_UnlockGuard_K1_.c :
+./run-experiments.sh: line 183: 29478 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	11m52.159s
+user	11m49.944s
+sys	0m1.676s
+============================
+Checking  SafeMotion_cyclBnd4_EF_SF_EmergencyStop_1.S_EStopOut.c :
+
+real	0m1.737s
+user	0m1.668s
+sys	0m0.056s
+============================
+Checking  SafeMotion_cyclBnd5_AG__S0_Reset______S_SafeMoveAxis1___S_SafeMoveAxis2__.c :
+./run-experiments.sh: line 183: 29500 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	11m47.195s
+user	11m45.116s
+sys	0m1.636s
+============================
+Checking  SafeMotion_cyclBnd5_AG___SF_SafelyLimitedSpeed_1.Error____SF_SafelyLimitedSpeed_2.Error_.c :
+./run-experiments.sh: line 183: 29523 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	11m42.675s
+user	11m40.204s
+sys	0m1.604s
+============================
+Checking  SafeMotion_cyclBnd5_AG__S_ModeAutoActive____SF_ModeSelector_1.S_Mode0Sel_.c :
+./run-experiments.sh: line 183: 29540 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	11m45.494s
+user	11m43.200s
+sys	0m1.676s
+============================
+Checking  SafeMotion_cyclBnd5_EF__SF_EnableSwitch_1.Error_.c :
+
+real	0m2.540s
+user	0m2.476s
+sys	0m0.056s
+============================
+Checking  SafeMotion_cyclBnd5_EF__S_ModeAutoActive_.c :
+
+real	0m2.559s
+user	0m2.472s
+sys	0m0.076s
+============================
+Checking  SafeMotion_cyclBnd5_EF__S_SafeMoveAxis1___S_SafeMoveAxis2_.c :
+./run-experiments.sh: line 183: 29578 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	11m39.379s
+user	11m37.300s
+sys	0m1.596s
+============================
+Checking  SafeMotion_cyclBnd9_AG___SF_ModeSelector_1.S_Mode0Sel___S_GuardLocked_____S_ModeAutoActive_.c :
+./run-experiments.sh: line 183: 29588 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	11m47.634s
+user	11m45.708s
+sys	0m1.624s
+============================
+Checking  SafeMotionIO_cyclBnd10_AG___S_SafeStandstill____S_SafeStop_M1_.c :
+
+real	0m5.012s
+user	0m4.968s
+sys	0m0.036s
+============================
+Checking  SafeMotionIO_cyclBnd2_EF_S_AutoMode.c :
+
+real	0m0.294s
+user	0m0.264s
+sys	0m0.024s
+============================
+Checking  SafeMotionIO_cyclBnd4_AG___S_UnlockGuard_K1_____S_SafeStandstill_.c :
+
+real	0m1.120s
+user	0m1.080s
+sys	0m0.036s
+============================
+Checking  SafeMotionIO_cyclBnd5_AG__S_UnlockGuard_K1____S_SafeStop_M1_.c :
+
+real	0m1.722s
+user	0m1.668s
+sys	0m0.048s
+============================
+Checking  SafeMotionIO_cyclBnd5_EF__S_SetupMode___S_AutoMode_.c :
+
+real	0m1.496s
+user	0m1.480s
+sys	0m0.012s
+============================
+Checking  SafeMotionIO_cyclBnd6_AG__SF_EnableSwitch_1.DiagCode___0xC000____SF_EmergencyStop_1.Error_.c :
+
+real	0m2.383s
+user	0m2.296s
+sys	0m0.076s
+============================
+Checking  SafeMotionIO_cyclBnd6_AG___SF_SafetyRequest_1.Error___SF_SafetyRequest_2.Error_____S_UnlockGuard_K1_.c :
+
+real	0m2.334s
+user	0m2.244s
+sys	0m0.080s
+============================
+Checking  SafeMotionIO_cyclBnd6_EF__S_SafeMotionActive___S_SetupMode___S_Enable_M1_.c :
+
+real	0m2.036s
+user	0m2.020s
+sys	0m0.012s
+============================
+Checking  SafeMotionIO_cyclBnd8_AG___S_SetupMode____S_AutoMode_.c :
+
+real	0m4.632s
+user	0m4.276s
+sys	0m0.344s
+============================
+Checking  SafeMotionIO_cyclBnd8_EF__S_SafeStandstill___S_SafeStop_M1_.c :
+
+real	0m3.340s
+user	0m3.308s
+sys	0m0.028s
+============================
+Checking  SF_Antivalent_cyclBnd25_AG_____Activate___S_ChannelNO____S_ChannelNC_______S_AntivalentOut_.c :
+./run-experiments.sh: line 183: 29686 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m51.964s
+user	8m49.916s
+sys	0m1.508s
+============================
+Checking  SF_Antivalent_cyclBnd25_AG__S_AntivalentOut_____Activate____S_ChannelNO___S_ChannelNC____Error__.c :
+./run-experiments.sh: line 183: 29713 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m55.040s
+user	8m53.312s
+sys	0m1.516s
+============================
+Checking  SF_Antivalent_cyclBnd25_AG____S_ChannelNC___S_ChannelNO___T_1.Q____Error_.c :
+./run-experiments.sh: line 183: 29726 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m50.713s
+user	8m48.896s
+sys	0m1.612s
+============================
+Checking  SF_Antivalent_cyclBnd27_AG__Error_____S_AntivalentOut_.c :
+./run-experiments.sh: line 183: 29743 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m50.898s
+user	8m49.128s
+sys	0m1.524s
+============================
+Checking  SF_Antivalent_cyclBnd30_AG___Activate______Ready____S_AntivalentOut___DiagCode_0____Error___.c :
+./run-experiments.sh: line 183: 29761 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m46.992s
+user	8m44.840s
+sys	0m1.668s
+============================
+Checking  SF_Antivalent_cyclBnd3_AG___Activate_____Ready__.c :
+./run-experiments.sh: line 183: 29773 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m48.076s
+user	8m46.184s
+sys	0m1.588s
+============================
+Checking  SF_EmergencyStop_cyclBnd35_419082230.c :
+
+real	0m0.512s
+user	0m0.476s
+sys	0m0.032s
+============================
+Checking  SF_EmergencyStop_cyclBnd40_AG___S_EStopIn_____S_EStopOut_.c :
+
+real	0m1.850s
+user	0m1.716s
+sys	0m0.132s
+============================
+Checking  SF_EmergencyStop_cyclBnd45_AG__Error____Ready_.c :
+
+real	0m0.751s
+user	0m0.708s
+sys	0m0.040s
+============================
+Checking  SF_EmergencyStop_cyclBnd45_EF__DiagCode_0x8000___Error_.c :
+
+real	0m0.474s
+user	0m0.436s
+sys	0m0.036s
+============================
+Checking  SF_Equivalent_cyclBnd24_AG__Error_____S_EquivalentOut_.c :
+./run-experiments.sh: line 183: 29818 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m45.925s
+user	8m44.060s
+sys	0m1.600s
+============================
+Checking  SF_Equivalent_cyclBnd3_AG___DiscrepancyTimer.Q___Ready____Error_.c :
+./run-experiments.sh: line 183: 29828 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	8m50.350s
+user	8m48.320s
+sys	0m1.676s
+============================
+Checking  SF_GuardLocking_cyclBnd37_AG__S_GuardLocked_____S_UnlockGuard_.c :
+
+real	0m0.567s
+user	0m0.536s
+sys	0m0.024s
+============================
+Checking  SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.c :
+
+real	0m0.912s
+user	0m0.860s
+sys	0m0.048s
+============================
+Checking  SF_GuardLocking_cyclBnd55_AG__DiagCode_8000_____S_UnlockGuard_.c :
+
+real	0m2.106s
+user	0m1.964s
+sys	0m0.136s
+============================
+Checking  SF_ModeSelector2_cyclBnd20_AG__DiagCode___0x8000____S_Unlock_.c :
+./run-experiments.sh: line 183: 29879 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	6m4.648s
+user	6m2.876s
+sys	0m1.488s
+============================
+Checking  SF_ModeSelector2_cyclBnd25_436126678.c :
+./run-experiments.sh: line 183: 29890 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	3m8.815s
+user	3m6.976s
+sys	0m1.552s
+============================
+Checking  SF_ModeSelector_cyclBnd10_278976826.c :
+./run-experiments.sh: line 183: 29906 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	2m52.258s
+user	2m50.456s
+sys	0m1.592s
+============================
+Checking  SF_ModeSelector_cyclBnd3_278976826.c :
+./run-experiments.sh: line 183: 29918 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	2m52.036s
+user	2m50.248s
+sys	0m1.620s
+============================
+Checking  SF_MutingSeq_cyclBnd15_AG__DiagCode_0x8011____MutingEnable____MutingSwitch12____MutingSwitch21_.c :
+./run-experiments.sh: line 183: 29931 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	7m52.279s
+user	7m50.384s
+sys	0m1.584s
+============================
+Checking  SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c :
+./run-experiments.sh: line 183: 29948 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	7m50.570s
+user	7m48.576s
+sys	0m1.532s
+============================
+Checking  SF_MutingSeq_cyclBnd40_AG__Error___S_AOPD_Out__S_MutingActive_.c :
+./run-experiments.sh: line 183: 29961 Aborted                 (core dumped) scripts/run_esbmc.sh $fn > results/esbmc/`basename $fn`.log 2>&1
+
+real	7m51.361s
+user	7m49.276s
+sys	0m1.632s
+============================
+Checking  SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c :
+
+real	0m0.390s
+user	0m0.368s
+sys	0m0.020s
+============================
+Checking  SF_SafelyLimitSpeed_cyclBnd25_EF__Error____Activate_.c :
+
+real	0m0.416s
+user	0m0.384s
+sys	0m0.028s
+============================

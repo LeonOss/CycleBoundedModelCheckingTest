@@ -1,0 +1,866 @@
+-- FORMULA: AG (DiagCode=0x8011 => MutingEnable & !MutingSwitch12 & !MutingSwitch21)
+-- BOUND: 15
+
+MODULE main
+	IVAR
+		SF_MutingSeq_Activate_IN : boolean;
+		SF_MutingSeq_S_AOPD_In_IN : boolean;
+		SF_MutingSeq_MutingSwitch11_IN : boolean;
+		SF_MutingSeq_MutingSwitch12_IN : boolean;
+		SF_MutingSeq_MutingSwitch21_IN : boolean;
+		SF_MutingSeq_MutingSwitch22_IN : boolean;
+		SF_MutingSeq_S_MutingLamp_IN : boolean;
+		SF_MutingSeq_DiscTime11_12_IN : unsigned word[32];
+		SF_MutingSeq_DiscTime21_22_IN : unsigned word[32];
+		SF_MutingSeq_MaxMutingTime_IN : unsigned word[32];
+		SF_MutingSeq_MutingEnable_IN : boolean;
+		SF_MutingSeq_S_StartReset_IN : boolean;
+		SF_MutingSeq_Reset_IN : boolean;
+		UNKNOWN_BOOL_UNKNOWN_BOOL_IN : boolean;
+	VAR
+		loc : {32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, EoC};
+		ccntr : 0..16;
+		UNKNOWN_BOOL_UNKNOWN_BOOL : boolean;
+		SF_MutingSeq_Activate : boolean;
+		SF_MutingSeq_S_AOPD_In : boolean;
+		SF_MutingSeq_MutingSwitch11 : boolean;
+		SF_MutingSeq_MutingSwitch12 : boolean;
+		SF_MutingSeq_MutingSwitch21 : boolean;
+		SF_MutingSeq_MutingSwitch22 : boolean;
+		SF_MutingSeq_S_MutingLamp : boolean;
+		SF_MutingSeq_DiscTime11_12 : unsigned word[32];
+		SF_MutingSeq_DiscTime21_22 : unsigned word[32];
+		SF_MutingSeq_MaxMutingTime : unsigned word[32];
+		SF_MutingSeq_MutingEnable : boolean;
+		SF_MutingSeq_S_StartReset : boolean;
+		SF_MutingSeq_Reset : boolean;
+		SF_MutingSeq_Ready : boolean;
+		SF_MutingSeq_S_AOPD_Out : boolean;
+		SF_MutingSeq_S_MutingActive : boolean;
+		SF_MutingSeq_Error : boolean;
+		SF_MutingSeq_DiagCode : unsigned word[16];
+		SF_MutingSeq_R_TRIGatReset_CLK : boolean;
+		SF_MutingSeq_R_TRIGatReset_Q : boolean;
+		SF_MutingSeq_R_TRIGatReset_M : boolean;
+		SF_MutingSeq_R_TRIGatMS_11_CLK : boolean;
+		SF_MutingSeq_R_TRIGatMS_11_Q : boolean;
+		SF_MutingSeq_R_TRIGatMS_11_M : boolean;
+		SF_MutingSeq_R_TRIGatMS_12_CLK : boolean;
+		SF_MutingSeq_R_TRIGatMS_12_Q : boolean;
+		SF_MutingSeq_R_TRIGatMS_12_M : boolean;
+		SF_MutingSeq_R_TRIGatMS_21_CLK : boolean;
+		SF_MutingSeq_R_TRIGatMS_21_Q : boolean;
+		SF_MutingSeq_R_TRIGatMS_21_M : boolean;
+		SF_MutingSeq_R_TRIGatMS_22_CLK : boolean;
+		SF_MutingSeq_R_TRIGatMS_22_Q : boolean;
+		SF_MutingSeq_R_TRIGatMS_22_M : boolean;
+		SF_MutingSeq_F_TRIGatMS_11_CLK : boolean;
+		SF_MutingSeq_F_TRIGatMS_11_Q : boolean;
+		SF_MutingSeq_F_TRIGatMS_11_M : boolean;
+		SF_MutingSeq_F_TRIGatMS_12_CLK : boolean;
+		SF_MutingSeq_F_TRIGatMS_12_Q : boolean;
+		SF_MutingSeq_F_TRIGatMS_12_M : boolean;
+		SF_MutingSeq_F_TRIGatMS_21_CLK : boolean;
+		SF_MutingSeq_F_TRIGatMS_21_Q : boolean;
+		SF_MutingSeq_F_TRIGatMS_21_M : boolean;
+		SF_MutingSeq_F_TRIGatMS_22_CLK : boolean;
+		SF_MutingSeq_F_TRIGatMS_22_Q : boolean;
+		SF_MutingSeq_F_TRIGatMS_22_M : boolean;
+		SF_MutingSeq_MutingTimer_IN : boolean;
+		SF_MutingSeq_MutingTimer_PT : unsigned word[32];
+		SF_MutingSeq_MutingTimer_Q : boolean;
+		SF_MutingSeq_MutingTimer___TEMP0 : boolean;
+		SF_MutingSeq___TEMP0 : unsigned word[16];
+		SF_MutingSeq___TEMP1 : unsigned word[16];
+		SF_MutingSeq___TEMP2 : unsigned word[16];
+	ASSIGN
+		init(loc) := 208;
+		init(ccntr) := 0;
+		init(UNKNOWN_BOOL_UNKNOWN_BOOL) := FALSE;
+		init(SF_MutingSeq_Activate) := FALSE;
+		init(SF_MutingSeq_S_AOPD_In) := FALSE;
+		init(SF_MutingSeq_MutingSwitch11) := FALSE;
+		init(SF_MutingSeq_MutingSwitch12) := FALSE;
+		init(SF_MutingSeq_MutingSwitch21) := FALSE;
+		init(SF_MutingSeq_MutingSwitch22) := FALSE;
+		init(SF_MutingSeq_S_MutingLamp) := FALSE;
+		init(SF_MutingSeq_DiscTime11_12) := 0ud32_0;
+		init(SF_MutingSeq_DiscTime21_22) := 0ud32_0;
+		init(SF_MutingSeq_MaxMutingTime) := 0ud32_0;
+		init(SF_MutingSeq_MutingEnable) := FALSE;
+		init(SF_MutingSeq_S_StartReset) := FALSE;
+		init(SF_MutingSeq_Reset) := FALSE;
+		init(SF_MutingSeq_Ready) := FALSE;
+		init(SF_MutingSeq_S_AOPD_Out) := FALSE;
+		init(SF_MutingSeq_S_MutingActive) := FALSE;
+		init(SF_MutingSeq_Error) := FALSE;
+		init(SF_MutingSeq_DiagCode) := 0ud16_0;
+		init(SF_MutingSeq_R_TRIGatReset_CLK) := FALSE;
+		init(SF_MutingSeq_R_TRIGatReset_Q) := FALSE;
+		init(SF_MutingSeq_R_TRIGatReset_M) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_11_CLK) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_11_Q) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_11_M) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_12_CLK) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_12_Q) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_12_M) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_21_CLK) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_21_Q) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_21_M) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_22_CLK) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_22_Q) := FALSE;
+		init(SF_MutingSeq_R_TRIGatMS_22_M) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_11_CLK) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_11_Q) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_11_M) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_12_CLK) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_12_Q) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_12_M) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_21_CLK) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_21_Q) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_21_M) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_22_CLK) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_22_Q) := FALSE;
+		init(SF_MutingSeq_F_TRIGatMS_22_M) := FALSE;
+		init(SF_MutingSeq_MutingTimer_IN) := FALSE;
+		init(SF_MutingSeq_MutingTimer_PT) := 0ud32_0;
+		init(SF_MutingSeq_MutingTimer_Q) := FALSE;
+		init(SF_MutingSeq_MutingTimer___TEMP0) := FALSE;
+		init(SF_MutingSeq___TEMP0) := 0ud16_0;
+		init(SF_MutingSeq___TEMP1) := 0ud16_0;
+		init(SF_MutingSeq___TEMP2) := 0ud16_0;
+
+		next(loc) := case
+			loc = 32 : 33;
+			loc = 33 : 34;
+			loc = 34 : 35;
+			loc = 35 : 322;
+			loc = 36 : 212;
+			loc = 37 : 265;
+			loc = 38 : 218;
+			loc = 39 : 328;
+			loc = 40 : 224;
+			loc = 41 : 259;
+			loc = 42 : 230;
+			loc = 43 : 236;
+			loc = 44 & !(SF_MutingSeq_Activate) : 45;
+			loc = 44 & SF_MutingSeq_Activate : 47;
+			loc = 45 : 46;
+			loc = 46 : 179;
+			loc = 47 : 48;
+			loc = 48 & (SF_MutingSeq___TEMP0 = resize(0ud8_0,16)) : 49;
+			loc = 48 & !((SF_MutingSeq___TEMP0 = resize(0ud8_0,16))) : 52;
+			loc = 49 & SF_MutingSeq_Activate : 50;
+			loc = 49 & !(SF_MutingSeq_Activate) : 51;
+			loc = 50 : 51;
+			loc = 51 : 179;
+			loc = 52 & (SF_MutingSeq___TEMP0 = resize(0ud16_32768,16)) : 53;
+			loc = 52 & !((SF_MutingSeq___TEMP0 = resize(0ud16_32768,16))) : 70;
+			loc = 53 & ((((!(SF_MutingSeq_MutingEnable) & SF_MutingSeq_R_TRIGatMS_11_Q) | (!(SF_MutingSeq_MutingEnable) & SF_MutingSeq_R_TRIGatMS_22_Q)) | (SF_MutingSeq_MutingSwitch12 | SF_MutingSeq_MutingSwitch21)) | (SF_MutingSeq_MutingSwitch11 & SF_MutingSeq_MutingSwitch22)) : 54;
+			loc = 53 & !(((((!(SF_MutingSeq_MutingEnable) & SF_MutingSeq_R_TRIGatMS_11_Q) | (!(SF_MutingSeq_MutingEnable) & SF_MutingSeq_R_TRIGatMS_22_Q)) | (SF_MutingSeq_MutingSwitch12 | SF_MutingSeq_MutingSwitch21)) | (SF_MutingSeq_MutingSwitch11 & SF_MutingSeq_MutingSwitch22))) : 56;
+			loc = 54 : 55;
+			loc = 55 : 69;
+			loc = 56 & !(SF_MutingSeq_S_AOPD_In) : 57;
+			loc = 56 & SF_MutingSeq_S_AOPD_In : 59;
+			loc = 57 : 58;
+			loc = 58 : 69;
+			loc = 59 & !(SF_MutingSeq_S_MutingLamp) : 60;
+			loc = 59 & SF_MutingSeq_S_MutingLamp : 62;
+			loc = 60 : 61;
+			loc = 61 : 69;
+			loc = 62 & (SF_MutingSeq_MutingEnable & (((SF_MutingSeq_R_TRIGatMS_11_Q & !(SF_MutingSeq_MutingSwitch12)) & !(SF_MutingSeq_MutingSwitch21)) & !(SF_MutingSeq_MutingSwitch22))) : 63;
+			loc = 62 & !((SF_MutingSeq_MutingEnable & (((SF_MutingSeq_R_TRIGatMS_11_Q & !(SF_MutingSeq_MutingSwitch12)) & !(SF_MutingSeq_MutingSwitch21)) & !(SF_MutingSeq_MutingSwitch22)))) : 66;
+			loc = 63 : 64;
+			loc = 64 : 252;
+			loc = 65 : 69;
+			loc = 66 & (SF_MutingSeq_MutingEnable & (((!(SF_MutingSeq_MutingSwitch11) & !(SF_MutingSeq_MutingSwitch12)) & !(SF_MutingSeq_MutingSwitch21)) & SF_MutingSeq_R_TRIGatMS_22_Q)) : 67;
+			loc = 66 & !((SF_MutingSeq_MutingEnable & (((!(SF_MutingSeq_MutingSwitch11) & !(SF_MutingSeq_MutingSwitch12)) & !(SF_MutingSeq_MutingSwitch21)) & SF_MutingSeq_R_TRIGatMS_22_Q))) : 69;
+			loc = 67 : 68;
+			loc = 68 : 315;
+			loc = 69 : 179;
+			loc = 70 & (SF_MutingSeq___TEMP0 = resize(0ud16_32769,16)) : 71;
+			loc = 70 & !((SF_MutingSeq___TEMP0 = resize(0ud16_32769,16))) : 77;
+			loc = 71 & ((SF_MutingSeq_Reset & !(SF_MutingSeq_R_TRIGatReset_Q)) & !(SF_MutingSeq_S_StartReset)) : 72;
+			loc = 71 & !(((SF_MutingSeq_Reset & !(SF_MutingSeq_R_TRIGatReset_Q)) & !(SF_MutingSeq_S_StartReset))) : 74;
+			loc = 72 : 73;
+			loc = 73 : 76;
+			loc = 74 & (SF_MutingSeq_R_TRIGatReset_Q | SF_MutingSeq_S_StartReset) : 75;
+			loc = 74 & !((SF_MutingSeq_R_TRIGatReset_Q | SF_MutingSeq_S_StartReset)) : 76;
+			loc = 75 : 76;
+			loc = 76 : 179;
+			loc = 77 & (SF_MutingSeq___TEMP0 = resize(0ud16_32770,16)) : 78;
+			loc = 77 & !((SF_MutingSeq___TEMP0 = resize(0ud16_32770,16))) : 81;
+			loc = 78 & SF_MutingSeq_S_AOPD_In : 79;
+			loc = 78 & !(SF_MutingSeq_S_AOPD_In) : 80;
+			loc = 79 : 80;
+			loc = 80 : 179;
+			loc = 81 & (SF_MutingSeq___TEMP0 = resize(0ud16_32771,16)) : 82;
+			loc = 81 & !((SF_MutingSeq___TEMP0 = resize(0ud16_32771,16))) : 88;
+			loc = 82 & (SF_MutingSeq_Reset & !(SF_MutingSeq_R_TRIGatReset_Q)) : 83;
+			loc = 82 & !((SF_MutingSeq_Reset & !(SF_MutingSeq_R_TRIGatReset_Q))) : 85;
+			loc = 83 : 84;
+			loc = 84 : 87;
+			loc = 85 & SF_MutingSeq_R_TRIGatReset_Q : 86;
+			loc = 85 & !(SF_MutingSeq_R_TRIGatReset_Q) : 87;
+			loc = 86 : 87;
+			loc = 87 : 179;
+			loc = 88 & (SF_MutingSeq___TEMP0 = resize(0ud16_32773,16)) : 89;
+			loc = 88 & !((SF_MutingSeq___TEMP0 = resize(0ud16_32773,16))) : 98;
+			loc = 89 & !(SF_MutingSeq_S_AOPD_In) : 90;
+			loc = 89 & SF_MutingSeq_S_AOPD_In : 92;
+			loc = 90 : 91;
+			loc = 91 : 97;
+			loc = 92 & !(SF_MutingSeq_S_MutingLamp) : 93;
+			loc = 92 & SF_MutingSeq_S_MutingLamp : 95;
+			loc = 93 : 94;
+			loc = 94 : 97;
+			loc = 95 & SF_MutingSeq_S_AOPD_In : 96;
+			loc = 95 & !(SF_MutingSeq_S_AOPD_In) : 97;
+			loc = 96 : 97;
+			loc = 97 : 179;
+			loc = 98 & (SF_MutingSeq___TEMP0 = resize(0ud16_49153,16)) : 99;
+			loc = 98 & !((SF_MutingSeq___TEMP0 = resize(0ud16_49153,16))) : 102;
+			loc = 99 & !(SF_MutingSeq_Reset) : 100;
+			loc = 99 & SF_MutingSeq_Reset : 101;
+			loc = 100 : 101;
+			loc = 101 : 179;
+			loc = 102 & (SF_MutingSeq___TEMP0 = resize(0ud16_49154,16)) : 103;
+			loc = 102 & !((SF_MutingSeq___TEMP0 = resize(0ud16_49154,16))) : 106;
+			loc = 103 & !(SF_MutingSeq_Reset) : 104;
+			loc = 103 & SF_MutingSeq_Reset : 105;
+			loc = 104 : 105;
+			loc = 105 : 179;
+			loc = 106 & (SF_MutingSeq___TEMP0 = resize(0ud16_49155,16)) : 107;
+			loc = 106 & !((SF_MutingSeq___TEMP0 = resize(0ud16_49155,16))) : 110;
+			loc = 107 & SF_MutingSeq_S_MutingLamp : 108;
+			loc = 107 & !(SF_MutingSeq_S_MutingLamp) : 109;
+			loc = 108 : 109;
+			loc = 109 : 179;
+			loc = 110 & ((SF_MutingSeq___TEMP0 = resize(0ud16_49158,16)) | ((SF_MutingSeq___TEMP0 = resize(0ud16_49159,16)) | (SF_MutingSeq___TEMP0 = resize(0ud16_49160,16)))) : 111;
+			loc = 110 & !(((SF_MutingSeq___TEMP0 = resize(0ud16_49158,16)) | ((SF_MutingSeq___TEMP0 = resize(0ud16_49159,16)) | (SF_MutingSeq___TEMP0 = resize(0ud16_49160,16))))) : 114;
+			loc = 111 & !((((SF_MutingSeq_MutingSwitch11 | SF_MutingSeq_MutingSwitch12) | SF_MutingSeq_MutingSwitch21) | SF_MutingSeq_MutingSwitch22)) : 112;
+			loc = 111 & (((SF_MutingSeq_MutingSwitch11 | SF_MutingSeq_MutingSwitch12) | SF_MutingSeq_MutingSwitch21) | SF_MutingSeq_MutingSwitch22) : 113;
+			loc = 112 : 113;
+			loc = 113 : 179;
+			loc = 114 & (SF_MutingSeq_DiagCode >= resize(0ud16_49152,16)) : 115;
+			loc = 114 & !((SF_MutingSeq_DiagCode >= resize(0ud16_49152,16))) : 118;
+			loc = 115 & !((((SF_MutingSeq_MutingSwitch11 | SF_MutingSeq_MutingSwitch12) | SF_MutingSeq_MutingSwitch21) | SF_MutingSeq_MutingSwitch22)) : 116;
+			loc = 115 & (((SF_MutingSeq_MutingSwitch11 | SF_MutingSeq_MutingSwitch12) | SF_MutingSeq_MutingSwitch21) | SF_MutingSeq_MutingSwitch22) : 117;
+			loc = 116 : 117;
+			loc = 117 : 179;
+			loc = 118 : 119;
+			loc = 119 & (SF_MutingSeq___TEMP1 = resize(0ud16_32785,16)) : 120;
+			loc = 119 & !((SF_MutingSeq___TEMP1 = resize(0ud16_32785,16))) : 135;
+			loc = 120 & (((!(SF_MutingSeq_MutingEnable) | !(SF_MutingSeq_MutingSwitch11)) | SF_MutingSeq_MutingSwitch21) | SF_MutingSeq_MutingSwitch22) : 121;
+			loc = 120 & !((((!(SF_MutingSeq_MutingEnable) | !(SF_MutingSeq_MutingSwitch11)) | SF_MutingSeq_MutingSwitch21) | SF_MutingSeq_MutingSwitch22)) : 123;
+			loc = 121 : 122;
+			loc = 122 : 134;
+			loc = 123 & SF_MutingSeq_MutingTimer_Q : 124;
+			loc = 123 & !(SF_MutingSeq_MutingTimer_Q) : 126;
+			loc = 124 : 125;
+			loc = 125 : 134;
+			loc = 126 & !(SF_MutingSeq_S_AOPD_In) : 127;
+			loc = 126 & SF_MutingSeq_S_AOPD_In : 129;
+			loc = 127 : 128;
+			loc = 128 : 134;
+			loc = 129 & !(SF_MutingSeq_S_MutingLamp) : 130;
+			loc = 129 & SF_MutingSeq_S_MutingLamp : 132;
+			loc = 130 : 131;
+			loc = 131 : 134;
+			loc = 132 & (SF_MutingSeq_MutingEnable & (((SF_MutingSeq_MutingSwitch11 & SF_MutingSeq_R_TRIGatMS_12_Q) & !(SF_MutingSeq_MutingSwitch21)) & !(SF_MutingSeq_MutingSwitch22))) : 133;
+			loc = 132 & !((SF_MutingSeq_MutingEnable & (((SF_MutingSeq_MutingSwitch11 & SF_MutingSeq_R_TRIGatMS_12_Q) & !(SF_MutingSeq_MutingSwitch21)) & !(SF_MutingSeq_MutingSwitch22)))) : 134;
+			loc = 133 : 134;
+			loc = 134 : 179;
+			loc = 135 & (SF_MutingSeq___TEMP1 = resize(0ud16_32786,16)) : 136;
+			loc = 135 & !((SF_MutingSeq___TEMP1 = resize(0ud16_32786,16))) : 149;
+			loc = 136 & ((SF_MutingSeq_R_TRIGatMS_11_Q | SF_MutingSeq_R_TRIGatMS_12_Q) | SF_MutingSeq_F_TRIGatMS_22_Q) : 137;
+			loc = 136 & !(((SF_MutingSeq_R_TRIGatMS_11_Q | SF_MutingSeq_R_TRIGatMS_12_Q) | SF_MutingSeq_F_TRIGatMS_22_Q)) : 139;
+			loc = 137 : 138;
+			loc = 138 : 148;
+			loc = 139 & SF_MutingSeq_MutingTimer_Q : 140;
+			loc = 139 & !(SF_MutingSeq_MutingTimer_Q) : 142;
+			loc = 140 : 141;
+			loc = 141 : 148;
+			loc = 142 & !(SF_MutingSeq_S_MutingLamp) : 143;
+			loc = 142 & SF_MutingSeq_S_MutingLamp : 145;
+			loc = 143 : 144;
+			loc = 144 : 148;
+			loc = 145 & (((!(SF_MutingSeq_MutingSwitch11) & !(SF_MutingSeq_MutingSwitch12)) & SF_MutingSeq_F_TRIGatMS_21_Q) & SF_MutingSeq_MutingSwitch22) : 146;
+			loc = 145 & !((((!(SF_MutingSeq_MutingSwitch11) & !(SF_MutingSeq_MutingSwitch12)) & SF_MutingSeq_F_TRIGatMS_21_Q) & SF_MutingSeq_MutingSwitch22)) : 148;
+			loc = 146 : 298;
+			loc = 147 : 148;
+			loc = 148 : 179;
+			loc = 149 & (SF_MutingSeq___TEMP1 = resize(0ud16_33058,16)) : 150;
+			loc = 149 & !((SF_MutingSeq___TEMP1 = resize(0ud16_33058,16))) : 165;
+			loc = 150 & (((!(SF_MutingSeq_MutingEnable) | SF_MutingSeq_MutingSwitch11) | SF_MutingSeq_MutingSwitch12) | !(SF_MutingSeq_MutingSwitch22)) : 151;
+			loc = 150 & !((((!(SF_MutingSeq_MutingEnable) | SF_MutingSeq_MutingSwitch11) | SF_MutingSeq_MutingSwitch12) | !(SF_MutingSeq_MutingSwitch22))) : 153;
+			loc = 151 : 152;
+			loc = 152 : 164;
+			loc = 153 & SF_MutingSeq_MutingTimer_Q : 154;
+			loc = 153 & !(SF_MutingSeq_MutingTimer_Q) : 156;
+			loc = 154 : 155;
+			loc = 155 : 164;
+			loc = 156 & !(SF_MutingSeq_S_AOPD_In) : 157;
+			loc = 156 & SF_MutingSeq_S_AOPD_In : 159;
+			loc = 157 : 158;
+			loc = 158 : 164;
+			loc = 159 & !(SF_MutingSeq_S_MutingLamp) : 160;
+			loc = 159 & SF_MutingSeq_S_MutingLamp : 162;
+			loc = 160 : 161;
+			loc = 161 : 164;
+			loc = 162 & (SF_MutingSeq_MutingEnable & (((!(SF_MutingSeq_MutingSwitch11) & !(SF_MutingSeq_MutingSwitch12)) & SF_MutingSeq_R_TRIGatMS_21_Q) & SF_MutingSeq_MutingSwitch22)) : 163;
+			loc = 162 & !((SF_MutingSeq_MutingEnable & (((!(SF_MutingSeq_MutingSwitch11) & !(SF_MutingSeq_MutingSwitch12)) & SF_MutingSeq_R_TRIGatMS_21_Q) & SF_MutingSeq_MutingSwitch22))) : 164;
+			loc = 163 : 164;
+			loc = 164 : 179;
+			loc = 165 & (SF_MutingSeq___TEMP1 = resize(0ud16_33042,16)) : 166;
+			loc = 165 & !((SF_MutingSeq___TEMP1 = resize(0ud16_33042,16))) : 179;
+			loc = 166 & ((SF_MutingSeq_F_TRIGatMS_11_Q | SF_MutingSeq_R_TRIGatMS_21_Q) | SF_MutingSeq_R_TRIGatMS_22_Q) : 167;
+			loc = 166 & !(((SF_MutingSeq_F_TRIGatMS_11_Q | SF_MutingSeq_R_TRIGatMS_21_Q) | SF_MutingSeq_R_TRIGatMS_22_Q)) : 169;
+			loc = 167 : 168;
+			loc = 168 : 178;
+			loc = 169 & SF_MutingSeq_MutingTimer_Q : 170;
+			loc = 169 & !(SF_MutingSeq_MutingTimer_Q) : 172;
+			loc = 170 : 171;
+			loc = 171 : 178;
+			loc = 172 & !(SF_MutingSeq_S_MutingLamp) : 173;
+			loc = 172 & SF_MutingSeq_S_MutingLamp : 175;
+			loc = 173 : 174;
+			loc = 174 : 178;
+			loc = 175 & (((SF_MutingSeq_MutingSwitch11 & SF_MutingSeq_F_TRIGatMS_12_Q) & !(SF_MutingSeq_MutingSwitch21)) & !(SF_MutingSeq_MutingSwitch22)) : 176;
+			loc = 175 & !((((SF_MutingSeq_MutingSwitch11 & SF_MutingSeq_F_TRIGatMS_12_Q) & !(SF_MutingSeq_MutingSwitch21)) & !(SF_MutingSeq_MutingSwitch22))) : 178;
+			loc = 176 : 177;
+			loc = 177 : 281;
+			loc = 178 : 179;
+			loc = 179 : 180;
+			loc = 180 & (SF_MutingSeq___TEMP2 = resize(0ud8_0,16)) : 181;
+			loc = 180 & !((SF_MutingSeq___TEMP2 = resize(0ud8_0,16))) : 186;
+			loc = 181 : 182;
+			loc = 182 : 183;
+			loc = 183 : 184;
+			loc = 184 : 185;
+			loc = 185 : 208;
+			loc = 186 & ((SF_MutingSeq___TEMP2 = resize(0ud16_32768,16)) | ((SF_MutingSeq___TEMP2 = resize(0ud16_32785,16)) | (SF_MutingSeq___TEMP2 = resize(0ud16_33058,16)))) : 187;
+			loc = 186 & !(((SF_MutingSeq___TEMP2 = resize(0ud16_32768,16)) | ((SF_MutingSeq___TEMP2 = resize(0ud16_32785,16)) | (SF_MutingSeq___TEMP2 = resize(0ud16_33058,16))))) : 192;
+			loc = 187 : 188;
+			loc = 188 : 189;
+			loc = 189 : 190;
+			loc = 190 : 191;
+			loc = 191 : 208;
+			loc = 192 & ((SF_MutingSeq___TEMP2 = resize(0ud16_32769,16)) | ((SF_MutingSeq___TEMP2 = resize(0ud16_32770,16)) | ((SF_MutingSeq___TEMP2 = resize(0ud16_32771,16)) | (SF_MutingSeq___TEMP2 = resize(0ud16_32773,16))))) : 193;
+			loc = 192 & !(((SF_MutingSeq___TEMP2 = resize(0ud16_32769,16)) | ((SF_MutingSeq___TEMP2 = resize(0ud16_32770,16)) | ((SF_MutingSeq___TEMP2 = resize(0ud16_32771,16)) | (SF_MutingSeq___TEMP2 = resize(0ud16_32773,16)))))) : 198;
+			loc = 193 : 194;
+			loc = 194 : 195;
+			loc = 195 : 196;
+			loc = 196 : 197;
+			loc = 197 : 208;
+			loc = 198 & ((SF_MutingSeq___TEMP2 = resize(0ud16_32786,16)) | (SF_MutingSeq___TEMP2 = resize(0ud16_33042,16))) : 199;
+			loc = 198 & !(((SF_MutingSeq___TEMP2 = resize(0ud16_32786,16)) | (SF_MutingSeq___TEMP2 = resize(0ud16_33042,16)))) : 204;
+			loc = 199 : 200;
+			loc = 200 : 201;
+			loc = 201 : 202;
+			loc = 202 : 203;
+			loc = 203 : 208;
+			loc = 204 : 205;
+			loc = 205 : 206;
+			loc = 206 : 207;
+			loc = 207 : 208;
+			loc = 208 : EoC;
+			(loc = EoC) & (ccntr<15) : 32;
+			(loc = EoC) & !(ccntr<15) : EoC;
+			loc = 209 : 210;
+			loc = 210 : 211;
+			loc = 211 : 214;
+			loc = 212 : 213;
+			loc = 213 : 209;
+			loc = 214 : 37;
+			loc = 215 : 216;
+			loc = 216 : 217;
+			loc = 217 : 220;
+			loc = 218 : 219;
+			loc = 219 : 215;
+			loc = 220 : 39;
+			loc = 221 : 222;
+			loc = 222 : 226;
+			loc = 223 : 221;
+			loc = 224 : 225;
+			loc = 225 : 223;
+			loc = 226 : 41;
+			loc = 227 : 228;
+			loc = 228 : 229;
+			loc = 229 : 232;
+			loc = 230 : 231;
+			loc = 231 : 227;
+			loc = 232 : 43;
+			loc = 233 : 234;
+			loc = 234 : 235;
+			loc = 235 : 238;
+			loc = 236 : 237;
+			loc = 237 : 233;
+			loc = 238 : 44;
+			loc = 239 : 240;
+			loc = 240 : 241;
+			loc = 241 : 255;
+			loc = 242 : 243;
+			loc = 243 : 245;
+			loc = 244 : 242;
+			loc = 245 : 239;
+			loc = 246 : 247;
+			loc = 247 & !(SF_MutingSeq_MutingTimer_IN) : 248;
+			loc = 247 & SF_MutingSeq_MutingTimer_IN : 250;
+			loc = 248 : 249;
+			loc = 249 : 241;
+			loc = 250 & !(SF_MutingSeq_MutingTimer_Q) : 251;
+			loc = 250 & SF_MutingSeq_MutingTimer_Q : 241;
+			loc = 251 : 244;
+			loc = 252 : 253;
+			loc = 253 : 254;
+			loc = 254 : 246;
+			loc = 255 : 65;
+			loc = 256 : 257;
+			loc = 257 : 258;
+			loc = 258 : 261;
+			loc = 259 : 260;
+			loc = 260 : 256;
+			loc = 261 : 42;
+			loc = 262 : 263;
+			loc = 263 : 264;
+			loc = 264 : 267;
+			loc = 265 : 266;
+			loc = 266 : 262;
+			loc = 267 : 38;
+			loc = 268 : 269;
+			loc = 269 : 270;
+			loc = 270 : 284;
+			loc = 271 : 272;
+			loc = 272 : 274;
+			loc = 273 : 271;
+			loc = 274 : 268;
+			loc = 275 : 276;
+			loc = 276 & !(SF_MutingSeq_MutingTimer_IN) : 277;
+			loc = 276 & SF_MutingSeq_MutingTimer_IN : 279;
+			loc = 277 : 278;
+			loc = 278 : 270;
+			loc = 279 & !(SF_MutingSeq_MutingTimer_Q) : 280;
+			loc = 279 & SF_MutingSeq_MutingTimer_Q : 270;
+			loc = 280 : 273;
+			loc = 281 : 282;
+			loc = 282 : 283;
+			loc = 283 : 275;
+			loc = 284 : 178;
+			loc = 285 : 286;
+			loc = 286 : 287;
+			loc = 287 : 301;
+			loc = 288 : 289;
+			loc = 289 : 291;
+			loc = 290 : 288;
+			loc = 291 : 285;
+			loc = 292 : 293;
+			loc = 293 & !(SF_MutingSeq_MutingTimer_IN) : 294;
+			loc = 293 & SF_MutingSeq_MutingTimer_IN : 296;
+			loc = 294 : 295;
+			loc = 295 : 287;
+			loc = 296 & !(SF_MutingSeq_MutingTimer_Q) : 297;
+			loc = 296 & SF_MutingSeq_MutingTimer_Q : 287;
+			loc = 297 : 290;
+			loc = 298 : 299;
+			loc = 299 : 300;
+			loc = 300 : 292;
+			loc = 301 : 147;
+			loc = 302 : 303;
+			loc = 303 : 304;
+			loc = 304 : 318;
+			loc = 305 : 306;
+			loc = 306 : 308;
+			loc = 307 : 305;
+			loc = 308 : 302;
+			loc = 309 : 310;
+			loc = 310 & !(SF_MutingSeq_MutingTimer_IN) : 311;
+			loc = 310 & SF_MutingSeq_MutingTimer_IN : 313;
+			loc = 311 : 312;
+			loc = 312 : 304;
+			loc = 313 & !(SF_MutingSeq_MutingTimer_Q) : 314;
+			loc = 313 & SF_MutingSeq_MutingTimer_Q : 304;
+			loc = 314 : 307;
+			loc = 315 : 316;
+			loc = 316 : 317;
+			loc = 317 : 309;
+			loc = 318 : 69;
+			loc = 319 : 320;
+			loc = 320 : 321;
+			loc = 321 : 324;
+			loc = 322 : 323;
+			loc = 323 : 319;
+			loc = 324 : 36;
+			loc = 325 : 326;
+			loc = 326 : 327;
+			loc = 327 : 330;
+			loc = 328 : 329;
+			loc = 329 : 325;
+			loc = 330 : 40;
+			TRUE : loc;
+		esac;
+		next(ccntr) := case
+			loc = EoC & (ccntr = 0): 1;
+			loc = EoC & (ccntr = 1): 2;
+			loc = EoC & (ccntr = 2): 3;
+			loc = EoC & (ccntr = 3): 4;
+			loc = EoC & (ccntr = 4): 5;
+			loc = EoC & (ccntr = 5): 6;
+			loc = EoC & (ccntr = 6): 7;
+			loc = EoC & (ccntr = 7): 8;
+			loc = EoC & (ccntr = 8): 9;
+			loc = EoC & (ccntr = 9): 10;
+			loc = EoC & (ccntr = 10): 11;
+			loc = EoC & (ccntr = 11): 12;
+			loc = EoC & (ccntr = 12): 13;
+			loc = EoC & (ccntr = 13): 14;
+			loc = EoC & (ccntr = 14): 15;
+			loc = EoC & (ccntr = 15): 16;
+			TRUE : ccntr;
+		esac;
+
+		next(UNKNOWN_BOOL_UNKNOWN_BOOL) := case
+			loc = 242 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 271 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 288 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 305 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			TRUE : UNKNOWN_BOOL_UNKNOWN_BOOL;
+		esac;
+
+		next(SF_MutingSeq_Activate) := case
+			loc = EoC : SF_MutingSeq_Activate_IN;
+			TRUE : SF_MutingSeq_Activate;
+		esac;
+
+		next(SF_MutingSeq_S_AOPD_In) := case
+			loc = EoC : SF_MutingSeq_S_AOPD_In_IN;
+			TRUE : SF_MutingSeq_S_AOPD_In;
+		esac;
+
+		next(SF_MutingSeq_MutingSwitch11) := case
+			loc = EoC : SF_MutingSeq_MutingSwitch11_IN;
+			TRUE : SF_MutingSeq_MutingSwitch11;
+		esac;
+
+		next(SF_MutingSeq_MutingSwitch12) := case
+			loc = EoC : SF_MutingSeq_MutingSwitch12_IN;
+			TRUE : SF_MutingSeq_MutingSwitch12;
+		esac;
+
+		next(SF_MutingSeq_MutingSwitch21) := case
+			loc = EoC : SF_MutingSeq_MutingSwitch21_IN;
+			TRUE : SF_MutingSeq_MutingSwitch21;
+		esac;
+
+		next(SF_MutingSeq_MutingSwitch22) := case
+			loc = EoC : SF_MutingSeq_MutingSwitch22_IN;
+			TRUE : SF_MutingSeq_MutingSwitch22;
+		esac;
+
+		next(SF_MutingSeq_S_MutingLamp) := case
+			loc = EoC : SF_MutingSeq_S_MutingLamp_IN;
+			TRUE : SF_MutingSeq_S_MutingLamp;
+		esac;
+
+		next(SF_MutingSeq_DiscTime11_12) := case
+			loc = EoC : SF_MutingSeq_DiscTime11_12_IN;
+			TRUE : SF_MutingSeq_DiscTime11_12;
+		esac;
+
+		next(SF_MutingSeq_DiscTime21_22) := case
+			loc = EoC : SF_MutingSeq_DiscTime21_22_IN;
+			TRUE : SF_MutingSeq_DiscTime21_22;
+		esac;
+
+		next(SF_MutingSeq_MaxMutingTime) := case
+			loc = EoC : SF_MutingSeq_MaxMutingTime_IN;
+			TRUE : SF_MutingSeq_MaxMutingTime;
+		esac;
+
+		next(SF_MutingSeq_MutingEnable) := case
+			loc = EoC : SF_MutingSeq_MutingEnable_IN;
+			TRUE : SF_MutingSeq_MutingEnable;
+		esac;
+
+		next(SF_MutingSeq_S_StartReset) := case
+			loc = EoC : SF_MutingSeq_S_StartReset_IN;
+			TRUE : SF_MutingSeq_S_StartReset;
+		esac;
+
+		next(SF_MutingSeq_Reset) := case
+			loc = EoC : SF_MutingSeq_Reset_IN;
+			TRUE : SF_MutingSeq_Reset;
+		esac;
+
+		next(SF_MutingSeq_Ready) := case
+			loc = 181 : FALSE;
+			loc = 187 : TRUE;
+			loc = 193 : TRUE;
+			loc = 199 : TRUE;
+			loc = 204 : TRUE;
+			TRUE : SF_MutingSeq_Ready;
+		esac;
+
+		next(SF_MutingSeq_S_AOPD_Out) := case
+			loc = 182 : FALSE;
+			loc = 188 : TRUE;
+			loc = 194 : FALSE;
+			loc = 200 : TRUE;
+			loc = 205 : FALSE;
+			TRUE : SF_MutingSeq_S_AOPD_Out;
+		esac;
+
+		next(SF_MutingSeq_S_MutingActive) := case
+			loc = 183 : FALSE;
+			loc = 189 : FALSE;
+			loc = 195 : FALSE;
+			loc = 201 : TRUE;
+			loc = 206 : FALSE;
+			TRUE : SF_MutingSeq_S_MutingActive;
+		esac;
+
+		next(SF_MutingSeq_Error) := case
+			loc = 184 : FALSE;
+			loc = 190 : FALSE;
+			loc = 196 : FALSE;
+			loc = 202 : FALSE;
+			loc = 207 : TRUE;
+			TRUE : SF_MutingSeq_Error;
+		esac;
+
+		next(SF_MutingSeq_DiagCode) := case
+			loc = 45 : resize(0ud8_0,16);
+			loc = 50 : resize(0ud16_32769,16);
+			loc = 54 : resize(0ud16_49156,16);
+			loc = 57 : resize(0ud16_32770,16);
+			loc = 60 : resize(0ud16_49155,16);
+			loc = 63 : resize(0ud16_32785,16);
+			loc = 67 : resize(0ud16_33058,16);
+			loc = 72 : resize(0ud16_49153,16);
+			loc = 75 : resize(0ud16_32773,16);
+			loc = 79 : resize(0ud16_32771,16);
+			loc = 83 : resize(0ud16_49154,16);
+			loc = 86 : resize(0ud16_32773,16);
+			loc = 90 : resize(0ud16_32770,16);
+			loc = 93 : resize(0ud16_49155,16);
+			loc = 96 : resize(0ud16_32768,16);
+			loc = 100 : resize(0ud16_32769,16);
+			loc = 104 : resize(0ud16_32771,16);
+			loc = 108 : resize(0ud16_32771,16);
+			loc = 112 : resize(0ud16_32771,16);
+			loc = 116 : resize(0ud16_32771,16);
+			loc = 121 : resize(0ud16_49412,16);
+			loc = 124 : resize(0ud16_49158,16);
+			loc = 127 : resize(0ud16_32770,16);
+			loc = 130 : resize(0ud16_49155,16);
+			loc = 133 : resize(0ud16_32786,16);
+			loc = 137 : resize(0ud16_49412,16);
+			loc = 140 : resize(0ud16_49158,16);
+			loc = 143 : resize(0ud16_49155,16);
+			loc = 147 : resize(0ud16_32768,16);
+			loc = 151 : resize(0ud16_49412,16);
+			loc = 154 : resize(0ud16_49158,16);
+			loc = 157 : resize(0ud16_32770,16);
+			loc = 160 : resize(0ud16_49155,16);
+			loc = 163 : resize(0ud16_33042,16);
+			loc = 167 : resize(0ud16_49412,16);
+			loc = 170 : resize(0ud16_49158,16);
+			loc = 173 : resize(0ud16_49155,16);
+			loc = 176 : resize(0ud16_32768,16);
+			TRUE : SF_MutingSeq_DiagCode;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatReset_CLK) := case
+			loc = 322 : SF_MutingSeq_Reset;
+			TRUE : SF_MutingSeq_R_TRIGatReset_CLK;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatReset_Q) := case
+			loc = 319 : (SF_MutingSeq_R_TRIGatReset_CLK & !(SF_MutingSeq_R_TRIGatReset_M));
+			TRUE : SF_MutingSeq_R_TRIGatReset_Q;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatReset_M) := case
+			loc = 320 : SF_MutingSeq_R_TRIGatReset_CLK;
+			TRUE : SF_MutingSeq_R_TRIGatReset_M;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_11_CLK) := case
+			loc = 212 : SF_MutingSeq_MutingSwitch11;
+			TRUE : SF_MutingSeq_R_TRIGatMS_11_CLK;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_11_Q) := case
+			loc = 209 : (SF_MutingSeq_R_TRIGatMS_11_CLK & !(SF_MutingSeq_R_TRIGatMS_11_M));
+			TRUE : SF_MutingSeq_R_TRIGatMS_11_Q;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_11_M) := case
+			loc = 210 : SF_MutingSeq_R_TRIGatMS_11_CLK;
+			TRUE : SF_MutingSeq_R_TRIGatMS_11_M;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_12_CLK) := case
+			loc = 265 : SF_MutingSeq_MutingSwitch12;
+			TRUE : SF_MutingSeq_R_TRIGatMS_12_CLK;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_12_Q) := case
+			loc = 262 : (SF_MutingSeq_R_TRIGatMS_12_CLK & !(SF_MutingSeq_R_TRIGatMS_12_M));
+			TRUE : SF_MutingSeq_R_TRIGatMS_12_Q;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_12_M) := case
+			loc = 263 : SF_MutingSeq_R_TRIGatMS_12_CLK;
+			TRUE : SF_MutingSeq_R_TRIGatMS_12_M;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_21_CLK) := case
+			loc = 218 : SF_MutingSeq_MutingSwitch21;
+			TRUE : SF_MutingSeq_R_TRIGatMS_21_CLK;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_21_Q) := case
+			loc = 215 : (SF_MutingSeq_R_TRIGatMS_21_CLK & !(SF_MutingSeq_R_TRIGatMS_21_M));
+			TRUE : SF_MutingSeq_R_TRIGatMS_21_Q;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_21_M) := case
+			loc = 216 : SF_MutingSeq_R_TRIGatMS_21_CLK;
+			TRUE : SF_MutingSeq_R_TRIGatMS_21_M;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_22_CLK) := case
+			loc = 328 : SF_MutingSeq_MutingSwitch22;
+			TRUE : SF_MutingSeq_R_TRIGatMS_22_CLK;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_22_Q) := case
+			loc = 325 : (SF_MutingSeq_R_TRIGatMS_22_CLK & !(SF_MutingSeq_R_TRIGatMS_22_M));
+			TRUE : SF_MutingSeq_R_TRIGatMS_22_Q;
+		esac;
+
+		next(SF_MutingSeq_R_TRIGatMS_22_M) := case
+			loc = 326 : SF_MutingSeq_R_TRIGatMS_22_CLK;
+			TRUE : SF_MutingSeq_R_TRIGatMS_22_M;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_11_CLK) := case
+			loc = 224 : SF_MutingSeq_MutingSwitch11;
+			TRUE : SF_MutingSeq_F_TRIGatMS_11_CLK;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_11_Q) := case
+			loc = 223 : (!(SF_MutingSeq_F_TRIGatMS_11_CLK) & SF_MutingSeq_F_TRIGatMS_11_M);
+			TRUE : SF_MutingSeq_F_TRIGatMS_11_Q;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_11_M) := case
+			loc = 221 : SF_MutingSeq_F_TRIGatMS_11_CLK;
+			TRUE : SF_MutingSeq_F_TRIGatMS_11_M;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_12_CLK) := case
+			loc = 259 : SF_MutingSeq_MutingSwitch12;
+			TRUE : SF_MutingSeq_F_TRIGatMS_12_CLK;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_12_Q) := case
+			loc = 256 : (!(SF_MutingSeq_F_TRIGatMS_12_CLK) & SF_MutingSeq_F_TRIGatMS_12_M);
+			TRUE : SF_MutingSeq_F_TRIGatMS_12_Q;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_12_M) := case
+			loc = 257 : SF_MutingSeq_F_TRIGatMS_12_CLK;
+			TRUE : SF_MutingSeq_F_TRIGatMS_12_M;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_21_CLK) := case
+			loc = 230 : SF_MutingSeq_MutingSwitch21;
+			TRUE : SF_MutingSeq_F_TRIGatMS_21_CLK;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_21_Q) := case
+			loc = 227 : (!(SF_MutingSeq_F_TRIGatMS_21_CLK) & SF_MutingSeq_F_TRIGatMS_21_M);
+			TRUE : SF_MutingSeq_F_TRIGatMS_21_Q;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_21_M) := case
+			loc = 228 : SF_MutingSeq_F_TRIGatMS_21_CLK;
+			TRUE : SF_MutingSeq_F_TRIGatMS_21_M;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_22_CLK) := case
+			loc = 236 : SF_MutingSeq_MutingSwitch22;
+			TRUE : SF_MutingSeq_F_TRIGatMS_22_CLK;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_22_Q) := case
+			loc = 233 : (!(SF_MutingSeq_F_TRIGatMS_22_CLK) & SF_MutingSeq_F_TRIGatMS_22_M);
+			TRUE : SF_MutingSeq_F_TRIGatMS_22_Q;
+		esac;
+
+		next(SF_MutingSeq_F_TRIGatMS_22_M) := case
+			loc = 234 : SF_MutingSeq_F_TRIGatMS_22_CLK;
+			TRUE : SF_MutingSeq_F_TRIGatMS_22_M;
+		esac;
+
+		next(SF_MutingSeq_MutingTimer_IN) := case
+			loc = 252 : TRUE;
+			loc = 281 : FALSE;
+			loc = 298 : FALSE;
+			loc = 315 : TRUE;
+			TRUE : SF_MutingSeq_MutingTimer_IN;
+		esac;
+
+		next(SF_MutingSeq_MutingTimer_PT) := case
+			loc = 253 : SF_MutingSeq_MaxMutingTime;
+			loc = 282 : SF_MutingSeq_MaxMutingTime;
+			loc = 299 : SF_MutingSeq_MaxMutingTime;
+			loc = 316 : SF_MutingSeq_MaxMutingTime;
+			TRUE : SF_MutingSeq_MutingTimer_PT;
+		esac;
+
+		next(SF_MutingSeq_MutingTimer_Q) := case
+			loc = 240 : SF_MutingSeq_MutingTimer___TEMP0;
+			loc = 248 : FALSE;
+			loc = 269 : SF_MutingSeq_MutingTimer___TEMP0;
+			loc = 277 : FALSE;
+			loc = 286 : SF_MutingSeq_MutingTimer___TEMP0;
+			loc = 294 : FALSE;
+			loc = 303 : SF_MutingSeq_MutingTimer___TEMP0;
+			loc = 311 : FALSE;
+			TRUE : SF_MutingSeq_MutingTimer_Q;
+		esac;
+
+		next(SF_MutingSeq_MutingTimer___TEMP0) := case
+			loc = 239 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 246 : FALSE;
+			loc = 268 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 275 : FALSE;
+			loc = 285 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 292 : FALSE;
+			loc = 302 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 309 : FALSE;
+			TRUE : SF_MutingSeq_MutingTimer___TEMP0;
+		esac;
+
+		next(SF_MutingSeq___TEMP0) := case
+			loc = 34 : 0ud16_0;
+			loc = 47 : SF_MutingSeq_DiagCode;
+			TRUE : SF_MutingSeq___TEMP0;
+		esac;
+
+		next(SF_MutingSeq___TEMP1) := case
+			loc = 33 : 0ud16_0;
+			loc = 118 : SF_MutingSeq_DiagCode;
+			TRUE : SF_MutingSeq___TEMP1;
+		esac;
+
+		next(SF_MutingSeq___TEMP2) := case
+			loc = 32 : 0ud16_0;
+			loc = 179 : SF_MutingSeq_DiagCode;
+			TRUE : SF_MutingSeq___TEMP2;
+		esac;
+
+INVARSPEC (loc = EoC) -> !(((SF_MutingSeq_DiagCode = resize(0ud16_32785,16)) & !(((!((SF_MutingSeq_MutingEnable = !((0ud8_0 = 0ud8_0)))) & (SF_MutingSeq_MutingSwitch12 = !((0ud8_0 = 0ud8_0)))) & (SF_MutingSeq_MutingSwitch21 = !((0ud8_0 = 0ud8_0)))))))

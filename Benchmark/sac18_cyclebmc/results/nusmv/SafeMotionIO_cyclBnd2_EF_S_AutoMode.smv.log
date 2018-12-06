@@ -1,0 +1,2043 @@
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:36:56 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- invariant (loc = EoC -> SafeMotionIO_S_AutoMode = !(0ud8_0 = 0ud8_0))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: AG alpha Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    loc = 828
+    ccntr = 0
+    UNKNOWN_BOOL_UNKNOWN_BOOL = FALSE
+    SafeMotionIO_S1_S_EStopIn = FALSE
+    SafeMotionIO_S2_S_AutoMode = FALSE
+    SafeMotionIO_S2_S_SetupMode = FALSE
+    SafeMotionIO_S4_S_EnableSwitchCh1 = FALSE
+    SafeMotionIO_S4_S_EnableSwitchCh2 = FALSE
+    SafeMotionIO_S5_S_GuardSwitch = FALSE
+    SafeMotionIO_S7_S_GuardLock = FALSE
+    SafeMotionIO_S0_Reset = FALSE
+    SafeMotionIO_S8_UnlockGuard = FALSE
+    SafeMotionIO_M1_S_AcknowledgeSS1 = FALSE
+    SafeMotionIO_M1_S_AcknowledgeSafeMotion = FALSE
+    SafeMotionIO_S_SafeStop_M1 = FALSE
+    SafeMotionIO_S_SafeMotion_M1 = FALSE
+    SafeMotionIO_S_Enable_M1 = FALSE
+    SafeMotionIO_S_UnlockGuard_K1 = FALSE
+    SafeMotionIO_S_SetupMode = FALSE
+    SafeMotionIO_S_AutoMode = FALSE
+    SafeMotionIO_S_SafeStandstill = FALSE
+    SafeMotionIO_S_SafeMotionActive = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_Activate = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_S_EStopIn = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_S_StartReset = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_S_AutoReset = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_Reset = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_Ready = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_S_EStopOut = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_Error = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_DiagCode = 0ud16_0
+    SafeMotionIO_SF_EmergencyStop_1_R_TRIGatReset_CLK = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_R_TRIGatReset_Q = FALSE
+    SafeMotionIO_SF_EmergencyStop_1_R_TRIGatReset_M = FALSE
+    SafeMotionIO_SF_EmergencyStop_1___TEMP0 = 0ud16_0
+    SafeMotionIO_SF_EmergencyStop_1___TEMP1 = 0ud16_0
+    SafeMotionIO_SF_SafetyRequest_1_Activate = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_S_OpMode = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_S_Acknowledge = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_MonitoringTime = 0ud32_0
+    SafeMotionIO_SF_SafetyRequest_1_Reset = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_Ready = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_S_SafetyActive = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_S_SafetyRequest = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_Error = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_DiagCode = 0ud16_0
+    SafeMotionIO_SF_SafetyRequest_1_R_TRIGatReset_CLK = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_R_TRIGatReset_Q = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_R_TRIGatReset_M = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_T1_IN = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_T1_PT = 0ud32_0
+    SafeMotionIO_SF_SafetyRequest_1_T1_Q = FALSE
+    SafeMotionIO_SF_SafetyRequest_1_T1___TEMP0 = FALSE
+    SafeMotionIO_SF_SafetyRequest_1___TEMP0 = 0ud16_0
+    SafeMotionIO_SF_SafetyRequest_1___TEMP1 = 0ud16_0
+    SafeMotionIO_SF_SafetyRequest_2_Activate = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_S_OpMode = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_S_Acknowledge = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_MonitoringTime = 0ud32_0
+    SafeMotionIO_SF_SafetyRequest_2_Reset = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_Ready = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_S_SafetyActive = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_S_SafetyRequest = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_Error = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_DiagCode = 0ud16_0
+    SafeMotionIO_SF_SafetyRequest_2_R_TRIGatReset_CLK = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_R_TRIGatReset_Q = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_R_TRIGatReset_M = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_T1_IN = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_T1_PT = 0ud32_0
+    SafeMotionIO_SF_SafetyRequest_2_T1_Q = FALSE
+    SafeMotionIO_SF_SafetyRequest_2_T1___TEMP0 = FALSE
+    SafeMotionIO_SF_SafetyRequest_2___TEMP0 = 0ud16_0
+    SafeMotionIO_SF_SafetyRequest_2___TEMP1 = 0ud16_0
+    SafeMotionIO_SF_ModeSelector_1_Activate = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode0 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode1 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode2 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode3 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode4 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode5 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode6 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode7 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Unlock = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_SetMode = FALSE
+    SafeMotionIO_SF_ModeSelector_1_AutoSetMode = FALSE
+    SafeMotionIO_SF_ModeSelector_1_ModeMonitorTime = 0ud32_0
+    SafeMotionIO_SF_ModeSelector_1_Reset = FALSE
+    SafeMotionIO_SF_ModeSelector_1_Ready = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode0Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode1Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode2Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode3Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode4Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode5Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode6Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_Mode7Sel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_S_AnyModeSel = FALSE
+    SafeMotionIO_SF_ModeSelector_1_Error = FALSE
+    SafeMotionIO_SF_ModeSelector_1_DiagCode = 0ud16_0
+    SafeMotionIO_SF_ModeSelector_1_T_1_IN = FALSE
+    SafeMotionIO_SF_ModeSelector_1_T_1_PT = 0ud32_0
+    SafeMotionIO_SF_ModeSelector_1_T_1_Q = FALSE
+    SafeMotionIO_SF_ModeSelector_1_T_1___TEMP0 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatReset_CLK = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatReset_Q = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatReset_M = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatSetMode_CLK = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatSetMode_Q = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatSetMode_M = FALSE
+    SafeMotionIO_SF_ModeSelector_1_F_TRIGatModeSel0_CLK = FALSE
+    SafeMotionIO_SF_ModeSelector_1_F_TRIGatModeSel0_Q = FALSE
+    SafeMotionIO_SF_ModeSelector_1_F_TRIGatModeSel0_M = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatModeSel0_CLK = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatModeSel0_Q = FALSE
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatModeSel0_M = FALSE
+    SafeMotionIO_SF_ModeSelector_1_Error1 = FALSE
+    SafeMotionIO_SF_ModeSelector_1_Error2 = FALSE
+    SafeMotionIO_SF_ModeSelector_1___TEMP0 = 0ud16_0
+    SafeMotionIO_SF_ModeSelector_1___TEMP1 = 0ud16_0
+    SafeMotionIO_SF_GuardLocking_1_Activate = FALSE
+    SafeMotionIO_SF_GuardLocking_1_S_GuardMonitoring = FALSE
+    SafeMotionIO_SF_GuardLocking_1_S_SafetyActive = FALSE
+    SafeMotionIO_SF_GuardLocking_1_S_GuardLock = FALSE
+    SafeMotionIO_SF_GuardLocking_1_UnlockRequest = FALSE
+    SafeMotionIO_SF_GuardLocking_1_S_StartReset = FALSE
+    SafeMotionIO_SF_GuardLocking_1_S_AutoReset = FALSE
+    SafeMotionIO_SF_GuardLocking_1_Reset = FALSE
+    SafeMotionIO_SF_GuardLocking_1_Ready = FALSE
+    SafeMotionIO_SF_GuardLocking_1_S_GuardLocked = FALSE
+    SafeMotionIO_SF_GuardLocking_1_S_UnlockGuard = FALSE
+    SafeMotionIO_SF_GuardLocking_1_Error = FALSE
+    SafeMotionIO_SF_GuardLocking_1_DiagCode = 0ud16_0
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatReset_CLK = FALSE
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatReset_Q = FALSE
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatReset_M = FALSE
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatUnlockRequest_CLK = FALSE
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatUnlockRequest_Q = FALSE
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatUnlockRequest_M = FALSE
+    SafeMotionIO_SF_GuardLocking_1_T1_IN = FALSE
+    SafeMotionIO_SF_GuardLocking_1_T1_PT = 0ud32_0
+    SafeMotionIO_SF_GuardLocking_1_T1_Q = FALSE
+    SafeMotionIO_SF_GuardLocking_1_T1___TEMP0 = FALSE
+    SafeMotionIO_SF_GuardLocking_1___TEMP0 = 0ud16_0
+    SafeMotionIO_SF_GuardLocking_1___TEMP1 = 0ud16_0
+    SafeMotionIO_SF_EnableSwitch_1_Activate = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_S_SafetyActive = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_S_EnableSwitchCh1 = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_S_EnableSwitchCh2 = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_S_AutoReset = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_Reset = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_Ready = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_S_EnableSwitchOut = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_Error = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_DiagCode = 0ud16_0
+    SafeMotionIO_SF_EnableSwitch_1_R_TRIGatReset_CLK = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_R_TRIGatReset_Q = FALSE
+    SafeMotionIO_SF_EnableSwitch_1_R_TRIGatReset_M = FALSE
+    SafeMotionIO_SF_EnableSwitch_1___TEMP0 = 0ud16_0
+    SafeMotionIO_SF_EnableSwitch_1___TEMP1 = 0ud16_0
+  -> Input: 1.2 <-
+    SafeMotionIO_S1_S_EStopIn_IN = FALSE
+    SafeMotionIO_S2_S_AutoMode_IN = FALSE
+    SafeMotionIO_S2_S_SetupMode_IN = FALSE
+    SafeMotionIO_S4_S_EnableSwitchCh1_IN = FALSE
+    SafeMotionIO_S4_S_EnableSwitchCh2_IN = FALSE
+    SafeMotionIO_S5_S_GuardSwitch_IN = FALSE
+    SafeMotionIO_S7_S_GuardLock_IN = FALSE
+    SafeMotionIO_S0_Reset_IN = FALSE
+    SafeMotionIO_S8_UnlockGuard_IN = FALSE
+    SafeMotionIO_M1_S_AcknowledgeSS1_IN = FALSE
+    SafeMotionIO_M1_S_AcknowledgeSafeMotion_IN = FALSE
+    UNKNOWN_BOOL_UNKNOWN_BOOL_IN = FALSE
+  -> State: 1.2 <-
+    loc = EoC
+  -> Input: 1.3 <-
+    SafeMotionIO_S8_UnlockGuard_IN = TRUE
+  -> State: 1.3 <-
+    loc = 814
+    ccntr = 1
+    SafeMotionIO_S8_UnlockGuard = TRUE
+  -> Input: 1.4 <-
+    SafeMotionIO_S8_UnlockGuard_IN = FALSE
+  -> State: 1.4 <-
+    loc = 1157
+  -> Input: 1.5 <-
+  -> State: 1.5 <-
+    loc = 1158
+    SafeMotionIO_SF_EmergencyStop_1_Activate = TRUE
+  -> Input: 1.6 <-
+  -> State: 1.6 <-
+    loc = 1159
+  -> Input: 1.7 <-
+  -> State: 1.7 <-
+    loc = 1160
+  -> Input: 1.8 <-
+  -> State: 1.8 <-
+    loc = 1161
+  -> Input: 1.9 <-
+  -> State: 1.9 <-
+    loc = 1162
+  -> Input: 1.10 <-
+  -> State: 1.10 <-
+    loc = 1040
+  -> Input: 1.11 <-
+  -> State: 1.11 <-
+    loc = 1041
+  -> Input: 1.12 <-
+  -> State: 1.12 <-
+    loc = 1042
+  -> Input: 1.13 <-
+  -> State: 1.13 <-
+    loc = 1154
+  -> Input: 1.14 <-
+  -> State: 1.14 <-
+    loc = 1155
+  -> Input: 1.15 <-
+  -> State: 1.15 <-
+    loc = 1151
+  -> Input: 1.16 <-
+  -> State: 1.16 <-
+    loc = 1152
+  -> Input: 1.17 <-
+  -> State: 1.17 <-
+    loc = 1153
+  -> Input: 1.18 <-
+  -> State: 1.18 <-
+    loc = 1156
+  -> Input: 1.19 <-
+  -> State: 1.19 <-
+    loc = 1043
+  -> Input: 1.20 <-
+  -> State: 1.20 <-
+    loc = 1046
+  -> Input: 1.21 <-
+  -> State: 1.21 <-
+    loc = 1047
+  -> Input: 1.22 <-
+  -> State: 1.22 <-
+    loc = 1048
+  -> Input: 1.23 <-
+  -> State: 1.23 <-
+    loc = 1049
+  -> Input: 1.24 <-
+  -> State: 1.24 <-
+    loc = 1050
+    SafeMotionIO_SF_EmergencyStop_1_DiagCode = 0ud16_32769
+  -> Input: 1.25 <-
+  -> State: 1.25 <-
+    loc = 1104
+  -> Input: 1.26 <-
+  -> State: 1.26 <-
+    loc = 1105
+    SafeMotionIO_SF_EmergencyStop_1___TEMP1 = 0ud16_32769
+  -> Input: 1.27 <-
+  -> State: 1.27 <-
+    loc = 1110
+  -> Input: 1.28 <-
+  -> State: 1.28 <-
+    loc = 1111
+  -> Input: 1.29 <-
+  -> State: 1.29 <-
+    loc = 1112
+    SafeMotionIO_SF_EmergencyStop_1_Ready = TRUE
+  -> Input: 1.30 <-
+  -> State: 1.30 <-
+    loc = 1113
+  -> Input: 1.31 <-
+  -> State: 1.31 <-
+    loc = 1114
+  -> Input: 1.32 <-
+  -> State: 1.32 <-
+    loc = 1150
+  -> Input: 1.33 <-
+  -> State: 1.33 <-
+    loc = 1163
+  -> Input: 1.34 <-
+  -> State: 1.34 <-
+    loc = 815
+  -> Input: 1.35 <-
+  -> State: 1.35 <-
+    loc = 1750
+  -> Input: 1.36 <-
+  -> State: 1.36 <-
+    loc = 1751
+    SafeMotionIO_SF_SafetyRequest_1_Activate = TRUE
+  -> Input: 1.37 <-
+  -> State: 1.37 <-
+    loc = 1752
+  -> Input: 1.38 <-
+  -> State: 1.38 <-
+    loc = 1753
+  -> Input: 1.39 <-
+  -> State: 1.39 <-
+    loc = 1754
+    SafeMotionIO_SF_SafetyRequest_1_MonitoringTime = 0ud32_100
+  -> Input: 1.40 <-
+  -> State: 1.40 <-
+    loc = 1755
+  -> Input: 1.41 <-
+  -> State: 1.41 <-
+    loc = 1546
+  -> Input: 1.42 <-
+  -> State: 1.42 <-
+    loc = 1547
+  -> Input: 1.43 <-
+  -> State: 1.43 <-
+    loc = 1548
+  -> Input: 1.44 <-
+  -> State: 1.44 <-
+    loc = 1696
+  -> Input: 1.45 <-
+  -> State: 1.45 <-
+    loc = 1697
+  -> Input: 1.46 <-
+  -> State: 1.46 <-
+    loc = 1693
+  -> Input: 1.47 <-
+  -> State: 1.47 <-
+    loc = 1694
+  -> Input: 1.48 <-
+  -> State: 1.48 <-
+    loc = 1695
+  -> Input: 1.49 <-
+  -> State: 1.49 <-
+    loc = 1698
+  -> Input: 1.50 <-
+  -> State: 1.50 <-
+    loc = 1549
+  -> Input: 1.51 <-
+  -> State: 1.51 <-
+    loc = 1552
+  -> Input: 1.52 <-
+  -> State: 1.52 <-
+    loc = 1553
+  -> Input: 1.53 <-
+  -> State: 1.53 <-
+    loc = 1554
+  -> Input: 1.54 <-
+  -> State: 1.54 <-
+    loc = 1555
+  -> Input: 1.55 <-
+  -> State: 1.55 <-
+    loc = 1556
+    SafeMotionIO_SF_SafetyRequest_1_DiagCode = 0ud16_32769
+  -> Input: 1.56 <-
+  -> State: 1.56 <-
+    loc = 1623
+  -> Input: 1.57 <-
+  -> State: 1.57 <-
+    loc = 1624
+  -> Input: 1.58 <-
+  -> State: 1.58 <-
+    loc = 1746
+  -> Input: 1.59 <-
+  -> State: 1.59 <-
+    loc = 1747
+  -> Input: 1.60 <-
+  -> State: 1.60 <-
+    loc = 1748
+    SafeMotionIO_SF_SafetyRequest_1_T1_PT = 0ud32_100
+  -> Input: 1.61 <-
+  -> State: 1.61 <-
+    loc = 1733
+  -> Input: 1.62 <-
+  -> State: 1.62 <-
+    loc = 1734
+  -> Input: 1.63 <-
+  -> State: 1.63 <-
+    loc = 1735
+  -> Input: 1.64 <-
+  -> State: 1.64 <-
+    loc = 1736
+  -> Input: 1.65 <-
+  -> State: 1.65 <-
+    loc = 1741
+  -> Input: 1.66 <-
+  -> State: 1.66 <-
+    loc = 1749
+  -> Input: 1.67 <-
+  -> State: 1.67 <-
+    loc = 1625
+  -> Input: 1.68 <-
+  -> State: 1.68 <-
+    loc = 1626
+    SafeMotionIO_SF_SafetyRequest_1___TEMP1 = 0ud16_32769
+  -> Input: 1.69 <-
+  -> State: 1.69 <-
+    loc = 1632
+  -> Input: 1.70 <-
+  -> State: 1.70 <-
+    loc = 1638
+  -> Input: 1.71 <-
+  -> State: 1.71 <-
+    loc = 1639
+  -> Input: 1.72 <-
+  -> State: 1.72 <-
+    loc = 1640
+    SafeMotionIO_SF_SafetyRequest_1_Ready = TRUE
+  -> Input: 1.73 <-
+  -> State: 1.73 <-
+    loc = 1641
+  -> Input: 1.74 <-
+  -> State: 1.74 <-
+    loc = 1642
+  -> Input: 1.75 <-
+  -> State: 1.75 <-
+    loc = 1643
+  -> Input: 1.76 <-
+  -> State: 1.76 <-
+    loc = 1692
+  -> Input: 1.77 <-
+  -> State: 1.77 <-
+    loc = 1756
+  -> Input: 1.78 <-
+  -> State: 1.78 <-
+    loc = 816
+  -> Input: 1.79 <-
+  -> State: 1.79 <-
+    loc = 1033
+  -> Input: 1.80 <-
+  -> State: 1.80 <-
+    loc = 1034
+    SafeMotionIO_SF_SafetyRequest_2_Activate = TRUE
+  -> Input: 1.81 <-
+  -> State: 1.81 <-
+    loc = 1035
+  -> Input: 1.82 <-
+  -> State: 1.82 <-
+    loc = 1036
+  -> Input: 1.83 <-
+  -> State: 1.83 <-
+    loc = 1037
+    SafeMotionIO_SF_SafetyRequest_2_MonitoringTime = 0ud32_100
+  -> Input: 1.84 <-
+  -> State: 1.84 <-
+    loc = 1038
+  -> Input: 1.85 <-
+  -> State: 1.85 <-
+    loc = 829
+  -> Input: 1.86 <-
+  -> State: 1.86 <-
+    loc = 830
+  -> Input: 1.87 <-
+  -> State: 1.87 <-
+    loc = 831
+  -> Input: 1.88 <-
+  -> State: 1.88 <-
+    loc = 1030
+  -> Input: 1.89 <-
+  -> State: 1.89 <-
+    loc = 1031
+  -> Input: 1.90 <-
+  -> State: 1.90 <-
+    loc = 1027
+  -> Input: 1.91 <-
+  -> State: 1.91 <-
+    loc = 1028
+  -> Input: 1.92 <-
+  -> State: 1.92 <-
+    loc = 1029
+  -> Input: 1.93 <-
+  -> State: 1.93 <-
+    loc = 1032
+  -> Input: 1.94 <-
+  -> State: 1.94 <-
+    loc = 832
+  -> Input: 1.95 <-
+  -> State: 1.95 <-
+    loc = 835
+  -> Input: 1.96 <-
+  -> State: 1.96 <-
+    loc = 836
+  -> Input: 1.97 <-
+  -> State: 1.97 <-
+    loc = 837
+  -> Input: 1.98 <-
+  -> State: 1.98 <-
+    loc = 838
+  -> Input: 1.99 <-
+  -> State: 1.99 <-
+    loc = 839
+    SafeMotionIO_SF_SafetyRequest_2_DiagCode = 0ud16_32769
+  -> Input: 1.100 <-
+  -> State: 1.100 <-
+    loc = 906
+  -> Input: 1.101 <-
+  -> State: 1.101 <-
+    loc = 907
+  -> Input: 1.102 <-
+  -> State: 1.102 <-
+    loc = 1023
+  -> Input: 1.103 <-
+  -> State: 1.103 <-
+    loc = 1024
+  -> Input: 1.104 <-
+  -> State: 1.104 <-
+    loc = 1025
+    SafeMotionIO_SF_SafetyRequest_2_T1_PT = 0ud32_100
+  -> Input: 1.105 <-
+  -> State: 1.105 <-
+    loc = 1010
+  -> Input: 1.106 <-
+  -> State: 1.106 <-
+    loc = 1011
+  -> Input: 1.107 <-
+  -> State: 1.107 <-
+    loc = 1012
+  -> Input: 1.108 <-
+  -> State: 1.108 <-
+    loc = 1013
+  -> Input: 1.109 <-
+  -> State: 1.109 <-
+    loc = 1018
+  -> Input: 1.110 <-
+  -> State: 1.110 <-
+    loc = 1026
+  -> Input: 1.111 <-
+  -> State: 1.111 <-
+    loc = 908
+  -> Input: 1.112 <-
+  -> State: 1.112 <-
+    loc = 909
+    SafeMotionIO_SF_SafetyRequest_2___TEMP1 = 0ud16_32769
+  -> Input: 1.113 <-
+  -> State: 1.113 <-
+    loc = 915
+  -> Input: 1.114 <-
+  -> State: 1.114 <-
+    loc = 921
+  -> Input: 1.115 <-
+  -> State: 1.115 <-
+    loc = 922
+  -> Input: 1.116 <-
+  -> State: 1.116 <-
+    loc = 923
+    SafeMotionIO_SF_SafetyRequest_2_Ready = TRUE
+  -> Input: 1.117 <-
+  -> State: 1.117 <-
+    loc = 924
+  -> Input: 1.118 <-
+  -> State: 1.118 <-
+    loc = 925
+  -> Input: 1.119 <-
+  -> State: 1.119 <-
+    loc = 926
+  -> Input: 1.120 <-
+  -> State: 1.120 <-
+    loc = 975
+  -> Input: 1.121 <-
+  -> State: 1.121 <-
+    loc = 1039
+  -> Input: 1.122 <-
+  -> State: 1.122 <-
+    loc = 817
+  -> Input: 1.123 <-
+  -> State: 1.123 <-
+    loc = 1388
+  -> Input: 1.124 <-
+  -> State: 1.124 <-
+    loc = 1389
+    SafeMotionIO_SF_ModeSelector_1_Activate = TRUE
+  -> Input: 1.125 <-
+  -> State: 1.125 <-
+    loc = 1390
+  -> Input: 1.126 <-
+  -> State: 1.126 <-
+    loc = 1391
+  -> Input: 1.127 <-
+  -> State: 1.127 <-
+    loc = 1392
+  -> Input: 1.128 <-
+  -> State: 1.128 <-
+    loc = 1393
+  -> Input: 1.129 <-
+  -> State: 1.129 <-
+    loc = 1394
+  -> Input: 1.130 <-
+  -> State: 1.130 <-
+    loc = 1395
+  -> Input: 1.131 <-
+  -> State: 1.131 <-
+    loc = 1396
+  -> Input: 1.132 <-
+  -> State: 1.132 <-
+    loc = 1397
+  -> Input: 1.133 <-
+  -> State: 1.133 <-
+    loc = 1398
+    SafeMotionIO_SF_ModeSelector_1_S_Unlock = TRUE
+  -> Input: 1.134 <-
+  -> State: 1.134 <-
+    loc = 1399
+  -> Input: 1.135 <-
+  -> State: 1.135 <-
+    loc = 1400
+    SafeMotionIO_SF_ModeSelector_1_AutoSetMode = TRUE
+  -> Input: 1.136 <-
+  -> State: 1.136 <-
+    loc = 1401
+    SafeMotionIO_SF_ModeSelector_1_ModeMonitorTime = 0ud32_50
+  -> Input: 1.137 <-
+  -> State: 1.137 <-
+    loc = 1402
+  -> Input: 1.138 <-
+  -> State: 1.138 <-
+    loc = 1316
+  -> Input: 1.139 <-
+  -> State: 1.139 <-
+    loc = 1317
+  -> Input: 1.140 <-
+  -> State: 1.140 <-
+    loc = 1318
+  -> Input: 1.141 <-
+  -> State: 1.141 <-
+    loc = 1319
+  -> Input: 1.142 <-
+  -> State: 1.142 <-
+    loc = 1320
+  -> Input: 1.143 <-
+  -> State: 1.143 <-
+    loc = 1272
+  -> Input: 1.144 <-
+  -> State: 1.144 <-
+    loc = 1273
+  -> Input: 1.145 <-
+  -> State: 1.145 <-
+    loc = 1269
+  -> Input: 1.146 <-
+  -> State: 1.146 <-
+    loc = 1270
+  -> Input: 1.147 <-
+  -> State: 1.147 <-
+    loc = 1271
+  -> Input: 1.148 <-
+  -> State: 1.148 <-
+    loc = 1274
+  -> Input: 1.149 <-
+  -> State: 1.149 <-
+    loc = 1321
+  -> Input: 1.150 <-
+  -> State: 1.150 <-
+    loc = 1284
+  -> Input: 1.151 <-
+  -> State: 1.151 <-
+    loc = 1285
+  -> Input: 1.152 <-
+  -> State: 1.152 <-
+    loc = 1281
+  -> Input: 1.153 <-
+  -> State: 1.153 <-
+    loc = 1282
+  -> Input: 1.154 <-
+  -> State: 1.154 <-
+    loc = 1283
+  -> Input: 1.155 <-
+  -> State: 1.155 <-
+    loc = 1286
+  -> Input: 1.156 <-
+  -> State: 1.156 <-
+    loc = 1322
+  -> Input: 1.157 <-
+  -> State: 1.157 <-
+    loc = 1325
+  -> Input: 1.158 <-
+  -> State: 1.158 <-
+    loc = 1328
+  -> Input: 1.159 <-
+  -> State: 1.159 <-
+    loc = 1329
+  -> Input: 1.160 <-
+  -> State: 1.160 <-
+    loc = 1330
+  -> Input: 1.161 <-
+  -> State: 1.161 <-
+    loc = 1331
+  -> Input: 1.162 <-
+  -> State: 1.162 <-
+    loc = 1332
+  -> Input: 1.163 <-
+  -> State: 1.163 <-
+    loc = 1333
+    SafeMotionIO_SF_ModeSelector_1_DiagCode = 0ud16_32773
+  -> Input: 1.164 <-
+  -> State: 1.164 <-
+    loc = 1168
+  -> Input: 1.165 <-
+  -> State: 1.165 <-
+    loc = 1169
+    SafeMotionIO_SF_ModeSelector_1___TEMP1 = 0ud16_32773
+  -> Input: 1.166 <-
+  -> State: 1.166 <-
+    loc = 1182
+  -> Input: 1.167 <-
+  -> State: 1.167 <-
+    loc = 1183
+  -> Input: 1.168 <-
+  -> State: 1.168 <-
+    loc = 1184
+    SafeMotionIO_SF_ModeSelector_1_Ready = TRUE
+  -> Input: 1.169 <-
+  -> State: 1.169 <-
+    loc = 1185
+  -> Input: 1.170 <-
+  -> State: 1.170 <-
+    loc = 1186
+  -> Input: 1.171 <-
+  -> State: 1.171 <-
+    loc = 1187
+  -> Input: 1.172 <-
+  -> State: 1.172 <-
+    loc = 1188
+  -> Input: 1.173 <-
+  -> State: 1.173 <-
+    loc = 1189
+  -> Input: 1.174 <-
+  -> State: 1.174 <-
+    loc = 1190
+  -> Input: 1.175 <-
+  -> State: 1.175 <-
+    loc = 1191
+  -> Input: 1.176 <-
+  -> State: 1.176 <-
+    loc = 1192
+  -> Input: 1.177 <-
+  -> State: 1.177 <-
+    loc = 1193
+  -> Input: 1.178 <-
+  -> State: 1.178 <-
+    loc = 1194
+  -> Input: 1.179 <-
+  -> State: 1.179 <-
+    loc = 1226
+  -> Input: 1.180 <-
+  -> State: 1.180 <-
+    loc = 1228
+  -> Input: 1.181 <-
+  -> State: 1.181 <-
+    loc = 1403
+  -> Input: 1.182 <-
+  -> State: 1.182 <-
+    loc = 818
+  -> Input: 1.183 <-
+  -> State: 1.183 <-
+    loc = 1536
+  -> Input: 1.184 <-
+  -> State: 1.184 <-
+    loc = 1537
+    SafeMotionIO_SF_GuardLocking_1_Activate = TRUE
+  -> Input: 1.185 <-
+  -> State: 1.185 <-
+    loc = 1538
+  -> Input: 1.186 <-
+  -> State: 1.186 <-
+    loc = 1539
+  -> Input: 1.187 <-
+  -> State: 1.187 <-
+    loc = 1540
+  -> Input: 1.188 <-
+  -> State: 1.188 <-
+    loc = 1541
+    SafeMotionIO_SF_GuardLocking_1_UnlockRequest = TRUE
+  -> Input: 1.189 <-
+  -> State: 1.189 <-
+    loc = 1542
+  -> Input: 1.190 <-
+  -> State: 1.190 <-
+    loc = 1543
+  -> Input: 1.191 <-
+  -> State: 1.191 <-
+    loc = 1544
+  -> Input: 1.192 <-
+  -> State: 1.192 <-
+    loc = 1404
+  -> Input: 1.193 <-
+  -> State: 1.193 <-
+    loc = 1405
+  -> Input: 1.194 <-
+  -> State: 1.194 <-
+    loc = 1406
+  -> Input: 1.195 <-
+  -> State: 1.195 <-
+    loc = 1527
+  -> Input: 1.196 <-
+  -> State: 1.196 <-
+    loc = 1528
+  -> Input: 1.197 <-
+  -> State: 1.197 <-
+    loc = 1524
+  -> Input: 1.198 <-
+  -> State: 1.198 <-
+    loc = 1525
+  -> Input: 1.199 <-
+  -> State: 1.199 <-
+    loc = 1526
+  -> Input: 1.200 <-
+  -> State: 1.200 <-
+    loc = 1529
+  -> Input: 1.201 <-
+  -> State: 1.201 <-
+    loc = 1407
+  -> Input: 1.202 <-
+  -> State: 1.202 <-
+    loc = 1533
+  -> Input: 1.203 <-
+  -> State: 1.203 <-
+    loc = 1534
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatUnlockRequest_CLK = TRUE
+  -> Input: 1.204 <-
+  -> State: 1.204 <-
+    loc = 1530
+  -> Input: 1.205 <-
+  -> State: 1.205 <-
+    loc = 1531
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatUnlockRequest_Q = TRUE
+  -> Input: 1.206 <-
+  -> State: 1.206 <-
+    loc = 1532
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatUnlockRequest_M = TRUE
+  -> Input: 1.207 <-
+  -> State: 1.207 <-
+    loc = 1535
+  -> Input: 1.208 <-
+  -> State: 1.208 <-
+    loc = 1408
+  -> Input: 1.209 <-
+  -> State: 1.209 <-
+    loc = 1410
+  -> Input: 1.210 <-
+  -> State: 1.210 <-
+    loc = 1411
+  -> Input: 1.211 <-
+  -> State: 1.211 <-
+    loc = 1412
+  -> Input: 1.212 <-
+  -> State: 1.212 <-
+    loc = 1413
+  -> Input: 1.213 <-
+  -> State: 1.213 <-
+    loc = 1414
+    SafeMotionIO_SF_GuardLocking_1_DiagCode = 0ud16_32769
+  -> Input: 1.214 <-
+  -> State: 1.214 <-
+    loc = 1492
+  -> Input: 1.215 <-
+  -> State: 1.215 <-
+    loc = 1493
+    SafeMotionIO_SF_GuardLocking_1___TEMP1 = 0ud16_32769
+  -> Input: 1.216 <-
+  -> State: 1.216 <-
+    loc = 1499
+  -> Input: 1.217 <-
+  -> State: 1.217 <-
+    loc = 1505
+  -> Input: 1.218 <-
+  -> State: 1.218 <-
+    loc = 1506
+  -> Input: 1.219 <-
+  -> State: 1.219 <-
+    loc = 1507
+    SafeMotionIO_SF_GuardLocking_1_Ready = TRUE
+  -> Input: 1.220 <-
+  -> State: 1.220 <-
+    loc = 1508
+  -> Input: 1.221 <-
+  -> State: 1.221 <-
+    loc = 1509
+  -> Input: 1.222 <-
+  -> State: 1.222 <-
+    loc = 1510
+  -> Input: 1.223 <-
+  -> State: 1.223 <-
+    loc = 1523
+  -> Input: 1.224 <-
+  -> State: 1.224 <-
+    loc = 1545
+  -> Input: 1.225 <-
+  -> State: 1.225 <-
+    loc = 819
+  -> Input: 1.226 <-
+  -> State: 1.226 <-
+    loc = 1867
+  -> Input: 1.227 <-
+  -> State: 1.227 <-
+    loc = 1868
+    SafeMotionIO_SF_EnableSwitch_1_Activate = TRUE
+  -> Input: 1.228 <-
+  -> State: 1.228 <-
+    loc = 1869
+  -> Input: 1.229 <-
+  -> State: 1.229 <-
+    loc = 1870
+  -> Input: 1.230 <-
+  -> State: 1.230 <-
+    loc = 1871
+  -> Input: 1.231 <-
+  -> State: 1.231 <-
+    loc = 1872
+  -> Input: 1.232 <-
+  -> State: 1.232 <-
+    loc = 1873
+  -> Input: 1.233 <-
+  -> State: 1.233 <-
+    loc = 1809
+  -> Input: 1.234 <-
+  -> State: 1.234 <-
+    loc = 1810
+  -> Input: 1.235 <-
+  -> State: 1.235 <-
+    loc = 1811
+  -> Input: 1.236 <-
+  -> State: 1.236 <-
+    loc = 1806
+  -> Input: 1.237 <-
+  -> State: 1.237 <-
+    loc = 1807
+  -> Input: 1.238 <-
+  -> State: 1.238 <-
+    loc = 1803
+  -> Input: 1.239 <-
+  -> State: 1.239 <-
+    loc = 1804
+  -> Input: 1.240 <-
+  -> State: 1.240 <-
+    loc = 1805
+  -> Input: 1.241 <-
+  -> State: 1.241 <-
+    loc = 1808
+  -> Input: 1.242 <-
+  -> State: 1.242 <-
+    loc = 1812
+  -> Input: 1.243 <-
+  -> State: 1.243 <-
+    loc = 1815
+  -> Input: 1.244 <-
+  -> State: 1.244 <-
+    loc = 1816
+  -> Input: 1.245 <-
+  -> State: 1.245 <-
+    loc = 1817
+    SafeMotionIO_SF_EnableSwitch_1_DiagCode = 0ud16_32772
+  -> Input: 1.246 <-
+  -> State: 1.246 <-
+    loc = 1781
+  -> Input: 1.247 <-
+  -> State: 1.247 <-
+    loc = 1782
+    SafeMotionIO_SF_EnableSwitch_1___TEMP1 = 0ud16_32772
+  -> Input: 1.248 <-
+  -> State: 1.248 <-
+    loc = 1787
+  -> Input: 1.249 <-
+  -> State: 1.249 <-
+    loc = 1792
+  -> Input: 1.250 <-
+  -> State: 1.250 <-
+    loc = 1797
+  -> Input: 1.251 <-
+  -> State: 1.251 <-
+    loc = 1798
+  -> Input: 1.252 <-
+  -> State: 1.252 <-
+    loc = 1799
+    SafeMotionIO_SF_EnableSwitch_1_Ready = TRUE
+  -> Input: 1.253 <-
+  -> State: 1.253 <-
+    loc = 1800
+  -> Input: 1.254 <-
+  -> State: 1.254 <-
+    loc = 1801
+  -> Input: 1.255 <-
+  -> State: 1.255 <-
+    loc = 1802
+  -> Input: 1.256 <-
+  -> State: 1.256 <-
+    loc = 1874
+  -> Input: 1.257 <-
+  -> State: 1.257 <-
+    loc = 820
+  -> Input: 1.258 <-
+  -> State: 1.258 <-
+    loc = 821
+  -> Input: 1.259 <-
+  -> State: 1.259 <-
+    loc = 822
+  -> Input: 1.260 <-
+  -> State: 1.260 <-
+    loc = 823
+  -> Input: 1.261 <-
+  -> State: 1.261 <-
+    loc = 824
+  -> Input: 1.262 <-
+  -> State: 1.262 <-
+    loc = 825
+  -> Input: 1.263 <-
+  -> State: 1.263 <-
+    loc = 826
+  -> Input: 1.264 <-
+  -> State: 1.264 <-
+    loc = 827
+  -> Input: 1.265 <-
+  -> State: 1.265 <-
+    loc = 828
+  -> Input: 1.266 <-
+  -> State: 1.266 <-
+    loc = EoC
+  -> Input: 1.267 <-
+    SafeMotionIO_S1_S_EStopIn_IN = TRUE
+    SafeMotionIO_S2_S_AutoMode_IN = TRUE
+    SafeMotionIO_S4_S_EnableSwitchCh1_IN = TRUE
+    SafeMotionIO_S4_S_EnableSwitchCh2_IN = TRUE
+    SafeMotionIO_S5_S_GuardSwitch_IN = TRUE
+    SafeMotionIO_S7_S_GuardLock_IN = TRUE
+    SafeMotionIO_S0_Reset_IN = TRUE
+    SafeMotionIO_S8_UnlockGuard_IN = TRUE
+  -> State: 1.267 <-
+    loc = 814
+    ccntr = 2
+    SafeMotionIO_S1_S_EStopIn = TRUE
+    SafeMotionIO_S2_S_AutoMode = TRUE
+    SafeMotionIO_S4_S_EnableSwitchCh1 = TRUE
+    SafeMotionIO_S4_S_EnableSwitchCh2 = TRUE
+    SafeMotionIO_S5_S_GuardSwitch = TRUE
+    SafeMotionIO_S7_S_GuardLock = TRUE
+    SafeMotionIO_S0_Reset = TRUE
+  -> Input: 1.268 <-
+    SafeMotionIO_S1_S_EStopIn_IN = FALSE
+    SafeMotionIO_S2_S_AutoMode_IN = FALSE
+    SafeMotionIO_S4_S_EnableSwitchCh1_IN = FALSE
+    SafeMotionIO_S4_S_EnableSwitchCh2_IN = FALSE
+    SafeMotionIO_S5_S_GuardSwitch_IN = FALSE
+    SafeMotionIO_S7_S_GuardLock_IN = FALSE
+    SafeMotionIO_S0_Reset_IN = FALSE
+    SafeMotionIO_S8_UnlockGuard_IN = FALSE
+  -> State: 1.268 <-
+    loc = 1157
+  -> Input: 1.269 <-
+  -> State: 1.269 <-
+    loc = 1158
+  -> Input: 1.270 <-
+  -> State: 1.270 <-
+    loc = 1159
+    SafeMotionIO_SF_EmergencyStop_1_S_EStopIn = TRUE
+  -> Input: 1.271 <-
+  -> State: 1.271 <-
+    loc = 1160
+  -> Input: 1.272 <-
+  -> State: 1.272 <-
+    loc = 1161
+  -> Input: 1.273 <-
+  -> State: 1.273 <-
+    loc = 1162
+    SafeMotionIO_SF_EmergencyStop_1_Reset = TRUE
+  -> Input: 1.274 <-
+  -> State: 1.274 <-
+    loc = 1040
+  -> Input: 1.275 <-
+  -> State: 1.275 <-
+    loc = 1041
+    SafeMotionIO_SF_EmergencyStop_1___TEMP1 = 0ud16_0
+  -> Input: 1.276 <-
+  -> State: 1.276 <-
+    loc = 1042
+  -> Input: 1.277 <-
+  -> State: 1.277 <-
+    loc = 1154
+  -> Input: 1.278 <-
+  -> State: 1.278 <-
+    loc = 1155
+    SafeMotionIO_SF_EmergencyStop_1_R_TRIGatReset_CLK = TRUE
+  -> Input: 1.279 <-
+  -> State: 1.279 <-
+    loc = 1151
+  -> Input: 1.280 <-
+  -> State: 1.280 <-
+    loc = 1152
+    SafeMotionIO_SF_EmergencyStop_1_R_TRIGatReset_Q = TRUE
+  -> Input: 1.281 <-
+  -> State: 1.281 <-
+    loc = 1153
+    SafeMotionIO_SF_EmergencyStop_1_R_TRIGatReset_M = TRUE
+  -> Input: 1.282 <-
+  -> State: 1.282 <-
+    loc = 1156
+  -> Input: 1.283 <-
+  -> State: 1.283 <-
+    loc = 1043
+  -> Input: 1.284 <-
+  -> State: 1.284 <-
+    loc = 1046
+  -> Input: 1.285 <-
+  -> State: 1.285 <-
+    loc = 1047
+    SafeMotionIO_SF_EmergencyStop_1___TEMP0 = 0ud16_32769
+  -> Input: 1.286 <-
+  -> State: 1.286 <-
+    loc = 1051
+  -> Input: 1.287 <-
+  -> State: 1.287 <-
+    loc = 1052
+  -> Input: 1.288 <-
+  -> State: 1.288 <-
+    loc = 1053
+  -> Input: 1.289 <-
+  -> State: 1.289 <-
+    loc = 1054
+    SafeMotionIO_SF_EmergencyStop_1_DiagCode = 0ud16_32770
+  -> Input: 1.290 <-
+  -> State: 1.290 <-
+    loc = 1060
+  -> Input: 1.291 <-
+  -> State: 1.291 <-
+    loc = 1104
+  -> Input: 1.292 <-
+  -> State: 1.292 <-
+    loc = 1105
+    SafeMotionIO_SF_EmergencyStop_1___TEMP1 = 0ud16_32770
+  -> Input: 1.293 <-
+  -> State: 1.293 <-
+    loc = 1110
+  -> Input: 1.294 <-
+  -> State: 1.294 <-
+    loc = 1115
+  -> Input: 1.295 <-
+  -> State: 1.295 <-
+    loc = 1116
+  -> Input: 1.296 <-
+  -> State: 1.296 <-
+    loc = 1117
+  -> Input: 1.297 <-
+  -> State: 1.297 <-
+    loc = 1118
+  -> Input: 1.298 <-
+  -> State: 1.298 <-
+    loc = 1119
+  -> Input: 1.299 <-
+  -> State: 1.299 <-
+    loc = 1150
+  -> Input: 1.300 <-
+  -> State: 1.300 <-
+    loc = 1163
+  -> Input: 1.301 <-
+  -> State: 1.301 <-
+    loc = 815
+  -> Input: 1.302 <-
+  -> State: 1.302 <-
+    loc = 1750
+  -> Input: 1.303 <-
+  -> State: 1.303 <-
+    loc = 1751
+  -> Input: 1.304 <-
+  -> State: 1.304 <-
+    loc = 1752
+  -> Input: 1.305 <-
+  -> State: 1.305 <-
+    loc = 1753
+  -> Input: 1.306 <-
+  -> State: 1.306 <-
+    loc = 1754
+  -> Input: 1.307 <-
+  -> State: 1.307 <-
+    loc = 1755
+    SafeMotionIO_SF_SafetyRequest_1_Reset = TRUE
+  -> Input: 1.308 <-
+  -> State: 1.308 <-
+    loc = 1546
+  -> Input: 1.309 <-
+  -> State: 1.309 <-
+    loc = 1547
+    SafeMotionIO_SF_SafetyRequest_1___TEMP1 = 0ud16_0
+  -> Input: 1.310 <-
+  -> State: 1.310 <-
+    loc = 1548
+  -> Input: 1.311 <-
+  -> State: 1.311 <-
+    loc = 1696
+  -> Input: 1.312 <-
+  -> State: 1.312 <-
+    loc = 1697
+    SafeMotionIO_SF_SafetyRequest_1_R_TRIGatReset_CLK = TRUE
+  -> Input: 1.313 <-
+  -> State: 1.313 <-
+    loc = 1693
+  -> Input: 1.314 <-
+  -> State: 1.314 <-
+    loc = 1694
+    SafeMotionIO_SF_SafetyRequest_1_R_TRIGatReset_Q = TRUE
+  -> Input: 1.315 <-
+  -> State: 1.315 <-
+    loc = 1695
+    SafeMotionIO_SF_SafetyRequest_1_R_TRIGatReset_M = TRUE
+  -> Input: 1.316 <-
+  -> State: 1.316 <-
+    loc = 1698
+  -> Input: 1.317 <-
+  -> State: 1.317 <-
+    loc = 1549
+  -> Input: 1.318 <-
+  -> State: 1.318 <-
+    loc = 1552
+  -> Input: 1.319 <-
+  -> State: 1.319 <-
+    loc = 1553
+    SafeMotionIO_SF_SafetyRequest_1___TEMP0 = 0ud16_32769
+  -> Input: 1.320 <-
+  -> State: 1.320 <-
+    loc = 1557
+  -> Input: 1.321 <-
+  -> State: 1.321 <-
+    loc = 1564
+  -> Input: 1.322 <-
+  -> State: 1.322 <-
+    loc = 1565
+  -> Input: 1.323 <-
+  -> State: 1.323 <-
+    loc = 1566
+  -> Input: 1.324 <-
+  -> State: 1.324 <-
+    loc = 1567
+    SafeMotionIO_SF_SafetyRequest_1_DiagCode = 0ud16_32770
+  -> Input: 1.325 <-
+  -> State: 1.325 <-
+    loc = 1570
+  -> Input: 1.326 <-
+  -> State: 1.326 <-
+    loc = 1623
+  -> Input: 1.327 <-
+  -> State: 1.327 <-
+    loc = 1624
+  -> Input: 1.328 <-
+  -> State: 1.328 <-
+    loc = 1746
+  -> Input: 1.329 <-
+  -> State: 1.329 <-
+    loc = 1747
+  -> Input: 1.330 <-
+  -> State: 1.330 <-
+    loc = 1748
+  -> Input: 1.331 <-
+  -> State: 1.331 <-
+    loc = 1733
+  -> Input: 1.332 <-
+  -> State: 1.332 <-
+    loc = 1734
+  -> Input: 1.333 <-
+  -> State: 1.333 <-
+    loc = 1735
+  -> Input: 1.334 <-
+  -> State: 1.334 <-
+    loc = 1736
+  -> Input: 1.335 <-
+  -> State: 1.335 <-
+    loc = 1741
+  -> Input: 1.336 <-
+  -> State: 1.336 <-
+    loc = 1749
+  -> Input: 1.337 <-
+  -> State: 1.337 <-
+    loc = 1625
+  -> Input: 1.338 <-
+  -> State: 1.338 <-
+    loc = 1626
+    SafeMotionIO_SF_SafetyRequest_1___TEMP1 = 0ud16_32770
+  -> Input: 1.339 <-
+  -> State: 1.339 <-
+    loc = 1632
+  -> Input: 1.340 <-
+  -> State: 1.340 <-
+    loc = 1638
+  -> Input: 1.341 <-
+  -> State: 1.341 <-
+    loc = 1644
+  -> Input: 1.342 <-
+  -> State: 1.342 <-
+    loc = 1645
+  -> Input: 1.343 <-
+  -> State: 1.343 <-
+    loc = 1646
+  -> Input: 1.344 <-
+  -> State: 1.344 <-
+    loc = 1647
+  -> Input: 1.345 <-
+  -> State: 1.345 <-
+    loc = 1648
+    SafeMotionIO_SF_SafetyRequest_1_S_SafetyRequest = TRUE
+  -> Input: 1.346 <-
+  -> State: 1.346 <-
+    loc = 1649
+  -> Input: 1.347 <-
+  -> State: 1.347 <-
+    loc = 1692
+  -> Input: 1.348 <-
+  -> State: 1.348 <-
+    loc = 1756
+  -> Input: 1.349 <-
+  -> State: 1.349 <-
+    loc = 816
+  -> Input: 1.350 <-
+  -> State: 1.350 <-
+    loc = 1033
+  -> Input: 1.351 <-
+  -> State: 1.351 <-
+    loc = 1034
+  -> Input: 1.352 <-
+  -> State: 1.352 <-
+    loc = 1035
+  -> Input: 1.353 <-
+  -> State: 1.353 <-
+    loc = 1036
+  -> Input: 1.354 <-
+  -> State: 1.354 <-
+    loc = 1037
+  -> Input: 1.355 <-
+  -> State: 1.355 <-
+    loc = 1038
+    SafeMotionIO_SF_SafetyRequest_2_Reset = TRUE
+  -> Input: 1.356 <-
+  -> State: 1.356 <-
+    loc = 829
+  -> Input: 1.357 <-
+  -> State: 1.357 <-
+    loc = 830
+    SafeMotionIO_SF_SafetyRequest_2___TEMP1 = 0ud16_0
+  -> Input: 1.358 <-
+  -> State: 1.358 <-
+    loc = 831
+  -> Input: 1.359 <-
+  -> State: 1.359 <-
+    loc = 1030
+  -> Input: 1.360 <-
+  -> State: 1.360 <-
+    loc = 1031
+    SafeMotionIO_SF_SafetyRequest_2_R_TRIGatReset_CLK = TRUE
+  -> Input: 1.361 <-
+  -> State: 1.361 <-
+    loc = 1027
+  -> Input: 1.362 <-
+  -> State: 1.362 <-
+    loc = 1028
+    SafeMotionIO_SF_SafetyRequest_2_R_TRIGatReset_Q = TRUE
+  -> Input: 1.363 <-
+  -> State: 1.363 <-
+    loc = 1029
+    SafeMotionIO_SF_SafetyRequest_2_R_TRIGatReset_M = TRUE
+  -> Input: 1.364 <-
+  -> State: 1.364 <-
+    loc = 1032
+  -> Input: 1.365 <-
+  -> State: 1.365 <-
+    loc = 832
+  -> Input: 1.366 <-
+  -> State: 1.366 <-
+    loc = 835
+  -> Input: 1.367 <-
+  -> State: 1.367 <-
+    loc = 836
+    SafeMotionIO_SF_SafetyRequest_2___TEMP0 = 0ud16_32769
+  -> Input: 1.368 <-
+  -> State: 1.368 <-
+    loc = 840
+  -> Input: 1.369 <-
+  -> State: 1.369 <-
+    loc = 847
+  -> Input: 1.370 <-
+  -> State: 1.370 <-
+    loc = 848
+  -> Input: 1.371 <-
+  -> State: 1.371 <-
+    loc = 849
+  -> Input: 1.372 <-
+  -> State: 1.372 <-
+    loc = 850
+    SafeMotionIO_SF_SafetyRequest_2_DiagCode = 0ud16_32770
+  -> Input: 1.373 <-
+  -> State: 1.373 <-
+    loc = 853
+  -> Input: 1.374 <-
+  -> State: 1.374 <-
+    loc = 906
+  -> Input: 1.375 <-
+  -> State: 1.375 <-
+    loc = 907
+  -> Input: 1.376 <-
+  -> State: 1.376 <-
+    loc = 1023
+  -> Input: 1.377 <-
+  -> State: 1.377 <-
+    loc = 1024
+  -> Input: 1.378 <-
+  -> State: 1.378 <-
+    loc = 1025
+  -> Input: 1.379 <-
+  -> State: 1.379 <-
+    loc = 1010
+  -> Input: 1.380 <-
+  -> State: 1.380 <-
+    loc = 1011
+  -> Input: 1.381 <-
+  -> State: 1.381 <-
+    loc = 1012
+  -> Input: 1.382 <-
+  -> State: 1.382 <-
+    loc = 1013
+  -> Input: 1.383 <-
+  -> State: 1.383 <-
+    loc = 1018
+  -> Input: 1.384 <-
+  -> State: 1.384 <-
+    loc = 1026
+  -> Input: 1.385 <-
+  -> State: 1.385 <-
+    loc = 908
+  -> Input: 1.386 <-
+  -> State: 1.386 <-
+    loc = 909
+    SafeMotionIO_SF_SafetyRequest_2___TEMP1 = 0ud16_32770
+  -> Input: 1.387 <-
+  -> State: 1.387 <-
+    loc = 915
+  -> Input: 1.388 <-
+  -> State: 1.388 <-
+    loc = 921
+  -> Input: 1.389 <-
+  -> State: 1.389 <-
+    loc = 927
+  -> Input: 1.390 <-
+  -> State: 1.390 <-
+    loc = 928
+  -> Input: 1.391 <-
+  -> State: 1.391 <-
+    loc = 929
+  -> Input: 1.392 <-
+  -> State: 1.392 <-
+    loc = 930
+  -> Input: 1.393 <-
+  -> State: 1.393 <-
+    loc = 931
+    SafeMotionIO_SF_SafetyRequest_2_S_SafetyRequest = TRUE
+  -> Input: 1.394 <-
+  -> State: 1.394 <-
+    loc = 932
+  -> Input: 1.395 <-
+  -> State: 1.395 <-
+    loc = 975
+  -> Input: 1.396 <-
+  -> State: 1.396 <-
+    loc = 1039
+  -> Input: 1.397 <-
+  -> State: 1.397 <-
+    loc = 817
+  -> Input: 1.398 <-
+  -> State: 1.398 <-
+    loc = 1388
+  -> Input: 1.399 <-
+  -> State: 1.399 <-
+    loc = 1389
+  -> Input: 1.400 <-
+  -> State: 1.400 <-
+    loc = 1390
+    SafeMotionIO_SF_ModeSelector_1_S_Mode0 = TRUE
+  -> Input: 1.401 <-
+  -> State: 1.401 <-
+    loc = 1391
+  -> Input: 1.402 <-
+  -> State: 1.402 <-
+    loc = 1392
+  -> Input: 1.403 <-
+  -> State: 1.403 <-
+    loc = 1393
+  -> Input: 1.404 <-
+  -> State: 1.404 <-
+    loc = 1394
+  -> Input: 1.405 <-
+  -> State: 1.405 <-
+    loc = 1395
+  -> Input: 1.406 <-
+  -> State: 1.406 <-
+    loc = 1396
+  -> Input: 1.407 <-
+  -> State: 1.407 <-
+    loc = 1397
+  -> Input: 1.408 <-
+  -> State: 1.408 <-
+    loc = 1398
+  -> Input: 1.409 <-
+  -> State: 1.409 <-
+    loc = 1399
+  -> Input: 1.410 <-
+  -> State: 1.410 <-
+    loc = 1400
+  -> Input: 1.411 <-
+  -> State: 1.411 <-
+    loc = 1401
+  -> Input: 1.412 <-
+  -> State: 1.412 <-
+    loc = 1402
+    SafeMotionIO_SF_ModeSelector_1_Reset = TRUE
+  -> Input: 1.413 <-
+  -> State: 1.413 <-
+    loc = 1316
+  -> Input: 1.414 <-
+  -> State: 1.414 <-
+    loc = 1317
+    SafeMotionIO_SF_ModeSelector_1___TEMP1 = 0ud16_0
+  -> Input: 1.415 <-
+  -> State: 1.415 <-
+    loc = 1318
+  -> Input: 1.416 <-
+  -> State: 1.416 <-
+    loc = 1319
+  -> Input: 1.417 <-
+  -> State: 1.417 <-
+    loc = 1320
+  -> Input: 1.418 <-
+  -> State: 1.418 <-
+    loc = 1272
+  -> Input: 1.419 <-
+  -> State: 1.419 <-
+    loc = 1273
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatReset_CLK = TRUE
+  -> Input: 1.420 <-
+  -> State: 1.420 <-
+    loc = 1269
+  -> Input: 1.421 <-
+  -> State: 1.421 <-
+    loc = 1270
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatReset_Q = TRUE
+  -> Input: 1.422 <-
+  -> State: 1.422 <-
+    loc = 1271
+    SafeMotionIO_SF_ModeSelector_1_R_TRIGatReset_M = TRUE
+  -> Input: 1.423 <-
+  -> State: 1.423 <-
+    loc = 1274
+  -> Input: 1.424 <-
+  -> State: 1.424 <-
+    loc = 1321
+  -> Input: 1.425 <-
+  -> State: 1.425 <-
+    loc = 1284
+  -> Input: 1.426 <-
+  -> State: 1.426 <-
+    loc = 1285
+  -> Input: 1.427 <-
+  -> State: 1.427 <-
+    loc = 1281
+  -> Input: 1.428 <-
+  -> State: 1.428 <-
+    loc = 1282
+  -> Input: 1.429 <-
+  -> State: 1.429 <-
+    loc = 1283
+  -> Input: 1.430 <-
+  -> State: 1.430 <-
+    loc = 1286
+  -> Input: 1.431 <-
+  -> State: 1.431 <-
+    loc = 1322
+  -> Input: 1.432 <-
+  -> State: 1.432 <-
+    loc = 1325
+  -> Input: 1.433 <-
+  -> State: 1.433 <-
+    loc = 1328
+  -> Input: 1.434 <-
+  -> State: 1.434 <-
+    loc = 1329
+  -> Input: 1.435 <-
+  -> State: 1.435 <-
+    loc = 1330
+    SafeMotionIO_SF_ModeSelector_1___TEMP0 = 0ud16_32773
+  -> Input: 1.436 <-
+  -> State: 1.436 <-
+    loc = 1334
+  -> Input: 1.437 <-
+  -> State: 1.437 <-
+    loc = 1335
+  -> Input: 1.438 <-
+  -> State: 1.438 <-
+    loc = 1339
+  -> Input: 1.439 <-
+  -> State: 1.439 <-
+    loc = 1278
+  -> Input: 1.440 <-
+  -> State: 1.440 <-
+    loc = 1279
+  -> Input: 1.441 <-
+  -> State: 1.441 <-
+    loc = 1275
+  -> Input: 1.442 <-
+  -> State: 1.442 <-
+    loc = 1276
+  -> Input: 1.443 <-
+  -> State: 1.443 <-
+    loc = 1277
+  -> Input: 1.444 <-
+  -> State: 1.444 <-
+    loc = 1280
+  -> Input: 1.445 <-
+  -> State: 1.445 <-
+    loc = 1340
+  -> Input: 1.446 <-
+  -> State: 1.446 <-
+    loc = 1249
+  -> Input: 1.447 <-
+  -> State: 1.447 <-
+    loc = 1250
+  -> Input: 1.448 <-
+  -> State: 1.448 <-
+    loc = 1246
+  -> Input: 1.449 <-
+  -> State: 1.449 <-
+    loc = 1247
+  -> Input: 1.450 <-
+  -> State: 1.450 <-
+    loc = 1248
+  -> Input: 1.451 <-
+  -> State: 1.451 <-
+    loc = 1251
+  -> Input: 1.452 <-
+  -> State: 1.452 <-
+    loc = 1341
+  -> Input: 1.453 <-
+  -> State: 1.453 <-
+    loc = 1344
+  -> Input: 1.454 <-
+  -> State: 1.454 <-
+    loc = 1346
+  -> Input: 1.455 <-
+  -> State: 1.455 <-
+    loc = 1347
+  -> Input: 1.456 <-
+  -> State: 1.456 <-
+    loc = 1350
+  -> Input: 1.457 <-
+  -> State: 1.457 <-
+    loc = 1353
+  -> Input: 1.458 <-
+  -> State: 1.458 <-
+    loc = 1354
+  -> Input: 1.459 <-
+  -> State: 1.459 <-
+    loc = 1355
+    SafeMotionIO_SF_ModeSelector_1_DiagCode = 0ud16_32768
+  -> Input: 1.460 <-
+  -> State: 1.460 <-
+    loc = 1168
+  -> Input: 1.461 <-
+  -> State: 1.461 <-
+    loc = 1169
+    SafeMotionIO_SF_ModeSelector_1___TEMP1 = 0ud16_32768
+  -> Input: 1.462 <-
+  -> State: 1.462 <-
+    loc = 1182
+  -> Input: 1.463 <-
+  -> State: 1.463 <-
+    loc = 1195
+  -> Input: 1.464 <-
+  -> State: 1.464 <-
+    loc = 1196
+  -> Input: 1.465 <-
+  -> State: 1.465 <-
+    loc = 1197
+  -> Input: 1.466 <-
+  -> State: 1.466 <-
+    loc = 1198
+    SafeMotionIO_SF_ModeSelector_1_S_Mode0Sel = TRUE
+  -> Input: 1.467 <-
+  -> State: 1.467 <-
+    loc = 1199
+  -> Input: 1.468 <-
+  -> State: 1.468 <-
+    loc = 1200
+  -> Input: 1.469 <-
+  -> State: 1.469 <-
+    loc = 1201
+  -> Input: 1.470 <-
+  -> State: 1.470 <-
+    loc = 1202
+  -> Input: 1.471 <-
+  -> State: 1.471 <-
+    loc = 1203
+  -> Input: 1.472 <-
+  -> State: 1.472 <-
+    loc = 1204
+  -> Input: 1.473 <-
+  -> State: 1.473 <-
+    loc = 1205
+  -> Input: 1.474 <-
+  -> State: 1.474 <-
+    loc = 1206
+    SafeMotionIO_SF_ModeSelector_1_S_AnyModeSel = TRUE
+  -> Input: 1.475 <-
+  -> State: 1.475 <-
+    loc = 1207
+  -> Input: 1.476 <-
+  -> State: 1.476 <-
+    loc = 1226
+  -> Input: 1.477 <-
+  -> State: 1.477 <-
+    loc = 1227
+  -> Input: 1.478 <-
+  -> State: 1.478 <-
+    loc = 1242
+  -> Input: 1.479 <-
+  -> State: 1.479 <-
+    loc = 1243
+  -> Input: 1.480 <-
+  -> State: 1.480 <-
+    loc = 1244
+    SafeMotionIO_SF_ModeSelector_1_T_1_PT = 0ud32_50
+  -> Input: 1.481 <-
+  -> State: 1.481 <-
+    loc = 1229
+  -> Input: 1.482 <-
+  -> State: 1.482 <-
+    loc = 1230
+  -> Input: 1.483 <-
+  -> State: 1.483 <-
+    loc = 1231
+  -> Input: 1.484 <-
+  -> State: 1.484 <-
+    loc = 1232
+  -> Input: 1.485 <-
+  -> State: 1.485 <-
+    loc = 1237
+  -> Input: 1.486 <-
+  -> State: 1.486 <-
+    loc = 1245
+  -> Input: 1.487 <-
+  -> State: 1.487 <-
+    loc = 1228
+  -> Input: 1.488 <-
+  -> State: 1.488 <-
+    loc = 1403
+  -> Input: 1.489 <-
+  -> State: 1.489 <-
+    loc = 818
+  -> Input: 1.490 <-
+  -> State: 1.490 <-
+    loc = 1536
+  -> Input: 1.491 <-
+  -> State: 1.491 <-
+    loc = 1537
+  -> Input: 1.492 <-
+  -> State: 1.492 <-
+    loc = 1538
+    SafeMotionIO_SF_GuardLocking_1_S_GuardMonitoring = TRUE
+  -> Input: 1.493 <-
+  -> State: 1.493 <-
+    loc = 1539
+  -> Input: 1.494 <-
+  -> State: 1.494 <-
+    loc = 1540
+    SafeMotionIO_SF_GuardLocking_1_S_GuardLock = TRUE
+  -> Input: 1.495 <-
+  -> State: 1.495 <-
+    loc = 1541
+  -> Input: 1.496 <-
+  -> State: 1.496 <-
+    loc = 1542
+  -> Input: 1.497 <-
+  -> State: 1.497 <-
+    loc = 1543
+  -> Input: 1.498 <-
+  -> State: 1.498 <-
+    loc = 1544
+    SafeMotionIO_SF_GuardLocking_1_Reset = TRUE
+  -> Input: 1.499 <-
+  -> State: 1.499 <-
+    loc = 1404
+  -> Input: 1.500 <-
+  -> State: 1.500 <-
+    loc = 1405
+    SafeMotionIO_SF_GuardLocking_1___TEMP1 = 0ud16_0
+  -> Input: 1.501 <-
+  -> State: 1.501 <-
+    loc = 1406
+  -> Input: 1.502 <-
+  -> State: 1.502 <-
+    loc = 1527
+  -> Input: 1.503 <-
+  -> State: 1.503 <-
+    loc = 1528
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatReset_CLK = TRUE
+  -> Input: 1.504 <-
+  -> State: 1.504 <-
+    loc = 1524
+  -> Input: 1.505 <-
+  -> State: 1.505 <-
+    loc = 1525
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatReset_Q = TRUE
+  -> Input: 1.506 <-
+  -> State: 1.506 <-
+    loc = 1526
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatReset_M = TRUE
+  -> Input: 1.507 <-
+  -> State: 1.507 <-
+    loc = 1529
+  -> Input: 1.508 <-
+  -> State: 1.508 <-
+    loc = 1407
+  -> Input: 1.509 <-
+  -> State: 1.509 <-
+    loc = 1533
+  -> Input: 1.510 <-
+  -> State: 1.510 <-
+    loc = 1534
+  -> Input: 1.511 <-
+  -> State: 1.511 <-
+    loc = 1530
+  -> Input: 1.512 <-
+  -> State: 1.512 <-
+    loc = 1531
+    SafeMotionIO_SF_GuardLocking_1_R_TRIGatUnlockRequest_Q = FALSE
+  -> Input: 1.513 <-
+  -> State: 1.513 <-
+    loc = 1532
+  -> Input: 1.514 <-
+  -> State: 1.514 <-
+    loc = 1535
+  -> Input: 1.515 <-
+  -> State: 1.515 <-
+    loc = 1408
+  -> Input: 1.516 <-
+  -> State: 1.516 <-
+    loc = 1410
+  -> Input: 1.517 <-
+  -> State: 1.517 <-
+    loc = 1411
+    SafeMotionIO_SF_GuardLocking_1___TEMP0 = 0ud16_32769
+  -> Input: 1.518 <-
+  -> State: 1.518 <-
+    loc = 1415
+  -> Input: 1.519 <-
+  -> State: 1.519 <-
+    loc = 1422
+  -> Input: 1.520 <-
+  -> State: 1.520 <-
+    loc = 1423
+  -> Input: 1.521 <-
+  -> State: 1.521 <-
+    loc = 1426
+  -> Input: 1.522 <-
+  -> State: 1.522 <-
+    loc = 1429
+  -> Input: 1.523 <-
+  -> State: 1.523 <-
+    loc = 1430
+  -> Input: 1.524 <-
+  -> State: 1.524 <-
+    loc = 1431
+    SafeMotionIO_SF_GuardLocking_1_DiagCode = 0ud16_32768
+  -> Input: 1.525 <-
+  -> State: 1.525 <-
+    loc = 1492
+  -> Input: 1.526 <-
+  -> State: 1.526 <-
+    loc = 1493
+    SafeMotionIO_SF_GuardLocking_1___TEMP1 = 0ud16_32768
+  -> Input: 1.527 <-
+  -> State: 1.527 <-
+    loc = 1499
+  -> Input: 1.528 <-
+  -> State: 1.528 <-
+    loc = 1500
+  -> Input: 1.529 <-
+  -> State: 1.529 <-
+    loc = 1501
+  -> Input: 1.530 <-
+  -> State: 1.530 <-
+    loc = 1502
+    SafeMotionIO_SF_GuardLocking_1_S_GuardLocked = TRUE
+  -> Input: 1.531 <-
+  -> State: 1.531 <-
+    loc = 1503
+  -> Input: 1.532 <-
+  -> State: 1.532 <-
+    loc = 1504
+  -> Input: 1.533 <-
+  -> State: 1.533 <-
+    loc = 1523
+  -> Input: 1.534 <-
+  -> State: 1.534 <-
+    loc = 1545
+  -> Input: 1.535 <-
+  -> State: 1.535 <-
+    loc = 819
+  -> Input: 1.536 <-
+  -> State: 1.536 <-
+    loc = 1867
+  -> Input: 1.537 <-
+  -> State: 1.537 <-
+    loc = 1868
+  -> Input: 1.538 <-
+  -> State: 1.538 <-
+    loc = 1869
+  -> Input: 1.539 <-
+  -> State: 1.539 <-
+    loc = 1870
+    SafeMotionIO_SF_EnableSwitch_1_S_EnableSwitchCh1 = TRUE
+  -> Input: 1.540 <-
+  -> State: 1.540 <-
+    loc = 1871
+    SafeMotionIO_SF_EnableSwitch_1_S_EnableSwitchCh2 = TRUE
+  -> Input: 1.541 <-
+  -> State: 1.541 <-
+    loc = 1872
+  -> Input: 1.542 <-
+  -> State: 1.542 <-
+    loc = 1873
+    SafeMotionIO_SF_EnableSwitch_1_Reset = TRUE
+  -> Input: 1.543 <-
+  -> State: 1.543 <-
+    loc = 1809
+  -> Input: 1.544 <-
+  -> State: 1.544 <-
+    loc = 1810
+    SafeMotionIO_SF_EnableSwitch_1___TEMP1 = 0ud16_0
+  -> Input: 1.545 <-
+  -> State: 1.545 <-
+    loc = 1811
+  -> Input: 1.546 <-
+  -> State: 1.546 <-
+    loc = 1806
+  -> Input: 1.547 <-
+  -> State: 1.547 <-
+    loc = 1807
+    SafeMotionIO_SF_EnableSwitch_1_R_TRIGatReset_CLK = TRUE
+  -> Input: 1.548 <-
+  -> State: 1.548 <-
+    loc = 1803
+  -> Input: 1.549 <-
+  -> State: 1.549 <-
+    loc = 1804
+    SafeMotionIO_SF_EnableSwitch_1_R_TRIGatReset_Q = TRUE
+  -> Input: 1.550 <-
+  -> State: 1.550 <-
+    loc = 1805
+    SafeMotionIO_SF_EnableSwitch_1_R_TRIGatReset_M = TRUE
+  -> Input: 1.551 <-
+  -> State: 1.551 <-
+    loc = 1808
+  -> Input: 1.552 <-
+  -> State: 1.552 <-
+    loc = 1812
+  -> Input: 1.553 <-
+  -> State: 1.553 <-
+    loc = 1815
+  -> Input: 1.554 <-
+  -> State: 1.554 <-
+    loc = 1816
+  -> Input: 1.555 <-
+  -> State: 1.555 <-
+    loc = 1817
+  -> Input: 1.556 <-
+  -> State: 1.556 <-
+    loc = 1781
+  -> Input: 1.557 <-
+  -> State: 1.557 <-
+    loc = 1782
+    SafeMotionIO_SF_EnableSwitch_1___TEMP1 = 0ud16_32772
+  -> Input: 1.558 <-
+  -> State: 1.558 <-
+    loc = 1787
+  -> Input: 1.559 <-
+  -> State: 1.559 <-
+    loc = 1792
+  -> Input: 1.560 <-
+  -> State: 1.560 <-
+    loc = 1797
+  -> Input: 1.561 <-
+  -> State: 1.561 <-
+    loc = 1798
+  -> Input: 1.562 <-
+  -> State: 1.562 <-
+    loc = 1799
+  -> Input: 1.563 <-
+  -> State: 1.563 <-
+    loc = 1800
+  -> Input: 1.564 <-
+  -> State: 1.564 <-
+    loc = 1801
+  -> Input: 1.565 <-
+  -> State: 1.565 <-
+    loc = 1802
+  -> Input: 1.566 <-
+  -> State: 1.566 <-
+    loc = 1874
+  -> Input: 1.567 <-
+  -> State: 1.567 <-
+    loc = 820
+  -> Input: 1.568 <-
+  -> State: 1.568 <-
+    loc = 821
+  -> Input: 1.569 <-
+  -> State: 1.569 <-
+    loc = 822
+    SafeMotionIO_S_SafeStop_M1 = TRUE
+  -> Input: 1.570 <-
+  -> State: 1.570 <-
+    loc = 823
+  -> Input: 1.571 <-
+  -> State: 1.571 <-
+    loc = 824
+    SafeMotionIO_S_SafeMotion_M1 = TRUE
+  -> Input: 1.572 <-
+  -> State: 1.572 <-
+    loc = 825
+  -> Input: 1.573 <-
+  -> State: 1.573 <-
+    loc = 826
+    SafeMotionIO_S_AutoMode = TRUE
+  -> Input: 1.574 <-
+  -> State: 1.574 <-
+    loc = 827
+  -> Input: 1.575 <-
+  -> State: 1.575 <-
+    loc = 828
+  -> Input: 1.576 <-
+  -> State: 1.576 <-
+    loc = EoC

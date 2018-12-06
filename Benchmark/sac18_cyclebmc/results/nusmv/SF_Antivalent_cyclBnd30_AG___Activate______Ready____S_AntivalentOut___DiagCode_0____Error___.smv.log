@@ -1,0 +1,2424 @@
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:36:56 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- invariant (loc = EoC -> !(SF_Antivalent_Activate = !(0ud8_0 = 0ud8_0) & !(((SF_Antivalent_Ready = !(0ud8_0 = 0ud8_0) & SF_Antivalent_S_AntivalentOut = !(0ud8_0 = 0ud8_0)) & SF_Antivalent_DiagCode = resize(0ud8_0, 16)) & SF_Antivalent_Error = !(0ud8_0 = 0ud8_0))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: AG alpha Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    loc = 101
+    ccntr = 0
+    UNKNOWN_BOOL_UNKNOWN_BOOL = FALSE
+    SF_Antivalent_Activate = FALSE
+    SF_Antivalent_S_ChannelNC = FALSE
+    SF_Antivalent_S_ChannelNO = FALSE
+    SF_Antivalent_DiscrepancyTime = 0ud32_0
+    SF_Antivalent_Ready = FALSE
+    SF_Antivalent_S_AntivalentOut = FALSE
+    SF_Antivalent_Error = FALSE
+    SF_Antivalent_DiagCode = 0ud16_0
+    SF_Antivalent_T_1_IN = FALSE
+    SF_Antivalent_T_1_PT = 0ud32_0
+    SF_Antivalent_T_1_Q = FALSE
+    SF_Antivalent_T_1___TEMP0 = FALSE
+    SF_Antivalent___TEMP0 = 0ud16_0
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.2 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+    SF_Antivalent_DiscrepancyTime_IN = 0ud32_0
+    UNKNOWN_BOOL_UNKNOWN_BOOL_IN = FALSE
+  -> State: 1.2 <-
+    loc = EoC
+  -> Input: 1.3 <-
+    SF_Antivalent_Activate_IN = TRUE
+  -> State: 1.3 <-
+    loc = 6
+    ccntr = 1
+    SF_Antivalent_Activate = TRUE
+  -> Input: 1.4 <-
+    SF_Antivalent_Activate_IN = FALSE
+  -> State: 1.4 <-
+    loc = 7
+  -> Input: 1.5 <-
+  -> State: 1.5 <-
+    loc = 8
+  -> Input: 1.6 <-
+  -> State: 1.6 <-
+    loc = 11
+  -> Input: 1.7 <-
+  -> State: 1.7 <-
+    loc = 12
+  -> Input: 1.8 <-
+  -> State: 1.8 <-
+    loc = 13
+  -> Input: 1.9 <-
+  -> State: 1.9 <-
+    loc = 14
+  -> Input: 1.10 <-
+  -> State: 1.10 <-
+    loc = 15
+    SF_Antivalent_DiagCode = 0ud16_32769
+  -> Input: 1.11 <-
+  -> State: 1.11 <-
+    loc = 71
+  -> Input: 1.12 <-
+  -> State: 1.12 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32769
+  -> Input: 1.13 <-
+  -> State: 1.13 <-
+    loc = 78
+  -> Input: 1.14 <-
+  -> State: 1.14 <-
+    loc = 84
+  -> Input: 1.15 <-
+  -> State: 1.15 <-
+    loc = 85
+  -> Input: 1.16 <-
+  -> State: 1.16 <-
+    loc = 183
+  -> Input: 1.17 <-
+  -> State: 1.17 <-
+    loc = 184
+  -> Input: 1.18 <-
+  -> State: 1.18 <-
+    loc = 185
+  -> Input: 1.19 <-
+  -> State: 1.19 <-
+    loc = 171
+  -> Input: 1.20 <-
+  -> State: 1.20 <-
+    loc = 170
+  -> Input: 1.21 <-
+  -> State: 1.21 <-
+    loc = 172
+  -> Input: 1.22 <-
+  -> State: 1.22 <-
+    loc = 173
+  -> Input: 1.23 <-
+  -> State: 1.23 <-
+    loc = 178
+  -> Input: 1.24 <-
+  -> State: 1.24 <-
+    loc = 186
+  -> Input: 1.25 <-
+  -> State: 1.25 <-
+    loc = 86
+  -> Input: 1.26 <-
+  -> State: 1.26 <-
+    loc = 87
+    SF_Antivalent_Ready = TRUE
+  -> Input: 1.27 <-
+  -> State: 1.27 <-
+    loc = 88
+  -> Input: 1.28 <-
+  -> State: 1.28 <-
+    loc = 89
+  -> Input: 1.29 <-
+  -> State: 1.29 <-
+    loc = 101
+  -> Input: 1.30 <-
+  -> State: 1.30 <-
+    loc = EoC
+  -> Input: 1.31 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.31 <-
+    loc = 6
+    ccntr = 2
+    SF_Antivalent_S_ChannelNC = TRUE
+    SF_Antivalent_S_ChannelNO = TRUE
+  -> Input: 1.32 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.32 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.33 <-
+  -> State: 1.33 <-
+    loc = 8
+  -> Input: 1.34 <-
+  -> State: 1.34 <-
+    loc = 11
+  -> Input: 1.35 <-
+  -> State: 1.35 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32769
+  -> Input: 1.36 <-
+  -> State: 1.36 <-
+    loc = 16
+  -> Input: 1.37 <-
+  -> State: 1.37 <-
+    loc = 17
+  -> Input: 1.38 <-
+  -> State: 1.38 <-
+    loc = 18
+  -> Input: 1.39 <-
+  -> State: 1.39 <-
+    loc = 19
+    SF_Antivalent_DiagCode = 0ud16_32772
+  -> Input: 1.40 <-
+  -> State: 1.40 <-
+    loc = 217
+  -> Input: 1.41 <-
+  -> State: 1.41 <-
+    loc = 218
+    SF_Antivalent_T_1_IN = TRUE
+  -> Input: 1.42 <-
+  -> State: 1.42 <-
+    loc = 219
+  -> Input: 1.43 <-
+  -> State: 1.43 <-
+    loc = 205
+  -> Input: 1.44 <-
+  -> State: 1.44 <-
+    loc = 204
+  -> Input: 1.45 <-
+  -> State: 1.45 <-
+    loc = 208
+  -> Input: 1.46 <-
+  -> State: 1.46 <-
+    loc = 209
+  -> Input: 1.47 <-
+  -> State: 1.47 <-
+    loc = 215
+  -> Input: 1.48 <-
+  -> State: 1.48 <-
+    loc = 213
+  -> Input: 1.49 <-
+  -> State: 1.49 <-
+    loc = 214
+  -> Input: 1.50 <-
+  -> State: 1.50 <-
+    loc = 216
+  -> Input: 1.51 <-
+  -> State: 1.51 <-
+    loc = 210
+  -> Input: 1.52 <-
+  -> State: 1.52 <-
+    loc = 211
+  -> Input: 1.53 <-
+  -> State: 1.53 <-
+    loc = 212
+  -> Input: 1.54 <-
+  -> State: 1.54 <-
+    loc = 220
+  -> Input: 1.55 <-
+  -> State: 1.55 <-
+    loc = 20
+  -> Input: 1.56 <-
+  -> State: 1.56 <-
+    loc = 27
+  -> Input: 1.57 <-
+  -> State: 1.57 <-
+    loc = 71
+  -> Input: 1.58 <-
+  -> State: 1.58 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.59 <-
+  -> State: 1.59 <-
+    loc = 78
+  -> Input: 1.60 <-
+  -> State: 1.60 <-
+    loc = 84
+  -> Input: 1.61 <-
+  -> State: 1.61 <-
+    loc = 90
+  -> Input: 1.62 <-
+  -> State: 1.62 <-
+    loc = 91
+  -> Input: 1.63 <-
+  -> State: 1.63 <-
+    loc = 92
+  -> Input: 1.64 <-
+  -> State: 1.64 <-
+    loc = 93
+  -> Input: 1.65 <-
+  -> State: 1.65 <-
+    loc = 94
+  -> Input: 1.66 <-
+  -> State: 1.66 <-
+    loc = 101
+  -> Input: 1.67 <-
+  -> State: 1.67 <-
+    loc = EoC
+  -> Input: 1.68 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.68 <-
+    loc = 6
+    ccntr = 3
+  -> Input: 1.69 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.69 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.70 <-
+  -> State: 1.70 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.71 <-
+  -> State: 1.71 <-
+    loc = 11
+  -> Input: 1.72 <-
+  -> State: 1.72 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.73 <-
+  -> State: 1.73 <-
+    loc = 16
+  -> Input: 1.74 <-
+  -> State: 1.74 <-
+    loc = 28
+  -> Input: 1.75 <-
+  -> State: 1.75 <-
+    loc = 29
+  -> Input: 1.76 <-
+  -> State: 1.76 <-
+    loc = 32
+  -> Input: 1.77 <-
+  -> State: 1.77 <-
+    loc = 35
+  -> Input: 1.78 <-
+  -> State: 1.78 <-
+    loc = 37
+  -> Input: 1.79 <-
+  -> State: 1.79 <-
+    loc = 71
+  -> Input: 1.80 <-
+  -> State: 1.80 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.81 <-
+  -> State: 1.81 <-
+    loc = 78
+  -> Input: 1.82 <-
+  -> State: 1.82 <-
+    loc = 84
+  -> Input: 1.83 <-
+  -> State: 1.83 <-
+    loc = 90
+  -> Input: 1.84 <-
+  -> State: 1.84 <-
+    loc = 91
+  -> Input: 1.85 <-
+  -> State: 1.85 <-
+    loc = 92
+  -> Input: 1.86 <-
+  -> State: 1.86 <-
+    loc = 93
+  -> Input: 1.87 <-
+  -> State: 1.87 <-
+    loc = 94
+  -> Input: 1.88 <-
+  -> State: 1.88 <-
+    loc = 101
+  -> Input: 1.89 <-
+  -> State: 1.89 <-
+    loc = EoC
+  -> Input: 1.90 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.90 <-
+    loc = 6
+    ccntr = 4
+  -> Input: 1.91 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.91 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.92 <-
+  -> State: 1.92 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.93 <-
+  -> State: 1.93 <-
+    loc = 11
+  -> Input: 1.94 <-
+  -> State: 1.94 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.95 <-
+  -> State: 1.95 <-
+    loc = 16
+  -> Input: 1.96 <-
+  -> State: 1.96 <-
+    loc = 28
+  -> Input: 1.97 <-
+  -> State: 1.97 <-
+    loc = 29
+  -> Input: 1.98 <-
+  -> State: 1.98 <-
+    loc = 32
+  -> Input: 1.99 <-
+  -> State: 1.99 <-
+    loc = 35
+  -> Input: 1.100 <-
+  -> State: 1.100 <-
+    loc = 37
+  -> Input: 1.101 <-
+  -> State: 1.101 <-
+    loc = 71
+  -> Input: 1.102 <-
+  -> State: 1.102 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.103 <-
+  -> State: 1.103 <-
+    loc = 78
+  -> Input: 1.104 <-
+  -> State: 1.104 <-
+    loc = 84
+  -> Input: 1.105 <-
+  -> State: 1.105 <-
+    loc = 90
+  -> Input: 1.106 <-
+  -> State: 1.106 <-
+    loc = 91
+  -> Input: 1.107 <-
+  -> State: 1.107 <-
+    loc = 92
+  -> Input: 1.108 <-
+  -> State: 1.108 <-
+    loc = 93
+  -> Input: 1.109 <-
+  -> State: 1.109 <-
+    loc = 94
+  -> Input: 1.110 <-
+  -> State: 1.110 <-
+    loc = 101
+  -> Input: 1.111 <-
+  -> State: 1.111 <-
+    loc = EoC
+  -> Input: 1.112 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.112 <-
+    loc = 6
+    ccntr = 5
+  -> Input: 1.113 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.113 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.114 <-
+  -> State: 1.114 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.115 <-
+  -> State: 1.115 <-
+    loc = 11
+  -> Input: 1.116 <-
+  -> State: 1.116 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.117 <-
+  -> State: 1.117 <-
+    loc = 16
+  -> Input: 1.118 <-
+  -> State: 1.118 <-
+    loc = 28
+  -> Input: 1.119 <-
+  -> State: 1.119 <-
+    loc = 29
+  -> Input: 1.120 <-
+  -> State: 1.120 <-
+    loc = 32
+  -> Input: 1.121 <-
+  -> State: 1.121 <-
+    loc = 35
+  -> Input: 1.122 <-
+  -> State: 1.122 <-
+    loc = 37
+  -> Input: 1.123 <-
+  -> State: 1.123 <-
+    loc = 71
+  -> Input: 1.124 <-
+  -> State: 1.124 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.125 <-
+  -> State: 1.125 <-
+    loc = 78
+  -> Input: 1.126 <-
+  -> State: 1.126 <-
+    loc = 84
+  -> Input: 1.127 <-
+  -> State: 1.127 <-
+    loc = 90
+  -> Input: 1.128 <-
+  -> State: 1.128 <-
+    loc = 91
+  -> Input: 1.129 <-
+  -> State: 1.129 <-
+    loc = 92
+  -> Input: 1.130 <-
+  -> State: 1.130 <-
+    loc = 93
+  -> Input: 1.131 <-
+  -> State: 1.131 <-
+    loc = 94
+  -> Input: 1.132 <-
+  -> State: 1.132 <-
+    loc = 101
+  -> Input: 1.133 <-
+  -> State: 1.133 <-
+    loc = EoC
+  -> Input: 1.134 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.134 <-
+    loc = 6
+    ccntr = 6
+  -> Input: 1.135 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.135 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.136 <-
+  -> State: 1.136 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.137 <-
+  -> State: 1.137 <-
+    loc = 11
+  -> Input: 1.138 <-
+  -> State: 1.138 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.139 <-
+  -> State: 1.139 <-
+    loc = 16
+  -> Input: 1.140 <-
+  -> State: 1.140 <-
+    loc = 28
+  -> Input: 1.141 <-
+  -> State: 1.141 <-
+    loc = 29
+  -> Input: 1.142 <-
+  -> State: 1.142 <-
+    loc = 32
+  -> Input: 1.143 <-
+  -> State: 1.143 <-
+    loc = 35
+  -> Input: 1.144 <-
+  -> State: 1.144 <-
+    loc = 37
+  -> Input: 1.145 <-
+  -> State: 1.145 <-
+    loc = 71
+  -> Input: 1.146 <-
+  -> State: 1.146 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.147 <-
+  -> State: 1.147 <-
+    loc = 78
+  -> Input: 1.148 <-
+  -> State: 1.148 <-
+    loc = 84
+  -> Input: 1.149 <-
+  -> State: 1.149 <-
+    loc = 90
+  -> Input: 1.150 <-
+  -> State: 1.150 <-
+    loc = 91
+  -> Input: 1.151 <-
+  -> State: 1.151 <-
+    loc = 92
+  -> Input: 1.152 <-
+  -> State: 1.152 <-
+    loc = 93
+  -> Input: 1.153 <-
+  -> State: 1.153 <-
+    loc = 94
+  -> Input: 1.154 <-
+  -> State: 1.154 <-
+    loc = 101
+  -> Input: 1.155 <-
+  -> State: 1.155 <-
+    loc = EoC
+  -> Input: 1.156 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.156 <-
+    loc = 6
+    ccntr = 7
+  -> Input: 1.157 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.157 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.158 <-
+  -> State: 1.158 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.159 <-
+  -> State: 1.159 <-
+    loc = 11
+  -> Input: 1.160 <-
+  -> State: 1.160 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.161 <-
+  -> State: 1.161 <-
+    loc = 16
+  -> Input: 1.162 <-
+  -> State: 1.162 <-
+    loc = 28
+  -> Input: 1.163 <-
+  -> State: 1.163 <-
+    loc = 29
+  -> Input: 1.164 <-
+  -> State: 1.164 <-
+    loc = 32
+  -> Input: 1.165 <-
+  -> State: 1.165 <-
+    loc = 35
+  -> Input: 1.166 <-
+  -> State: 1.166 <-
+    loc = 37
+  -> Input: 1.167 <-
+  -> State: 1.167 <-
+    loc = 71
+  -> Input: 1.168 <-
+  -> State: 1.168 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.169 <-
+  -> State: 1.169 <-
+    loc = 78
+  -> Input: 1.170 <-
+  -> State: 1.170 <-
+    loc = 84
+  -> Input: 1.171 <-
+  -> State: 1.171 <-
+    loc = 90
+  -> Input: 1.172 <-
+  -> State: 1.172 <-
+    loc = 91
+  -> Input: 1.173 <-
+  -> State: 1.173 <-
+    loc = 92
+  -> Input: 1.174 <-
+  -> State: 1.174 <-
+    loc = 93
+  -> Input: 1.175 <-
+  -> State: 1.175 <-
+    loc = 94
+  -> Input: 1.176 <-
+  -> State: 1.176 <-
+    loc = 101
+  -> Input: 1.177 <-
+  -> State: 1.177 <-
+    loc = EoC
+  -> Input: 1.178 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.178 <-
+    loc = 6
+    ccntr = 8
+  -> Input: 1.179 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.179 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.180 <-
+  -> State: 1.180 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.181 <-
+  -> State: 1.181 <-
+    loc = 11
+  -> Input: 1.182 <-
+  -> State: 1.182 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.183 <-
+  -> State: 1.183 <-
+    loc = 16
+  -> Input: 1.184 <-
+  -> State: 1.184 <-
+    loc = 28
+  -> Input: 1.185 <-
+  -> State: 1.185 <-
+    loc = 29
+  -> Input: 1.186 <-
+  -> State: 1.186 <-
+    loc = 32
+  -> Input: 1.187 <-
+  -> State: 1.187 <-
+    loc = 35
+  -> Input: 1.188 <-
+  -> State: 1.188 <-
+    loc = 37
+  -> Input: 1.189 <-
+  -> State: 1.189 <-
+    loc = 71
+  -> Input: 1.190 <-
+  -> State: 1.190 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.191 <-
+  -> State: 1.191 <-
+    loc = 78
+  -> Input: 1.192 <-
+  -> State: 1.192 <-
+    loc = 84
+  -> Input: 1.193 <-
+  -> State: 1.193 <-
+    loc = 90
+  -> Input: 1.194 <-
+  -> State: 1.194 <-
+    loc = 91
+  -> Input: 1.195 <-
+  -> State: 1.195 <-
+    loc = 92
+  -> Input: 1.196 <-
+  -> State: 1.196 <-
+    loc = 93
+  -> Input: 1.197 <-
+  -> State: 1.197 <-
+    loc = 94
+  -> Input: 1.198 <-
+  -> State: 1.198 <-
+    loc = 101
+  -> Input: 1.199 <-
+  -> State: 1.199 <-
+    loc = EoC
+  -> Input: 1.200 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.200 <-
+    loc = 6
+    ccntr = 9
+  -> Input: 1.201 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.201 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.202 <-
+  -> State: 1.202 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.203 <-
+  -> State: 1.203 <-
+    loc = 11
+  -> Input: 1.204 <-
+  -> State: 1.204 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.205 <-
+  -> State: 1.205 <-
+    loc = 16
+  -> Input: 1.206 <-
+  -> State: 1.206 <-
+    loc = 28
+  -> Input: 1.207 <-
+  -> State: 1.207 <-
+    loc = 29
+  -> Input: 1.208 <-
+  -> State: 1.208 <-
+    loc = 32
+  -> Input: 1.209 <-
+  -> State: 1.209 <-
+    loc = 35
+  -> Input: 1.210 <-
+  -> State: 1.210 <-
+    loc = 37
+  -> Input: 1.211 <-
+  -> State: 1.211 <-
+    loc = 71
+  -> Input: 1.212 <-
+  -> State: 1.212 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.213 <-
+  -> State: 1.213 <-
+    loc = 78
+  -> Input: 1.214 <-
+  -> State: 1.214 <-
+    loc = 84
+  -> Input: 1.215 <-
+  -> State: 1.215 <-
+    loc = 90
+  -> Input: 1.216 <-
+  -> State: 1.216 <-
+    loc = 91
+  -> Input: 1.217 <-
+  -> State: 1.217 <-
+    loc = 92
+  -> Input: 1.218 <-
+  -> State: 1.218 <-
+    loc = 93
+  -> Input: 1.219 <-
+  -> State: 1.219 <-
+    loc = 94
+  -> Input: 1.220 <-
+  -> State: 1.220 <-
+    loc = 101
+  -> Input: 1.221 <-
+  -> State: 1.221 <-
+    loc = EoC
+  -> Input: 1.222 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.222 <-
+    loc = 6
+    ccntr = 10
+  -> Input: 1.223 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.223 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.224 <-
+  -> State: 1.224 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.225 <-
+  -> State: 1.225 <-
+    loc = 11
+  -> Input: 1.226 <-
+  -> State: 1.226 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.227 <-
+  -> State: 1.227 <-
+    loc = 16
+  -> Input: 1.228 <-
+  -> State: 1.228 <-
+    loc = 28
+  -> Input: 1.229 <-
+  -> State: 1.229 <-
+    loc = 29
+  -> Input: 1.230 <-
+  -> State: 1.230 <-
+    loc = 32
+  -> Input: 1.231 <-
+  -> State: 1.231 <-
+    loc = 35
+  -> Input: 1.232 <-
+  -> State: 1.232 <-
+    loc = 37
+  -> Input: 1.233 <-
+  -> State: 1.233 <-
+    loc = 71
+  -> Input: 1.234 <-
+  -> State: 1.234 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.235 <-
+  -> State: 1.235 <-
+    loc = 78
+  -> Input: 1.236 <-
+  -> State: 1.236 <-
+    loc = 84
+  -> Input: 1.237 <-
+  -> State: 1.237 <-
+    loc = 90
+  -> Input: 1.238 <-
+  -> State: 1.238 <-
+    loc = 91
+  -> Input: 1.239 <-
+  -> State: 1.239 <-
+    loc = 92
+  -> Input: 1.240 <-
+  -> State: 1.240 <-
+    loc = 93
+  -> Input: 1.241 <-
+  -> State: 1.241 <-
+    loc = 94
+  -> Input: 1.242 <-
+  -> State: 1.242 <-
+    loc = 101
+  -> Input: 1.243 <-
+  -> State: 1.243 <-
+    loc = EoC
+  -> Input: 1.244 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.244 <-
+    loc = 6
+    ccntr = 11
+  -> Input: 1.245 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.245 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.246 <-
+  -> State: 1.246 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.247 <-
+  -> State: 1.247 <-
+    loc = 11
+  -> Input: 1.248 <-
+  -> State: 1.248 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.249 <-
+  -> State: 1.249 <-
+    loc = 16
+  -> Input: 1.250 <-
+  -> State: 1.250 <-
+    loc = 28
+  -> Input: 1.251 <-
+  -> State: 1.251 <-
+    loc = 29
+  -> Input: 1.252 <-
+  -> State: 1.252 <-
+    loc = 32
+  -> Input: 1.253 <-
+  -> State: 1.253 <-
+    loc = 35
+  -> Input: 1.254 <-
+  -> State: 1.254 <-
+    loc = 37
+  -> Input: 1.255 <-
+  -> State: 1.255 <-
+    loc = 71
+  -> Input: 1.256 <-
+  -> State: 1.256 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.257 <-
+  -> State: 1.257 <-
+    loc = 78
+  -> Input: 1.258 <-
+  -> State: 1.258 <-
+    loc = 84
+  -> Input: 1.259 <-
+  -> State: 1.259 <-
+    loc = 90
+  -> Input: 1.260 <-
+  -> State: 1.260 <-
+    loc = 91
+  -> Input: 1.261 <-
+  -> State: 1.261 <-
+    loc = 92
+  -> Input: 1.262 <-
+  -> State: 1.262 <-
+    loc = 93
+  -> Input: 1.263 <-
+  -> State: 1.263 <-
+    loc = 94
+  -> Input: 1.264 <-
+  -> State: 1.264 <-
+    loc = 101
+  -> Input: 1.265 <-
+  -> State: 1.265 <-
+    loc = EoC
+  -> Input: 1.266 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.266 <-
+    loc = 6
+    ccntr = 12
+  -> Input: 1.267 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.267 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.268 <-
+  -> State: 1.268 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.269 <-
+  -> State: 1.269 <-
+    loc = 11
+  -> Input: 1.270 <-
+  -> State: 1.270 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.271 <-
+  -> State: 1.271 <-
+    loc = 16
+  -> Input: 1.272 <-
+  -> State: 1.272 <-
+    loc = 28
+  -> Input: 1.273 <-
+  -> State: 1.273 <-
+    loc = 29
+  -> Input: 1.274 <-
+  -> State: 1.274 <-
+    loc = 32
+  -> Input: 1.275 <-
+  -> State: 1.275 <-
+    loc = 35
+  -> Input: 1.276 <-
+  -> State: 1.276 <-
+    loc = 37
+  -> Input: 1.277 <-
+  -> State: 1.277 <-
+    loc = 71
+  -> Input: 1.278 <-
+  -> State: 1.278 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.279 <-
+  -> State: 1.279 <-
+    loc = 78
+  -> Input: 1.280 <-
+  -> State: 1.280 <-
+    loc = 84
+  -> Input: 1.281 <-
+  -> State: 1.281 <-
+    loc = 90
+  -> Input: 1.282 <-
+  -> State: 1.282 <-
+    loc = 91
+  -> Input: 1.283 <-
+  -> State: 1.283 <-
+    loc = 92
+  -> Input: 1.284 <-
+  -> State: 1.284 <-
+    loc = 93
+  -> Input: 1.285 <-
+  -> State: 1.285 <-
+    loc = 94
+  -> Input: 1.286 <-
+  -> State: 1.286 <-
+    loc = 101
+  -> Input: 1.287 <-
+  -> State: 1.287 <-
+    loc = EoC
+  -> Input: 1.288 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.288 <-
+    loc = 6
+    ccntr = 13
+  -> Input: 1.289 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.289 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.290 <-
+  -> State: 1.290 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.291 <-
+  -> State: 1.291 <-
+    loc = 11
+  -> Input: 1.292 <-
+  -> State: 1.292 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.293 <-
+  -> State: 1.293 <-
+    loc = 16
+  -> Input: 1.294 <-
+  -> State: 1.294 <-
+    loc = 28
+  -> Input: 1.295 <-
+  -> State: 1.295 <-
+    loc = 29
+  -> Input: 1.296 <-
+  -> State: 1.296 <-
+    loc = 32
+  -> Input: 1.297 <-
+  -> State: 1.297 <-
+    loc = 35
+  -> Input: 1.298 <-
+  -> State: 1.298 <-
+    loc = 37
+  -> Input: 1.299 <-
+  -> State: 1.299 <-
+    loc = 71
+  -> Input: 1.300 <-
+  -> State: 1.300 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.301 <-
+  -> State: 1.301 <-
+    loc = 78
+  -> Input: 1.302 <-
+  -> State: 1.302 <-
+    loc = 84
+  -> Input: 1.303 <-
+  -> State: 1.303 <-
+    loc = 90
+  -> Input: 1.304 <-
+  -> State: 1.304 <-
+    loc = 91
+  -> Input: 1.305 <-
+  -> State: 1.305 <-
+    loc = 92
+  -> Input: 1.306 <-
+  -> State: 1.306 <-
+    loc = 93
+  -> Input: 1.307 <-
+  -> State: 1.307 <-
+    loc = 94
+  -> Input: 1.308 <-
+  -> State: 1.308 <-
+    loc = 101
+  -> Input: 1.309 <-
+  -> State: 1.309 <-
+    loc = EoC
+  -> Input: 1.310 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.310 <-
+    loc = 6
+    ccntr = 14
+  -> Input: 1.311 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.311 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.312 <-
+  -> State: 1.312 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.313 <-
+  -> State: 1.313 <-
+    loc = 11
+  -> Input: 1.314 <-
+  -> State: 1.314 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.315 <-
+  -> State: 1.315 <-
+    loc = 16
+  -> Input: 1.316 <-
+  -> State: 1.316 <-
+    loc = 28
+  -> Input: 1.317 <-
+  -> State: 1.317 <-
+    loc = 29
+  -> Input: 1.318 <-
+  -> State: 1.318 <-
+    loc = 32
+  -> Input: 1.319 <-
+  -> State: 1.319 <-
+    loc = 35
+  -> Input: 1.320 <-
+  -> State: 1.320 <-
+    loc = 37
+  -> Input: 1.321 <-
+  -> State: 1.321 <-
+    loc = 71
+  -> Input: 1.322 <-
+  -> State: 1.322 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.323 <-
+  -> State: 1.323 <-
+    loc = 78
+  -> Input: 1.324 <-
+  -> State: 1.324 <-
+    loc = 84
+  -> Input: 1.325 <-
+  -> State: 1.325 <-
+    loc = 90
+  -> Input: 1.326 <-
+  -> State: 1.326 <-
+    loc = 91
+  -> Input: 1.327 <-
+  -> State: 1.327 <-
+    loc = 92
+  -> Input: 1.328 <-
+  -> State: 1.328 <-
+    loc = 93
+  -> Input: 1.329 <-
+  -> State: 1.329 <-
+    loc = 94
+  -> Input: 1.330 <-
+  -> State: 1.330 <-
+    loc = 101
+  -> Input: 1.331 <-
+  -> State: 1.331 <-
+    loc = EoC
+  -> Input: 1.332 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.332 <-
+    loc = 6
+    ccntr = 15
+  -> Input: 1.333 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.333 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.334 <-
+  -> State: 1.334 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.335 <-
+  -> State: 1.335 <-
+    loc = 11
+  -> Input: 1.336 <-
+  -> State: 1.336 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.337 <-
+  -> State: 1.337 <-
+    loc = 16
+  -> Input: 1.338 <-
+  -> State: 1.338 <-
+    loc = 28
+  -> Input: 1.339 <-
+  -> State: 1.339 <-
+    loc = 29
+  -> Input: 1.340 <-
+  -> State: 1.340 <-
+    loc = 32
+  -> Input: 1.341 <-
+  -> State: 1.341 <-
+    loc = 35
+  -> Input: 1.342 <-
+  -> State: 1.342 <-
+    loc = 37
+  -> Input: 1.343 <-
+  -> State: 1.343 <-
+    loc = 71
+  -> Input: 1.344 <-
+  -> State: 1.344 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.345 <-
+  -> State: 1.345 <-
+    loc = 78
+  -> Input: 1.346 <-
+  -> State: 1.346 <-
+    loc = 84
+  -> Input: 1.347 <-
+  -> State: 1.347 <-
+    loc = 90
+  -> Input: 1.348 <-
+  -> State: 1.348 <-
+    loc = 91
+  -> Input: 1.349 <-
+  -> State: 1.349 <-
+    loc = 92
+  -> Input: 1.350 <-
+  -> State: 1.350 <-
+    loc = 93
+  -> Input: 1.351 <-
+  -> State: 1.351 <-
+    loc = 94
+  -> Input: 1.352 <-
+  -> State: 1.352 <-
+    loc = 101
+  -> Input: 1.353 <-
+  -> State: 1.353 <-
+    loc = EoC
+  -> Input: 1.354 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.354 <-
+    loc = 6
+    ccntr = 16
+  -> Input: 1.355 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.355 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.356 <-
+  -> State: 1.356 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.357 <-
+  -> State: 1.357 <-
+    loc = 11
+  -> Input: 1.358 <-
+  -> State: 1.358 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.359 <-
+  -> State: 1.359 <-
+    loc = 16
+  -> Input: 1.360 <-
+  -> State: 1.360 <-
+    loc = 28
+  -> Input: 1.361 <-
+  -> State: 1.361 <-
+    loc = 29
+  -> Input: 1.362 <-
+  -> State: 1.362 <-
+    loc = 32
+  -> Input: 1.363 <-
+  -> State: 1.363 <-
+    loc = 35
+  -> Input: 1.364 <-
+  -> State: 1.364 <-
+    loc = 37
+  -> Input: 1.365 <-
+  -> State: 1.365 <-
+    loc = 71
+  -> Input: 1.366 <-
+  -> State: 1.366 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.367 <-
+  -> State: 1.367 <-
+    loc = 78
+  -> Input: 1.368 <-
+  -> State: 1.368 <-
+    loc = 84
+  -> Input: 1.369 <-
+  -> State: 1.369 <-
+    loc = 90
+  -> Input: 1.370 <-
+  -> State: 1.370 <-
+    loc = 91
+  -> Input: 1.371 <-
+  -> State: 1.371 <-
+    loc = 92
+  -> Input: 1.372 <-
+  -> State: 1.372 <-
+    loc = 93
+  -> Input: 1.373 <-
+  -> State: 1.373 <-
+    loc = 94
+  -> Input: 1.374 <-
+  -> State: 1.374 <-
+    loc = 101
+  -> Input: 1.375 <-
+  -> State: 1.375 <-
+    loc = EoC
+  -> Input: 1.376 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.376 <-
+    loc = 6
+    ccntr = 17
+  -> Input: 1.377 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.377 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.378 <-
+  -> State: 1.378 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.379 <-
+  -> State: 1.379 <-
+    loc = 11
+  -> Input: 1.380 <-
+  -> State: 1.380 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.381 <-
+  -> State: 1.381 <-
+    loc = 16
+  -> Input: 1.382 <-
+  -> State: 1.382 <-
+    loc = 28
+  -> Input: 1.383 <-
+  -> State: 1.383 <-
+    loc = 29
+  -> Input: 1.384 <-
+  -> State: 1.384 <-
+    loc = 32
+  -> Input: 1.385 <-
+  -> State: 1.385 <-
+    loc = 35
+  -> Input: 1.386 <-
+  -> State: 1.386 <-
+    loc = 37
+  -> Input: 1.387 <-
+  -> State: 1.387 <-
+    loc = 71
+  -> Input: 1.388 <-
+  -> State: 1.388 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.389 <-
+  -> State: 1.389 <-
+    loc = 78
+  -> Input: 1.390 <-
+  -> State: 1.390 <-
+    loc = 84
+  -> Input: 1.391 <-
+  -> State: 1.391 <-
+    loc = 90
+  -> Input: 1.392 <-
+  -> State: 1.392 <-
+    loc = 91
+  -> Input: 1.393 <-
+  -> State: 1.393 <-
+    loc = 92
+  -> Input: 1.394 <-
+  -> State: 1.394 <-
+    loc = 93
+  -> Input: 1.395 <-
+  -> State: 1.395 <-
+    loc = 94
+  -> Input: 1.396 <-
+  -> State: 1.396 <-
+    loc = 101
+  -> Input: 1.397 <-
+  -> State: 1.397 <-
+    loc = EoC
+  -> Input: 1.398 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.398 <-
+    loc = 6
+    ccntr = 18
+  -> Input: 1.399 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.399 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.400 <-
+  -> State: 1.400 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.401 <-
+  -> State: 1.401 <-
+    loc = 11
+  -> Input: 1.402 <-
+  -> State: 1.402 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.403 <-
+  -> State: 1.403 <-
+    loc = 16
+  -> Input: 1.404 <-
+  -> State: 1.404 <-
+    loc = 28
+  -> Input: 1.405 <-
+  -> State: 1.405 <-
+    loc = 29
+  -> Input: 1.406 <-
+  -> State: 1.406 <-
+    loc = 32
+  -> Input: 1.407 <-
+  -> State: 1.407 <-
+    loc = 35
+  -> Input: 1.408 <-
+  -> State: 1.408 <-
+    loc = 37
+  -> Input: 1.409 <-
+  -> State: 1.409 <-
+    loc = 71
+  -> Input: 1.410 <-
+  -> State: 1.410 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.411 <-
+  -> State: 1.411 <-
+    loc = 78
+  -> Input: 1.412 <-
+  -> State: 1.412 <-
+    loc = 84
+  -> Input: 1.413 <-
+  -> State: 1.413 <-
+    loc = 90
+  -> Input: 1.414 <-
+  -> State: 1.414 <-
+    loc = 91
+  -> Input: 1.415 <-
+  -> State: 1.415 <-
+    loc = 92
+  -> Input: 1.416 <-
+  -> State: 1.416 <-
+    loc = 93
+  -> Input: 1.417 <-
+  -> State: 1.417 <-
+    loc = 94
+  -> Input: 1.418 <-
+  -> State: 1.418 <-
+    loc = 101
+  -> Input: 1.419 <-
+  -> State: 1.419 <-
+    loc = EoC
+  -> Input: 1.420 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.420 <-
+    loc = 6
+    ccntr = 19
+  -> Input: 1.421 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.421 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.422 <-
+  -> State: 1.422 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.423 <-
+  -> State: 1.423 <-
+    loc = 11
+  -> Input: 1.424 <-
+  -> State: 1.424 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.425 <-
+  -> State: 1.425 <-
+    loc = 16
+  -> Input: 1.426 <-
+  -> State: 1.426 <-
+    loc = 28
+  -> Input: 1.427 <-
+  -> State: 1.427 <-
+    loc = 29
+  -> Input: 1.428 <-
+  -> State: 1.428 <-
+    loc = 32
+  -> Input: 1.429 <-
+  -> State: 1.429 <-
+    loc = 35
+  -> Input: 1.430 <-
+  -> State: 1.430 <-
+    loc = 37
+  -> Input: 1.431 <-
+  -> State: 1.431 <-
+    loc = 71
+  -> Input: 1.432 <-
+  -> State: 1.432 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.433 <-
+  -> State: 1.433 <-
+    loc = 78
+  -> Input: 1.434 <-
+  -> State: 1.434 <-
+    loc = 84
+  -> Input: 1.435 <-
+  -> State: 1.435 <-
+    loc = 90
+  -> Input: 1.436 <-
+  -> State: 1.436 <-
+    loc = 91
+  -> Input: 1.437 <-
+  -> State: 1.437 <-
+    loc = 92
+  -> Input: 1.438 <-
+  -> State: 1.438 <-
+    loc = 93
+  -> Input: 1.439 <-
+  -> State: 1.439 <-
+    loc = 94
+  -> Input: 1.440 <-
+  -> State: 1.440 <-
+    loc = 101
+  -> Input: 1.441 <-
+  -> State: 1.441 <-
+    loc = EoC
+  -> Input: 1.442 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.442 <-
+    loc = 6
+    ccntr = 20
+  -> Input: 1.443 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.443 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.444 <-
+  -> State: 1.444 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.445 <-
+  -> State: 1.445 <-
+    loc = 11
+  -> Input: 1.446 <-
+  -> State: 1.446 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.447 <-
+  -> State: 1.447 <-
+    loc = 16
+  -> Input: 1.448 <-
+  -> State: 1.448 <-
+    loc = 28
+  -> Input: 1.449 <-
+  -> State: 1.449 <-
+    loc = 29
+  -> Input: 1.450 <-
+  -> State: 1.450 <-
+    loc = 32
+  -> Input: 1.451 <-
+  -> State: 1.451 <-
+    loc = 35
+  -> Input: 1.452 <-
+  -> State: 1.452 <-
+    loc = 37
+  -> Input: 1.453 <-
+  -> State: 1.453 <-
+    loc = 71
+  -> Input: 1.454 <-
+  -> State: 1.454 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.455 <-
+  -> State: 1.455 <-
+    loc = 78
+  -> Input: 1.456 <-
+  -> State: 1.456 <-
+    loc = 84
+  -> Input: 1.457 <-
+  -> State: 1.457 <-
+    loc = 90
+  -> Input: 1.458 <-
+  -> State: 1.458 <-
+    loc = 91
+  -> Input: 1.459 <-
+  -> State: 1.459 <-
+    loc = 92
+  -> Input: 1.460 <-
+  -> State: 1.460 <-
+    loc = 93
+  -> Input: 1.461 <-
+  -> State: 1.461 <-
+    loc = 94
+  -> Input: 1.462 <-
+  -> State: 1.462 <-
+    loc = 101
+  -> Input: 1.463 <-
+  -> State: 1.463 <-
+    loc = EoC
+  -> Input: 1.464 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.464 <-
+    loc = 6
+    ccntr = 21
+  -> Input: 1.465 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.465 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.466 <-
+  -> State: 1.466 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.467 <-
+  -> State: 1.467 <-
+    loc = 11
+  -> Input: 1.468 <-
+  -> State: 1.468 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.469 <-
+  -> State: 1.469 <-
+    loc = 16
+  -> Input: 1.470 <-
+  -> State: 1.470 <-
+    loc = 28
+  -> Input: 1.471 <-
+  -> State: 1.471 <-
+    loc = 29
+  -> Input: 1.472 <-
+  -> State: 1.472 <-
+    loc = 32
+  -> Input: 1.473 <-
+  -> State: 1.473 <-
+    loc = 35
+  -> Input: 1.474 <-
+  -> State: 1.474 <-
+    loc = 37
+  -> Input: 1.475 <-
+  -> State: 1.475 <-
+    loc = 71
+  -> Input: 1.476 <-
+  -> State: 1.476 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.477 <-
+  -> State: 1.477 <-
+    loc = 78
+  -> Input: 1.478 <-
+  -> State: 1.478 <-
+    loc = 84
+  -> Input: 1.479 <-
+  -> State: 1.479 <-
+    loc = 90
+  -> Input: 1.480 <-
+  -> State: 1.480 <-
+    loc = 91
+  -> Input: 1.481 <-
+  -> State: 1.481 <-
+    loc = 92
+  -> Input: 1.482 <-
+  -> State: 1.482 <-
+    loc = 93
+  -> Input: 1.483 <-
+  -> State: 1.483 <-
+    loc = 94
+  -> Input: 1.484 <-
+  -> State: 1.484 <-
+    loc = 101
+  -> Input: 1.485 <-
+  -> State: 1.485 <-
+    loc = EoC
+  -> Input: 1.486 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.486 <-
+    loc = 6
+    ccntr = 22
+  -> Input: 1.487 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.487 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.488 <-
+  -> State: 1.488 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.489 <-
+  -> State: 1.489 <-
+    loc = 11
+  -> Input: 1.490 <-
+  -> State: 1.490 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.491 <-
+  -> State: 1.491 <-
+    loc = 16
+  -> Input: 1.492 <-
+  -> State: 1.492 <-
+    loc = 28
+  -> Input: 1.493 <-
+  -> State: 1.493 <-
+    loc = 29
+  -> Input: 1.494 <-
+  -> State: 1.494 <-
+    loc = 32
+  -> Input: 1.495 <-
+  -> State: 1.495 <-
+    loc = 35
+  -> Input: 1.496 <-
+  -> State: 1.496 <-
+    loc = 37
+  -> Input: 1.497 <-
+  -> State: 1.497 <-
+    loc = 71
+  -> Input: 1.498 <-
+  -> State: 1.498 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.499 <-
+  -> State: 1.499 <-
+    loc = 78
+  -> Input: 1.500 <-
+  -> State: 1.500 <-
+    loc = 84
+  -> Input: 1.501 <-
+  -> State: 1.501 <-
+    loc = 90
+  -> Input: 1.502 <-
+  -> State: 1.502 <-
+    loc = 91
+  -> Input: 1.503 <-
+  -> State: 1.503 <-
+    loc = 92
+  -> Input: 1.504 <-
+  -> State: 1.504 <-
+    loc = 93
+  -> Input: 1.505 <-
+  -> State: 1.505 <-
+    loc = 94
+  -> Input: 1.506 <-
+  -> State: 1.506 <-
+    loc = 101
+  -> Input: 1.507 <-
+  -> State: 1.507 <-
+    loc = EoC
+  -> Input: 1.508 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.508 <-
+    loc = 6
+    ccntr = 23
+  -> Input: 1.509 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.509 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.510 <-
+  -> State: 1.510 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.511 <-
+  -> State: 1.511 <-
+    loc = 11
+  -> Input: 1.512 <-
+  -> State: 1.512 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.513 <-
+  -> State: 1.513 <-
+    loc = 16
+  -> Input: 1.514 <-
+  -> State: 1.514 <-
+    loc = 28
+  -> Input: 1.515 <-
+  -> State: 1.515 <-
+    loc = 29
+  -> Input: 1.516 <-
+  -> State: 1.516 <-
+    loc = 32
+  -> Input: 1.517 <-
+  -> State: 1.517 <-
+    loc = 35
+  -> Input: 1.518 <-
+  -> State: 1.518 <-
+    loc = 37
+  -> Input: 1.519 <-
+  -> State: 1.519 <-
+    loc = 71
+  -> Input: 1.520 <-
+  -> State: 1.520 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.521 <-
+  -> State: 1.521 <-
+    loc = 78
+  -> Input: 1.522 <-
+  -> State: 1.522 <-
+    loc = 84
+  -> Input: 1.523 <-
+  -> State: 1.523 <-
+    loc = 90
+  -> Input: 1.524 <-
+  -> State: 1.524 <-
+    loc = 91
+  -> Input: 1.525 <-
+  -> State: 1.525 <-
+    loc = 92
+  -> Input: 1.526 <-
+  -> State: 1.526 <-
+    loc = 93
+  -> Input: 1.527 <-
+  -> State: 1.527 <-
+    loc = 94
+  -> Input: 1.528 <-
+  -> State: 1.528 <-
+    loc = 101
+  -> Input: 1.529 <-
+  -> State: 1.529 <-
+    loc = EoC
+  -> Input: 1.530 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.530 <-
+    loc = 6
+    ccntr = 24
+  -> Input: 1.531 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.531 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.532 <-
+  -> State: 1.532 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.533 <-
+  -> State: 1.533 <-
+    loc = 11
+  -> Input: 1.534 <-
+  -> State: 1.534 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.535 <-
+  -> State: 1.535 <-
+    loc = 16
+  -> Input: 1.536 <-
+  -> State: 1.536 <-
+    loc = 28
+  -> Input: 1.537 <-
+  -> State: 1.537 <-
+    loc = 29
+  -> Input: 1.538 <-
+  -> State: 1.538 <-
+    loc = 32
+  -> Input: 1.539 <-
+  -> State: 1.539 <-
+    loc = 35
+  -> Input: 1.540 <-
+  -> State: 1.540 <-
+    loc = 37
+  -> Input: 1.541 <-
+  -> State: 1.541 <-
+    loc = 71
+  -> Input: 1.542 <-
+  -> State: 1.542 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.543 <-
+  -> State: 1.543 <-
+    loc = 78
+  -> Input: 1.544 <-
+  -> State: 1.544 <-
+    loc = 84
+  -> Input: 1.545 <-
+  -> State: 1.545 <-
+    loc = 90
+  -> Input: 1.546 <-
+  -> State: 1.546 <-
+    loc = 91
+  -> Input: 1.547 <-
+  -> State: 1.547 <-
+    loc = 92
+  -> Input: 1.548 <-
+  -> State: 1.548 <-
+    loc = 93
+  -> Input: 1.549 <-
+  -> State: 1.549 <-
+    loc = 94
+  -> Input: 1.550 <-
+  -> State: 1.550 <-
+    loc = 101
+  -> Input: 1.551 <-
+  -> State: 1.551 <-
+    loc = EoC
+  -> Input: 1.552 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.552 <-
+    loc = 6
+    ccntr = 25
+  -> Input: 1.553 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.553 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.554 <-
+  -> State: 1.554 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.555 <-
+  -> State: 1.555 <-
+    loc = 11
+  -> Input: 1.556 <-
+  -> State: 1.556 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.557 <-
+  -> State: 1.557 <-
+    loc = 16
+  -> Input: 1.558 <-
+  -> State: 1.558 <-
+    loc = 28
+  -> Input: 1.559 <-
+  -> State: 1.559 <-
+    loc = 29
+  -> Input: 1.560 <-
+  -> State: 1.560 <-
+    loc = 32
+  -> Input: 1.561 <-
+  -> State: 1.561 <-
+    loc = 35
+  -> Input: 1.562 <-
+  -> State: 1.562 <-
+    loc = 37
+  -> Input: 1.563 <-
+  -> State: 1.563 <-
+    loc = 71
+  -> Input: 1.564 <-
+  -> State: 1.564 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.565 <-
+  -> State: 1.565 <-
+    loc = 78
+  -> Input: 1.566 <-
+  -> State: 1.566 <-
+    loc = 84
+  -> Input: 1.567 <-
+  -> State: 1.567 <-
+    loc = 90
+  -> Input: 1.568 <-
+  -> State: 1.568 <-
+    loc = 91
+  -> Input: 1.569 <-
+  -> State: 1.569 <-
+    loc = 92
+  -> Input: 1.570 <-
+  -> State: 1.570 <-
+    loc = 93
+  -> Input: 1.571 <-
+  -> State: 1.571 <-
+    loc = 94
+  -> Input: 1.572 <-
+  -> State: 1.572 <-
+    loc = 101
+  -> Input: 1.573 <-
+  -> State: 1.573 <-
+    loc = EoC
+  -> Input: 1.574 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.574 <-
+    loc = 6
+    ccntr = 26
+  -> Input: 1.575 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.575 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.576 <-
+  -> State: 1.576 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.577 <-
+  -> State: 1.577 <-
+    loc = 11
+  -> Input: 1.578 <-
+  -> State: 1.578 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.579 <-
+  -> State: 1.579 <-
+    loc = 16
+  -> Input: 1.580 <-
+  -> State: 1.580 <-
+    loc = 28
+  -> Input: 1.581 <-
+  -> State: 1.581 <-
+    loc = 29
+  -> Input: 1.582 <-
+  -> State: 1.582 <-
+    loc = 32
+  -> Input: 1.583 <-
+  -> State: 1.583 <-
+    loc = 35
+  -> Input: 1.584 <-
+  -> State: 1.584 <-
+    loc = 37
+  -> Input: 1.585 <-
+  -> State: 1.585 <-
+    loc = 71
+  -> Input: 1.586 <-
+  -> State: 1.586 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.587 <-
+  -> State: 1.587 <-
+    loc = 78
+  -> Input: 1.588 <-
+  -> State: 1.588 <-
+    loc = 84
+  -> Input: 1.589 <-
+  -> State: 1.589 <-
+    loc = 90
+  -> Input: 1.590 <-
+  -> State: 1.590 <-
+    loc = 91
+  -> Input: 1.591 <-
+  -> State: 1.591 <-
+    loc = 92
+  -> Input: 1.592 <-
+  -> State: 1.592 <-
+    loc = 93
+  -> Input: 1.593 <-
+  -> State: 1.593 <-
+    loc = 94
+  -> Input: 1.594 <-
+  -> State: 1.594 <-
+    loc = 101
+  -> Input: 1.595 <-
+  -> State: 1.595 <-
+    loc = EoC
+  -> Input: 1.596 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.596 <-
+    loc = 6
+    ccntr = 27
+  -> Input: 1.597 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.597 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.598 <-
+  -> State: 1.598 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.599 <-
+  -> State: 1.599 <-
+    loc = 11
+  -> Input: 1.600 <-
+  -> State: 1.600 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.601 <-
+  -> State: 1.601 <-
+    loc = 16
+  -> Input: 1.602 <-
+  -> State: 1.602 <-
+    loc = 28
+  -> Input: 1.603 <-
+  -> State: 1.603 <-
+    loc = 29
+  -> Input: 1.604 <-
+  -> State: 1.604 <-
+    loc = 32
+  -> Input: 1.605 <-
+  -> State: 1.605 <-
+    loc = 35
+  -> Input: 1.606 <-
+  -> State: 1.606 <-
+    loc = 37
+  -> Input: 1.607 <-
+  -> State: 1.607 <-
+    loc = 71
+  -> Input: 1.608 <-
+  -> State: 1.608 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.609 <-
+  -> State: 1.609 <-
+    loc = 78
+  -> Input: 1.610 <-
+  -> State: 1.610 <-
+    loc = 84
+  -> Input: 1.611 <-
+  -> State: 1.611 <-
+    loc = 90
+  -> Input: 1.612 <-
+  -> State: 1.612 <-
+    loc = 91
+  -> Input: 1.613 <-
+  -> State: 1.613 <-
+    loc = 92
+  -> Input: 1.614 <-
+  -> State: 1.614 <-
+    loc = 93
+  -> Input: 1.615 <-
+  -> State: 1.615 <-
+    loc = 94
+  -> Input: 1.616 <-
+  -> State: 1.616 <-
+    loc = 101
+  -> Input: 1.617 <-
+  -> State: 1.617 <-
+    loc = EoC
+  -> Input: 1.618 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.618 <-
+    loc = 6
+    ccntr = 28
+  -> Input: 1.619 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.619 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.620 <-
+  -> State: 1.620 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.621 <-
+  -> State: 1.621 <-
+    loc = 11
+  -> Input: 1.622 <-
+  -> State: 1.622 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.623 <-
+  -> State: 1.623 <-
+    loc = 16
+  -> Input: 1.624 <-
+  -> State: 1.624 <-
+    loc = 28
+  -> Input: 1.625 <-
+  -> State: 1.625 <-
+    loc = 29
+  -> Input: 1.626 <-
+  -> State: 1.626 <-
+    loc = 32
+  -> Input: 1.627 <-
+  -> State: 1.627 <-
+    loc = 35
+  -> Input: 1.628 <-
+  -> State: 1.628 <-
+    loc = 37
+  -> Input: 1.629 <-
+  -> State: 1.629 <-
+    loc = 71
+  -> Input: 1.630 <-
+  -> State: 1.630 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.631 <-
+  -> State: 1.631 <-
+    loc = 78
+  -> Input: 1.632 <-
+  -> State: 1.632 <-
+    loc = 84
+  -> Input: 1.633 <-
+  -> State: 1.633 <-
+    loc = 90
+  -> Input: 1.634 <-
+  -> State: 1.634 <-
+    loc = 91
+  -> Input: 1.635 <-
+  -> State: 1.635 <-
+    loc = 92
+  -> Input: 1.636 <-
+  -> State: 1.636 <-
+    loc = 93
+  -> Input: 1.637 <-
+  -> State: 1.637 <-
+    loc = 94
+  -> Input: 1.638 <-
+  -> State: 1.638 <-
+    loc = 101
+  -> Input: 1.639 <-
+  -> State: 1.639 <-
+    loc = EoC
+  -> Input: 1.640 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.640 <-
+    loc = 6
+    ccntr = 29
+  -> Input: 1.641 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.641 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.642 <-
+  -> State: 1.642 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.643 <-
+  -> State: 1.643 <-
+    loc = 11
+  -> Input: 1.644 <-
+  -> State: 1.644 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.645 <-
+  -> State: 1.645 <-
+    loc = 16
+  -> Input: 1.646 <-
+  -> State: 1.646 <-
+    loc = 28
+  -> Input: 1.647 <-
+  -> State: 1.647 <-
+    loc = 29
+  -> Input: 1.648 <-
+  -> State: 1.648 <-
+    loc = 32
+  -> Input: 1.649 <-
+  -> State: 1.649 <-
+    loc = 35
+  -> Input: 1.650 <-
+  -> State: 1.650 <-
+    loc = 37
+  -> Input: 1.651 <-
+  -> State: 1.651 <-
+    loc = 71
+  -> Input: 1.652 <-
+  -> State: 1.652 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.653 <-
+  -> State: 1.653 <-
+    loc = 78
+  -> Input: 1.654 <-
+  -> State: 1.654 <-
+    loc = 84
+  -> Input: 1.655 <-
+  -> State: 1.655 <-
+    loc = 90
+  -> Input: 1.656 <-
+  -> State: 1.656 <-
+    loc = 91
+  -> Input: 1.657 <-
+  -> State: 1.657 <-
+    loc = 92
+  -> Input: 1.658 <-
+  -> State: 1.658 <-
+    loc = 93
+  -> Input: 1.659 <-
+  -> State: 1.659 <-
+    loc = 94
+  -> Input: 1.660 <-
+  -> State: 1.660 <-
+    loc = 101
+  -> Input: 1.661 <-
+  -> State: 1.661 <-
+    loc = EoC
+  -> Input: 1.662 <-
+    SF_Antivalent_Activate_IN = TRUE
+    SF_Antivalent_S_ChannelNC_IN = TRUE
+    SF_Antivalent_S_ChannelNO_IN = TRUE
+  -> State: 1.662 <-
+    loc = 6
+    ccntr = 30
+  -> Input: 1.663 <-
+    SF_Antivalent_Activate_IN = FALSE
+    SF_Antivalent_S_ChannelNC_IN = FALSE
+    SF_Antivalent_S_ChannelNO_IN = FALSE
+  -> State: 1.663 <-
+    loc = 7
+    SF_Antivalent___TEMP1 = 0ud16_0
+  -> Input: 1.664 <-
+  -> State: 1.664 <-
+    loc = 8
+    SF_Antivalent___TEMP0 = 0ud16_0
+  -> Input: 1.665 <-
+  -> State: 1.665 <-
+    loc = 11
+  -> Input: 1.666 <-
+  -> State: 1.666 <-
+    loc = 12
+    SF_Antivalent___TEMP0 = 0ud16_32772
+  -> Input: 1.667 <-
+  -> State: 1.667 <-
+    loc = 16
+  -> Input: 1.668 <-
+  -> State: 1.668 <-
+    loc = 28
+  -> Input: 1.669 <-
+  -> State: 1.669 <-
+    loc = 29
+  -> Input: 1.670 <-
+  -> State: 1.670 <-
+    loc = 32
+  -> Input: 1.671 <-
+  -> State: 1.671 <-
+    loc = 35
+  -> Input: 1.672 <-
+  -> State: 1.672 <-
+    loc = 37
+  -> Input: 1.673 <-
+  -> State: 1.673 <-
+    loc = 71
+  -> Input: 1.674 <-
+  -> State: 1.674 <-
+    loc = 72
+    SF_Antivalent___TEMP1 = 0ud16_32772
+  -> Input: 1.675 <-
+  -> State: 1.675 <-
+    loc = 78
+  -> Input: 1.676 <-
+  -> State: 1.676 <-
+    loc = 84
+  -> Input: 1.677 <-
+  -> State: 1.677 <-
+    loc = 90
+  -> Input: 1.678 <-
+  -> State: 1.678 <-
+    loc = 91
+  -> Input: 1.679 <-
+  -> State: 1.679 <-
+    loc = 92
+  -> Input: 1.680 <-
+  -> State: 1.680 <-
+    loc = 93
+  -> Input: 1.681 <-
+  -> State: 1.681 <-
+    loc = 94
+  -> Input: 1.682 <-
+  -> State: 1.682 <-
+    loc = 101
+  -> Input: 1.683 <-
+  -> State: 1.683 <-
+    loc = EoC
+  -> Input: 1.684 <-
+  -> State: 1.684 <-
+    ccntr = 31
+    SF_Antivalent_Activate = FALSE
+    SF_Antivalent_S_ChannelNC = FALSE
+    SF_Antivalent_S_ChannelNO = FALSE

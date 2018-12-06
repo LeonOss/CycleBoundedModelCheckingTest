@@ -1,0 +1,21 @@
+ARCADE
+Embedded Software Laboratory, RWTH Aachen University
+
+Copyright © 2004-2017 Stefan Kowalewski.
+All rights reserved.
+
+License Agreement
+ARCADE (Release Version)
+
+Please read the license agreement carefully.
+
+We (the licensee) understand that Arcade includes the program: ARCADE and that it is supplied "as is", without expressed or implied warranty. We agree on the following:
+
+1. You (the licensers) do not have any obligation to provide any maintenance or consulting help with respect to ARCADE.
+2. You neither have any responsibility for the correctness of systems verified using ARCADE, nor for the correctness of ARCADE itself.
+3. We will never distribute or modify any part of the ARCADE code (i.e., the source code and the object code) without a written permission of Stefan Kowalewski (RWTH Aachen University).
+4. We will only use ARCADE for non-commercial applications in academia, or as private persons. This implies that neither ARCADE nor any part of its code should be used or modified for any commercial software product. 
+
+In the event that you should release new versions of ARCADE to us, we agree that they will also fall under all of these terms. 
+
+Other license arrangements are possible, contact arcade@embedded.rwth-aachen.de for terms and conditions.

@@ -1,0 +1,1521 @@
+-- FORMULA: AG (SF_EmergencyStop_1.Error => !S_EStopOut)
+-- BOUND: 15
+
+MODULE main
+	IVAR
+		DiagnosticsConcept_S1_S_EStopIn_1_IN : boolean;
+		DiagnosticsConcept_S1_S_EStopIn_2_IN : boolean;
+		DiagnosticsConcept_S2_S_ESPE_In_IN : boolean;
+		DiagnosticsConcept_S0_Reset_IN : boolean;
+		DiagnosticsConcept_S3_Drive_Reset_IN : boolean;
+		DiagnosticsConcept_AxisD_1_IN : signed word[16];
+		DiagnosticsConcept_InputDevice1_active_IN : boolean;
+		DiagnosticsConcept_InputDevice2_active_IN : boolean;
+		DiagnosticsConcept_Internal_Acknowledge_IN : boolean;
+		UNKNOWN_BOOL_UNKNOWN_BOOL_IN : boolean;
+	VAR
+		loc : {434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, EoC};
+		ccntr : 0..16;
+		UNKNOWN_BOOL_UNKNOWN_BOOL : boolean;
+		DiagnosticsConcept_S1_S_EStopIn_1 : boolean;
+		DiagnosticsConcept_S1_S_EStopIn_2 : boolean;
+		DiagnosticsConcept_S2_S_ESPE_In : boolean;
+		DiagnosticsConcept_S0_Reset : boolean;
+		DiagnosticsConcept_S3_Drive_Reset : boolean;
+		DiagnosticsConcept_AxisD_1 : signed word[16];
+		DiagnosticsConcept_InputDevice1_active : boolean;
+		DiagnosticsConcept_InputDevice2_active : boolean;
+		DiagnosticsConcept_Internal_Acknowledge : boolean;
+		DiagnosticsConcept_Error_Equiv1 : boolean;
+		DiagnosticsConcept_Diag_Equiv1 : unsigned word[16];
+		DiagnosticsConcept_Error_EStop1 : boolean;
+		DiagnosticsConcept_Diag_EStop1 : unsigned word[16];
+		DiagnosticsConcept_Error_ESPE1 : boolean;
+		DiagnosticsConcept_Diag_ESPE1 : unsigned word[16];
+		DiagnosticsConcept_Error_SafeStop1 : boolean;
+		DiagnosticsConcept_Diag_SafeStop1 : unsigned word[16];
+		DiagnosticsConcept_S_Stopped : boolean;
+		DiagnosticsConcept_S_EStopOut : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_Activate : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_S_ChannelA : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_S_ChannelB : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime : unsigned word[32];
+		DiagnosticsConcept_SF_Equivalent_1_Ready : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_S_EquivalentOut : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_Error : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_DiagCode : unsigned word[16];
+		DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_PT : unsigned word[32];
+		DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : boolean;
+		DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0 : boolean;
+		DiagnosticsConcept_SF_Equivalent_1___TEMP0 : unsigned word[16];
+		DiagnosticsConcept_SF_Equivalent_1___TEMP1 : unsigned word[16];
+		DiagnosticsConcept_SF_EmergencyStop_1_Activate : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_Reset : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_Ready : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_S_EStopOut : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_Error : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_DiagCode : unsigned word[16];
+		DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_CLK : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_M : boolean;
+		DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 : unsigned word[16];
+		DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 : unsigned word[16];
+		DiagnosticsConcept_SF_ESPE_1_Activate : boolean;
+		DiagnosticsConcept_SF_ESPE_1_S_ESPE_In : boolean;
+		DiagnosticsConcept_SF_ESPE_1_S_StartReset : boolean;
+		DiagnosticsConcept_SF_ESPE_1_S_AutoReset : boolean;
+		DiagnosticsConcept_SF_ESPE_1_Reset : boolean;
+		DiagnosticsConcept_SF_ESPE_1_Ready : boolean;
+		DiagnosticsConcept_SF_ESPE_1_S_ESPE_Out : boolean;
+		DiagnosticsConcept_SF_ESPE_1_Error : boolean;
+		DiagnosticsConcept_SF_ESPE_1_DiagCode : unsigned word[16];
+		DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_CLK : boolean;
+		DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q : boolean;
+		DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_M : boolean;
+		DiagnosticsConcept_SF_ESPE_1___TEMP0 : unsigned word[16];
+		DiagnosticsConcept_SF_ESPE_1___TEMP1 : unsigned word[16];
+		DiagnosticsConcept_SF_SafeStop1_1_Activate : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_S_StopIn : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_AxisID : signed word[16];
+		DiagnosticsConcept_SF_SafeStop1_1_MonitoringTime : unsigned word[32];
+		DiagnosticsConcept_SF_SafeStop1_1_Reset : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_Acknowledge : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_Ready : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_S_Stopped : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_Error : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_DiagCode : unsigned word[16];
+		DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_CLK : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_M : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_T_1_IN : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_T_1_PT : unsigned word[32];
+		DiagnosticsConcept_SF_SafeStop1_1_T_1_Q : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1_T_1___TEMP0 : boolean;
+		DiagnosticsConcept_SF_SafeStop1_1___TEMP0 : unsigned word[16];
+		DiagnosticsConcept_SF_SafeStop1_1___TEMP1 : unsigned word[16];
+	ASSIGN
+		init(loc) := 448;
+		init(ccntr) := 0;
+		init(UNKNOWN_BOOL_UNKNOWN_BOOL) := FALSE;
+		init(DiagnosticsConcept_S1_S_EStopIn_1) := FALSE;
+		init(DiagnosticsConcept_S1_S_EStopIn_2) := FALSE;
+		init(DiagnosticsConcept_S2_S_ESPE_In) := FALSE;
+		init(DiagnosticsConcept_S0_Reset) := FALSE;
+		init(DiagnosticsConcept_S3_Drive_Reset) := FALSE;
+		init(DiagnosticsConcept_AxisD_1) := 0sd16_0;
+		init(DiagnosticsConcept_InputDevice1_active) := FALSE;
+		init(DiagnosticsConcept_InputDevice2_active) := FALSE;
+		init(DiagnosticsConcept_Internal_Acknowledge) := FALSE;
+		init(DiagnosticsConcept_Error_Equiv1) := FALSE;
+		init(DiagnosticsConcept_Diag_Equiv1) := 0ud16_0;
+		init(DiagnosticsConcept_Error_EStop1) := FALSE;
+		init(DiagnosticsConcept_Diag_EStop1) := 0ud16_0;
+		init(DiagnosticsConcept_Error_ESPE1) := FALSE;
+		init(DiagnosticsConcept_Diag_ESPE1) := 0ud16_0;
+		init(DiagnosticsConcept_Error_SafeStop1) := FALSE;
+		init(DiagnosticsConcept_Diag_SafeStop1) := 0ud16_0;
+		init(DiagnosticsConcept_S_Stopped) := FALSE;
+		init(DiagnosticsConcept_S_EStopOut) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_Activate) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime) := 0ud32_0;
+		init(DiagnosticsConcept_SF_Equivalent_1_Ready) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_S_EquivalentOut) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_Error) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_DiagCode) := 0ud16_0;
+		init(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_PT) := 0ud32_0;
+		init(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0) := FALSE;
+		init(DiagnosticsConcept_SF_Equivalent_1___TEMP0) := 0ud16_0;
+		init(DiagnosticsConcept_SF_Equivalent_1___TEMP1) := 0ud16_0;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_Activate) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_Reset) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_Ready) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopOut) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_Error) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_DiagCode) := 0ud16_0;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_CLK) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_M) := FALSE;
+		init(DiagnosticsConcept_SF_EmergencyStop_1___TEMP0) := 0ud16_0;
+		init(DiagnosticsConcept_SF_EmergencyStop_1___TEMP1) := 0ud16_0;
+		init(DiagnosticsConcept_SF_ESPE_1_Activate) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_S_StartReset) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_S_AutoReset) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_Reset) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_Ready) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_S_ESPE_Out) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_Error) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_DiagCode) := 0ud16_0;
+		init(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_CLK) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_M) := FALSE;
+		init(DiagnosticsConcept_SF_ESPE_1___TEMP0) := 0ud16_0;
+		init(DiagnosticsConcept_SF_ESPE_1___TEMP1) := 0ud16_0;
+		init(DiagnosticsConcept_SF_SafeStop1_1_Activate) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_AxisID) := 0sd16_0;
+		init(DiagnosticsConcept_SF_SafeStop1_1_MonitoringTime) := 0ud32_0;
+		init(DiagnosticsConcept_SF_SafeStop1_1_Reset) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_Ready) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_S_Stopped) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_Error) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_DiagCode) := 0ud16_0;
+		init(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_CLK) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_M) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_T_1_IN) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_T_1_PT) := 0ud32_0;
+		init(DiagnosticsConcept_SF_SafeStop1_1_T_1_Q) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1_T_1___TEMP0) := FALSE;
+		init(DiagnosticsConcept_SF_SafeStop1_1___TEMP0) := 0ud16_0;
+		init(DiagnosticsConcept_SF_SafeStop1_1___TEMP1) := 0ud16_0;
+
+		next(loc) := case
+			loc = 434 : 628;
+			loc = 435 : 1007;
+			loc = 436 : 751;
+			loc = 437 : 882;
+			loc = 438 : 439;
+			loc = 439 : 440;
+			loc = 440 : 441;
+			loc = 441 : 442;
+			loc = 442 : 443;
+			loc = 443 : 444;
+			loc = 444 : 445;
+			loc = 445 : 446;
+			loc = 446 : 447;
+			loc = 447 : 448;
+			loc = 448 : EoC;
+			(loc = EoC) & (ccntr<15) : 434;
+			(loc = EoC) & !(ccntr<15) : EoC;
+			loc = 449 : 450;
+			loc = 450 : 451;
+			loc = 451 & !(DiagnosticsConcept_SF_Equivalent_1_Activate) : 452;
+			loc = 451 & DiagnosticsConcept_SF_Equivalent_1_Activate : 454;
+			loc = 452 : 453;
+			loc = 453 : 511;
+			loc = 454 : 455;
+			loc = 455 & (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud8_0,16)) : 456;
+			loc = 455 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud8_0,16))) : 459;
+			loc = 456 & DiagnosticsConcept_SF_Equivalent_1_Activate : 457;
+			loc = 456 & !(DiagnosticsConcept_SF_Equivalent_1_Activate) : 458;
+			loc = 457 : 458;
+			loc = 458 : 511;
+			loc = 459 & (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32769,16)) : 460;
+			loc = 459 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32769,16))) : 469;
+			loc = 460 & (DiagnosticsConcept_SF_Equivalent_1_S_ChannelA & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB)) : 461;
+			loc = 460 & !((DiagnosticsConcept_SF_Equivalent_1_S_ChannelA & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB))) : 463;
+			loc = 461 : 462;
+			loc = 462 : 468;
+			loc = 463 & (DiagnosticsConcept_SF_Equivalent_1_S_ChannelB & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA)) : 464;
+			loc = 463 & !((DiagnosticsConcept_SF_Equivalent_1_S_ChannelB & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA))) : 466;
+			loc = 464 : 465;
+			loc = 465 : 468;
+			loc = 466 & (DiagnosticsConcept_SF_Equivalent_1_S_ChannelA & DiagnosticsConcept_SF_Equivalent_1_S_ChannelB) : 467;
+			loc = 466 & !((DiagnosticsConcept_SF_Equivalent_1_S_ChannelA & DiagnosticsConcept_SF_Equivalent_1_S_ChannelB)) : 468;
+			loc = 467 : 468;
+			loc = 468 : 511;
+			loc = 469 & (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32772,16)) : 470;
+			loc = 469 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32772,16))) : 479;
+			loc = 470 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 471;
+			loc = 470 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 473;
+			loc = 471 : 472;
+			loc = 472 : 478;
+			loc = 473 & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) : 474;
+			loc = 473 & DiagnosticsConcept_SF_Equivalent_1_S_ChannelA : 476;
+			loc = 474 : 475;
+			loc = 475 : 478;
+			loc = 476 & DiagnosticsConcept_SF_Equivalent_1_S_ChannelB : 477;
+			loc = 476 & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB) : 478;
+			loc = 477 : 478;
+			loc = 478 : 511;
+			loc = 479 & ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_49153,16)) | (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_49154,16))) : 480;
+			loc = 479 & !(((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_49153,16)) | (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_49154,16)))) : 483;
+			loc = 480 & (!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB)) : 481;
+			loc = 480 & !((!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB))) : 482;
+			loc = 481 : 482;
+			loc = 482 : 511;
+			loc = 483 & (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32788,16)) : 484;
+			loc = 483 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32788,16))) : 493;
+			loc = 484 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 485;
+			loc = 484 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 487;
+			loc = 485 : 486;
+			loc = 486 : 492;
+			loc = 487 & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB) : 488;
+			loc = 487 & DiagnosticsConcept_SF_Equivalent_1_S_ChannelB : 490;
+			loc = 488 : 489;
+			loc = 489 : 492;
+			loc = 490 & DiagnosticsConcept_SF_Equivalent_1_S_ChannelA : 491;
+			loc = 490 & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) : 492;
+			loc = 491 : 492;
+			loc = 492 : 511;
+			loc = 493 & (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_49155,16)) : 494;
+			loc = 493 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_49155,16))) : 497;
+			loc = 494 & (!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB)) : 495;
+			loc = 494 & !((!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB))) : 496;
+			loc = 495 : 496;
+			loc = 496 : 511;
+			loc = 497 & (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32773,16)) : 498;
+			loc = 497 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32773,16))) : 504;
+			loc = 498 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 499;
+			loc = 498 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 501;
+			loc = 499 : 500;
+			loc = 500 : 503;
+			loc = 501 & (!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB)) : 502;
+			loc = 501 & !((!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB))) : 503;
+			loc = 502 : 503;
+			loc = 503 : 511;
+			loc = 504 & (DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32768,16)) : 505;
+			loc = 504 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP0 = resize(0ud16_32768,16))) : 511;
+			loc = 505 & (!DiagnosticsConcept_SF_Equivalent_1_S_ChannelA != !DiagnosticsConcept_SF_Equivalent_1_S_ChannelB) : 506;
+			loc = 505 & !((!DiagnosticsConcept_SF_Equivalent_1_S_ChannelA != !DiagnosticsConcept_SF_Equivalent_1_S_ChannelB)) : 508;
+			loc = 506 : 507;
+			loc = 507 : 510;
+			loc = 508 & (!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB)) : 509;
+			loc = 508 & !((!(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) & !(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB))) : 510;
+			loc = 509 : 510;
+			loc = 510 : 511;
+			loc = 511 : 512;
+			loc = 512 & (DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud8_0,16)) : 513;
+			loc = 512 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud8_0,16))) : 518;
+			loc = 513 : 590;
+			loc = 514 : 515;
+			loc = 515 : 516;
+			loc = 516 : 517;
+			loc = 517 : 542;
+			loc = 518 & (DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32768,16)) : 519;
+			loc = 518 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32768,16))) : 524;
+			loc = 519 : 607;
+			loc = 520 : 521;
+			loc = 521 : 522;
+			loc = 522 : 523;
+			loc = 523 : 542;
+			loc = 524 & (DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32769,16)) : 525;
+			loc = 524 & !((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32769,16))) : 530;
+			loc = 525 : 573;
+			loc = 526 : 527;
+			loc = 527 : 528;
+			loc = 528 : 529;
+			loc = 529 : 542;
+			loc = 530 & ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32772,16)) | ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32788,16)) | (DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32773,16)))) : 531;
+			loc = 530 & !(((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32772,16)) | ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32788,16)) | (DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_32773,16))))) : 536;
+			loc = 531 : 556;
+			loc = 532 : 533;
+			loc = 533 : 534;
+			loc = 534 : 535;
+			loc = 535 : 542;
+			loc = 536 & ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_49153,16)) | ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_49154,16)) | (DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_49155,16)))) : 537;
+			loc = 536 & !(((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_49153,16)) | ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_49154,16)) | (DiagnosticsConcept_SF_Equivalent_1___TEMP1 = resize(0ud16_49155,16))))) : 542;
+			loc = 537 : 624;
+			loc = 538 : 539;
+			loc = 539 : 540;
+			loc = 540 : 541;
+			loc = 541 : 542;
+			loc = 542 : 633;
+			loc = 543 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN) : 545;
+			loc = 543 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN : 547;
+			loc = 544 : 543;
+			loc = 545 : 546;
+			loc = 546 : 551;
+			loc = 547 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 548;
+			loc = 547 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 551;
+			loc = 548 : 554;
+			loc = 549 : 550;
+			loc = 550 : 551;
+			loc = 551 : 559;
+			loc = 552 : 553;
+			loc = 553 : 555;
+			loc = 554 : 552;
+			loc = 555 : 549;
+			loc = 556 : 557;
+			loc = 557 : 558;
+			loc = 558 : 544;
+			loc = 559 : 532;
+			loc = 560 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN) : 562;
+			loc = 560 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN : 564;
+			loc = 561 : 560;
+			loc = 562 : 563;
+			loc = 563 : 568;
+			loc = 564 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 565;
+			loc = 564 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 568;
+			loc = 565 : 571;
+			loc = 566 : 567;
+			loc = 567 : 568;
+			loc = 568 : 576;
+			loc = 569 : 570;
+			loc = 570 : 572;
+			loc = 571 : 569;
+			loc = 572 : 566;
+			loc = 573 : 574;
+			loc = 574 : 575;
+			loc = 575 : 561;
+			loc = 576 : 526;
+			loc = 577 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN) : 579;
+			loc = 577 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN : 581;
+			loc = 578 : 577;
+			loc = 579 : 580;
+			loc = 580 : 585;
+			loc = 581 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 582;
+			loc = 581 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 585;
+			loc = 582 : 588;
+			loc = 583 : 584;
+			loc = 584 : 585;
+			loc = 585 : 593;
+			loc = 586 : 587;
+			loc = 587 : 589;
+			loc = 588 : 586;
+			loc = 589 : 583;
+			loc = 590 : 591;
+			loc = 591 : 592;
+			loc = 592 : 578;
+			loc = 593 : 514;
+			loc = 594 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN) : 596;
+			loc = 594 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN : 598;
+			loc = 595 : 594;
+			loc = 596 : 597;
+			loc = 597 : 602;
+			loc = 598 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 599;
+			loc = 598 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 602;
+			loc = 599 : 605;
+			loc = 600 : 601;
+			loc = 601 : 602;
+			loc = 602 : 610;
+			loc = 603 : 604;
+			loc = 604 : 606;
+			loc = 605 : 603;
+			loc = 606 : 600;
+			loc = 607 : 608;
+			loc = 608 : 609;
+			loc = 609 : 595;
+			loc = 610 : 520;
+			loc = 611 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN) : 613;
+			loc = 611 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN : 615;
+			loc = 612 : 611;
+			loc = 613 : 614;
+			loc = 614 : 619;
+			loc = 615 & !(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) : 616;
+			loc = 615 & DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q : 619;
+			loc = 616 : 622;
+			loc = 617 : 618;
+			loc = 618 : 619;
+			loc = 619 : 627;
+			loc = 620 : 621;
+			loc = 621 : 623;
+			loc = 622 : 620;
+			loc = 623 : 617;
+			loc = 624 : 625;
+			loc = 625 : 626;
+			loc = 626 : 612;
+			loc = 627 : 538;
+			loc = 628 : 629;
+			loc = 629 : 630;
+			loc = 630 : 631;
+			loc = 631 : 632;
+			loc = 632 : 449;
+			loc = 633 : 435;
+			loc = 634 & (DiagnosticsConcept_SF_ESPE_1_S_ESPE_In & DiagnosticsConcept_SF_ESPE_1_S_AutoReset) : 635;
+			loc = 634 & !((DiagnosticsConcept_SF_ESPE_1_S_ESPE_In & DiagnosticsConcept_SF_ESPE_1_S_AutoReset)) : 636;
+			loc = 635 : 636;
+			loc = 636 : 655;
+			loc = 637 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32773,16)) : 638;
+			loc = 637 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32773,16))) : 647;
+			loc = 638 & (DiagnosticsConcept_SF_ESPE_1_Reset & !(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q)) : 639;
+			loc = 638 & !((DiagnosticsConcept_SF_ESPE_1_Reset & !(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q))) : 641;
+			loc = 639 : 640;
+			loc = 640 : 646;
+			loc = 641 & !(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In) : 642;
+			loc = 641 & DiagnosticsConcept_SF_ESPE_1_S_ESPE_In : 644;
+			loc = 642 : 643;
+			loc = 643 : 646;
+			loc = 644 & (DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q | DiagnosticsConcept_SF_ESPE_1_S_AutoReset) : 645;
+			loc = 644 & !((DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q | DiagnosticsConcept_SF_ESPE_1_S_AutoReset)) : 646;
+			loc = 645 : 646;
+			loc = 646 : 655;
+			loc = 647 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_49154,16)) : 648;
+			loc = 647 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_49154,16))) : 651;
+			loc = 648 & !(DiagnosticsConcept_SF_ESPE_1_Reset) : 649;
+			loc = 648 & DiagnosticsConcept_SF_ESPE_1_Reset : 650;
+			loc = 649 : 650;
+			loc = 650 : 655;
+			loc = 651 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32768,16)) : 652;
+			loc = 651 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32768,16))) : 655;
+			loc = 652 & !(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In) : 653;
+			loc = 652 & DiagnosticsConcept_SF_ESPE_1_S_ESPE_In : 654;
+			loc = 653 : 654;
+			loc = 654 : 655;
+			loc = 655 : 656;
+			loc = 656 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud8_0,16)) : 657;
+			loc = 656 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud8_0,16))) : 661;
+			loc = 657 : 658;
+			loc = 658 : 659;
+			loc = 659 : 660;
+			loc = 660 : 701;
+			loc = 661 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32769,16)) : 662;
+			loc = 661 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32769,16))) : 666;
+			loc = 662 : 663;
+			loc = 663 : 664;
+			loc = 664 : 665;
+			loc = 665 : 701;
+			loc = 666 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32770,16)) : 667;
+			loc = 666 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32770,16))) : 671;
+			loc = 667 : 668;
+			loc = 668 : 669;
+			loc = 669 : 670;
+			loc = 670 : 701;
+			loc = 671 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32771,16)) : 672;
+			loc = 671 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32771,16))) : 676;
+			loc = 672 : 673;
+			loc = 673 : 674;
+			loc = 674 : 675;
+			loc = 675 : 701;
+			loc = 676 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_49153,16)) : 677;
+			loc = 676 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_49153,16))) : 681;
+			loc = 677 : 678;
+			loc = 678 : 679;
+			loc = 679 : 680;
+			loc = 680 : 701;
+			loc = 681 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32772,16)) : 682;
+			loc = 681 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32772,16))) : 686;
+			loc = 682 : 683;
+			loc = 683 : 684;
+			loc = 684 : 685;
+			loc = 685 : 701;
+			loc = 686 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32773,16)) : 687;
+			loc = 686 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32773,16))) : 691;
+			loc = 687 : 688;
+			loc = 688 : 689;
+			loc = 689 : 690;
+			loc = 690 : 701;
+			loc = 691 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_49154,16)) : 692;
+			loc = 691 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_49154,16))) : 696;
+			loc = 692 : 693;
+			loc = 693 : 694;
+			loc = 694 : 695;
+			loc = 695 : 701;
+			loc = 696 & (DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32768,16)) : 697;
+			loc = 696 & !((DiagnosticsConcept_SF_ESPE_1___TEMP1 = resize(0ud16_32768,16))) : 701;
+			loc = 697 : 698;
+			loc = 698 : 699;
+			loc = 699 : 700;
+			loc = 700 : 701;
+			loc = 701 : 757;
+			loc = 702 : 703;
+			loc = 703 : 704;
+			loc = 704 : 707;
+			loc = 705 : 706;
+			loc = 706 : 702;
+			loc = 707 : 711;
+			loc = 708 : 709;
+			loc = 709 : 710;
+			loc = 710 : 705;
+			loc = 711 & !(DiagnosticsConcept_SF_ESPE_1_Activate) : 712;
+			loc = 711 & DiagnosticsConcept_SF_ESPE_1_Activate : 714;
+			loc = 712 : 713;
+			loc = 713 : 655;
+			loc = 714 : 715;
+			loc = 715 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud8_0,16)) : 716;
+			loc = 715 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud8_0,16))) : 719;
+			loc = 716 & DiagnosticsConcept_SF_ESPE_1_Activate : 717;
+			loc = 716 & !(DiagnosticsConcept_SF_ESPE_1_Activate) : 718;
+			loc = 717 : 718;
+			loc = 718 : 655;
+			loc = 719 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32769,16)) : 720;
+			loc = 719 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32769,16))) : 729;
+			loc = 720 & !(DiagnosticsConcept_SF_ESPE_1_S_StartReset) : 721;
+			loc = 720 & DiagnosticsConcept_SF_ESPE_1_S_StartReset : 723;
+			loc = 721 : 722;
+			loc = 722 : 728;
+			loc = 723 & (DiagnosticsConcept_SF_ESPE_1_S_StartReset & !(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In)) : 724;
+			loc = 723 & !((DiagnosticsConcept_SF_ESPE_1_S_StartReset & !(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In))) : 726;
+			loc = 724 : 725;
+			loc = 725 : 728;
+			loc = 726 & (DiagnosticsConcept_SF_ESPE_1_S_ESPE_In & DiagnosticsConcept_SF_ESPE_1_S_StartReset) : 727;
+			loc = 726 & !((DiagnosticsConcept_SF_ESPE_1_S_ESPE_In & DiagnosticsConcept_SF_ESPE_1_S_StartReset)) : 728;
+			loc = 727 : 728;
+			loc = 728 : 655;
+			loc = 729 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32770,16)) : 730;
+			loc = 729 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32770,16))) : 733;
+			loc = 730 & DiagnosticsConcept_SF_ESPE_1_S_ESPE_In : 731;
+			loc = 730 & !(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In) : 732;
+			loc = 731 : 732;
+			loc = 732 : 655;
+			loc = 733 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32771,16)) : 734;
+			loc = 733 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32771,16))) : 743;
+			loc = 734 & (DiagnosticsConcept_SF_ESPE_1_Reset & !(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q)) : 735;
+			loc = 734 & !((DiagnosticsConcept_SF_ESPE_1_Reset & !(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q))) : 737;
+			loc = 735 : 736;
+			loc = 736 : 742;
+			loc = 737 & !(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In) : 738;
+			loc = 737 & DiagnosticsConcept_SF_ESPE_1_S_ESPE_In : 740;
+			loc = 738 : 739;
+			loc = 739 : 742;
+			loc = 740 & DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q : 741;
+			loc = 740 & !(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q) : 742;
+			loc = 741 : 742;
+			loc = 742 : 655;
+			loc = 743 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_49153,16)) : 744;
+			loc = 743 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_49153,16))) : 747;
+			loc = 744 & !(DiagnosticsConcept_SF_ESPE_1_Reset) : 745;
+			loc = 744 & DiagnosticsConcept_SF_ESPE_1_Reset : 746;
+			loc = 745 : 746;
+			loc = 746 : 655;
+			loc = 747 & (DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32772,16)) : 748;
+			loc = 747 & !((DiagnosticsConcept_SF_ESPE_1___TEMP0 = resize(0ud16_32772,16))) : 637;
+			loc = 748 & (DiagnosticsConcept_SF_ESPE_1_S_ESPE_In & !(DiagnosticsConcept_SF_ESPE_1_S_AutoReset)) : 749;
+			loc = 748 & !((DiagnosticsConcept_SF_ESPE_1_S_ESPE_In & !(DiagnosticsConcept_SF_ESPE_1_S_AutoReset))) : 634;
+			loc = 749 : 750;
+			loc = 750 : 636;
+			loc = 751 : 752;
+			loc = 752 : 753;
+			loc = 753 : 754;
+			loc = 754 : 755;
+			loc = 755 : 756;
+			loc = 756 : 708;
+			loc = 757 : 437;
+			loc = 758 : 759;
+			loc = 759 : 760;
+			loc = 760 : 862;
+			loc = 761 & !(DiagnosticsConcept_SF_SafeStop1_1_Activate) : 762;
+			loc = 761 & DiagnosticsConcept_SF_SafeStop1_1_Activate : 764;
+			loc = 762 : 763;
+			loc = 763 : 837;
+			loc = 764 : 878;
+			loc = 765 : 766;
+			loc = 766 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud8_0,16)) : 767;
+			loc = 766 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud8_0,16))) : 770;
+			loc = 767 & DiagnosticsConcept_SF_SafeStop1_1_Activate : 768;
+			loc = 767 & !(DiagnosticsConcept_SF_SafeStop1_1_Activate) : 769;
+			loc = 768 : 769;
+			loc = 769 : 837;
+			loc = 770 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32768,16)) : 771;
+			loc = 770 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32768,16))) : 777;
+			loc = 771 & !(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) : 772;
+			loc = 771 & DiagnosticsConcept_SF_SafeStop1_1_Acknowledge : 774;
+			loc = 772 : 773;
+			loc = 773 : 776;
+			loc = 774 & DiagnosticsConcept_SF_SafeStop1_1_S_StopIn : 775;
+			loc = 774 & !(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn) : 776;
+			loc = 775 : 776;
+			loc = 776 : 837;
+			loc = 777 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32769,16)) : 778;
+			loc = 777 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32769,16))) : 784;
+			loc = 778 & (DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q & !(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge)) : 779;
+			loc = 778 & !((DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q & !(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge))) : 781;
+			loc = 779 : 780;
+			loc = 780 : 783;
+			loc = 781 & (DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q & DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) : 782;
+			loc = 781 & !((DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q & DiagnosticsConcept_SF_SafeStop1_1_Acknowledge)) : 783;
+			loc = 782 : 783;
+			loc = 783 : 837;
+			loc = 784 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32770,16)) : 785;
+			loc = 784 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32770,16))) : 791;
+			loc = 785 & !(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn) : 786;
+			loc = 785 & DiagnosticsConcept_SF_SafeStop1_1_S_StopIn : 788;
+			loc = 786 : 787;
+			loc = 787 : 790;
+			loc = 788 & DiagnosticsConcept_SF_SafeStop1_1_Acknowledge : 789;
+			loc = 788 & !(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) : 790;
+			loc = 789 : 790;
+			loc = 790 : 837;
+			loc = 791 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32771,16)) : 792;
+			loc = 791 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32771,16))) : 801;
+			loc = 792 & DiagnosticsConcept_SF_SafeStop1_1_T_1_Q : 793;
+			loc = 792 & !(DiagnosticsConcept_SF_SafeStop1_1_T_1_Q) : 795;
+			loc = 793 : 794;
+			loc = 794 : 800;
+			loc = 795 & DiagnosticsConcept_SF_SafeStop1_1_S_StopIn : 796;
+			loc = 795 & !(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn) : 798;
+			loc = 796 : 797;
+			loc = 797 : 800;
+			loc = 798 & DiagnosticsConcept_SF_SafeStop1_1_Acknowledge : 799;
+			loc = 798 & !(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) : 800;
+			loc = 799 : 800;
+			loc = 800 : 837;
+			loc = 801 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32773,16)) : 802;
+			loc = 801 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32773,16))) : 805;
+			loc = 802 & DiagnosticsConcept_SF_SafeStop1_1_S_StopIn : 803;
+			loc = 802 & !(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn) : 804;
+			loc = 803 : 804;
+			loc = 804 : 837;
+			loc = 805 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32786,16)) : 806;
+			loc = 805 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_32786,16))) : 815;
+			loc = 806 & !(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) : 807;
+			loc = 806 & DiagnosticsConcept_SF_SafeStop1_1_Acknowledge : 809;
+			loc = 807 : 808;
+			loc = 808 : 814;
+			loc = 809 & !(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn) : 810;
+			loc = 809 & DiagnosticsConcept_SF_SafeStop1_1_S_StopIn : 812;
+			loc = 810 : 811;
+			loc = 811 : 814;
+			loc = 812 & DiagnosticsConcept_SF_SafeStop1_1_Acknowledge : 813;
+			loc = 812 & !(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) : 814;
+			loc = 813 : 814;
+			loc = 814 : 837;
+			loc = 815 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49154,16)) : 816;
+			loc = 815 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49154,16))) : 822;
+			loc = 816 & (DiagnosticsConcept_SF_SafeStop1_1_Reset & !(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q)) : 817;
+			loc = 816 & !((DiagnosticsConcept_SF_SafeStop1_1_Reset & !(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q))) : 819;
+			loc = 817 : 818;
+			loc = 818 : 821;
+			loc = 819 & DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q : 820;
+			loc = 819 & !(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q) : 821;
+			loc = 820 : 821;
+			loc = 821 : 837;
+			loc = 822 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49155,16)) : 823;
+			loc = 822 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49155,16))) : 829;
+			loc = 823 & (DiagnosticsConcept_SF_SafeStop1_1_Reset & !(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q)) : 824;
+			loc = 823 & !((DiagnosticsConcept_SF_SafeStop1_1_Reset & !(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q))) : 826;
+			loc = 824 : 825;
+			loc = 825 : 828;
+			loc = 826 & DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q : 827;
+			loc = 826 & !(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q) : 828;
+			loc = 827 : 828;
+			loc = 828 : 837;
+			loc = 829 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49156,16)) : 830;
+			loc = 829 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49156,16))) : 833;
+			loc = 830 & !(DiagnosticsConcept_SF_SafeStop1_1_Reset) : 831;
+			loc = 830 & DiagnosticsConcept_SF_SafeStop1_1_Reset : 832;
+			loc = 831 : 832;
+			loc = 832 : 837;
+			loc = 833 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49157,16)) : 834;
+			loc = 833 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 = resize(0ud16_49157,16))) : 837;
+			loc = 834 & !(DiagnosticsConcept_SF_SafeStop1_1_Reset) : 835;
+			loc = 834 & DiagnosticsConcept_SF_SafeStop1_1_Reset : 836;
+			loc = 835 : 836;
+			loc = 836 : 837;
+			loc = 837 : 838;
+			loc = 838 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud8_0,16)) : 839;
+			loc = 838 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud8_0,16))) : 843;
+			loc = 839 : 840;
+			loc = 840 : 841;
+			loc = 841 : 842;
+			loc = 842 : 858;
+			loc = 843 & (DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32768,16)) : 844;
+			loc = 843 & !((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32768,16))) : 848;
+			loc = 844 : 845;
+			loc = 845 : 846;
+			loc = 846 : 847;
+			loc = 847 : 858;
+			loc = 848 & ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32769,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32770,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32771,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32773,16)) | (DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32786,16)))))) : 849;
+			loc = 848 & !(((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32769,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32770,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32771,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32773,16)) | (DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_32786,16))))))) : 853;
+			loc = 849 : 850;
+			loc = 850 : 851;
+			loc = 851 : 852;
+			loc = 852 : 858;
+			loc = 853 & ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49154,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49155,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49156,16)) | (DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49157,16))))) : 854;
+			loc = 853 & !(((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49154,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49155,16)) | ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49156,16)) | (DiagnosticsConcept_SF_SafeStop1_1___TEMP1 = resize(0ud16_49157,16)))))) : 858;
+			loc = 854 : 855;
+			loc = 855 : 856;
+			loc = 856 : 857;
+			loc = 857 : 858;
+			loc = 858 : 889;
+			loc = 859 : 860;
+			loc = 860 : 861;
+			loc = 861 : 864;
+			loc = 862 : 863;
+			loc = 863 : 859;
+			loc = 864 : 761;
+			loc = 865 : 866;
+			loc = 866 & !(DiagnosticsConcept_SF_SafeStop1_1_T_1_IN) : 867;
+			loc = 866 & DiagnosticsConcept_SF_SafeStop1_1_T_1_IN : 869;
+			loc = 867 : 868;
+			loc = 868 : 873;
+			loc = 869 & !(DiagnosticsConcept_SF_SafeStop1_1_T_1_Q) : 870;
+			loc = 869 & DiagnosticsConcept_SF_SafeStop1_1_T_1_Q : 873;
+			loc = 870 : 876;
+			loc = 871 : 872;
+			loc = 872 : 873;
+			loc = 873 : 881;
+			loc = 874 : 875;
+			loc = 875 : 877;
+			loc = 876 : 874;
+			loc = 877 : 871;
+			loc = 878 : 879;
+			loc = 879 : 880;
+			loc = 880 : 865;
+			loc = 881 : 765;
+			loc = 882 : 883;
+			loc = 883 : 884;
+			loc = 884 : 885;
+			loc = 885 : 886;
+			loc = 886 : 887;
+			loc = 887 : 888;
+			loc = 888 : 758;
+			loc = 889 : 438;
+			loc = 890 : 891;
+			loc = 891 : 892;
+			loc = 892 : 1004;
+			loc = 893 & !(DiagnosticsConcept_SF_EmergencyStop_1_Activate) : 894;
+			loc = 893 & DiagnosticsConcept_SF_EmergencyStop_1_Activate : 896;
+			loc = 894 : 895;
+			loc = 895 : 954;
+			loc = 896 : 897;
+			loc = 897 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud8_0,16)) : 898;
+			loc = 897 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud8_0,16))) : 901;
+			loc = 898 & DiagnosticsConcept_SF_EmergencyStop_1_Activate : 899;
+			loc = 898 & !(DiagnosticsConcept_SF_EmergencyStop_1_Activate) : 900;
+			loc = 899 : 900;
+			loc = 900 : 954;
+			loc = 901 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32769,16)) : 902;
+			loc = 901 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32769,16))) : 911;
+			loc = 902 & !(DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset) : 903;
+			loc = 902 & DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset : 905;
+			loc = 903 : 904;
+			loc = 904 : 910;
+			loc = 905 & (DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset & !(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn)) : 906;
+			loc = 905 & !((DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset & !(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn))) : 908;
+			loc = 906 : 907;
+			loc = 907 : 910;
+			loc = 908 & (DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn & DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset) : 909;
+			loc = 908 & !((DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn & DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset)) : 910;
+			loc = 909 : 910;
+			loc = 910 : 954;
+			loc = 911 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32770,16)) : 912;
+			loc = 911 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32770,16))) : 915;
+			loc = 912 & DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn : 913;
+			loc = 912 & !(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn) : 914;
+			loc = 913 : 914;
+			loc = 914 : 954;
+			loc = 915 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32771,16)) : 916;
+			loc = 915 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32771,16))) : 925;
+			loc = 916 & (DiagnosticsConcept_SF_EmergencyStop_1_Reset & !(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q)) : 917;
+			loc = 916 & !((DiagnosticsConcept_SF_EmergencyStop_1_Reset & !(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q))) : 919;
+			loc = 917 : 918;
+			loc = 918 : 924;
+			loc = 919 & !(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn) : 920;
+			loc = 919 & DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn : 922;
+			loc = 920 : 921;
+			loc = 921 : 924;
+			loc = 922 & DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q : 923;
+			loc = 922 & !(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q) : 924;
+			loc = 923 : 924;
+			loc = 924 : 954;
+			loc = 925 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_49153,16)) : 926;
+			loc = 925 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_49153,16))) : 929;
+			loc = 926 & !(DiagnosticsConcept_SF_EmergencyStop_1_Reset) : 927;
+			loc = 926 & DiagnosticsConcept_SF_EmergencyStop_1_Reset : 928;
+			loc = 927 : 928;
+			loc = 928 : 954;
+			loc = 929 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32772,16)) : 930;
+			loc = 929 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32772,16))) : 936;
+			loc = 930 & (DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn & !(DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset)) : 931;
+			loc = 930 & !((DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn & !(DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset))) : 933;
+			loc = 931 : 932;
+			loc = 932 : 935;
+			loc = 933 & (DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn & DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset) : 934;
+			loc = 933 & !((DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn & DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset)) : 935;
+			loc = 934 : 935;
+			loc = 935 : 954;
+			loc = 936 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32773,16)) : 937;
+			loc = 936 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32773,16))) : 946;
+			loc = 937 & (DiagnosticsConcept_SF_EmergencyStop_1_Reset & !(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q)) : 938;
+			loc = 937 & !((DiagnosticsConcept_SF_EmergencyStop_1_Reset & !(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q))) : 940;
+			loc = 938 : 939;
+			loc = 939 : 945;
+			loc = 940 & !(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn) : 941;
+			loc = 940 & DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn : 943;
+			loc = 941 : 942;
+			loc = 942 : 945;
+			loc = 943 & (DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q | DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset) : 944;
+			loc = 943 & !((DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q | DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset)) : 945;
+			loc = 944 : 945;
+			loc = 945 : 954;
+			loc = 946 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_49154,16)) : 947;
+			loc = 946 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_49154,16))) : 950;
+			loc = 947 & !(DiagnosticsConcept_SF_EmergencyStop_1_Reset) : 948;
+			loc = 947 & DiagnosticsConcept_SF_EmergencyStop_1_Reset : 949;
+			loc = 948 : 949;
+			loc = 949 : 954;
+			loc = 950 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32768,16)) : 951;
+			loc = 950 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 = resize(0ud16_32768,16))) : 954;
+			loc = 951 & !(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn) : 952;
+			loc = 951 & DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn : 953;
+			loc = 952 : 953;
+			loc = 953 : 954;
+			loc = 954 : 955;
+			loc = 955 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud8_0,16)) : 956;
+			loc = 955 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud8_0,16))) : 960;
+			loc = 956 : 957;
+			loc = 957 : 958;
+			loc = 958 : 959;
+			loc = 959 : 1000;
+			loc = 960 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32769,16)) : 961;
+			loc = 960 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32769,16))) : 965;
+			loc = 961 : 962;
+			loc = 962 : 963;
+			loc = 963 : 964;
+			loc = 964 : 1000;
+			loc = 965 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32770,16)) : 966;
+			loc = 965 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32770,16))) : 970;
+			loc = 966 : 967;
+			loc = 967 : 968;
+			loc = 968 : 969;
+			loc = 969 : 1000;
+			loc = 970 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32771,16)) : 971;
+			loc = 970 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32771,16))) : 975;
+			loc = 971 : 972;
+			loc = 972 : 973;
+			loc = 973 : 974;
+			loc = 974 : 1000;
+			loc = 975 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_49153,16)) : 976;
+			loc = 975 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_49153,16))) : 980;
+			loc = 976 : 977;
+			loc = 977 : 978;
+			loc = 978 : 979;
+			loc = 979 : 1000;
+			loc = 980 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32772,16)) : 981;
+			loc = 980 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32772,16))) : 985;
+			loc = 981 : 982;
+			loc = 982 : 983;
+			loc = 983 : 984;
+			loc = 984 : 1000;
+			loc = 985 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32773,16)) : 986;
+			loc = 985 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32773,16))) : 990;
+			loc = 986 : 987;
+			loc = 987 : 988;
+			loc = 988 : 989;
+			loc = 989 : 1000;
+			loc = 990 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_49154,16)) : 991;
+			loc = 990 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_49154,16))) : 995;
+			loc = 991 : 992;
+			loc = 992 : 993;
+			loc = 993 : 994;
+			loc = 994 : 1000;
+			loc = 995 & (DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32768,16)) : 996;
+			loc = 995 & !((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 = resize(0ud16_32768,16))) : 1000;
+			loc = 996 : 997;
+			loc = 997 : 998;
+			loc = 998 : 999;
+			loc = 999 : 1000;
+			loc = 1000 : 1013;
+			loc = 1001 : 1002;
+			loc = 1002 : 1003;
+			loc = 1003 : 1006;
+			loc = 1004 : 1005;
+			loc = 1005 : 1001;
+			loc = 1006 : 893;
+			loc = 1007 : 1008;
+			loc = 1008 : 1009;
+			loc = 1009 : 1010;
+			loc = 1010 : 1011;
+			loc = 1011 : 1012;
+			loc = 1012 : 890;
+			loc = 1013 : 436;
+			TRUE : loc;
+		esac;
+		next(ccntr) := case
+			loc = EoC & (ccntr = 0): 1;
+			loc = EoC & (ccntr = 1): 2;
+			loc = EoC & (ccntr = 2): 3;
+			loc = EoC & (ccntr = 3): 4;
+			loc = EoC & (ccntr = 4): 5;
+			loc = EoC & (ccntr = 5): 6;
+			loc = EoC & (ccntr = 6): 7;
+			loc = EoC & (ccntr = 7): 8;
+			loc = EoC & (ccntr = 8): 9;
+			loc = EoC & (ccntr = 9): 10;
+			loc = EoC & (ccntr = 10): 11;
+			loc = EoC & (ccntr = 11): 12;
+			loc = EoC & (ccntr = 12): 13;
+			loc = EoC & (ccntr = 13): 14;
+			loc = EoC & (ccntr = 14): 15;
+			loc = EoC & (ccntr = 15): 16;
+			TRUE : ccntr;
+		esac;
+
+		next(UNKNOWN_BOOL_UNKNOWN_BOOL) := case
+			loc = 552 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 569 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 586 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 603 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 620 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 874 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			TRUE : UNKNOWN_BOOL_UNKNOWN_BOOL;
+		esac;
+
+		next(DiagnosticsConcept_S1_S_EStopIn_1) := case
+			loc = EoC : DiagnosticsConcept_S1_S_EStopIn_1_IN;
+			TRUE : DiagnosticsConcept_S1_S_EStopIn_1;
+		esac;
+
+		next(DiagnosticsConcept_S1_S_EStopIn_2) := case
+			loc = EoC : DiagnosticsConcept_S1_S_EStopIn_2_IN;
+			TRUE : DiagnosticsConcept_S1_S_EStopIn_2;
+		esac;
+
+		next(DiagnosticsConcept_S2_S_ESPE_In) := case
+			loc = EoC : DiagnosticsConcept_S2_S_ESPE_In_IN;
+			TRUE : DiagnosticsConcept_S2_S_ESPE_In;
+		esac;
+
+		next(DiagnosticsConcept_S0_Reset) := case
+			loc = EoC : DiagnosticsConcept_S0_Reset_IN;
+			TRUE : DiagnosticsConcept_S0_Reset;
+		esac;
+
+		next(DiagnosticsConcept_S3_Drive_Reset) := case
+			loc = EoC : DiagnosticsConcept_S3_Drive_Reset_IN;
+			TRUE : DiagnosticsConcept_S3_Drive_Reset;
+		esac;
+
+		next(DiagnosticsConcept_AxisD_1) := case
+			loc = EoC : DiagnosticsConcept_AxisD_1_IN;
+			TRUE : DiagnosticsConcept_AxisD_1;
+		esac;
+
+		next(DiagnosticsConcept_InputDevice1_active) := case
+			loc = EoC : DiagnosticsConcept_InputDevice1_active_IN;
+			TRUE : DiagnosticsConcept_InputDevice1_active;
+		esac;
+
+		next(DiagnosticsConcept_InputDevice2_active) := case
+			loc = EoC : DiagnosticsConcept_InputDevice2_active_IN;
+			TRUE : DiagnosticsConcept_InputDevice2_active;
+		esac;
+
+		next(DiagnosticsConcept_Internal_Acknowledge) := case
+			loc = EoC : DiagnosticsConcept_Internal_Acknowledge_IN;
+			TRUE : DiagnosticsConcept_Internal_Acknowledge;
+		esac;
+
+		next(DiagnosticsConcept_Error_Equiv1) := case
+			loc = 439 : DiagnosticsConcept_SF_Equivalent_1_Error;
+			TRUE : DiagnosticsConcept_Error_Equiv1;
+		esac;
+
+		next(DiagnosticsConcept_Diag_Equiv1) := case
+			loc = 440 : DiagnosticsConcept_SF_Equivalent_1_DiagCode;
+			TRUE : DiagnosticsConcept_Diag_Equiv1;
+		esac;
+
+		next(DiagnosticsConcept_Error_EStop1) := case
+			loc = 441 : DiagnosticsConcept_SF_EmergencyStop_1_Error;
+			TRUE : DiagnosticsConcept_Error_EStop1;
+		esac;
+
+		next(DiagnosticsConcept_Diag_EStop1) := case
+			loc = 442 : DiagnosticsConcept_SF_EmergencyStop_1_DiagCode;
+			TRUE : DiagnosticsConcept_Diag_EStop1;
+		esac;
+
+		next(DiagnosticsConcept_Error_ESPE1) := case
+			loc = 443 : DiagnosticsConcept_SF_ESPE_1_Error;
+			TRUE : DiagnosticsConcept_Error_ESPE1;
+		esac;
+
+		next(DiagnosticsConcept_Diag_ESPE1) := case
+			loc = 444 : DiagnosticsConcept_SF_ESPE_1_DiagCode;
+			TRUE : DiagnosticsConcept_Diag_ESPE1;
+		esac;
+
+		next(DiagnosticsConcept_Error_SafeStop1) := case
+			loc = 445 : DiagnosticsConcept_SF_SafeStop1_1_Error;
+			TRUE : DiagnosticsConcept_Error_SafeStop1;
+		esac;
+
+		next(DiagnosticsConcept_Diag_SafeStop1) := case
+			loc = 446 : DiagnosticsConcept_SF_SafeStop1_1_DiagCode;
+			TRUE : DiagnosticsConcept_Diag_SafeStop1;
+		esac;
+
+		next(DiagnosticsConcept_S_Stopped) := case
+			loc = 447 : DiagnosticsConcept_SF_SafeStop1_1_S_Stopped;
+			TRUE : DiagnosticsConcept_S_Stopped;
+		esac;
+
+		next(DiagnosticsConcept_S_EStopOut) := case
+			loc = 438 : DiagnosticsConcept_SF_EmergencyStop_1_S_EStopOut;
+			TRUE : DiagnosticsConcept_S_EStopOut;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_Activate) := case
+			loc = 628 : DiagnosticsConcept_InputDevice1_active;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_Activate;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_S_ChannelA) := case
+			loc = 629 : DiagnosticsConcept_S1_S_EStopIn_1;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_S_ChannelA;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_S_ChannelB) := case
+			loc = 630 : DiagnosticsConcept_S1_S_EStopIn_2;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_S_ChannelB;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime) := case
+			loc = 631 : 0ud32_10;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_Ready) := case
+			loc = 514 : FALSE;
+			loc = 520 : TRUE;
+			loc = 526 : TRUE;
+			loc = 532 : TRUE;
+			loc = 538 : TRUE;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_Ready;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_S_EquivalentOut) := case
+			loc = 516 : FALSE;
+			loc = 522 : TRUE;
+			loc = 528 : FALSE;
+			loc = 534 : FALSE;
+			loc = 540 : FALSE;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_S_EquivalentOut;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_Error) := case
+			loc = 515 : FALSE;
+			loc = 521 : FALSE;
+			loc = 527 : FALSE;
+			loc = 533 : FALSE;
+			loc = 539 : TRUE;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_Error;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_DiagCode) := case
+			loc = 452 : resize(0ud8_0,16);
+			loc = 457 : resize(0ud16_32769,16);
+			loc = 461 : resize(0ud16_32772,16);
+			loc = 464 : resize(0ud16_32788,16);
+			loc = 467 : resize(0ud16_32768,16);
+			loc = 471 : resize(0ud16_49153,16);
+			loc = 474 : resize(0ud16_32769,16);
+			loc = 477 : resize(0ud16_32768,16);
+			loc = 481 : resize(0ud16_32769,16);
+			loc = 485 : resize(0ud16_49154,16);
+			loc = 488 : resize(0ud16_32769,16);
+			loc = 491 : resize(0ud16_32768,16);
+			loc = 495 : resize(0ud16_32769,16);
+			loc = 499 : resize(0ud16_49155,16);
+			loc = 502 : resize(0ud16_32769,16);
+			loc = 506 : resize(0ud16_32773,16);
+			loc = 509 : resize(0ud16_32769,16);
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_DiagCode;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN) := case
+			loc = 556 : !((0ud8_1 = 0ud8_0));
+			loc = 573 : !((0ud8_0 = 0ud8_0));
+			loc = 590 : !((0ud8_0 = 0ud8_0));
+			loc = 607 : !((0ud8_0 = 0ud8_0));
+			loc = 624 : !((0ud8_0 = 0ud8_0));
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_IN;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_PT) := case
+			loc = 557 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime;
+			loc = 574 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime;
+			loc = 591 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime;
+			loc = 608 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime;
+			loc = 625 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTime;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_PT;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q) := case
+			loc = 545 : FALSE;
+			loc = 550 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0;
+			loc = 562 : FALSE;
+			loc = 567 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0;
+			loc = 579 : FALSE;
+			loc = 584 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0;
+			loc = 596 : FALSE;
+			loc = 601 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0;
+			loc = 613 : FALSE;
+			loc = 618 : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer_Q;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0) := case
+			loc = 544 : FALSE;
+			loc = 549 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 561 : FALSE;
+			loc = 566 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 578 : FALSE;
+			loc = 583 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 595 : FALSE;
+			loc = 600 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 612 : FALSE;
+			loc = 617 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1_DiscrepancyTimer___TEMP0;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1___TEMP0) := case
+			loc = 450 : 0ud16_0;
+			loc = 454 : DiagnosticsConcept_SF_Equivalent_1_DiagCode;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1___TEMP0;
+		esac;
+
+		next(DiagnosticsConcept_SF_Equivalent_1___TEMP1) := case
+			loc = 449 : 0ud16_0;
+			loc = 511 : DiagnosticsConcept_SF_Equivalent_1_DiagCode;
+			TRUE : DiagnosticsConcept_SF_Equivalent_1___TEMP1;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_Activate) := case
+			loc = 1007 : DiagnosticsConcept_SF_Equivalent_1_Ready;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_Activate;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn) := case
+			loc = 1008 : DiagnosticsConcept_SF_Equivalent_1_S_EquivalentOut;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_S_EStopIn;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset) := case
+			loc = 1009 : FALSE;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_S_StartReset;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset) := case
+			loc = 1010 : FALSE;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_S_AutoReset;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_Reset) := case
+			loc = 1011 : DiagnosticsConcept_S0_Reset;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_Reset;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_Ready) := case
+			loc = 956 : FALSE;
+			loc = 961 : TRUE;
+			loc = 966 : TRUE;
+			loc = 971 : TRUE;
+			loc = 976 : TRUE;
+			loc = 981 : TRUE;
+			loc = 986 : TRUE;
+			loc = 991 : TRUE;
+			loc = 996 : TRUE;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_Ready;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_S_EStopOut) := case
+			loc = 958 : FALSE;
+			loc = 963 : FALSE;
+			loc = 968 : FALSE;
+			loc = 973 : FALSE;
+			loc = 978 : FALSE;
+			loc = 983 : FALSE;
+			loc = 988 : FALSE;
+			loc = 993 : FALSE;
+			loc = 998 : TRUE;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_S_EStopOut;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_Error) := case
+			loc = 957 : FALSE;
+			loc = 962 : FALSE;
+			loc = 967 : FALSE;
+			loc = 972 : FALSE;
+			loc = 977 : TRUE;
+			loc = 982 : FALSE;
+			loc = 987 : FALSE;
+			loc = 992 : TRUE;
+			loc = 997 : FALSE;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_Error;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_DiagCode) := case
+			loc = 894 : resize(0ud8_0,16);
+			loc = 899 : resize(0ud16_32769,16);
+			loc = 903 : resize(0ud16_32770,16);
+			loc = 906 : resize(0ud16_32772,16);
+			loc = 909 : resize(0ud16_32768,16);
+			loc = 913 : resize(0ud16_32771,16);
+			loc = 917 : resize(0ud16_49153,16);
+			loc = 920 : resize(0ud16_32770,16);
+			loc = 923 : resize(0ud16_32768,16);
+			loc = 927 : resize(0ud16_32771,16);
+			loc = 931 : resize(0ud16_32773,16);
+			loc = 934 : resize(0ud16_32768,16);
+			loc = 938 : resize(0ud16_49154,16);
+			loc = 941 : resize(0ud16_32772,16);
+			loc = 944 : resize(0ud16_32768,16);
+			loc = 948 : resize(0ud16_32773,16);
+			loc = 952 : resize(0ud16_32772,16);
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_DiagCode;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_CLK) := case
+			loc = 1004 : DiagnosticsConcept_SF_EmergencyStop_1_Reset;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_CLK;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q) := case
+			loc = 1001 : (DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_CLK & !(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_M));
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_Q;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_M) := case
+			loc = 1002 : DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_CLK;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1_R_TRIGatReset_M;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1___TEMP0) := case
+			loc = 891 : 0ud16_0;
+			loc = 896 : DiagnosticsConcept_SF_EmergencyStop_1_DiagCode;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1___TEMP0;
+		esac;
+
+		next(DiagnosticsConcept_SF_EmergencyStop_1___TEMP1) := case
+			loc = 890 : 0ud16_0;
+			loc = 954 : DiagnosticsConcept_SF_EmergencyStop_1_DiagCode;
+			TRUE : DiagnosticsConcept_SF_EmergencyStop_1___TEMP1;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_Activate) := case
+			loc = 751 : DiagnosticsConcept_InputDevice2_active;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_Activate;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_S_ESPE_In) := case
+			loc = 752 : DiagnosticsConcept_S2_S_ESPE_In;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_S_ESPE_In;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_S_StartReset) := case
+			loc = 753 : FALSE;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_S_StartReset;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_S_AutoReset) := case
+			loc = 754 : FALSE;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_S_AutoReset;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_Reset) := case
+			loc = 755 : DiagnosticsConcept_S0_Reset;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_Reset;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_Ready) := case
+			loc = 657 : FALSE;
+			loc = 662 : TRUE;
+			loc = 667 : TRUE;
+			loc = 672 : TRUE;
+			loc = 677 : TRUE;
+			loc = 682 : TRUE;
+			loc = 687 : TRUE;
+			loc = 692 : TRUE;
+			loc = 697 : TRUE;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_Ready;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_S_ESPE_Out) := case
+			loc = 659 : FALSE;
+			loc = 664 : FALSE;
+			loc = 669 : FALSE;
+			loc = 674 : FALSE;
+			loc = 679 : FALSE;
+			loc = 684 : FALSE;
+			loc = 689 : FALSE;
+			loc = 694 : FALSE;
+			loc = 699 : TRUE;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_S_ESPE_Out;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_Error) := case
+			loc = 658 : FALSE;
+			loc = 663 : FALSE;
+			loc = 668 : FALSE;
+			loc = 673 : FALSE;
+			loc = 678 : TRUE;
+			loc = 683 : FALSE;
+			loc = 688 : FALSE;
+			loc = 693 : TRUE;
+			loc = 698 : FALSE;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_Error;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_DiagCode) := case
+			loc = 635 : resize(0ud16_32768,16);
+			loc = 639 : resize(0ud16_49154,16);
+			loc = 642 : resize(0ud16_32772,16);
+			loc = 645 : resize(0ud16_32768,16);
+			loc = 649 : resize(0ud16_32773,16);
+			loc = 653 : resize(0ud16_32772,16);
+			loc = 712 : resize(0ud8_0,16);
+			loc = 717 : resize(0ud16_32769,16);
+			loc = 721 : resize(0ud16_32770,16);
+			loc = 724 : resize(0ud16_32772,16);
+			loc = 727 : resize(0ud16_32768,16);
+			loc = 731 : resize(0ud16_32771,16);
+			loc = 735 : resize(0ud16_49153,16);
+			loc = 738 : resize(0ud16_32770,16);
+			loc = 741 : resize(0ud16_32768,16);
+			loc = 745 : resize(0ud16_32771,16);
+			loc = 749 : resize(0ud16_32773,16);
+			TRUE : DiagnosticsConcept_SF_ESPE_1_DiagCode;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_CLK) := case
+			loc = 705 : DiagnosticsConcept_SF_ESPE_1_Reset;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_CLK;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q) := case
+			loc = 702 : (DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_CLK & !(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_M));
+			TRUE : DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_Q;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_M) := case
+			loc = 703 : DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_CLK;
+			TRUE : DiagnosticsConcept_SF_ESPE_1_R_TRIGatReset_M;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1___TEMP0) := case
+			loc = 709 : 0ud16_0;
+			loc = 714 : DiagnosticsConcept_SF_ESPE_1_DiagCode;
+			TRUE : DiagnosticsConcept_SF_ESPE_1___TEMP0;
+		esac;
+
+		next(DiagnosticsConcept_SF_ESPE_1___TEMP1) := case
+			loc = 655 : DiagnosticsConcept_SF_ESPE_1_DiagCode;
+			loc = 708 : 0ud16_0;
+			TRUE : DiagnosticsConcept_SF_ESPE_1___TEMP1;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_Activate) := case
+			loc = 882 : (DiagnosticsConcept_SF_EmergencyStop_1_Ready & DiagnosticsConcept_SF_ESPE_1_Ready);
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_Activate;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn) := case
+			loc = 883 : (DiagnosticsConcept_S_EStopOut & DiagnosticsConcept_SF_ESPE_1_S_ESPE_Out);
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_S_StopIn;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_AxisID) := case
+			loc = 884 : DiagnosticsConcept_AxisD_1;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_AxisID;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_MonitoringTime) := case
+			loc = 885 : 0ud32_100;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_MonitoringTime;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_Reset) := case
+			loc = 886 : DiagnosticsConcept_S3_Drive_Reset;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_Reset;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_Acknowledge) := case
+			loc = 887 : DiagnosticsConcept_Internal_Acknowledge;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_Acknowledge;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_Ready) := case
+			loc = 839 : FALSE;
+			loc = 844 : TRUE;
+			loc = 849 : TRUE;
+			loc = 854 : TRUE;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_Ready;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_S_Stopped) := case
+			loc = 840 : FALSE;
+			loc = 845 : TRUE;
+			loc = 850 : FALSE;
+			loc = 855 : FALSE;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_S_Stopped;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_Error) := case
+			loc = 841 : FALSE;
+			loc = 846 : FALSE;
+			loc = 851 : FALSE;
+			loc = 856 : TRUE;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_Error;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_DiagCode) := case
+			loc = 762 : resize(0ud8_0,16);
+			loc = 768 : resize(0ud16_32769,16);
+			loc = 772 : resize(0ud16_49154,16);
+			loc = 775 : resize(0ud16_32786,16);
+			loc = 779 : resize(0ud16_32770,16);
+			loc = 782 : resize(0ud16_32786,16);
+			loc = 786 : resize(0ud16_32771,16);
+			loc = 789 : resize(0ud16_32786,16);
+			loc = 793 : resize(0ud16_49155,16);
+			loc = 796 : resize(0ud16_32786,16);
+			loc = 799 : resize(0ud16_32768,16);
+			loc = 803 : resize(0ud16_32786,16);
+			loc = 807 : resize(0ud16_32770,16);
+			loc = 810 : resize(0ud16_32771,16);
+			loc = 813 : resize(0ud16_32768,16);
+			loc = 817 : resize(0ud16_49156,16);
+			loc = 820 : resize(0ud16_32773,16);
+			loc = 824 : resize(0ud16_49157,16);
+			loc = 827 : resize(0ud16_32773,16);
+			loc = 831 : resize(0ud16_49154,16);
+			loc = 835 : resize(0ud16_49155,16);
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_DiagCode;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_CLK) := case
+			loc = 862 : DiagnosticsConcept_SF_SafeStop1_1_Reset;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_CLK;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q) := case
+			loc = 859 : (DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_CLK & !(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_M));
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_Q;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_M) := case
+			loc = 860 : DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_CLK;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_R_TRIGatReset_M;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_T_1_IN) := case
+			loc = 878 : (DiagnosticsConcept_SF_SafeStop1_1_Activate & !(DiagnosticsConcept_SF_SafeStop1_1_S_StopIn));
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_T_1_IN;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_T_1_PT) := case
+			loc = 879 : DiagnosticsConcept_SF_SafeStop1_1_MonitoringTime;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_T_1_PT;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_T_1_Q) := case
+			loc = 867 : FALSE;
+			loc = 872 : DiagnosticsConcept_SF_SafeStop1_1_T_1___TEMP0;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_T_1_Q;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1_T_1___TEMP0) := case
+			loc = 865 : FALSE;
+			loc = 871 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1_T_1___TEMP0;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1___TEMP0) := case
+			loc = 759 : 0ud16_0;
+			loc = 765 : DiagnosticsConcept_SF_SafeStop1_1_DiagCode;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1___TEMP0;
+		esac;
+
+		next(DiagnosticsConcept_SF_SafeStop1_1___TEMP1) := case
+			loc = 758 : 0ud16_0;
+			loc = 837 : DiagnosticsConcept_SF_SafeStop1_1_DiagCode;
+			TRUE : DiagnosticsConcept_SF_SafeStop1_1___TEMP1;
+		esac;
+
+INVARSPEC (loc = EoC) -> !((!((DiagnosticsConcept_SF_EmergencyStop_1_Error = !((0ud8_0 = 0ud8_0)))) & !((DiagnosticsConcept_S_EStopOut = !((0ud8_0 = 0ud8_0))))))

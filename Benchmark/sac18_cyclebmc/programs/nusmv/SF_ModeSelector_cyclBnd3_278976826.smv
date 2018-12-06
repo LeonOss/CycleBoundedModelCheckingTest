@@ -1,0 +1,709 @@
+-- FORMULA: AG (S_Mode0Sel + S_Mode1Sel + S_Mode2Sel + S_Mode3Sel + S_Mode4Sel + S_Mode5Sel + S_Mode6Sel + S_Mode7Sel<=1)
+-- BOUND: 3
+
+MODULE main
+	IVAR
+		SF_ModeSelector_Activate_IN : boolean;
+		SF_ModeSelector_S_Mode0_IN : boolean;
+		SF_ModeSelector_S_Mode1_IN : boolean;
+		SF_ModeSelector_S_Mode2_IN : boolean;
+		SF_ModeSelector_S_Mode3_IN : boolean;
+		SF_ModeSelector_S_Mode4_IN : boolean;
+		SF_ModeSelector_S_Mode5_IN : boolean;
+		SF_ModeSelector_S_Mode6_IN : boolean;
+		SF_ModeSelector_S_Mode7_IN : boolean;
+		SF_ModeSelector_S_Unlock_IN : boolean;
+		SF_ModeSelector_S_SetMode_IN : boolean;
+		SF_ModeSelector_AutoSetMode_IN : boolean;
+		SF_ModeSelector_ModeMonitorTime_IN : unsigned word[32];
+		SF_ModeSelector_Reset_IN : boolean;
+		UNKNOWN_BOOL_UNKNOWN_BOOL_IN : boolean;
+	VAR
+		loc : {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, EoC};
+		ccntr : 0..4;
+		UNKNOWN_BOOL_UNKNOWN_BOOL : boolean;
+		SF_ModeSelector_Activate : boolean;
+		SF_ModeSelector_S_Mode0 : boolean;
+		SF_ModeSelector_S_Mode1 : boolean;
+		SF_ModeSelector_S_Mode2 : boolean;
+		SF_ModeSelector_S_Mode3 : boolean;
+		SF_ModeSelector_S_Mode4 : boolean;
+		SF_ModeSelector_S_Mode5 : boolean;
+		SF_ModeSelector_S_Mode6 : boolean;
+		SF_ModeSelector_S_Mode7 : boolean;
+		SF_ModeSelector_S_Unlock : boolean;
+		SF_ModeSelector_S_SetMode : boolean;
+		SF_ModeSelector_AutoSetMode : boolean;
+		SF_ModeSelector_ModeMonitorTime : unsigned word[32];
+		SF_ModeSelector_Reset : boolean;
+		SF_ModeSelector_Ready : boolean;
+		SF_ModeSelector_S_Mode0Sel : boolean;
+		SF_ModeSelector_S_Mode1Sel : boolean;
+		SF_ModeSelector_S_Mode2Sel : boolean;
+		SF_ModeSelector_S_Mode3Sel : boolean;
+		SF_ModeSelector_S_Mode4Sel : boolean;
+		SF_ModeSelector_S_Mode5Sel : boolean;
+		SF_ModeSelector_S_Mode6Sel : boolean;
+		SF_ModeSelector_S_Mode7Sel : boolean;
+		SF_ModeSelector_S_AnyModeSel : boolean;
+		SF_ModeSelector_Error : boolean;
+		SF_ModeSelector_DiagCode : unsigned word[16];
+		SF_ModeSelector_T_1_IN : boolean;
+		SF_ModeSelector_T_1_PT : unsigned word[32];
+		SF_ModeSelector_T_1_Q : boolean;
+		SF_ModeSelector_T_1___TEMP0 : boolean;
+		SF_ModeSelector_R_TRIGatReset_CLK : boolean;
+		SF_ModeSelector_R_TRIGatReset_Q : boolean;
+		SF_ModeSelector_R_TRIGatReset_M : boolean;
+		SF_ModeSelector_R_TRIGatSetMode_CLK : boolean;
+		SF_ModeSelector_R_TRIGatSetMode_Q : boolean;
+		SF_ModeSelector_R_TRIGatSetMode_M : boolean;
+		SF_ModeSelector_F_TRIGatModeSel0_CLK : boolean;
+		SF_ModeSelector_F_TRIGatModeSel0_Q : boolean;
+		SF_ModeSelector_F_TRIGatModeSel0_M : boolean;
+		SF_ModeSelector_R_TRIGatModeSel0_CLK : boolean;
+		SF_ModeSelector_R_TRIGatModeSel0_Q : boolean;
+		SF_ModeSelector_R_TRIGatModeSel0_M : boolean;
+		SF_ModeSelector_Error1 : boolean;
+		SF_ModeSelector_Error2 : boolean;
+		SF_ModeSelector___TEMP0 : unsigned word[16];
+		SF_ModeSelector___TEMP1 : unsigned word[16];
+	ASSIGN
+		init(loc) := 151;
+		init(ccntr) := 0;
+		init(UNKNOWN_BOOL_UNKNOWN_BOOL) := FALSE;
+		init(SF_ModeSelector_Activate) := FALSE;
+		init(SF_ModeSelector_S_Mode0) := FALSE;
+		init(SF_ModeSelector_S_Mode1) := FALSE;
+		init(SF_ModeSelector_S_Mode2) := FALSE;
+		init(SF_ModeSelector_S_Mode3) := FALSE;
+		init(SF_ModeSelector_S_Mode4) := FALSE;
+		init(SF_ModeSelector_S_Mode5) := FALSE;
+		init(SF_ModeSelector_S_Mode6) := FALSE;
+		init(SF_ModeSelector_S_Mode7) := FALSE;
+		init(SF_ModeSelector_S_Unlock) := FALSE;
+		init(SF_ModeSelector_S_SetMode) := FALSE;
+		init(SF_ModeSelector_AutoSetMode) := FALSE;
+		init(SF_ModeSelector_ModeMonitorTime) := 0ud32_0;
+		init(SF_ModeSelector_Reset) := FALSE;
+		init(SF_ModeSelector_Ready) := FALSE;
+		init(SF_ModeSelector_S_Mode0Sel) := FALSE;
+		init(SF_ModeSelector_S_Mode1Sel) := FALSE;
+		init(SF_ModeSelector_S_Mode2Sel) := FALSE;
+		init(SF_ModeSelector_S_Mode3Sel) := FALSE;
+		init(SF_ModeSelector_S_Mode4Sel) := FALSE;
+		init(SF_ModeSelector_S_Mode5Sel) := FALSE;
+		init(SF_ModeSelector_S_Mode6Sel) := FALSE;
+		init(SF_ModeSelector_S_Mode7Sel) := FALSE;
+		init(SF_ModeSelector_S_AnyModeSel) := FALSE;
+		init(SF_ModeSelector_Error) := FALSE;
+		init(SF_ModeSelector_DiagCode) := 0ud16_0;
+		init(SF_ModeSelector_T_1_IN) := FALSE;
+		init(SF_ModeSelector_T_1_PT) := 0ud32_0;
+		init(SF_ModeSelector_T_1_Q) := FALSE;
+		init(SF_ModeSelector_T_1___TEMP0) := FALSE;
+		init(SF_ModeSelector_R_TRIGatReset_CLK) := FALSE;
+		init(SF_ModeSelector_R_TRIGatReset_Q) := FALSE;
+		init(SF_ModeSelector_R_TRIGatReset_M) := FALSE;
+		init(SF_ModeSelector_R_TRIGatSetMode_CLK) := FALSE;
+		init(SF_ModeSelector_R_TRIGatSetMode_Q) := FALSE;
+		init(SF_ModeSelector_R_TRIGatSetMode_M) := FALSE;
+		init(SF_ModeSelector_F_TRIGatModeSel0_CLK) := FALSE;
+		init(SF_ModeSelector_F_TRIGatModeSel0_Q) := FALSE;
+		init(SF_ModeSelector_F_TRIGatModeSel0_M) := FALSE;
+		init(SF_ModeSelector_R_TRIGatModeSel0_CLK) := FALSE;
+		init(SF_ModeSelector_R_TRIGatModeSel0_Q) := FALSE;
+		init(SF_ModeSelector_R_TRIGatModeSel0_M) := FALSE;
+		init(SF_ModeSelector_Error1) := FALSE;
+		init(SF_ModeSelector_Error2) := FALSE;
+		init(SF_ModeSelector___TEMP0) := 0ud16_0;
+		init(SF_ModeSelector___TEMP1) := 0ud16_0;
+
+		next(loc) := case
+			loc = 16 : 17;
+			loc = 17 : 18;
+			loc = 18 : 19;
+			loc = 19 : 20;
+			loc = 20 : 236;
+			loc = 21 : 155;
+			loc = 22 & !(SF_ModeSelector_Activate) : 23;
+			loc = 22 & SF_ModeSelector_Activate : 24;
+			loc = 23 : 24;
+			loc = 24 & ((((((((signed(resize(word1(SF_ModeSelector_S_Mode0),16)) + signed(resize(word1(SF_ModeSelector_S_Mode1),16))) + signed(resize(word1(SF_ModeSelector_S_Mode2),16))) + signed(resize(word1(SF_ModeSelector_S_Mode3),16))) + signed(resize(word1(SF_ModeSelector_S_Mode4),16))) + signed(resize(word1(SF_ModeSelector_S_Mode5),16))) + signed(resize(word1(SF_ModeSelector_S_Mode6),16))) + signed(resize(word1(SF_ModeSelector_S_Mode7),16))) > resize(signed(0ud8_1),16)) : 25;
+			loc = 24 & !(((((((((signed(resize(word1(SF_ModeSelector_S_Mode0),16)) + signed(resize(word1(SF_ModeSelector_S_Mode1),16))) + signed(resize(word1(SF_ModeSelector_S_Mode2),16))) + signed(resize(word1(SF_ModeSelector_S_Mode3),16))) + signed(resize(word1(SF_ModeSelector_S_Mode4),16))) + signed(resize(word1(SF_ModeSelector_S_Mode5),16))) + signed(resize(word1(SF_ModeSelector_S_Mode6),16))) + signed(resize(word1(SF_ModeSelector_S_Mode7),16))) > resize(signed(0ud8_1),16))) : 27;
+			loc = 25 : 26;
+			loc = 26 : 28;
+			loc = 27 : 28;
+			loc = 28 : 29;
+			loc = 29 & (SF_ModeSelector___TEMP0 = resize(0ud8_0,16)) : 30;
+			loc = 29 & !((SF_ModeSelector___TEMP0 = resize(0ud8_0,16))) : 33;
+			loc = 30 & SF_ModeSelector_Activate : 31;
+			loc = 30 & !(SF_ModeSelector_Activate) : 32;
+			loc = 31 : 32;
+			loc = 32 : 91;
+			loc = 33 & (SF_ModeSelector___TEMP0 = resize(0ud16_32773,16)) : 34;
+			loc = 33 & !((SF_ModeSelector___TEMP0 = resize(0ud16_32773,16))) : 55;
+			loc = 34 & (((((((!(SF_ModeSelector_S_Mode0) & !(SF_ModeSelector_S_Mode1)) & !(SF_ModeSelector_S_Mode2)) & !(SF_ModeSelector_S_Mode3)) & !(SF_ModeSelector_S_Mode4)) & !(SF_ModeSelector_S_Mode5)) & !(SF_ModeSelector_S_Mode6)) & !(SF_ModeSelector_S_Mode7)) : 35;
+			loc = 34 & !((((((((!(SF_ModeSelector_S_Mode0) & !(SF_ModeSelector_S_Mode1)) & !(SF_ModeSelector_S_Mode2)) & !(SF_ModeSelector_S_Mode3)) & !(SF_ModeSelector_S_Mode4)) & !(SF_ModeSelector_S_Mode5)) & !(SF_ModeSelector_S_Mode6)) & !(SF_ModeSelector_S_Mode7))) : 38;
+			loc = 35 : 161;
+			loc = 36 : 213;
+			loc = 37 : 40;
+			loc = 38 : 167;
+			loc = 39 : 173;
+			loc = 40 & SF_ModeSelector_F_TRIGatModeSel0_Q : 41;
+			loc = 40 & !(SF_ModeSelector_F_TRIGatModeSel0_Q) : 43;
+			loc = 41 : 229;
+			loc = 42 : 45;
+			loc = 43 & SF_ModeSelector_R_TRIGatModeSel0_Q : 44;
+			loc = 43 & !(SF_ModeSelector_R_TRIGatModeSel0_Q) : 45;
+			loc = 44 : 189;
+			loc = 45 : 46;
+			loc = 46 & SF_ModeSelector_Error1 : 47;
+			loc = 46 & !(SF_ModeSelector_Error1) : 49;
+			loc = 47 : 48;
+			loc = 48 : 54;
+			loc = 49 & SF_ModeSelector_Error2 : 50;
+			loc = 49 & !(SF_ModeSelector_Error2) : 52;
+			loc = 50 : 51;
+			loc = 51 : 54;
+			loc = 52 & (((SF_ModeSelector_AutoSetMode | SF_ModeSelector_R_TRIGatSetMode_Q) & SF_ModeSelector_S_Unlock) & ((((((((signed(resize(word1(SF_ModeSelector_S_Mode0),16)) + signed(resize(word1(SF_ModeSelector_S_Mode1),16))) + signed(resize(word1(SF_ModeSelector_S_Mode2),16))) + signed(resize(word1(SF_ModeSelector_S_Mode3),16))) + signed(resize(word1(SF_ModeSelector_S_Mode4),16))) + signed(resize(word1(SF_ModeSelector_S_Mode5),16))) + signed(resize(word1(SF_ModeSelector_S_Mode6),16))) + signed(resize(word1(SF_ModeSelector_S_Mode7),16))) = resize(signed(0ud8_1),16))) : 53;
+			loc = 52 & !((((SF_ModeSelector_AutoSetMode | SF_ModeSelector_R_TRIGatSetMode_Q) & SF_ModeSelector_S_Unlock) & ((((((((signed(resize(word1(SF_ModeSelector_S_Mode0),16)) + signed(resize(word1(SF_ModeSelector_S_Mode1),16))) + signed(resize(word1(SF_ModeSelector_S_Mode2),16))) + signed(resize(word1(SF_ModeSelector_S_Mode3),16))) + signed(resize(word1(SF_ModeSelector_S_Mode4),16))) + signed(resize(word1(SF_ModeSelector_S_Mode5),16))) + signed(resize(word1(SF_ModeSelector_S_Mode6),16))) + signed(resize(word1(SF_ModeSelector_S_Mode7),16))) = resize(signed(0ud8_1),16)))) : 54;
+			loc = 53 : 54;
+			loc = 54 : 91;
+			loc = 55 & (SF_ModeSelector___TEMP0 = resize(0ud16_32768,16)) : 56;
+			loc = 55 & !((SF_ModeSelector___TEMP0 = resize(0ud16_32768,16))) : 65;
+			loc = 56 & SF_ModeSelector_Error1 : 57;
+			loc = 56 & !(SF_ModeSelector_Error1) : 59;
+			loc = 57 : 58;
+			loc = 58 : 64;
+			loc = 59 & (((((((!((SF_ModeSelector_S_Mode0 = SF_ModeSelector_S_Mode0Sel)) | !((SF_ModeSelector_S_Mode1 = SF_ModeSelector_S_Mode1Sel))) | !((SF_ModeSelector_S_Mode2 = SF_ModeSelector_S_Mode2Sel))) | !((SF_ModeSelector_S_Mode3 = SF_ModeSelector_S_Mode3Sel))) | !((SF_ModeSelector_S_Mode4 = SF_ModeSelector_S_Mode4Sel))) | !((SF_ModeSelector_S_Mode5 = SF_ModeSelector_S_Mode5Sel))) | !((SF_ModeSelector_S_Mode6 = SF_ModeSelector_S_Mode6Sel))) | !((SF_ModeSelector_S_Mode7 = SF_ModeSelector_S_Mode7Sel))) : 60;
+			loc = 59 & !((((((((!((SF_ModeSelector_S_Mode0 = SF_ModeSelector_S_Mode0Sel)) | !((SF_ModeSelector_S_Mode1 = SF_ModeSelector_S_Mode1Sel))) | !((SF_ModeSelector_S_Mode2 = SF_ModeSelector_S_Mode2Sel))) | !((SF_ModeSelector_S_Mode3 = SF_ModeSelector_S_Mode3Sel))) | !((SF_ModeSelector_S_Mode4 = SF_ModeSelector_S_Mode4Sel))) | !((SF_ModeSelector_S_Mode5 = SF_ModeSelector_S_Mode5Sel))) | !((SF_ModeSelector_S_Mode6 = SF_ModeSelector_S_Mode6Sel))) | !((SF_ModeSelector_S_Mode7 = SF_ModeSelector_S_Mode7Sel)))) : 62;
+			loc = 60 : 61;
+			loc = 61 : 64;
+			loc = 62 & !(SF_ModeSelector_S_Unlock) : 63;
+			loc = 62 & SF_ModeSelector_S_Unlock : 64;
+			loc = 63 : 64;
+			loc = 64 : 91;
+			loc = 65 & (SF_ModeSelector___TEMP0 = resize(0ud16_32772,16)) : 66;
+			loc = 65 & !((SF_ModeSelector___TEMP0 = resize(0ud16_32772,16))) : 69;
+			loc = 66 & SF_ModeSelector_S_Unlock : 67;
+			loc = 66 & !(SF_ModeSelector_S_Unlock) : 68;
+			loc = 67 : 68;
+			loc = 68 : 91;
+			loc = 69 & (SF_ModeSelector___TEMP0 = resize(0ud16_49153,16)) : 70;
+			loc = 69 & !((SF_ModeSelector___TEMP0 = resize(0ud16_49153,16))) : 76;
+			loc = 70 & (SF_ModeSelector_Reset & !(SF_ModeSelector_R_TRIGatReset_Q)) : 71;
+			loc = 70 & !((SF_ModeSelector_Reset & !(SF_ModeSelector_R_TRIGatReset_Q))) : 73;
+			loc = 71 : 72;
+			loc = 72 : 75;
+			loc = 73 & SF_ModeSelector_R_TRIGatReset_Q : 74;
+			loc = 73 & !(SF_ModeSelector_R_TRIGatReset_Q) : 75;
+			loc = 74 : 75;
+			loc = 75 : 91;
+			loc = 76 & (SF_ModeSelector___TEMP0 = resize(0ud16_49154,16)) : 77;
+			loc = 76 & !((SF_ModeSelector___TEMP0 = resize(0ud16_49154,16))) : 83;
+			loc = 77 & (SF_ModeSelector_Reset & !(SF_ModeSelector_R_TRIGatReset_Q)) : 78;
+			loc = 77 & !((SF_ModeSelector_Reset & !(SF_ModeSelector_R_TRIGatReset_Q))) : 80;
+			loc = 78 : 79;
+			loc = 79 : 82;
+			loc = 80 & SF_ModeSelector_R_TRIGatReset_Q : 81;
+			loc = 80 & !(SF_ModeSelector_R_TRIGatReset_Q) : 82;
+			loc = 81 : 82;
+			loc = 82 : 91;
+			loc = 83 & (SF_ModeSelector___TEMP0 = resize(0ud16_49155,16)) : 84;
+			loc = 83 & !((SF_ModeSelector___TEMP0 = resize(0ud16_49155,16))) : 87;
+			loc = 84 & !(SF_ModeSelector_Reset) : 85;
+			loc = 84 & SF_ModeSelector_Reset : 86;
+			loc = 85 : 86;
+			loc = 86 : 91;
+			loc = 87 & (SF_ModeSelector___TEMP0 = resize(0ud16_49156,16)) : 88;
+			loc = 87 & !((SF_ModeSelector___TEMP0 = resize(0ud16_49156,16))) : 91;
+			loc = 88 & !(SF_ModeSelector_Reset) : 89;
+			loc = 88 & SF_ModeSelector_Reset : 90;
+			loc = 89 : 90;
+			loc = 90 : 91;
+			loc = 91 : 92;
+			loc = 92 & (SF_ModeSelector___TEMP1 = resize(0ud8_0,16)) : 93;
+			loc = 92 & !((SF_ModeSelector___TEMP1 = resize(0ud8_0,16))) : 105;
+			loc = 93 : 94;
+			loc = 94 : 95;
+			loc = 95 : 96;
+			loc = 96 : 97;
+			loc = 97 : 98;
+			loc = 98 : 99;
+			loc = 99 : 100;
+			loc = 100 : 101;
+			loc = 101 : 102;
+			loc = 102 : 103;
+			loc = 103 : 104;
+			loc = 104 : 149;
+			loc = 105 & (SF_ModeSelector___TEMP1 = resize(0ud16_32773,16)) : 106;
+			loc = 105 & !((SF_ModeSelector___TEMP1 = resize(0ud16_32773,16))) : 118;
+			loc = 106 : 107;
+			loc = 107 : 108;
+			loc = 108 : 109;
+			loc = 109 : 110;
+			loc = 110 : 111;
+			loc = 111 : 112;
+			loc = 112 : 113;
+			loc = 113 : 114;
+			loc = 114 : 115;
+			loc = 115 : 116;
+			loc = 116 : 117;
+			loc = 117 : 149;
+			loc = 118 & (SF_ModeSelector___TEMP1 = resize(0ud16_32768,16)) : 119;
+			loc = 118 & !((SF_ModeSelector___TEMP1 = resize(0ud16_32768,16))) : 131;
+			loc = 119 : 120;
+			loc = 120 : 121;
+			loc = 121 : 122;
+			loc = 122 : 123;
+			loc = 123 : 124;
+			loc = 124 : 125;
+			loc = 125 : 126;
+			loc = 126 : 127;
+			loc = 127 : 128;
+			loc = 128 : 129;
+			loc = 129 : 130;
+			loc = 130 : 149;
+			loc = 131 & (SF_ModeSelector___TEMP1 = resize(0ud16_32772,16)) : 132;
+			loc = 131 & !((SF_ModeSelector___TEMP1 = resize(0ud16_32772,16))) : 136;
+			loc = 132 : 133;
+			loc = 133 : 134;
+			loc = 134 : 135;
+			loc = 135 : 149;
+			loc = 136 & ((SF_ModeSelector___TEMP1 = resize(0ud16_49153,16)) | ((SF_ModeSelector___TEMP1 = resize(0ud16_49154,16)) | ((SF_ModeSelector___TEMP1 = resize(0ud16_49155,16)) | (SF_ModeSelector___TEMP1 = resize(0ud16_49156,16))))) : 137;
+			loc = 136 & !(((SF_ModeSelector___TEMP1 = resize(0ud16_49153,16)) | ((SF_ModeSelector___TEMP1 = resize(0ud16_49154,16)) | ((SF_ModeSelector___TEMP1 = resize(0ud16_49155,16)) | (SF_ModeSelector___TEMP1 = resize(0ud16_49156,16)))))) : 149;
+			loc = 137 : 138;
+			loc = 138 : 139;
+			loc = 139 : 140;
+			loc = 140 : 141;
+			loc = 141 : 142;
+			loc = 142 : 143;
+			loc = 143 : 144;
+			loc = 144 : 145;
+			loc = 145 : 146;
+			loc = 146 : 147;
+			loc = 147 : 148;
+			loc = 148 : 149;
+			loc = 149 & !((SF_ModeSelector_DiagCode = resize(0ud16_32773,16))) : 150;
+			loc = 149 & (SF_ModeSelector_DiagCode = resize(0ud16_32773,16)) : 151;
+			loc = 150 : 206;
+			loc = 151 : EoC;
+			(loc = EoC) & (ccntr<3) : 16;
+			(loc = EoC) & !(ccntr<3) : EoC;
+			loc = 152 : 153;
+			loc = 153 : 154;
+			loc = 154 : 157;
+			loc = 155 : 156;
+			loc = 156 : 152;
+			loc = 157 : 22;
+			loc = 158 : 163;
+			loc = 159 : 160;
+			loc = 160 : 158;
+			loc = 161 : 162;
+			loc = 162 : 159;
+			loc = 163 : 36;
+			loc = 164 : 169;
+			loc = 165 : 166;
+			loc = 166 : 164;
+			loc = 167 : 168;
+			loc = 168 : 165;
+			loc = 169 : 39;
+			loc = 170 : 171;
+			loc = 171 : 172;
+			loc = 172 : 175;
+			loc = 173 : 174;
+			loc = 174 : 170;
+			loc = 175 : 40;
+			loc = 176 & !(SF_ModeSelector_T_1_IN) : 178;
+			loc = 176 & SF_ModeSelector_T_1_IN : 180;
+			loc = 177 : 176;
+			loc = 178 : 179;
+			loc = 179 : 184;
+			loc = 180 & !(SF_ModeSelector_T_1_Q) : 181;
+			loc = 180 & SF_ModeSelector_T_1_Q : 184;
+			loc = 181 : 187;
+			loc = 182 : 183;
+			loc = 183 : 184;
+			loc = 184 : 192;
+			loc = 185 : 186;
+			loc = 186 : 188;
+			loc = 187 : 185;
+			loc = 188 : 182;
+			loc = 189 : 190;
+			loc = 190 : 191;
+			loc = 191 : 177;
+			loc = 192 : 45;
+			loc = 193 & !(SF_ModeSelector_T_1_IN) : 195;
+			loc = 193 & SF_ModeSelector_T_1_IN : 197;
+			loc = 194 : 193;
+			loc = 195 : 196;
+			loc = 196 : 201;
+			loc = 197 & !(SF_ModeSelector_T_1_Q) : 198;
+			loc = 197 & SF_ModeSelector_T_1_Q : 201;
+			loc = 198 : 204;
+			loc = 199 : 200;
+			loc = 200 : 201;
+			loc = 201 : 209;
+			loc = 202 : 203;
+			loc = 203 : 205;
+			loc = 204 : 202;
+			loc = 205 : 199;
+			loc = 206 : 207;
+			loc = 207 : 208;
+			loc = 208 : 194;
+			loc = 209 : 151;
+			loc = 210 : 211;
+			loc = 211 : 212;
+			loc = 212 : 215;
+			loc = 213 : 214;
+			loc = 214 : 210;
+			loc = 215 : 37;
+			loc = 216 & !(SF_ModeSelector_T_1_IN) : 218;
+			loc = 216 & SF_ModeSelector_T_1_IN : 220;
+			loc = 217 : 216;
+			loc = 218 : 219;
+			loc = 219 : 224;
+			loc = 220 & !(SF_ModeSelector_T_1_Q) : 221;
+			loc = 220 & SF_ModeSelector_T_1_Q : 224;
+			loc = 221 : 227;
+			loc = 222 : 223;
+			loc = 223 : 224;
+			loc = 224 : 232;
+			loc = 225 : 226;
+			loc = 226 : 228;
+			loc = 227 : 225;
+			loc = 228 : 222;
+			loc = 229 : 230;
+			loc = 230 : 231;
+			loc = 231 : 217;
+			loc = 232 : 42;
+			loc = 233 : 234;
+			loc = 234 : 235;
+			loc = 235 : 238;
+			loc = 236 : 237;
+			loc = 237 : 233;
+			loc = 238 : 21;
+			TRUE : loc;
+		esac;
+		next(ccntr) := case
+			loc = EoC & (ccntr = 0): 1;
+			loc = EoC & (ccntr = 1): 2;
+			loc = EoC & (ccntr = 2): 3;
+			loc = EoC & (ccntr = 3): 4;
+			TRUE : ccntr;
+		esac;
+
+		next(UNKNOWN_BOOL_UNKNOWN_BOOL) := case
+			loc = 185 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 202 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			loc = 225 : UNKNOWN_BOOL_UNKNOWN_BOOL_IN;
+			TRUE : UNKNOWN_BOOL_UNKNOWN_BOOL;
+		esac;
+
+		next(SF_ModeSelector_Activate) := case
+			loc = EoC : SF_ModeSelector_Activate_IN;
+			TRUE : SF_ModeSelector_Activate;
+		esac;
+
+		next(SF_ModeSelector_S_Mode0) := case
+			loc = EoC : SF_ModeSelector_S_Mode0_IN;
+			TRUE : SF_ModeSelector_S_Mode0;
+		esac;
+
+		next(SF_ModeSelector_S_Mode1) := case
+			loc = EoC : SF_ModeSelector_S_Mode1_IN;
+			TRUE : SF_ModeSelector_S_Mode1;
+		esac;
+
+		next(SF_ModeSelector_S_Mode2) := case
+			loc = EoC : SF_ModeSelector_S_Mode2_IN;
+			TRUE : SF_ModeSelector_S_Mode2;
+		esac;
+
+		next(SF_ModeSelector_S_Mode3) := case
+			loc = EoC : SF_ModeSelector_S_Mode3_IN;
+			TRUE : SF_ModeSelector_S_Mode3;
+		esac;
+
+		next(SF_ModeSelector_S_Mode4) := case
+			loc = EoC : SF_ModeSelector_S_Mode4_IN;
+			TRUE : SF_ModeSelector_S_Mode4;
+		esac;
+
+		next(SF_ModeSelector_S_Mode5) := case
+			loc = EoC : SF_ModeSelector_S_Mode5_IN;
+			TRUE : SF_ModeSelector_S_Mode5;
+		esac;
+
+		next(SF_ModeSelector_S_Mode6) := case
+			loc = EoC : SF_ModeSelector_S_Mode6_IN;
+			TRUE : SF_ModeSelector_S_Mode6;
+		esac;
+
+		next(SF_ModeSelector_S_Mode7) := case
+			loc = EoC : SF_ModeSelector_S_Mode7_IN;
+			TRUE : SF_ModeSelector_S_Mode7;
+		esac;
+
+		next(SF_ModeSelector_S_Unlock) := case
+			loc = EoC : SF_ModeSelector_S_Unlock_IN;
+			TRUE : SF_ModeSelector_S_Unlock;
+		esac;
+
+		next(SF_ModeSelector_S_SetMode) := case
+			loc = EoC : SF_ModeSelector_S_SetMode_IN;
+			TRUE : SF_ModeSelector_S_SetMode;
+		esac;
+
+		next(SF_ModeSelector_AutoSetMode) := case
+			loc = EoC : SF_ModeSelector_AutoSetMode_IN;
+			TRUE : SF_ModeSelector_AutoSetMode;
+		esac;
+
+		next(SF_ModeSelector_ModeMonitorTime) := case
+			loc = EoC : SF_ModeSelector_ModeMonitorTime_IN;
+			TRUE : SF_ModeSelector_ModeMonitorTime;
+		esac;
+
+		next(SF_ModeSelector_Reset) := case
+			loc = EoC : SF_ModeSelector_Reset_IN;
+			TRUE : SF_ModeSelector_Reset;
+		esac;
+
+		next(SF_ModeSelector_Ready) := case
+			loc = 93 : FALSE;
+			loc = 106 : TRUE;
+			loc = 119 : TRUE;
+			loc = 132 : TRUE;
+			loc = 137 : TRUE;
+			TRUE : SF_ModeSelector_Ready;
+		esac;
+
+		next(SF_ModeSelector_S_Mode0Sel) := case
+			loc = 94 : FALSE;
+			loc = 107 : FALSE;
+			loc = 120 : SF_ModeSelector_S_Mode0;
+			loc = 138 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode0Sel;
+		esac;
+
+		next(SF_ModeSelector_S_Mode1Sel) := case
+			loc = 95 : FALSE;
+			loc = 108 : FALSE;
+			loc = 121 : SF_ModeSelector_S_Mode1;
+			loc = 139 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode1Sel;
+		esac;
+
+		next(SF_ModeSelector_S_Mode2Sel) := case
+			loc = 96 : FALSE;
+			loc = 109 : FALSE;
+			loc = 122 : SF_ModeSelector_S_Mode2;
+			loc = 140 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode2Sel;
+		esac;
+
+		next(SF_ModeSelector_S_Mode3Sel) := case
+			loc = 97 : FALSE;
+			loc = 110 : FALSE;
+			loc = 123 : SF_ModeSelector_S_Mode3;
+			loc = 141 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode3Sel;
+		esac;
+
+		next(SF_ModeSelector_S_Mode4Sel) := case
+			loc = 98 : FALSE;
+			loc = 111 : FALSE;
+			loc = 124 : SF_ModeSelector_S_Mode4;
+			loc = 142 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode4Sel;
+		esac;
+
+		next(SF_ModeSelector_S_Mode5Sel) := case
+			loc = 99 : FALSE;
+			loc = 112 : FALSE;
+			loc = 125 : SF_ModeSelector_S_Mode5;
+			loc = 143 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode5Sel;
+		esac;
+
+		next(SF_ModeSelector_S_Mode6Sel) := case
+			loc = 100 : FALSE;
+			loc = 113 : FALSE;
+			loc = 126 : SF_ModeSelector_S_Mode6;
+			loc = 144 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode6Sel;
+		esac;
+
+		next(SF_ModeSelector_S_Mode7Sel) := case
+			loc = 101 : FALSE;
+			loc = 114 : FALSE;
+			loc = 127 : SF_ModeSelector_S_Mode7;
+			loc = 145 : FALSE;
+			TRUE : SF_ModeSelector_S_Mode7Sel;
+		esac;
+
+		next(SF_ModeSelector_S_AnyModeSel) := case
+			loc = 102 : FALSE;
+			loc = 115 : FALSE;
+			loc = 128 : TRUE;
+			loc = 133 : TRUE;
+			loc = 146 : FALSE;
+			TRUE : SF_ModeSelector_S_AnyModeSel;
+		esac;
+
+		next(SF_ModeSelector_Error) := case
+			loc = 103 : FALSE;
+			loc = 116 : FALSE;
+			loc = 129 : FALSE;
+			loc = 134 : FALSE;
+			loc = 147 : TRUE;
+			TRUE : SF_ModeSelector_Error;
+		esac;
+
+		next(SF_ModeSelector_DiagCode) := case
+			loc = 23 : resize(0ud8_0,16);
+			loc = 31 : resize(0ud16_32773,16);
+			loc = 47 : resize(0ud16_49153,16);
+			loc = 50 : resize(0ud16_49154,16);
+			loc = 53 : resize(0ud16_32768,16);
+			loc = 57 : resize(0ud16_49153,16);
+			loc = 60 : resize(0ud16_32773,16);
+			loc = 63 : resize(0ud16_32772,16);
+			loc = 67 : resize(0ud16_32768,16);
+			loc = 71 : resize(0ud16_49155,16);
+			loc = 74 : resize(0ud16_32773,16);
+			loc = 78 : resize(0ud16_49156,16);
+			loc = 81 : resize(0ud16_32773,16);
+			loc = 85 : resize(0ud16_49153,16);
+			loc = 89 : resize(0ud16_49154,16);
+			TRUE : SF_ModeSelector_DiagCode;
+		esac;
+
+		next(SF_ModeSelector_T_1_IN) := case
+			loc = 189 : FALSE;
+			loc = 206 : FALSE;
+			loc = 229 : TRUE;
+			TRUE : SF_ModeSelector_T_1_IN;
+		esac;
+
+		next(SF_ModeSelector_T_1_PT) := case
+			loc = 190 : SF_ModeSelector_ModeMonitorTime;
+			loc = 207 : SF_ModeSelector_ModeMonitorTime;
+			loc = 230 : SF_ModeSelector_ModeMonitorTime;
+			TRUE : SF_ModeSelector_T_1_PT;
+		esac;
+
+		next(SF_ModeSelector_T_1_Q) := case
+			loc = 178 : FALSE;
+			loc = 183 : SF_ModeSelector_T_1___TEMP0;
+			loc = 195 : FALSE;
+			loc = 200 : SF_ModeSelector_T_1___TEMP0;
+			loc = 218 : FALSE;
+			loc = 223 : SF_ModeSelector_T_1___TEMP0;
+			TRUE : SF_ModeSelector_T_1_Q;
+		esac;
+
+		next(SF_ModeSelector_T_1___TEMP0) := case
+			loc = 177 : FALSE;
+			loc = 182 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 194 : FALSE;
+			loc = 199 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			loc = 217 : FALSE;
+			loc = 222 : UNKNOWN_BOOL_UNKNOWN_BOOL;
+			TRUE : SF_ModeSelector_T_1___TEMP0;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatReset_CLK) := case
+			loc = 236 : SF_ModeSelector_Reset;
+			TRUE : SF_ModeSelector_R_TRIGatReset_CLK;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatReset_Q) := case
+			loc = 233 : (SF_ModeSelector_R_TRIGatReset_CLK & !(SF_ModeSelector_R_TRIGatReset_M));
+			TRUE : SF_ModeSelector_R_TRIGatReset_Q;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatReset_M) := case
+			loc = 234 : SF_ModeSelector_R_TRIGatReset_CLK;
+			TRUE : SF_ModeSelector_R_TRIGatReset_M;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatSetMode_CLK) := case
+			loc = 155 : SF_ModeSelector_S_SetMode;
+			TRUE : SF_ModeSelector_R_TRIGatSetMode_CLK;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatSetMode_Q) := case
+			loc = 152 : (SF_ModeSelector_R_TRIGatSetMode_CLK & !(SF_ModeSelector_R_TRIGatSetMode_M));
+			TRUE : SF_ModeSelector_R_TRIGatSetMode_Q;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatSetMode_M) := case
+			loc = 153 : SF_ModeSelector_R_TRIGatSetMode_CLK;
+			TRUE : SF_ModeSelector_R_TRIGatSetMode_M;
+		esac;
+
+		next(SF_ModeSelector_F_TRIGatModeSel0_CLK) := case
+			loc = 161 : TRUE;
+			loc = 167 : FALSE;
+			TRUE : SF_ModeSelector_F_TRIGatModeSel0_CLK;
+		esac;
+
+		next(SF_ModeSelector_F_TRIGatModeSel0_Q) := case
+			loc = 159 : (!(SF_ModeSelector_F_TRIGatModeSel0_CLK) & SF_ModeSelector_F_TRIGatModeSel0_M);
+			loc = 165 : (!(SF_ModeSelector_F_TRIGatModeSel0_CLK) & SF_ModeSelector_F_TRIGatModeSel0_M);
+			TRUE : SF_ModeSelector_F_TRIGatModeSel0_Q;
+		esac;
+
+		next(SF_ModeSelector_F_TRIGatModeSel0_M) := case
+			loc = 160 : SF_ModeSelector_F_TRIGatModeSel0_CLK;
+			loc = 166 : SF_ModeSelector_F_TRIGatModeSel0_CLK;
+			TRUE : SF_ModeSelector_F_TRIGatModeSel0_M;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatModeSel0_CLK) := case
+			loc = 173 : FALSE;
+			loc = 213 : TRUE;
+			TRUE : SF_ModeSelector_R_TRIGatModeSel0_CLK;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatModeSel0_Q) := case
+			loc = 170 : (SF_ModeSelector_R_TRIGatModeSel0_CLK & !(SF_ModeSelector_R_TRIGatModeSel0_M));
+			loc = 210 : (SF_ModeSelector_R_TRIGatModeSel0_CLK & !(SF_ModeSelector_R_TRIGatModeSel0_M));
+			TRUE : SF_ModeSelector_R_TRIGatModeSel0_Q;
+		esac;
+
+		next(SF_ModeSelector_R_TRIGatModeSel0_M) := case
+			loc = 171 : SF_ModeSelector_R_TRIGatModeSel0_CLK;
+			loc = 211 : SF_ModeSelector_R_TRIGatModeSel0_CLK;
+			TRUE : SF_ModeSelector_R_TRIGatModeSel0_M;
+		esac;
+
+		next(SF_ModeSelector_Error1) := case
+			loc = 19 : FALSE;
+			loc = 25 : TRUE;
+			loc = 27 : FALSE;
+			TRUE : SF_ModeSelector_Error1;
+		esac;
+
+		next(SF_ModeSelector_Error2) := case
+			loc = 18 : FALSE;
+			loc = 45 : SF_ModeSelector_T_1_Q;
+			TRUE : SF_ModeSelector_Error2;
+		esac;
+
+		next(SF_ModeSelector___TEMP0) := case
+			loc = 17 : 0ud16_0;
+			loc = 28 : SF_ModeSelector_DiagCode;
+			TRUE : SF_ModeSelector___TEMP0;
+		esac;
+
+		next(SF_ModeSelector___TEMP1) := case
+			loc = 16 : 0ud16_0;
+			loc = 91 : SF_ModeSelector_DiagCode;
+			TRUE : SF_ModeSelector___TEMP1;
+		esac;
+
+INVARSPEC (loc = EoC) -> !(((((((((signed(resize(word1(SF_ModeSelector_S_Mode0Sel),16)) + signed(resize(word1(SF_ModeSelector_S_Mode1Sel),16))) + signed(resize(word1(SF_ModeSelector_S_Mode2Sel),16))) + signed(resize(word1(SF_ModeSelector_S_Mode3Sel),16))) + signed(resize(word1(SF_ModeSelector_S_Mode4Sel),16))) + signed(resize(word1(SF_ModeSelector_S_Mode5Sel),16))) + signed(resize(word1(SF_ModeSelector_S_Mode6Sel),16))) + signed(resize(word1(SF_ModeSelector_S_Mode7Sel),16))) > resize(signed(0ud8_1),16)))

@@ -1,0 +1,103 @@
+Checking  DiagnosticsConcept_cyclBnd12_AG__SF_SafeStop1_1.Error_____S_Stopped_.spec :
+
+real	0m36,837s
+user	0m40,147s
+sys	0m0,140s
+============================
+Checking  DiagnosticsConcept_cyclBnd12_EF__Error_ESPE1___S3_Drive_Reset___S_Stopped_.spec :
+
+real	0m4,392s
+user	0m7,090s
+sys	0m0,174s
+============================
+Checking  DiagnosticsConcept_cyclBnd15_AG__SF_EmergencyStop_1.Error_____S_EStopOut_.spec :
+
+real	0m57,926s
+user	1m1,019s
+sys	0m0,218s
+============================
+Checking  DiagnosticsConcept_cyclBnd15_AG__SF_ESPE_1.S_ESPE_Out____S2_S_ESPE_In_.spec :
+
+real	1m0,172s
+user	1m3,164s
+sys	0m0,288s
+============================
+Checking  DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.spec :
+
+real	0m2,375s
+user	0m4,576s
+sys	0m0,130s
+============================
+Checking  DiagnosticsConcept_cyclBnd20_AG___S2_S_ESPE_In______SF_ESPE_1.DiagCode___0x8004______SF_ESPE_1.DiagCode___0x8001__.spec :
+
+real	0m0,689s
+user	0m1,231s
+sys	0m0,057s
+============================
+Checking  DiagnosticsConcept_cyclBnd4_AG__S_Stopped_____Internal_Acknowledge___SF_ESPE_1.S_ESPE_Out___SF_EmergencyStop_1.S_EStopOut___.spec :
+
+real	0m0,397s
+user	0m0,535s
+sys	0m0,025s
+============================
+Checking  PLCopenX.SF_Antivalent_cyclBnd25_AG_____Activate___S_ChannelNO____S_ChannelNC_______S_AntivalentOut_.spec :
+
+real	0m0,246s
+user	0m0,345s
+sys	0m0,020s
+============================
+Checking  PLCopenX.SF_Antivalent_cyclBnd25_AG__S_AntivalentOut_____Activate____S_ChannelNO___S_ChannelNC____Error__.spec :
+
+real	0m0,247s
+user	0m0,334s
+sys	0m0,043s
+============================
+Checking  PLCopenX.SF_Antivalent_cyclBnd25_AG____S_ChannelNC___S_ChannelNO___T_1.Q____Error_.spec :
+
+real	0m0,198s
+user	0m0,270s
+sys	0m0,031s
+============================
+Checking  PLCopenX.SF_Antivalent_cyclBnd27_AG__Error_____S_AntivalentOut_.spec :
+
+real	0m0,214s
+user	0m0,309s
+sys	0m0,017s
+============================
+Checking  PLCopenX.SF_Antivalent_cyclBnd30_AG___Activate______Ready____S_AntivalentOut___DiagCode_0____Error___.spec :
+
+real	0m0,231s
+user	0m0,337s
+sys	0m0,021s
+============================
+Checking  PLCopenX.SF_Antivalent_cyclBnd3_AG___Activate_____Ready__.spec :
+
+real	0m0,202s
+user	0m0,286s
+sys	0m0,022s
+============================
+Checking  PLCopenX.SF_EmergencyStop_cyclBnd35_559746110.spec :
+
+real	0m0,235s
+user	0m0,333s
+sys	0m0,029s
+============================
+Checking  PLCopenX.SF_EmergencyStop_cyclBnd40_AG___S_EStopIn_____S_EStopOut_.spec :
+
+real	0m0,225s
+user	0m0,287s
+sys	0m0,038s
+============================
+Checking  PLCopenX.SF_EmergencyStop_cyclBnd45_AG__Error____Ready_.spec :
+
+real	0m0,258s
+user	0m0,364s
+sys	0m0,029s
+============================
+Checking  PLCopenX.SF_EmergencyStop_cyclBnd45_EF__DiagCode_0x8000___Error_.spec :
+
+real	0m0,492s
+user	0m0,861s
+sys	0m0,029s
+============================
+Checking  PLCopenX.SF_Equivalent_cyclBnd24_AG__Error_____S_EquivalentOut_.spec :

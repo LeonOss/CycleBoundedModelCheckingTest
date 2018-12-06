@@ -1,0 +1,149 @@
+ESBMC version 4.5.0 64-bit x86_64 linux
+file /home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c: Parsing
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:123:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:123:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 0)){
+            ~                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:123:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 0)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:144:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:144:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 32768)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:144:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 32768)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:227:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:227:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 32769)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:227:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 32769)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:262:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:262:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 32770)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:262:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 32770)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:283:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:283:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 32771)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:283:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 32771)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:318:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:318:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 32773)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:318:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 32773)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:367:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:367:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 49153)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:367:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 49153)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:388:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:388:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 49154)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:388:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 49154)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:409:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:409:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP0 == 49155)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:409:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP0 == 49155)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:476:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP1 == 32785)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:476:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP1 == 32785)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:476:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP1 == 32785)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:553:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP1 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:553:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP1 == 32786)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:553:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP1 == 32786)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:619:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP1 == 33058)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:619:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP1 == 33058)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:619:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP1 == 33058)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:696:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP1 == 33042)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:696:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP1 == 33042)){
+            ~                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:696:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP1 == 33042)){
+                                  ^~
+                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:766:28: warning: equality comparison with extraneous parentheses
+        if ((SF_MutingSeq___TEMP2 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:766:28: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_MutingSeq___TEMP2 == 0)){
+            ~                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.c:766:28: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_MutingSeq___TEMP2 == 0)){
+                                  ^~
+                                  =
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.067s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Out of memory
+decision procedure failed

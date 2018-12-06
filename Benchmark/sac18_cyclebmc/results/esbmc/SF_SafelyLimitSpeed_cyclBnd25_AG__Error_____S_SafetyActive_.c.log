@@ -1,0 +1,158 @@
+ESBMC version 4.5.0 64-bit x86_64 linux
+file /home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c: Parsing
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:63:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:63:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 0)){
+            ~                            ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:63:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 0)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:84:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:84:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32768)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:84:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32768)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:133:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:133:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32769)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:133:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32769)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:182:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:182:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32770)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:182:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32770)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:217:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:217:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32771)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:217:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32771)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:280:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:280:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32772)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:280:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32772)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:329:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:329:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32773)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:329:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32773)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:350:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:350:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32786)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:350:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 32786)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:385:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:385:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49153)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:385:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49153)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:406:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:406:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49154)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:406:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49154)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:441:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:441:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49155)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:441:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49155)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:476:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:476:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49156)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:476:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49156)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:497:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49157)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:497:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49157)){
+            ~                            ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:497:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP0 == 49157)){
+                                         ^~
+                                         =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:522:35: warning: equality comparison with extraneous parentheses
+        if ((SF_SafelyLimitSpeed___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:522:35: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_SafelyLimitSpeed___TEMP1 == 0)){
+            ~                            ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.c:522:35: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_SafelyLimitSpeed___TEMP1 == 0)){
+                                         ^~
+                                         =
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.060s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.178s (5219 assignments)
+Slicing time: 0.064s (removed 1504 assignments)
+Generated 26 VCC(s), 25 remaining after simplification (3715 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.016s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.016s
+Runtime decision procedure: 0.044s
+BMC program time: 0.303s
+
+VERIFICATION SUCCESSFUL

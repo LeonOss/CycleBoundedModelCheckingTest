@@ -1,0 +1,1050 @@
+ESBMC version 4.5.0 64-bit x86_64 linux
+file /home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c: Parsing
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:188:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:188:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 0)){
+            ~                                           ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:188:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 0)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:209:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:209:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32769)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:209:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32769)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:258:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:258:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32772)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:258:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32772)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:328:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32788)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:328:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32788)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:328:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32788)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:377:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:377:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 49155)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:377:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 49155)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:398:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:398:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32773)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:398:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32773)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:433:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:433:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32768)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:433:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP0 == 32768)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:472:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:472:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 0)){
+            ~                                           ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:472:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 0)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:497:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:497:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 32768)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:497:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 32768)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:522:50: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:522:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 32769)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:522:50: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_Equivalent_1___TEMP1 == 32769)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:966:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:966:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32773)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:966:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32773)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1015:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1015:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 49154)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1015:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 49154)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1036:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1036:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1036:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1061:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1061:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1061:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1083:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1083:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32769)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1083:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32769)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1105:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1105:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32770)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1105:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32770)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1127:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1127:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32771)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1127:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32771)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1149:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1149:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 49153)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1149:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 49153)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1171:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1171:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32772)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1171:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32772)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1193:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1193:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32773)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1193:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32773)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1215:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1215:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 49154)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1215:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 49154)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1237:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1237:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1237:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP1 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1312:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1312:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1312:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1333:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1333:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32769)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1333:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32769)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1382:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1382:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32770)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1382:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32770)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1403:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1403:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32771)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1403:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32771)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1452:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1452:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 49153)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1452:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 49153)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1473:44: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1473:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32772)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1473:44: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_ESPE_1___TEMP0 == 32772)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1552:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1552:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 0)){
+            ~                                          ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1552:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 0)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1573:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1573:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32768)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1573:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32768)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1608:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1608:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32769)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1608:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32769)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1643:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1643:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32770)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1643:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32770)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1678:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1678:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32771)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1678:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32771)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1727:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1727:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32773)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1727:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32773)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1748:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1748:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32786)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1748:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 32786)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1797:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1797:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49154)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1797:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49154)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1832:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1832:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49155)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1832:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49155)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1867:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1867:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49156)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1867:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49156)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1888:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49157)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1888:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49157)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1888:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP0 == 49157)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1913:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1913:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 == 0)){
+            ~                                          ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1913:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 == 0)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1935:49: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1935:49: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 == 32768)){
+            ~                                          ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:1935:49: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_SafeStop1_1___TEMP1 == 32768)){
+                                                       ^~
+                                                       =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2150:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2150:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 0)){
+            ~                                              ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2150:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 0)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2171:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2171:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32769)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2171:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32769)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2220:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2220:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32770)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2220:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32770)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2241:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2241:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32771)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2241:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32771)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2290:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2290:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 49153)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2290:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 49153)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2311:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2311:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32772)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2311:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32772)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2346:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2346:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32773)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2346:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32773)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2395:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2395:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 49154)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2395:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 49154)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2416:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2416:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32768)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2416:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP0 == 32768)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2441:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2441:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 0)){
+            ~                                              ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2441:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 0)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2463:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2463:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32769)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2463:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32769)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2485:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2485:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32770)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2485:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32770)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2507:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2507:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32771)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2507:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32771)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2529:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2529:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 49153)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2529:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 49153)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2551:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2551:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32772)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2551:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32772)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2573:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2573:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32773)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2573:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32773)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2595:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2595:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 49154)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2595:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 49154)){
+                                                           ^~
+                                                           =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2617:53: warning: equality comparison with extraneous parentheses
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2617:53: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32768)){
+            ~                                              ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.c:2617:53: note: use '=' to turn this equality comparison into an assignment
+        if ((DiagnosticsConcept_SF_EmergencyStop_1___TEMP1 == 32768)){
+                                                           ^~
+                                                           =
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.087s
+GOTO program processing time: 0.001s
+
+*** Iteration number 1 ***
+Starting Bounded Model Checking
+Symex completed in: 0.002s (110 assignments)
+Slicing time: 0.000s (removed 109 assignments)
+Generated 1 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.002s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.002s (110 assignments)
+Slicing time: 0.000s (removed 109 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.000s
+Runtime decision procedure: 0.000s
+The forward condition is unable to prove the property
+
+*** Iteration number 2 ***
+Starting Bounded Model Checking
+Symex completed in: 0.054s (992 assignments)
+Slicing time: 0.005s (removed 704 assignments)
+Generated 2 VCC(s), 1 remaining after simplification (288 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.002s
+Runtime decision procedure: 0.000s
+BMC program time: 0.061s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.057s (991 assignments)
+Slicing time: 0.005s (removed 723 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (268 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.002s
+Runtime decision procedure: 0.001s
+The forward condition is unable to prove the property
+
+*** Iteration number 3 ***
+Starting Bounded Model Checking
+Symex completed in: 0.133s (2294 assignments)
+Slicing time: 0.018s (removed 1291 assignments)
+Generated 3 VCC(s), 2 remaining after simplification (1003 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.005s
+Runtime decision procedure: 0.002s
+BMC program time: 0.158s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.139s (2292 assignments)
+Slicing time: 0.018s (removed 1328 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (964 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.004s
+Runtime decision procedure: 0.003s
+The forward condition is unable to prove the property
+
+*** Iteration number 4 ***
+Starting Bounded Model Checking
+Symex completed in: 0.216s (3596 assignments)
+Slicing time: 0.037s (removed 1892 assignments)
+Generated 4 VCC(s), 3 remaining after simplification (1704 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.007s
+BMC program time: 0.268s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.224s (3593 assignments)
+Slicing time: 0.035s (removed 1939 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1654 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.012s
+The forward condition is unable to prove the property
+
+*** Iteration number 5 ***
+Starting Bounded Model Checking
+Symex completed in: 0.304s (4898 assignments)
+Slicing time: 0.059s (removed 2493 assignments)
+Generated 5 VCC(s), 4 remaining after simplification (2405 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.011s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.011s
+Runtime decision procedure: 0.014s
+BMC program time: 0.388s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.317s (4894 assignments)
+Slicing time: 0.062s (removed 2550 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2344 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.010s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.010s
+Runtime decision procedure: 0.016s
+The forward condition is unable to prove the property
+
+*** Iteration number 6 ***
+Starting Bounded Model Checking
+Symex completed in: 0.407s (6200 assignments)
+Slicing time: 0.088s (removed 3094 assignments)
+Generated 6 VCC(s), 5 remaining after simplification (3106 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.014s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.014s
+Runtime decision procedure: 0.034s
+BMC program time: 0.543s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.411s (6195 assignments)
+Slicing time: 0.092s (removed 3161 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3034 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.015s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.015s
+Runtime decision procedure: 0.026s
+The forward condition is unable to prove the property
+
+*** Iteration number 7 ***
+Starting Bounded Model Checking
+Symex completed in: 0.498s (7502 assignments)
+Slicing time: 0.129s (removed 3695 assignments)
+Generated 7 VCC(s), 6 remaining after simplification (3807 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.017s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.017s
+Runtime decision procedure: 0.065s
+BMC program time: 0.709s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.502s (7496 assignments)
+Slicing time: 0.122s (removed 3772 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3724 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.017s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.017s
+Runtime decision procedure: 0.049s
+The forward condition is unable to prove the property
+
+*** Iteration number 8 ***
+Starting Bounded Model Checking
+Symex completed in: 0.588s (8804 assignments)
+Slicing time: 0.162s (removed 4296 assignments)
+Generated 8 VCC(s), 7 remaining after simplification (4508 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.020s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.020s
+Runtime decision procedure: 0.097s
+BMC program time: 0.868s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.597s (8797 assignments)
+Slicing time: 0.168s (removed 4383 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4414 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.022s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.022s
+Runtime decision procedure: 0.052s
+The forward condition is unable to prove the property
+
+*** Iteration number 9 ***
+Starting Bounded Model Checking
+Symex completed in: 0.692s (10106 assignments)
+Slicing time: 0.207s (removed 4897 assignments)
+Generated 9 VCC(s), 8 remaining after simplification (5209 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.025s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.025s
+Runtime decision procedure: 0.084s
+BMC program time: 1.009s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.699s (10098 assignments)
+Slicing time: 0.214s (removed 4994 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5104 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.025s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.025s
+Runtime decision procedure: 0.072s
+The forward condition is unable to prove the property
+
+*** Iteration number 10 ***
+Starting Bounded Model Checking
+Symex completed in: 0.786s (11408 assignments)
+Slicing time: 0.258s (removed 5498 assignments)
+Generated 10 VCC(s), 9 remaining after simplification (5910 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.029s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.029s
+Runtime decision procedure: 0.140s
+BMC program time: 1.213s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.794s (11399 assignments)
+Slicing time: 0.266s (removed 5605 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5794 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.028s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.028s
+Runtime decision procedure: 0.070s
+The forward condition is unable to prove the property
+
+*** Iteration number 11 ***
+Starting Bounded Model Checking
+Symex completed in: 0.896s (12710 assignments)
+Slicing time: 0.332s (removed 6099 assignments)
+Generated 11 VCC(s), 10 remaining after simplification (6611 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.033s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.033s
+Runtime decision procedure: 0.154s
+BMC program time: 1.416s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.909s (12700 assignments)
+Slicing time: 0.324s (removed 6216 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (6484 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.032s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.032s
+Runtime decision procedure: 0.086s
+The forward condition is unable to prove the property
+
+*** Iteration number 12 ***
+Starting Bounded Model Checking
+Symex completed in: 0.998s (14012 assignments)
+Slicing time: 0.380s (removed 6700 assignments)
+Generated 12 VCC(s), 11 remaining after simplification (7312 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.037s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.037s
+Runtime decision procedure: 0.181s
+BMC program time: 1.597s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.013s (14001 assignments)
+Slicing time: 0.373s (removed 6827 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (7174 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.034s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.034s
+Runtime decision procedure: 0.129s
+The forward condition is unable to prove the property
+
+*** Iteration number 13 ***
+Starting Bounded Model Checking
+Symex completed in: 1.102s (15314 assignments)
+Slicing time: 0.467s (removed 7301 assignments)
+Generated 13 VCC(s), 12 remaining after simplification (8013 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.039s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.039s
+Runtime decision procedure: 0.282s
+BMC program time: 1.891s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.102s (15302 assignments)
+Slicing time: 0.458s (removed 7438 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (7864 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.039s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.039s
+Runtime decision procedure: 0.172s
+The forward condition is unable to prove the property
+
+*** Iteration number 14 ***
+Starting Bounded Model Checking
+Symex completed in: 1.197s (16616 assignments)
+Slicing time: 0.523s (removed 7902 assignments)
+Generated 14 VCC(s), 13 remaining after simplification (8714 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.043s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.043s
+Runtime decision procedure: 0.388s
+BMC program time: 2.151s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.236s (16603 assignments)
+Slicing time: 0.533s (removed 8049 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (8554 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.041s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.041s
+Runtime decision procedure: 0.305s
+The forward condition is unable to prove the property
+
+*** Iteration number 15 ***
+Starting Bounded Model Checking
+Symex completed in: 1.313s (17918 assignments)
+Slicing time: 0.603s (removed 8503 assignments)
+Generated 15 VCC(s), 14 remaining after simplification (9415 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.046s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.046s
+Runtime decision procedure: 0.361s
+BMC program time: 2.324s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.322s (17904 assignments)
+Slicing time: 0.593s (removed 8660 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (9244 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.045s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.045s
+Runtime decision procedure: 0.351s
+The forward condition is unable to prove the property
+
+*** Iteration number 16 ***
+Starting Bounded Model Checking
+Symex completed in: 1.432s (19220 assignments)
+Slicing time: 0.690s (removed 9104 assignments)
+Generated 16 VCC(s), 15 remaining after simplification (10116 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.050s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.050s
+Runtime decision procedure: 0.512s
+BMC program time: 2.684s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.443s (19205 assignments)
+Slicing time: 0.679s (removed 9271 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (9934 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.048s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.048s
+Runtime decision procedure: 0.338s
+The forward condition is unable to prove the property
+
+*** Iteration number 17 ***
+Starting Bounded Model Checking
+Symex completed in: 1.550s (20522 assignments)
+Slicing time: 0.816s (removed 9705 assignments)
+Generated 17 VCC(s), 16 remaining after simplification (10817 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.054s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.054s
+Runtime decision procedure: 0.660s
+BMC program time: 3.081s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.569s (20506 assignments)
+Slicing time: 0.791s (removed 9882 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (10624 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.054s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.054s
+Runtime decision procedure: 0.294s
+The forward condition is unable to prove the property
+
+*** Iteration number 18 ***
+Starting Bounded Model Checking
+Symex completed in: 1.684s (21824 assignments)
+Slicing time: 0.881s (removed 10306 assignments)
+Generated 18 VCC(s), 17 remaining after simplification (11518 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.060s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.060s
+Runtime decision procedure: 1.128s
+BMC program time: 3.753s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.712s (21807 assignments)
+Slicing time: 0.886s (removed 10493 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (11314 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.056s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.056s
+Runtime decision procedure: 0.514s
+The forward condition is unable to prove the property
+
+*** Iteration number 19 ***
+Starting Bounded Model Checking
+Symex completed in: 1.782s (23126 assignments)
+Slicing time: 0.980s (removed 10907 assignments)
+Generated 19 VCC(s), 18 remaining after simplification (12219 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.061s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.061s
+Runtime decision procedure: 0.755s
+BMC program time: 3.578s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.793s (23108 assignments)
+Slicing time: 0.994s (removed 11104 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (12004 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.060s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.060s
+Runtime decision procedure: 0.587s
+The forward condition is unable to prove the property
+
+*** Iteration number 20 ***
+Starting Bounded Model Checking
+Symex completed in: 1.875s (24035 assignments)
+Slicing time: 1.051s (removed 11296 assignments)
+Generated 20 VCC(s), 19 remaining after simplification (12739 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.064s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.064s
+Runtime decision procedure: 1.483s
+BMC program time: 4.474s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.851s (24016 assignments)
+Slicing time: 1.070s (removed 11503 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (12513 assignments)
+BMC program time: 2.921s
+
+VERIFICATION SUCCESSFUL
+
+Solution found by the forward condition; all states are reachable (k = 20)

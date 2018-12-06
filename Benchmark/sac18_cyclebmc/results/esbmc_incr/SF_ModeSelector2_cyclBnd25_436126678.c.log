@@ -1,0 +1,360 @@
+ESBMC version 4.5.0 64-bit x86_64 linux
+file /home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c: Parsing
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:115:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:115:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 0)){
+            ~                         ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:115:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 0)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:136:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:136:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 32773)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:136:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 32773)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:266:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:266:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 32768)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:266:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 32768)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:315:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:315:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 32772)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:315:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 32772)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:336:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:336:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 49153)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:336:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 49153)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:371:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:371:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 49154)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:371:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 49154)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:406:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:406:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 49155)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:406:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 49155)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:427:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:427:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP0 == 49156)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:427:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP0 == 49156)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:452:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:452:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP1 == 0)){
+            ~                         ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:452:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP1 == 0)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:506:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP1 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:506:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP1 == 32773)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:506:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP1 == 32773)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:560:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:560:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP1 == 32768)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:560:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP1 == 32768)){
+                                      ^~
+                                      =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:582:32: warning: equality comparison with extraneous parentheses
+        if ((SF_ModeSelector2___TEMP1 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:582:32: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SF_ModeSelector2___TEMP1 == 32772)){
+            ~                         ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SF_ModeSelector2_cyclBnd25_436126678.c:582:32: note: use '=' to turn this equality comparison into an assignment
+        if ((SF_ModeSelector2___TEMP1 == 32772)){
+                                      ^~
+                                      =
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.063s
+GOTO program processing time: 0.001s
+
+*** Iteration number 1 ***
+Starting Bounded Model Checking
+Symex completed in: 0.001s (86 assignments)
+Slicing time: 0.000s (removed 85 assignments)
+Generated 1 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.001s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.001s (86 assignments)
+Slicing time: 0.000s (removed 85 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.000s
+Runtime decision procedure: 0.000s
+The forward condition is unable to prove the property
+
+*** Iteration number 2 ***
+Starting Bounded Model Checking
+Symex completed in: 0.066s (3321 assignments)
+Slicing time: 0.010s (removed 2299 assignments)
+Generated 10 VCC(s), 9 remaining after simplification (1022 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.005s
+Runtime decision procedure: 0.008s
+BMC program time: 0.089s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.067s (3312 assignments)
+Slicing time: 0.008s (removed 2715 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (597 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.003s
+Runtime decision procedure: 0.005s
+The forward condition is unable to prove the property
+
+*** Iteration number 3 ***
+Starting Bounded Model Checking
+Symex completed in: 0.239s (11881 assignments)
+Slicing time: 0.113s (removed 7501 assignments)
+Generated 31 VCC(s), 30 remaining after simplification (4380 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.022s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.022s
+Runtime decision procedure: 0.107s
+BMC program time: 0.481s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.243s (11851 assignments)
+Slicing time: 0.115s (removed 7933 assignments)
+Generated 4 VCC(s), 4 remaining after simplification (3918 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.020s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.020s
+Runtime decision procedure: 0.028s
+The forward condition is unable to prove the property
+
+*** Iteration number 4 ***
+Starting Bounded Model Checking
+Symex completed in: 0.514s (24673 assignments)
+Slicing time: 0.552s (removed 14950 assignments)
+Generated 62 VCC(s), 61 remaining after simplification (9723 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.050s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.050s
+Runtime decision procedure: 0.768s
+BMC program time: 1.885s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.531s (24612 assignments)
+Slicing time: 0.562s (removed 15382 assignments)
+Generated 5 VCC(s), 5 remaining after simplification (9230 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.046s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.046s
+Runtime decision procedure: 0.133s
+The forward condition is unable to prove the property
+
+*** Iteration number 5 ***
+Starting Bounded Model Checking
+Symex completed in: 0.928s (41703 assignments)
+Slicing time: 1.710s (removed 24755 assignments)
+Generated 103 VCC(s), 102 remaining after simplification (16948 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.091s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.091s
+Runtime decision procedure: 4.014s
+BMC program time: 6.744s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.950s (41601 assignments)
+Slicing time: 1.691s (removed 25187 assignments)
+Generated 6 VCC(s), 6 remaining after simplification (16414 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.088s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.088s
+Runtime decision procedure: 0.358s
+The forward condition is unable to prove the property
+
+*** Iteration number 6 ***
+Starting Bounded Model Checking
+Symex completed in: 1.504s (62971 assignments)
+Slicing time: 4.191s (removed 36916 assignments)
+Generated 154 VCC(s), 153 remaining after simplification (26055 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.149s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.149s
+Runtime decision procedure: 16.787s
+BMC program time: 22.633s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.486s (62818 assignments)
+Slicing time: 4.064s (removed 37348 assignments)
+Generated 7 VCC(s), 7 remaining after simplification (25470 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.142s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.142s
+Runtime decision procedure: 0.648s
+The forward condition is unable to prove the property
+
+*** Iteration number 7 ***
+Starting Bounded Model Checking
+Symex completed in: 2.168s (88477 assignments)
+Slicing time: 8.535s (removed 51433 assignments)
+Generated 215 VCC(s), 214 remaining after simplification (37044 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.208s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.208s
+Runtime decision procedure: 51.004s
+BMC program time: 61.917s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 2.115s (88263 assignments)
+Slicing time: 8.077s (removed 51865 assignments)
+Generated 8 VCC(s), 8 remaining after simplification (36398 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.187s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.187s
+Runtime decision procedure: 1.230s
+The forward condition is unable to prove the property
+
+*** Iteration number 8 ***
+Starting Bounded Model Checking
+Symex completed in: 2.930s (118221 assignments)
+Slicing time: 15.307s (removed 68306 assignments)
+Generated 286 VCC(s), 285 remaining after simplification (49915 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.297s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.297s
+Runtime decision procedure: 103.603s
+BMC program time: 122.139s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 2.853s (117936 assignments)
+Slicing time: 14.578s (removed 68738 assignments)
+Generated 9 VCC(s), 9 remaining after simplification (49198 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.257s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.257s
+Runtime decision procedure: 2.351s
+The forward condition is unable to prove the property
+
+*** Iteration number 9 ***
+Starting Bounded Model Checking
+Symex completed in: 3.880s (152203 assignments)
+Slicing time: 25.909s (removed 87535 assignments)
+Generated 367 VCC(s), 366 remaining after simplification (64668 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.370s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.370s
+Runtime decision procedure: 215.709s
+BMC program time: 245.870s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 3.844s (151837 assignments)
+Slicing time: 24.776s (removed 87967 assignments)
+Generated 10 VCC(s), 10 remaining after simplification (63870 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.349s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.349s
+Runtime decision procedure: 5.189s
+The forward condition is unable to prove the property
+
+*** Iteration number 10 ***
+Starting Bounded Model Checking
+Symex completed in: 5.069s (190423 assignments)
+Slicing time: 41.623s (removed 109120 assignments)
+Generated 458 VCC(s), 457 remaining after simplification (81303 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.497s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.497s
+Runtime decision procedure: 512.597s
+BMC program time: 559.788s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 5.042s (189966 assignments)
+Slicing time: 40.543s (removed 109552 assignments)
+Generated 11 VCC(s), 11 remaining after simplification (80414 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.467s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.467s
+Runtime decision procedure: 6.329s
+The forward condition is unable to prove the property
+
+*** Iteration number 11 ***
+Starting Bounded Model Checking
+Symex completed in: 6.539s (232881 assignments)
+Slicing time: 63.902s (removed 133061 assignments)
+Generated 559 VCC(s), 558 remaining after simplification (99820 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.647s
+Solving with solver Z3 v4.5.0

@@ -1,0 +1,1508 @@
+ESBMC version 4.5.0 64-bit x86_64 linux
+file /home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c: Parsing
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:297:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:297:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 0)){
+            ~                                  ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:297:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 0)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:318:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:318:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32768)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:318:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32768)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:353:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:353:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32769)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:353:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32769)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:388:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:388:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32770)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:388:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32770)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:423:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:423:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32771)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:423:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32771)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:472:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:472:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32773)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:472:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32773)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:493:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:493:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32786)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:493:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 32786)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:542:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:542:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49154)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:542:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49154)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:577:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:577:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49155)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:577:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49155)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:612:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:612:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49156)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:612:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49156)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:633:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49157)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:633:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49157)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:633:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP0 == 49157)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:658:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:658:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP1 == 0)){
+            ~                                  ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:658:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP1 == 0)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:680:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:680:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_1___TEMP1 == 32768)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:680:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_1___TEMP1 == 32768)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:869:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:869:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32770)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:869:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32770)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:904:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:904:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32771)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:904:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32771)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:953:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:953:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32773)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:953:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32773)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:974:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:974:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32786)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:974:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32786)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1023:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1023:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49154)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1023:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49154)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1058:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1058:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49155)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1058:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49155)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1093:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1093:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49156)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1093:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49156)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1114:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49157)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1114:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49157)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1114:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 49157)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1139:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1139:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP1 == 0)){
+            ~                                  ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1139:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP1 == 0)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1161:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1161:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP1 == 32768)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1161:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP1 == 32768)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1349:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1349:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 0)){
+            ~                                  ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1349:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 0)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1370:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1370:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32768)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1370:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32768)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1405:41: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1405:41: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32769)){
+            ~                                  ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1405:41: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafeStop1_2___TEMP0 == 32769)){
+                                               ^~
+                                               =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1744:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1744:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1744:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1765:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1765:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32773)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1765:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32773)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1863:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1863:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1863:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1912:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1912:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32772)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1912:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 32772)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1933:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1933:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49153)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1933:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49153)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1968:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1968:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49154)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:1968:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49154)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2003:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2003:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49155)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2003:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49155)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2024:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2024:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49156)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2024:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP0 == 49156)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2049:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2049:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2049:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2103:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2103:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32773)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2103:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32773)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2157:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2157:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2157:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2211:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2211:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32772)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2211:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_ModeSelector_1___TEMP1 == 32772)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2572:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2572:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32771)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2572:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32771)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2635:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2635:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32772)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2635:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32772)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2684:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2684:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32773)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2684:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32773)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2705:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2705:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32786)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2705:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32786)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2740:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2740:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49153)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2740:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49153)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2761:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2761:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49154)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2761:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49154)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2796:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2796:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49155)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2796:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49155)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2831:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2831:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49156)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2831:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49156)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2852:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49157)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2852:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49157)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2852:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 49157)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2877:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2877:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP1 == 0)){
+            ~                                           ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:2877:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP1 == 0)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3084:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3084:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 0)){
+            ~                                           ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3084:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 0)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3105:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3105:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32768)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3105:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32768)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3154:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3154:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32769)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3154:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32769)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3203:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3203:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32770)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3203:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_2___TEMP0 == 32770)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3269:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3269:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32770)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3269:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32770)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3290:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3290:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32771)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3290:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32771)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3339:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3339:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32786)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3339:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32786)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3380:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3380:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32772)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3380:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32772)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3429:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32788)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3429:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32788)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3429:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32788)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3478:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3478:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32773)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3478:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32773)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3527:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3527:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32768)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3527:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32768)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3548:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3548:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49153)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3548:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49153)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3569:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49169)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3569:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49169)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3569:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49169)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3590:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49170)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3590:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49170)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3590:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 49170)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3615:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3615:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP1 == 0)){
+            ~                                        ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3615:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP1 == 0)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3640:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3640:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP1 == 32768)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:3640:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP1 == 32768)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4186:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4186:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 0)){
+            ~                                        ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4186:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 0)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4207:47: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4207:47: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32769)){
+            ~                                        ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4207:47: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardMonitoring_1___TEMP0 == 32769)){
+                                                     ^~
+                                                     =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4279:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4279:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32772)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4279:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32772)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4300:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4300:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32773)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4300:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32773)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4335:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32774)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4335:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32774)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4335:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32774)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4370:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32775)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4370:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32775)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4370:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32775)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4405:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4405:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49153)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4405:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49153)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4426:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4426:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49154)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4426:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49154)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4447:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49168)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4447:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49168)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4447:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49168)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4468:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49184)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4468:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49184)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4468:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49184)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4517:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49200)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4517:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49200)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4517:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49200)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4538:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49216)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4538:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49216)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4538:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 49216)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4613:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4613:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP1 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4613:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP1 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4635:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4635:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP1 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4635:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP1 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4746:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4746:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4746:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4767:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4767:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4767:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EnableSwitch_1___TEMP0 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4858:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4858:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4858:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4879:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4879:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4879:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4914:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4914:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32769)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4914:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32769)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4963:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4963:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32771)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:4963:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32771)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5012:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32785)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5012:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32785)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5012:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32785)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5061:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5061:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32786)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5061:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32786)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5096:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32787)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5096:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32787)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5096:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32787)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5131:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32788)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5131:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32788)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5131:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 32788)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5180:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5180:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49153)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5180:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49153)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5201:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5201:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49154)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5201:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49154)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5222:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5222:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49155)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5222:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49155)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5243:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5243:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49156)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5243:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP0 == 49156)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5268:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5268:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP1 == 0)){
+            ~                                     ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5268:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP1 == 0)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5294:44: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_GuardLocking_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5294:44: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_GuardLocking_1___TEMP1 == 32768)){
+            ~                                     ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5294:44: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_GuardLocking_1___TEMP1 == 32768)){
+                                                  ^~
+                                                  =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5510:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5510:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 0)){
+            ~                                           ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5510:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 0)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5531:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5531:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32768)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5531:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32768)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5580:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5580:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32769)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5580:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32769)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5629:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5629:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32770)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5629:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32770)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5664:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5664:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32771)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5664:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32771)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5727:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5727:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32772)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5727:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32772)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5776:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5776:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32773)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5776:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32773)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5797:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32786)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5797:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32786)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5797:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 32786)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5832:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5832:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49153)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5832:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49153)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5853:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5853:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49154)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5853:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49154)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5888:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49155)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5888:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49155)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5888:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49155)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5923:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49156)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5923:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49156)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5923:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49156)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5944:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49157)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5944:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49157)){
+            ~                                           ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5944:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP0 == 49157)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5969:50: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5969:50: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP1 == 0)){
+            ~                                           ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:5969:50: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_SafelyLimitedSpeed_1___TEMP1 == 0)){
+                                                        ^~
+                                                        =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6210:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6210:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 0)){
+            ~                                      ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6210:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 0)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6231:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6231:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32769)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6231:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32769)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6280:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6280:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32770)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6280:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32770)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6301:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6301:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32771)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6301:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32771)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6350:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6350:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 49153)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6350:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 49153)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6371:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6371:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32772)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6371:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32772)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6406:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6406:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32773)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6406:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32773)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6455:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6455:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 49154)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6455:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 49154)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6476:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6476:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32768)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6476:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP0 == 32768)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6501:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 0)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6501:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 0)){
+            ~                                      ^   ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6501:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 0)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6523:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32769)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6523:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32769)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6523:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32769)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6545:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32770)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6545:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32770)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6545:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32770)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6567:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32771)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6567:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32771)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6567:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32771)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6589:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 49153)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6589:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 49153)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6589:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 49153)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6611:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32772)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6611:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32772)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6611:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32772)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6633:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32773)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6633:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32773)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6633:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32773)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6655:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 49154)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6655:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 49154)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6655:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 49154)){
+                                                   ^~
+                                                   =
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6677:45: warning: equality comparison with extraneous parentheses
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32768)){
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6677:45: note: remove extraneous parentheses around the comparison to silence this warning
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32768)){
+            ~                                      ^       ~
+/home/benchuser/Downloads/sac18_cyclebmc/programs/esbmc/SafeMotion_cyclBnd10_643570300.c:6677:45: note: use '=' to turn this equality comparison into an assignment
+        if ((SafeMotion_SF_EmergencyStop_1___TEMP1 == 32768)){
+                                                   ^~
+                                                   =
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.145s
+GOTO program processing time: 0.002s
+
+*** Iteration number 1 ***
+Starting Bounded Model Checking
+Symex completed in: 0.005s (263 assignments)
+Slicing time: 0.000s (removed 262 assignments)
+Generated 1 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.005s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.005s (263 assignments)
+Slicing time: 0.000s (removed 262 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.000s
+Runtime decision procedure: 0.000s
+The forward condition is unable to prove the property
+
+*** Iteration number 2 ***
+Starting Bounded Model Checking
+Symex completed in: 0.005s (263 assignments)
+Slicing time: 0.000s (removed 262 assignments)
+Generated 1 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.005s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.005s (263 assignments)
+Slicing time: 0.000s (removed 262 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.001s
+Runtime decision procedure: 0.000s
+The forward condition is unable to prove the property
+
+*** Iteration number 3 ***
+Starting Bounded Model Checking
+Symex completed in: 0.204s (1610 assignments)
+Slicing time: 0.004s (removed 1288 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (322 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.002s
+Runtime decision procedure: 0.000s
+BMC program time: 0.211s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.213s (1609 assignments)
+Slicing time: 0.004s (removed 1366 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (243 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.001s
+Runtime decision procedure: 0.001s
+The forward condition is unable to prove the property
+
+*** Iteration number 4 ***
+Starting Bounded Model Checking
+Symex completed in: 0.619s (4349 assignments)
+Slicing time: 0.048s (removed 2778 assignments)
+Generated 4 VCC(s), 2 remaining after simplification (1571 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.008s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.008s
+Runtime decision procedure: 0.002s
+BMC program time: 0.677s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 0.655s (4347 assignments)
+Slicing time: 0.047s (removed 2898 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (1449 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.007s
+Runtime decision procedure: 0.007s
+The forward condition is unable to prove the property
+
+*** Iteration number 5 ***
+Starting Bounded Model Checking
+Symex completed in: 1.120s (7151 assignments)
+Slicing time: 0.152s (removed 4201 assignments)
+Generated 5 VCC(s), 3 remaining after simplification (2950 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.015s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.015s
+Runtime decision procedure: 0.005s
+BMC program time: 1.292s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.185s (7148 assignments)
+Slicing time: 0.150s (removed 4321 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2827 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.015s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.015s
+Runtime decision procedure: 0.040s
+The forward condition is unable to prove the property
+
+*** Iteration number 6 ***
+Starting Bounded Model Checking
+Symex completed in: 1.671s (9953 assignments)
+Slicing time: 0.318s (removed 5626 assignments)
+Generated 6 VCC(s), 4 remaining after simplification (4327 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.021s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.021s
+Runtime decision procedure: 0.008s
+BMC program time: 2.019s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 1.749s (9949 assignments)
+Slicing time: 0.317s (removed 5746 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4203 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.021s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.021s
+Runtime decision procedure: 0.090s
+The forward condition is unable to prove the property
+
+*** Iteration number 7 ***
+Starting Bounded Model Checking
+Symex completed in: 2.251s (12755 assignments)
+Slicing time: 0.571s (removed 7051 assignments)
+Generated 7 VCC(s), 5 remaining after simplification (5704 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.029s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.029s
+Runtime decision procedure: 0.009s
+BMC program time: 2.862s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 2.351s (12750 assignments)
+Slicing time: 0.548s (removed 7171 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (5579 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.030s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.030s
+Runtime decision procedure: 0.200s
+The forward condition is unable to prove the property
+
+*** Iteration number 8 ***
+Starting Bounded Model Checking
+Symex completed in: 2.861s (15557 assignments)
+Slicing time: 0.831s (removed 8476 assignments)
+Generated 8 VCC(s), 6 remaining after simplification (7081 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.036s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.036s
+Runtime decision procedure: 0.013s
+BMC program time: 3.741s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 2.959s (15551 assignments)
+Slicing time: 0.829s (removed 8596 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (6955 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.036s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.036s
+Runtime decision procedure: 0.322s
+The forward condition is unable to prove the property
+
+*** Iteration number 9 ***
+Starting Bounded Model Checking
+Symex completed in: 3.444s (18359 assignments)
+Slicing time: 1.186s (removed 9901 assignments)
+Generated 9 VCC(s), 7 remaining after simplification (8458 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.042s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.042s
+Runtime decision procedure: 0.016s
+BMC program time: 4.689s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 3.493s (18352 assignments)
+Slicing time: 1.184s (removed 10021 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (8331 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.040s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.040s
+Runtime decision procedure: 1.182s
+The forward condition is unable to prove the property
+
+*** Iteration number 10 ***
+Starting Bounded Model Checking
+Symex completed in: 4.008s (21161 assignments)
+Slicing time: 1.629s (removed 11326 assignments)
+Generated 10 VCC(s), 8 remaining after simplification (9835 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.050s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.050s
+Runtime decision procedure: 0.015s
+BMC program time: 5.703s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 4.056s (21153 assignments)
+Slicing time: 1.646s (removed 11446 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (9707 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.047s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.047s
+Runtime decision procedure: 1.717s
+The forward condition is unable to prove the property
+
+*** Iteration number 11 ***
+Starting Bounded Model Checking
+Symex completed in: 4.520s (23955 assignments)
+Slicing time: 2.128s (removed 12744 assignments)
+Generated 11 VCC(s), 9 remaining after simplification (11211 assignments)
+Encoding remaining VCC(s) using integer/real arithmetic
+Encoding to solver time: 0.058s
+Solving with solver Z3 v4.5.0
+Encoding to solver time: 0.058s
+Runtime decision procedure: 0.019s
+BMC program time: 6.725s
+No bug has been found in the base case
+Starting Bounded Model Checking
+Symex completed in: 4.602s (23946 assignments)
+Slicing time: 2.089s (removed 12864 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (11082 assignments)
+BMC program time: 6.691s
+
+VERIFICATION SUCCESSFUL
+
+Solution found by the forward condition; all states are reachable (k = 11)
