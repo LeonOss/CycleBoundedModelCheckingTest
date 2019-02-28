@@ -1,318 +1,318 @@
 Checking  DiagnosticsConcept_cyclBnd12_AG__SF_SafeStop1_1.Error_____S_Stopped_.spec :
 
-real	0m7,628s
-user	0m10,442s
-sys	0m0,137s
+real	0m35,787s
+user	0m39,176s
+sys	0m0,200s
 ============================
 Checking  DiagnosticsConcept_cyclBnd12_EF__Error_ESPE1___S3_Drive_Reset___S_Stopped_.spec :
 
-real	0m0,178s
-user	0m0,249s
-sys	0m0,024s
+real	0m4,291s
+user	0m7,033s
+sys	0m0,154s
 ============================
 Checking  DiagnosticsConcept_cyclBnd15_AG__SF_EmergencyStop_1.Error_____S_EStopOut_.spec :
 
-real	0m0,199s
-user	0m0,260s
-sys	0m0,045s
+real	0m48,885s
+user	0m52,167s
+sys	0m0,137s
 ============================
 Checking  DiagnosticsConcept_cyclBnd15_AG__SF_ESPE_1.S_ESPE_Out____S2_S_ESPE_In_.spec :
 
-real	0m0,179s
-user	0m0,231s
-sys	0m0,035s
+real	0m51,334s
+user	0m54,689s
+sys	0m0,192s
 ============================
 Checking  DiagnosticsConcept_cyclBnd19_AG__S_Stopped_____Internal_Acknowledge___S2_S_ESPE_In___SF_EmergencyStop_1.S_EStopOut___.spec :
 
-real	0m0,168s
-user	0m0,220s
-sys	0m0,042s
+real	1m37,416s
+user	1m40,891s
+sys	0m0,204s
 ============================
 Checking  DiagnosticsConcept_cyclBnd20_AG___S2_S_ESPE_In______SF_ESPE_1.DiagCode___0x8004______SF_ESPE_1.DiagCode___0x8001__.spec :
 
-real	0m0,173s
-user	0m0,236s
-sys	0m0,031s
+real	2m31,975s
+user	2m35,139s
+sys	0m0,168s
 ============================
 Checking  DiagnosticsConcept_cyclBnd4_AG__S_Stopped_____Internal_Acknowledge___SF_ESPE_1.S_ESPE_Out___SF_EmergencyStop_1.S_EStopOut___.spec :
 
-real	0m0,192s
-user	0m0,248s
-sys	0m0,042s
+real	0m4,294s
+user	0m7,071s
+sys	0m0,163s
 ============================
 Checking  PLCopenX.SF_Antivalent_cyclBnd25_AG_____Activate___S_ChannelNO____S_ChannelNC_______S_AntivalentOut_.spec :
 
-real	0m1,258s
-user	0m3,254s
-sys	0m0,096s
+real	0m13,985s
+user	0m17,026s
+sys	0m0,152s
 ============================
 Checking  PLCopenX.SF_Antivalent_cyclBnd25_AG__S_AntivalentOut_____Activate____S_ChannelNO___S_ChannelNC____Error__.spec :
 
-real	0m0,502s
-user	0m0,925s
-sys	0m0,044s
+real	0m14,024s
+user	0m17,038s
+sys	0m0,157s
 ============================
 Checking  PLCopenX.SF_Antivalent_cyclBnd25_AG____S_ChannelNC___S_ChannelNO___T_1.Q____Error_.spec :
 
-real	0m0,441s
-user	0m0,805s
-sys	0m0,086s
+real	0m14,495s
+user	0m17,593s
+sys	0m0,158s
 ============================
 Checking  PLCopenX.SF_Antivalent_cyclBnd27_AG__Error_____S_AntivalentOut_.spec :
 
-real	0m0,281s
-user	0m0,479s
-sys	0m0,035s
+real	0m15,773s
+user	0m19,202s
+sys	0m0,160s
 ============================
 Checking  PLCopenX.SF_Antivalent_cyclBnd30_AG___Activate______Ready____S_AntivalentOut___DiagCode_0____Error___.spec :
 
-real	0m0,194s
-user	0m0,296s
-sys	0m0,028s
+real	0m20,027s
+user	0m23,644s
+sys	0m0,160s
 ============================
 Checking  PLCopenX.SF_Antivalent_cyclBnd3_AG___Activate_____Ready__.spec :
 
-real	0m0,209s
-user	0m0,314s
-sys	0m0,031s
+real	0m1,627s
+user	0m3,910s
+sys	0m0,110s
 ============================
 Checking  PLCopenX.SF_EmergencyStop_cyclBnd35_559746110.spec :
 
-real	0m0,274s
-user	0m0,458s
-sys	0m0,029s
+real	0m16,814s
+user	0m19,719s
+sys	0m0,193s
 ============================
 Checking  PLCopenX.SF_EmergencyStop_cyclBnd40_AG___S_EStopIn_____S_EStopOut_.spec :
 
-real	0m0,335s
-user	0m0,628s
-sys	0m0,017s
+real	0m19,599s
+user	0m22,618s
+sys	0m0,168s
 ============================
 Checking  PLCopenX.SF_EmergencyStop_cyclBnd45_AG__Error____Ready_.spec :
 
-real	0m0,249s
-user	0m0,413s
-sys	0m0,021s
+real	0m26,905s
+user	0m29,811s
+sys	0m0,168s
 ============================
 Checking  PLCopenX.SF_EmergencyStop_cyclBnd45_EF__DiagCode_0x8000___Error_.spec :
 
-real	0m0,328s
-user	0m0,596s
-sys	0m0,034s
+real	0m25,448s
+user	0m28,318s
+sys	0m0,169s
 ============================
 Checking  PLCopenX.SF_Equivalent_cyclBnd24_AG__Error_____S_EquivalentOut_.spec :
 
-real	0m0,350s
-user	0m0,620s
-sys	0m0,033s
+real	0m14,545s
+user	0m17,432s
+sys	0m0,177s
 ============================
 Checking  PLCopenX.SF_Equivalent_cyclBnd3_AG___DiscrepancyTimer.Q___Ready____Error_.spec :
 
-real	0m0,329s
-user	0m0,607s
-sys	0m0,041s
+real	0m1,554s
+user	0m3,834s
+sys	0m0,133s
 ============================
 Checking  PLCopenX.SF_GuardLocking_cyclBnd37_AG__S_GuardLocked_____S_UnlockGuard_.spec :
 
-real	0m0,385s
-user	0m0,749s
-sys	0m0,041s
+real	0m30,338s
+user	0m33,324s
+sys	0m0,128s
 ============================
 Checking  PLCopenX.SF_GuardLocking_cyclBnd54_EF__DiagCode_0x8000___S_UnlockGuard_.spec :
 
-real	0m0,313s
-user	0m0,536s
-sys	0m0,044s
+real	0m53,929s
+user	0m57,396s
+sys	0m0,166s
 ============================
 Checking  PLCopenX.SF_GuardLocking_cyclBnd55_AG__DiagCode_8000_____S_UnlockGuard_.spec :
 
-real	0m0,411s
-user	0m0,802s
-sys	0m0,038s
+real	0m49,245s
+user	0m52,655s
+sys	0m0,152s
 ============================
 Checking  PLCopenX.SF_ModeSelector_cyclBnd10_449543336.spec :
 
-real	0m0,358s
-user	0m0,621s
-sys	0m0,061s
+real	0m2,019s
+user	0m4,427s
+sys	0m0,123s
 ============================
 Checking  PLCopenX.SF_ModeSelector_cyclBnd3_465976285.spec :
 
-real	0m0,276s
-user	0m0,463s
-sys	0m0,038s
+real	0m1,749s
+user	0m4,142s
+sys	0m0,151s
 ============================
 Checking  PLCopenX.SF_MutingSeq_cyclBnd15_AG__DiagCode_0x8011____MutingEnable____MutingSwitch12____MutingSwitch21_.spec :
 
-real	0m0,311s
-user	0m0,556s
-sys	0m0,059s
+real	0m11,924s
+user	0m15,102s
+sys	0m0,109s
 ============================
 Checking  PLCopenX.SF_MutingSeq_cyclBnd35_AG__DiagCode_0xC003_____S_MutingLamp_.spec :
 
-real	0m0,562s
-user	0m0,996s
-sys	0m0,041s
+real	1m12,264s
+user	1m15,838s
+sys	0m0,160s
 ============================
 Checking  PLCopenX.SF_MutingSeq_cyclBnd40_AG__Error___S_AOPD_Out__S_MutingActive_.spec :
 
-real	0m0,346s
-user	0m0,615s
-sys	0m0,050s
+real	1m26,139s
+user	1m29,672s
+sys	0m0,184s
 ============================
 Checking  PLCopenX.SF_SafelyLimitSpeed_cyclBnd25_AG__Error_____S_SafetyActive_.spec :
 
-real	0m0,373s
-user	0m0,701s
-sys	0m0,036s
+real	0m12,371s
+user	0m15,134s
+sys	0m0,152s
 ============================
 Checking  PLCopenX.SF_SafelyLimitSpeed_cyclBnd25_EF__Error____Activate_.spec :
 
-real	0m0,396s
-user	0m0,744s
-sys	0m0,061s
+real	0m10,191s
+user	0m12,847s
+sys	0m0,176s
 ============================
 Checking  SafeMotion_cyclBnd10_1381152291.spec :
 
-real	0m0,486s
-user	0m0,890s
-sys	0m0,053s
+real	3m24,125s
+user	3m28,458s
+sys	0m0,240s
 ============================
 Checking  SafeMotion_cyclBnd10_EF__SF_SafelyLimitedSpeed_1.S_OpMode_.spec :
 
-real	0m0,414s
-user	0m0,782s
-sys	0m0,058s
+real	0m25,007s
+user	0m28,601s
+sys	0m0,213s
 ============================
 Checking  SafeMotion_cyclBnd10_EF__S_SLS_Enable_.spec :
 
-real	0m0,482s
-user	0m0,911s
-sys	0m0,038s
+real	0m57,545s
+user	1m1,506s
+sys	0m0,220s
 ============================
 Checking  SafeMotion_cyclBnd12_AG__S_GuardLocked_____S_UnlockGuard_K1_.spec :
 
-real	0m0,359s
-user	0m0,627s
-sys	0m0,050s
+real	5m34,106s
+user	5m39,793s
+sys	0m0,321s
 ============================
 Checking  SafeMotion_cyclBnd4_EF_SF_EmergencyStop_1.S_EStopOut.spec :
 
-real	0m0,423s
-user	0m0,812s
-sys	0m0,037s
+real	0m35,893s
+user	0m39,471s
+sys	0m0,180s
 ============================
 Checking  SafeMotion_cyclBnd5_AG__S0_Reset______S_SafeMoveAxis1___S_SafeMoveAxis2__.spec :
 
-real	0m0,609s
-user	0m1,252s
-sys	0m0,053s
+real	0m29,818s
+user	0m33,359s
+sys	0m0,173s
 ============================
 Checking  SafeMotion_cyclBnd5_AG___SF_SafelyLimitedSpeed_1.Error____SF_SafelyLimitedSpeed_2.Error_.spec :
 
-real	0m0,506s
-user	0m0,916s
-sys	0m0,045s
+real	0m6,855s
+user	0m10,272s
+sys	0m0,145s
 ============================
 Checking  SafeMotion_cyclBnd5_AG__S_ModeAutoActive____SF_ModeSelector_1.S_Mode0Sel_.spec :
 
-real	0m0,514s
-user	0m0,906s
-sys	0m0,071s
+real	0m39,590s
+user	0m43,428s
+sys	0m0,188s
 ============================
 Checking  SafeMotion_cyclBnd5_EF__SF_EnableSwitch_1.Error_.spec :
 
-real	0m0,622s
-user	0m1,253s
-sys	0m0,045s
+real	0m46,513s
+user	0m50,075s
+sys	0m0,205s
 ============================
 Checking  SafeMotion_cyclBnd5_EF__S_ModeAutoActive_.spec :
 
-real	0m0,636s
-user	0m1,194s
-sys	0m0,096s
+real	0m35,314s
+user	0m38,942s
+sys	0m0,217s
 ============================
 Checking  SafeMotion_cyclBnd5_EF__S_SafeMoveAxis1___S_SafeMoveAxis2_.spec :
 
-real	0m0,426s
-user	0m0,741s
-sys	0m0,055s
+real	0m30,826s
+user	0m34,413s
+sys	0m0,229s
 ============================
 Checking  SafeMotion_cyclBnd9_AG___SF_ModeSelector_1.S_Mode0Sel___S_GuardLocked_____S_ModeAutoActive_.spec :
 
-real	0m0,650s
-user	0m1,330s
-sys	0m0,087s
+real	0m23,099s
+user	0m26,742s
+sys	0m0,252s
 ============================
 Checking  SafeMotionIO_cyclBnd10_AG___S_SafeStandstill____S_SafeStop_M1_.spec :
 
-real	0m0,495s
-user	0m0,894s
-sys	0m0,068s
+real	1m13,706s
+user	1m17,126s
+sys	0m0,240s
 ============================
 Checking  SafeMotionIO_cyclBnd2_EF_S_AutoMode.spec :
 
-real	0m0,586s
-user	0m1,093s
-sys	0m0,069s
+real	0m3,660s
+user	0m6,488s
+sys	0m0,145s
 ============================
 Checking  SafeMotionIO_cyclBnd4_AG___S_UnlockGuard_K1_____S_SafeStandstill_.spec :
 
-real	0m0,524s
-user	0m0,987s
-sys	0m0,049s
+real	0m10,907s
+user	0m14,139s
+sys	0m0,210s
 ============================
 Checking  SafeMotionIO_cyclBnd5_AG__S_UnlockGuard_K1____S_SafeStop_M1_.spec :
 
-real	0m0,487s
-user	0m0,923s
-sys	0m0,042s
+real	0m16,199s
+user	0m19,502s
+sys	0m0,173s
 ============================
 Checking  SafeMotionIO_cyclBnd5_EF__S_SetupMode___S_AutoMode_.spec :
 
-real	0m0,573s
-user	0m1,027s
-sys	0m0,068s
+real	0m17,841s
+user	0m21,214s
+sys	0m0,133s
 ============================
 Checking  SafeMotionIO_cyclBnd6_AG__SF_EnableSwitch_1.DiagCode___0xC000____SF_EmergencyStop_1.Error_.spec :
 
-real	0m0,494s
-user	0m0,901s
-sys	0m0,046s
+real	0m29,172s
+user	0m32,538s
+sys	0m0,200s
 ============================
 Checking  SafeMotionIO_cyclBnd6_AG___SF_SafetyRequest_1.Error___SF_SafetyRequest_2.Error_____S_UnlockGuard_K1_.spec :
 
-real	0m0,617s
-user	0m1,266s
-sys	0m0,045s
+real	0m17,414s
+user	0m20,864s
+sys	0m0,196s
 ============================
 Checking  SafeMotionIO_cyclBnd6_EF__S_SafeMotionActive___S_SetupMode___S_Enable_M1_.spec :
 
-real	0m0,473s
-user	0m0,821s
-sys	0m0,072s
+real	0m26,045s
+user	0m29,520s
+sys	0m0,189s
 ============================
 Checking  SafeMotionIO_cyclBnd8_AG___S_SetupMode____S_AutoMode_.spec :
 
-real	0m0,454s
-user	0m0,838s
-sys	0m0,045s
+real	0m55,099s
+user	0m58,577s
+sys	0m0,184s
 ============================
 Checking  SafeMotionIO_cyclBnd8_EF__S_SafeStandstill___S_SafeStop_M1_.spec :
 
-real	0m0,475s
-user	0m0,838s
-sys	0m0,059s
+real	0m48,152s
+user	0m51,696s
+sys	0m0,172s
 ============================
 Checking  SF_ModeSelector2_cyclBnd20_AG__DiagCode___0x8000____S_Unlock_.spec :
 
-real	0m0,382s
-user	0m0,744s
-sys	0m0,045s
+real	0m12,111s
+user	0m14,853s
+sys	0m0,169s
 ============================
 Checking  SF_ModeSelector2_cyclBnd25_82632501.spec :
 
-real	0m0,574s
-user	0m1,112s
-sys	0m0,068s
+real	0m24,805s
+user	0m28,296s
+sys	0m0,172s
 ============================
